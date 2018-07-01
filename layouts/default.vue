@@ -9,43 +9,43 @@
    @font-face {
       font-family: "Lato";
       font-weight: 400;
-      src: url(/fonts/Lato-Regular.ttf);
+      src: url(~/assets/fonts/Lato-Regular.ttf);
    }
 
    @font-face {
       font-family: "Lato";
       font-weight: 500;
-      src: url(/fonts/Lato-Medium.ttf);
+      src: url(~/assets/fonts/Lato-Medium.ttf);
    }
 
    @font-face {
       font-family: "Lato";
       font-weight: 600;
-      src: url(/fonts/Lato-Semibold.ttf);
+      src: url(~/assets/fonts/Lato-Semibold.ttf);
    }
 
    @font-face {
       font-family: "Ubuntu";
       font-weight: 400;
-      src: url(/fonts/Ubuntu-R.ttf);
+      src: url(~/assets/fonts/Ubuntu-R.ttf);
    }
 
    @font-face {
       font-family: "Ubuntu";
       font-weight: 500;
-      src: url(/fonts/Ubuntu-M.ttf);
+      src: url(~/assets/fonts/Ubuntu-M.ttf);
    }
 
    @font-face {
       font-family: "Ubuntu";
       font-weight: 600;
-      src: url(/fonts/Ubuntu-B.ttf);
+      src: url(~/assets/fonts/Ubuntu-B.ttf);
    }
 
    @font-face {
       font-family: "Adele";
       font-weight: 400;
-      src: url(/fonts/ADELE-Light.ttf);
+      src: url(~/assets/fonts/ADELE-Light.ttf);
    }
 
    * {
@@ -63,7 +63,7 @@
       min-height: 100%;
       font-family: "Lato", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
       color: #242424;
-      // background-image: url(/images/bg.jpg);
+      // background-image: url(~/assets/images/bg.jpg);
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
