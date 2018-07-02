@@ -3,8 +3,9 @@ module.exports =
    name: 'len'
 
    signs: [{
-      name: 'len(object)'
       async: true
+      name: 'len(object)'
+      desc: '统计对象中的属性数量'
       params: [{
          name: 'object'
          type: 'object'

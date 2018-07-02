@@ -19,6 +19,7 @@
             type: Object
             default: null
 
+
       methods:
          isHint: ( item ) ->
             return typeof(item) is 'string'

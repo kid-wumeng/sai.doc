@@ -82,7 +82,7 @@
 
    body {
       min-height: 100%;
-      font-family: "Lato", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
+      font-family: "Ubuntu", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
       color: #242424;
       // background-image: url(~/assets/images/bg.jpg);
       background-repeat: no-repeat;
