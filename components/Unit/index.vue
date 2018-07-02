@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Func {{ name }}
+   .Unit {{ name }}
 </template>
 
 
@@ -8,19 +8,17 @@
    module.exports =
 
       props:
-         'func':
+         'unit':
             type: Object
             required: true
 
       computed:
-         name:  -> @func.name  ? 'func-name ???'
-         desc:  -> @func.desc  ? ''
-         signs: -> @func.signs ? []
+         name: -> @unit.name ? 'unit-name ???'
 </script>
 
 
 
 <style lang="less">
-   .Func {
+   .Unit {
    }
 </style>

@@ -1,6 +1,8 @@
 <template lang="jade">
    #unit-or-func(v-if="isUnit || isFunc")
       SideLv2(:items="items", :func="func")
+      Unit(v-if="isUnit && unit", :unit="unit")
+      Func(v-if="isFunc && func", :func="func")
 </template>
 
 
@@ -10,6 +12,8 @@
 
       components:
          'SideLv2': require('~/components/SideLv2').default
+         'Unit':    require('~/components/Unit').default
+         'Func':    require('~/components/Func').default
 
       computed:
          doc:    -> @$store.state.doc
