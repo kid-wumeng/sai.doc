@@ -1,8 +1,5 @@
 <template lang="jade">
-   #index
-      Side
-      .main
-         nuxt-child
+   #method
 </template>
 
 

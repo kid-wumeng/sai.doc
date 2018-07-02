@@ -1,6 +1,27 @@
 <template lang="jade">
-   nuxt
+   nuxt(v-if="$store.state.ready")
 </template>
+
+
+
+<script lang="coffee">
+   module.exports =
+      mounted: ->
+         @$store.commit('update', @$route)
+
+      watch:
+         '$route': ( newRoute, oldRoute ) ->
+
+            newVer  = newRoute.query.ver
+            oldVer  = oldRoute.query.ver
+
+            newLang = newRoute.query.lang
+            oldLang = oldRoute.query.lang
+
+            if ( newVer isnt oldVer ) or ( newLang isnt oldLang )
+               console.log '098765'
+               @$store.commit('update', newRoute)
+</script>
 
 
 

@@ -1,34 +1,27 @@
 <template lang="jade">
    .Side
       .units
-         nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="'/_' + unit.path") {{ unit.name }}
+         nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="getTo(unit)") {{ unit.name }}
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-
-      props:
-         'docs':
-            type: Object
-            required: true
-
-         'ver':
-            type: String
-            required: true
-
-         'lang':
-            type: String
-            required: true
-
-         'langDefault':
-            type: String
-            required: true
-
       computed:
-         doc:   -> @docs[@ver][@lang] ? @docs[@ver][@langDefault]
-         units: -> @doc.units
+         docs:        -> @$store.state.docs
+         ver:         -> @$store.state.ver
+         lang:        -> @$store.state.lang
+         langDefault: -> @$store.state.langDefault
+
+         doc:         -> @docs[@ver][@lang] ? @docs[@ver][@langDefault]
+         units:       -> @doc.units
+
+      methods:
+         getTo: ( unit ) ->
+            return
+               path: '/' + unit.path
+               query: @$route.query
 </script>
 
 
