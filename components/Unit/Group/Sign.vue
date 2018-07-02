@@ -17,9 +17,9 @@
             required: true
 
       computed:
-         async: -> @sign.async  ? false
-         name:  -> @sign.name   ? 'sign-name ???'
-         desc:  -> @sign.desc   ? ''
+         async: -> @sign.async ? false
+         name:  -> @sign.name  ? 'sign-name ???'
+         desc:  -> @sign.desc  ? ''
 
          await: -> if @async then 'await ' else '      '
 </script>
@@ -27,7 +27,7 @@
 
 
 <style lang="less">
-   .Sign {
+   .Unit .Sign {
       pre {
          display: inline-block;
          font-family: "Monaco";

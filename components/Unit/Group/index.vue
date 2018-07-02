@@ -1,6 +1,9 @@
 <template lang="jade">
-   table.Group
-      Sign(v-for="(sign, i) in signs", :key="i", :sign="sign")
+   .Group
+      .hint {{ hint }}
+      
+      table
+         Sign(v-for="(sign, i) in signs", :key="i", :sign="sign")
 </template>
 
 
@@ -33,7 +36,9 @@
 
 
 <style lang="less">
-   .Group {
-      table-layout: fixed;
+   .Unit .Group {
+      > table {
+         table-layout: fixed;
+      }
    }
 </style>

@@ -2,6 +2,8 @@ module.exports =
 
    name: 'len'
 
+   desc: '计算长度或数量'
+
    signs: [{
       async: true
       name: 'len(object)'
@@ -25,8 +27,8 @@ module.exports =
          children: [{
             name: 'mode'
             desc: '模式'
-            scopes: ['length', 'cjk']
             default: 'length'
+            scopes: ['length', 'cjk']
          }]
       }]
    }]

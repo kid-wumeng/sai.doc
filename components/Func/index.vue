@@ -1,11 +1,17 @@
 <template lang="jade">
-   .Func {{ name }}
+   .Func
+      .name {{ name }}
+      .desc {{ desc }}
+      Sign(v-for="(sign, i) in signs", :key="i", :sign="sign")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
+
+      components:
+         'Sign': require('./Sign').default
 
       props:
          'func':
