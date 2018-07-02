@@ -13,7 +13,7 @@
          'Side': require('~/components/Side').default
 
       mounted: ->
-         console.log docs['zh-Hans']['0.3']['type']['number']['isNumber']
+         console.log docs['zh-Hans']['0.3']['string']['base']['len']
 </script>
 
 
