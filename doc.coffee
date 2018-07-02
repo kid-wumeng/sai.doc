@@ -81,12 +81,17 @@ sai.isEmpty(data)
 sai.get(data, path, [defaultValue])
 sai.set(data, path, value)
 sai.del(data, path)
+sai.first(array)
+sai.last(array)
+sai.random(array, count)
 sai.equal(datas)
 sai.has(data, ...names)
 sai.in(data, enums)
-sai.len(data, { mode })
+sai.len(data, mode)
+sai.len(data, callback)
 sai.merge(...datas)
 sai.copy(data)
+sai.type(data)
 
 
 

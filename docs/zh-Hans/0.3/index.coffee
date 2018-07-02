@@ -1,2 +1,5 @@
 module.exports =
-   'string': require('./string')
+
+   units: [
+      require('./string')
+   ]

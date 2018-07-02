@@ -7,7 +7,18 @@
 
 <script lang="coffee">
    module.exports =
-      data: -> {}
+      props:
+         'docs':
+            type: Object
+            required: true
+
+      computed:
+         lang: -> @$route.query['lang']
+         ver:  -> @$route.query['ver']
+
+      mounted: ->
+
+
 </script>
 
 

@@ -1,5 +1,8 @@
 module.exports =
-   _name: 'String'
-   _sort: 1
 
-   base: require('./base')
+   name: 'String'
+
+   items: [
+      '字符串操纵'
+      require('./len')
+   ]

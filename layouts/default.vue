@@ -4,17 +4,6 @@
 
 
 
-<script lang="coffee">
-
-   if process.browser
-      window.docs = require('~/docs')
-   else
-      global.docs = require('~/docs')
-
-</script>
-
-
-
 <style lang="less">
 
    @font-face {
