@@ -18,8 +18,9 @@ module.exports =
          type: 'string'
          desc: '字符串'
       },{
-         name: 'mode'
-         type: 'string'
+         name: 'options'
+         type: 'object'
+         desc: '选项'
          children: [{
             name: 'mode'
             desc: '模式'

@@ -1,13 +1,18 @@
 <template lang="jade">
-   #method
+   #method(v-if="method")
+      Side2(:method="method")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
+
       components:
-         'Side': require('~/components/Side').default
+         'Side2': require('~/components/Side2').default
+
+      computed:
+         method: -> @$route.params.method
 </script>
 
 

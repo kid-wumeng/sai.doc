@@ -1,11 +1,14 @@
-docs            = require('~/docs')
+_               = require('lodash')
 compareVersions = require('compare-versions')
+docs            = require('~/docs')
+
 
 
 module.exports =
 
    state:
       docs:        docs
+      doc:         null
       vers:        []
       ver:         ''
       langs:       []
@@ -17,22 +20,33 @@ module.exports =
    mutations:
       update: (state, route) =>
 
-         vers        = Object.keys(state.docs).sort(compareVersions).reverse()
+         docs        = state.docs
 
-         verLast     = vers[0]
+         vers        = Object.keys(docs).sort(compareVersions).reverse()
 
          verQuery    = route.query['ver']
 
+         verLast     = vers[0]
+
          ver         = if vers.includes(verQuery) then verQuery else verLast
 
-         langs       = Object.keys(state.docs[ver])
+         langs       = Object.keys(docs[ver])
 
          langQuery   = route.query['lang']
 
-         lang        = if langs.includes(langQuery) then langQuery else state.langDefault
+         langDefault = state.langDefault
+
+         lang        = if langs.includes(langQuery) then langQuery else langDefault
+
+         docDefault  = docs[ver][langDefault]
+
+         doc         = docs[ver][lang] ? {}
+
+         doc         = _.merge({}, docDefault, doc)
 
          state.vers  = vers
          state.ver   = ver
          state.langs = langs
          state.lang  = lang
+         state.doc   = doc
          state.ready = true

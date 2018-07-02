@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Side
+   .Side1
       .units
          nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="getTo(unit)") {{ unit.name }}
 </template>
@@ -8,25 +8,21 @@
 
 <script lang="coffee">
    module.exports =
+      
       computed:
-         docs:        -> @$store.state.docs
-         ver:         -> @$store.state.ver
-         lang:        -> @$store.state.lang
-         langDefault: -> @$store.state.langDefault
-
-         doc:         -> @docs[@ver][@lang] ? @docs[@ver][@langDefault]
-         units:       -> @doc.units
+         doc:   -> @$store.state.doc
+         units: -> @doc.units
 
       methods:
          getTo: ( unit ) ->
             return
-               path: '/' + unit.path
+               path: '/_' + unit.path
                query: @$route.query
 </script>
 
 
 
 <style lang="less">
-   .Side {
+   .Side1 {
    }
 </style>

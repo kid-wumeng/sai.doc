@@ -1,6 +1,6 @@
 <template lang="jade">
    #index
-      Side
+      Side1
       .main
          nuxt-child
 </template>
@@ -10,7 +10,7 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Side': require('~/components/Side').default
+         'Side1': require('~/components/Side1').default
 </script>
 
 
@@ -20,7 +20,7 @@
    @side-width: 240px;
 
    #index {
-      .Side {
+      .Side1 {
          position: fixed;
          left: 0;
          top: 0;
