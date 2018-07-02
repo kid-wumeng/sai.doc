@@ -2,8 +2,8 @@ module.exports =
 
    name: 'len'
 
-   methods: [{
-      sign: 'len(object)'
+   signs: [{
+      name: 'len(object)'
       async: true
       params: [{
          name: 'object'
@@ -12,7 +12,7 @@ module.exports =
          required: true
       }]
    },{
-      sign: 'len(string, mode)'
+      name: 'len(string, mode)'
       params: [{
          name: 'string'
          type: 'string'

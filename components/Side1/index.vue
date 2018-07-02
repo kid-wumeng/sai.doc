@@ -1,17 +1,16 @@
 <template lang="jade">
    .Side1
-      .units
-         nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="getTo(unit)") {{ unit.name }}
+      nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="getTo(unit)") {{ unit.name }}
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-      
+
       computed:
          doc:   -> @$store.state.doc
-         units: -> @doc.units
+         units: -> @$store.state.units
 
       methods:
          getTo: ( unit ) ->
