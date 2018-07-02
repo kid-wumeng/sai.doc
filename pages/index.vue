@@ -1,6 +1,6 @@
 <template lang="jade">
    #index
-      Side(:docs="docs", :lang="lang", :ver="ver")
+      Side(:docs="docs", :ver="ver", :lang="lang", :lang-default="langDefault")
       .main
          nuxt-child
 </template>
@@ -20,15 +20,7 @@
       computed:
          docs:        -> docs
 
-         langs:       -> Object.keys(@docs)
-
-         langDefault: -> 'zh-Hans'
-
-         langQuery:   -> @$route.query['lang']
-
-         lang:        -> if @langs.includes(@langQuery) then @langQuery else @langDefault
-
-         vers:        -> Object.keys(@docs[@langDefault]).sort(compareVersions).reverse()
+         vers:        -> Object.keys(@docs).sort(compareVersions).reverse()
 
          verLast:     -> @vers[0]
 
@@ -36,9 +28,13 @@
 
          ver:         -> if @vers.includes(@verQuery) then @verQuery else @verLast
 
+         langs:       -> Object.keys(@docs[@ver])
 
-      mounted: ->
-         console.log docs
+         langDefault: -> 'zh-Hans'
+
+         langQuery:   -> @$route.query['lang']
+
+         lang:        -> if @langs.includes(@langQuery) then @langQuery else @langDefault
 </script>
 
 

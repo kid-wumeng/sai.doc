@@ -1,5 +1,6 @@
 module.exports =
 
+   path: 'string'
    name: 'String'
 
    items: [

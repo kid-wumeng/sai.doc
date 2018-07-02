@@ -1,2 +1,2 @@
 module.exports =
-   'zh-Hans': require('./zh-Hans')
+   '0.3': require('./0.3')
