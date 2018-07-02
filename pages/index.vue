@@ -1,6 +1,6 @@
 <template lang="jade">
    #index
-      Side1
+      SideLv1(:units="units")
       .main
          nuxt-child
 </template>
@@ -9,8 +9,12 @@
 
 <script lang="coffee">
    module.exports =
+
       components:
-         'Side1': require('~/components/Side1').default
+         'SideLv1': require('~/components/SideLv1').default
+
+      computed:
+         units: -> @$store.state.doc.units ? []
 </script>
 
 
@@ -20,7 +24,7 @@
    @side-width: 240px;
 
    #index {
-      .Side1 {
+      .SideLv1 {
          position: fixed;
          left: 0;
          top: 0;

@@ -8,7 +8,7 @@ module.exports =
 
    state:
       docs:        docs
-      doc:         null
+      doc:         {}
       units:       {}
       funcs:       {}
       vers:        []
