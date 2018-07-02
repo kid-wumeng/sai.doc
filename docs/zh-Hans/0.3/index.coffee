@@ -1,2 +1,2 @@
 module.exports =
-   'type': require('./type')
+   'string': require('./string')
