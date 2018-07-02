@@ -1,6 +1,5 @@
 module.exports =
    async: true
-   sign: 'len(data, options)'
    params: [{
       name: 'data'
       type: ['string', 'object', '*[]']
