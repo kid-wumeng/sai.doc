@@ -17,3 +17,13 @@
       computed:
          desc: -> @param.desc ? ''
 </script>
+
+
+
+<style lang="less" scoped>
+   .DescArea {
+      > * {
+         margin-bottom: 0;
+      }
+   }
+</style>

@@ -29,7 +29,7 @@
 
 <style lang="less">
    .Func {
-      padding: 48px;
+      overflow: scroll;
 
       > * {
          margin-bottom: 40px;
