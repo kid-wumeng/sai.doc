@@ -24,7 +24,6 @@
 
 <style lang="less">
    .SideLv1 {
-      width: 240px;
       overflow: scroll;
       padding: 20px 0;
 

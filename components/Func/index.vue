@@ -12,7 +12,7 @@
 
       components:
          'TextArea': require('~/components/TextArea').default
-         'Sign':     require('./Sign').default
+         'Sign':     require('~/components/Sign').default
 
       props:
          'func':
@@ -30,5 +30,9 @@
 <style lang="less">
    .Func {
       padding: 48px;
+
+      > * {
+         margin-bottom: 40px;
+      }
    }
 </style>

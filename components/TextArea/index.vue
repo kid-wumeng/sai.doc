@@ -12,7 +12,6 @@
          'text':
             type: String
             default: ''
-            default: false
 
 
       computed:
@@ -29,7 +28,8 @@
 
       methods:
          format: ->
-            @formatAs()
+            if @text
+               @formatAs()
 
          formatAs: ->
             as = @$el.querySelectorAll('a')
@@ -42,7 +42,7 @@
 
 <style lang="less">
    .TextArea {
-      line-height: 23px;
+      line-height: 22px;
       text-align: justify;
       font-size: 14px;
       color: #273340;
@@ -82,16 +82,21 @@
       > ul,
       > ol {
          margin-left: 1.5em;
-      }
-
-      strong {
-         font-weight: 600;
-         color: red;
+         li {
+            list-style-position: outside;
+         }
       }
 
       em {
          font-weight: 600;
          font-style: normal;
+         user-select: all;
+      }
+
+      strong {
+         font-weight: 600;
+         color: red;
+         user-select: all;
       }
 
       a {

@@ -45,7 +45,7 @@
 
 <style lang="less">
 
-   @side-width: 240px;
+   @side-width: 160px;
 
    #unit-or-func {
       height: 100%;

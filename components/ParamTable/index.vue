@@ -20,7 +20,6 @@
          show: -> @params.length > 0
 
       mounted: ->
-         @setParamWidth()
 
       methods:
          setParamWidth: ->
@@ -46,7 +45,6 @@
 
 <style lang="less">
    .ParamTable {
-      width: 480px;
       border: 1px solid lighten(#A2AEBA, 20%);
       border-radius: 2px;
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);

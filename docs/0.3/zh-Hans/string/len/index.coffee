@@ -5,28 +5,36 @@ module.exports =
    desc: '计算*长度*或数量'
 
    signs: [{
-      async: true
-      name: 'len(object)'
+      class: true
+      name: 'MongoDB.Collection(name, options)'
       desc: '统计对象中的属性数量'
       params: [{
-         name: 'object'
-         type: 'object'
-         desc: '对象'
-         default: 6
-         required: true
-      }]
-   },{
-      name: 'len(string, mode)'
-      params: [{
-         name: 'string'
+         name: 'name'
          type: 'string'
-         default: 'kid'
+         desc: '集合名'
+         required: true
       },{
          name: 'options'
          type: 'object'
+         desc: '选项配置'
+      }]
+   },{
+      name: 'len(string, mode)'
+      desc: '''
+         统计字符串中的字符个数
+      '''
+      params: [{
+         name: 'string'
+         type: 'string'
+         required: true
+      },{
+         name: 'autoIDStore'
+         type: 'string'
+         default: 'length'
          desc: '''
-            选项
-            可选值：length | cjk
+            模式，默认值："length"
+            * *length* - 以 String.prototype.length 统计
+            * *cjk* - 中日韩字符算2位，其它字符算1位
          '''
          children: [{
             name: 'mode'

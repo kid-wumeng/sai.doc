@@ -2,8 +2,8 @@
    .Param
       .left
          .name {{ displayName }}
-         .type {{ displayType }}
-      TextArea.right(v-if="desc", :text="desc")
+         .type {{ type }}
+      TextArea.right(:text="desc")
 </template>
 
 
@@ -30,13 +30,7 @@
             if @required
                return "#{@name}"
             else
-               return "[#{@name}]"
-
-         displayType: ->
-            if @defaults
-               return "#{@type}, default is #{utils.formatData(@defaults)}"
-            else
-               return "#{@type}"
+               return "[ #{@name} ]"
 </script>
 
 
@@ -52,19 +46,12 @@
          > .left,
          > .right {
             padding: @padding;
-            line-height: 21px;
-
-            > * {
-               margin-bottom: 5px;
-               &:last-child {
-                  margin-bottom: 0;
-               }
-            }
+            line-height: 22px;
          }
 
          > .left {
-            max-width: 65%;
-            text-align: right;
+            flex: none;
+            width: 30%;
 
             > .name {
                font-size: 14px;
@@ -73,11 +60,15 @@
             }
 
             > .type {
-               font-family: "Ubuntu Mono";
+               margin-top: 4px;
                font-size: 14px;
-               color: #9CA4AC;
+               color: #A2AEBA;
                word-break: break-all;
             }
+         }
+
+         > .right {
+            flex: auto;
          }
       }
    }

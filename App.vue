@@ -141,7 +141,7 @@
       display: flex;
 
       .SideLv1 {
-         width: 240px;
+         width: 120px;
          height: 100%;
          overflow: scroll;
       }
