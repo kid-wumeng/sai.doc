@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.DescArea(:text="sign.desc")
+   TextArea.DescArea(:text="desc")
 </template>
 
 
@@ -10,17 +10,10 @@
          'TextArea': require('~/components/TextArea').default
 
       props:
-         'sign':
+         'param':
             type: Object
             required: true
+
+      computed:
+         desc: -> @param.desc ? ''
 </script>
-
-
-
-<style lang="less" scoped>
-   .DescArea {
-      > * {
-         margin-bottom: 0;
-      }
-   }
-</style>

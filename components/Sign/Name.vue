@@ -29,14 +29,12 @@
 
 
 
-<style lang="less">
-   .Sign {
-      .Name {
-         line-height: 21px;
-         font-weight: 500;
-         font-size: 17px;
-         color: #273340;
-         user-select: all;
-      }
+<style lang="less" scoped>
+   .Name {
+      line-height: 21px;
+      font-weight: 500;
+      font-size: 17px;
+      color: #273340;
+      user-select: all;
    }
 </style>
