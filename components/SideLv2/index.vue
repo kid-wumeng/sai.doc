@@ -37,23 +37,32 @@
    .SideLv2 {
       overflow: scroll;
       padding: 20px 0;
+      border-right: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
 
       .item {
-         > a {
+         > .hint,
+         > .func {
             display: block;
-            padding: 10px 16px;
-            font-family: "Ubuntu";
+            padding: 10px 20px;
+            font-weight: 500;
+         }
+
+         > .hint {
+            text-align: center;
+            font-weight: 600;
             font-size: 14px;
+            color: lighten(#A2AEBA, 18%);
+         }
+
+         > .func {
+            font-size: 16px;
             color: #445669;
 
             &:hover {
-               background-color: #F6F6F6;
             }
 
             &[is-current-func] {
-               font-weight: 500;
-               color: white;
-               background-color: #273340;
             }
          }
       }

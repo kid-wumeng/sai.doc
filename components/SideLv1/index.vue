@@ -1,6 +1,6 @@
 <template lang="jade">
    .SideLv1
-      nuxt-link.home(to="/") HOME
+      nuxt-link.home(to="/") Sai
       nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="getTo(unit)") {{ unit.name }}
 </template>
 
@@ -26,22 +26,34 @@
    .SideLv1 {
       overflow: scroll;
       padding: 20px 0;
+      background-color: #272E3D;
 
-      > a {
+      > .home,
+      > .unit {
          display: block;
-         padding: 10px 16px;
-         font-family: "Ubuntu";
+         padding: 10px 20px;
+      }
+
+      > .home {
+         text-align: center;
+         font-family: "Futura";
+         font-size: 30px;
+         color: #CCC;
+         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      > .unit {
+         font-family: "Futura";
          font-size: 14px;
-         color: #445669;
+         color: #CCC;
 
          &:hover {
-            background-color: #F6F6F6;
+            color: #272E3D;
+            background-color: white;
          }
 
-         &.active {
+         &[is-current-unit] {
             font-weight: 500;
-            color: white;
-            background-color: #273340;
          }
       }
    }

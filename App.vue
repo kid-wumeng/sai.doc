@@ -32,6 +32,9 @@
 
       mounted: ->
          @$store.commit('update', @$route)
+         @setAppHeight()
+
+         window.addEventListener('resize', @setAppHeight)
 
 
       watch:
@@ -46,6 +49,10 @@
             if ( newVer isnt oldVer ) or ( newLang isnt oldLang )
                console.log '098765'
                @$store.commit('update', newRoute)
+
+      methods:
+         setAppHeight: ->
+            document.body.style.height = window.innerHeight + 'px'
 </script>
 
 
@@ -106,10 +113,8 @@
    }
 
    body {
-      height: 100%;
       font-family: "Ubuntu", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
       color: #242424;
-      // background-image: url(~/assets/images/bg.jpg);
       background-color: #FAF4E9;
       background-color: white;
       background-repeat: no-repeat;
@@ -134,22 +139,32 @@
 
    #__layout {
      height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
    }
 
    #App {
-      margin: 0 auto;
-      width: 1280px;
+      max-width: 1680px;
+      width: 100%;
       height: 100%;
-      display: flex;
+      position: relative;
+      overflow: hidden;
+
+      @side-width: 160px;
 
       .SideLv1 {
-         width: 120px;
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: @side-width;
          height: 100%;
-         overflow: scroll;
       }
 
       .main {
-         flex: auto;
+         margin-left: @side-width;
+         height: 100%;
+         overflow: scroll;
       }
    }
 

@@ -18,3 +18,12 @@
       computed:
          desc: -> @func.desc ? ''
 </script>
+
+
+
+<style lang="less" scoped>
+   .DescArea {
+      width: 600px;
+      text-indent: 2em;
+   }
+</style>

@@ -48,8 +48,6 @@
    @side-width: 160px;
 
    #unit-or-func {
-      padding: 40px;
-      background-color: white;
       position: relative;
 
       .SideLv2 {
@@ -58,12 +56,13 @@
          top: 0;
          width: @side-width;
          height: 100%;
-         overflow: scroll;
       }
 
       .Unit,
       .Func {
          margin-left: @side-width;
+         height: 100%;
+         padding: 36px 46px;
       }
    }
 </style>

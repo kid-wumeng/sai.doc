@@ -49,5 +49,7 @@
 
 <style lang="less">
    .Unit {
+      background-color: white;
+      overflow: scroll;
    }
 </style>

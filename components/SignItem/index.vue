@@ -37,7 +37,7 @@
 
       > .SignTable {
          flex: auto;
-         margin-left: 20px;
+         margin-left: 36px;
       }
    }
 </style>

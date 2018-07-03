@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Name {{ displaySign }}
+   .Name sai.{{ name }}
 </template>
 
 
@@ -7,23 +7,22 @@
 <script lang="coffee">
    module.exports =
       props:
-         'sign':
+         'func':
             type: Object
             required: true
 
       computed:
-         displaySign: -> utils.displaySign(@sign)
+         name: -> @func.name ? 'func-name ???'
 </script>
 
 
 
 <style lang="less" scoped>
    .Name {
-      line-height: 21px;
-      font-weight: 500;
-      font-size: 17px;
+      font-weight: 400;
+      font-size: 26px;
       color: #273340;
-      word-break: break-all;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
       user-select: all;
    }
 </style>

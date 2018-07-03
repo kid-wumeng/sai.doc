@@ -41,7 +41,7 @@
       line-height: 40px;
       text-align: center;
       font-weight: 500;
-      font-size: 17px;
+      font-size: 15px;
       color: lighten(#A2AEBA, 18%);
 
       hr {
