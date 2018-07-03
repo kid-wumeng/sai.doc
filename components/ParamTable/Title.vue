@@ -42,7 +42,7 @@
       text-align: center;
       font-weight: 500;
       font-size: 17px;
-      color: lighten(#A2AEBA, 20%);
+      color: lighten(#A2AEBA, 18%);
 
       hr {
          position: absolute;

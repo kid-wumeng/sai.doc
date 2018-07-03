@@ -16,5 +16,5 @@ module.exports =
 
    return:
       name: 'collection'
-      type: 'MongoDB.Collection'
+      type: 'sai.MongoDB.Collection'
       desc: '集合对象'

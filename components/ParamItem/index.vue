@@ -32,7 +32,7 @@
 
    @padding: 20px;
 
-   .ParamItem {      
+   .ParamItem {
       > .Row {
          > .Column {
             flex: none;
