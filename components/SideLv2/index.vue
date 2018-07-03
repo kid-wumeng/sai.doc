@@ -35,9 +35,27 @@
 
 <style lang="less">
    .SideLv2 {
-      .func {
-         &[is-current-func] {
-            background-color: blue;
+      width: 240px;
+      overflow: scroll;
+      padding: 20px 0;
+
+      .item {
+         > a {
+            display: block;
+            padding: 10px 16px;
+            font-family: "Ubuntu";
+            font-size: 14px;
+            color: #445669;
+
+            &:hover {
+               background-color: #F6F6F6;
+            }
+
+            &[is-current-func] {
+               font-weight: 500;
+               color: white;
+               background-color: #273340;
+            }
          }
       }
    }

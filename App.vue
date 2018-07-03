@@ -1,5 +1,7 @@
 <template lang="jade">
-   nuxt(v-if="$store.state.ready")
+   #App(v-if="ready")
+      SideLv1(:units="units")
+      nuxt.main
 </template>
 
 
@@ -8,14 +10,28 @@
 
    Vue = require('vue').default ? require('vue')
 
+   global._ = Vue.prototype._ = require('lodash')
+
    global.utils = Vue.prototype.utils =
-      markdown: require('~/utils/markdown')
+      'formatData': require('~/utils/formatData')
+      'markdown':   require('~/utils/markdown')
+
 
 
    module.exports =
 
+      components:
+         'SideLv1': require('~/components/SideLv1').default
+
+
+      computed:
+         ready: -> @$store.state.ready
+         units: -> @$store.state.doc.units ? []
+
+
       mounted: ->
          @$store.commit('update', @$route)
+
 
       watch:
          '$route': ( newRoute, oldRoute ) ->
@@ -89,10 +105,11 @@
    }
 
    body {
-      min-height: 100%;
+      height: 100%;
       font-family: "Ubuntu", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
       color: #242424;
       // background-image: url(~/assets/images/bg.jpg);
+      background-color: #FAF4E9;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -108,4 +125,31 @@
       color: inherit;
       text-decoration: none;
    }
+
+   #__nuxt {
+     height: 100%;
+   }
+
+   #__layout {
+     height: 100%;
+   }
+
+   #App {
+      margin: 0 auto;
+      width: 1280px;
+      height: 100%;
+      display: flex;
+
+      .SideLv1 {
+         width: 240px;
+         height: 100%;
+         overflow: scroll;
+      }
+
+      .main {
+         flex: auto;
+         background-color: white;
+      }
+   }
+
 </style>

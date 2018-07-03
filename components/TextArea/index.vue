@@ -1,5 +1,5 @@
 <template lang="jade">
-   .TextArea(v-html="html")
+   .TextArea(v-if="text" v-html="html")
 </template>
 
 
@@ -16,7 +16,7 @@
 
 
       computed:
-         html: -> utils.markdown(@text.trim())
+         html: -> utils.markdown(@text.trim().replace(/\n{1}/g, '\n\n'))
 
 
       mounted: ->

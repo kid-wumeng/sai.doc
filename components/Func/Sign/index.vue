@@ -1,10 +1,9 @@
 <template lang="jade">
    .Sign
-      .name {{ await + name }}
+      .name {{ await + 'sai.' + name }}
       .desc {{ desc }}
 
-      table
-         Param(v-for="(param, i) in params", :key="i", :param="param")
+      ParamTable(:params="params")
 </template>
 
 
@@ -13,7 +12,7 @@
    module.exports =
 
       components:
-         'Param': require('./Param').default
+         'ParamTable': require('~/components/ParamTable').default
 
       props:
          'sign':
@@ -33,8 +32,12 @@
 
 <style lang="less">
    .Func .Sign {
-      > table {
-         table-layout: fixed;
+      > .name {
+         user-select: all;
+      }
+
+      > .ParamTable {
+         margin: 30px 0;
       }
    }
 </style>

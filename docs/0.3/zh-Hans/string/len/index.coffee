@@ -12,6 +12,7 @@ module.exports =
          name: 'object'
          type: 'object'
          desc: '对象'
+         default: 6
          required: true
       }]
    },{
@@ -19,11 +20,14 @@ module.exports =
       params: [{
          name: 'string'
          type: 'string'
-         desc: '字符串'
+         default: 'kid'
       },{
          name: 'options'
          type: 'object'
-         desc: '选项'
+         desc: '''
+            选项
+            可选值：length | cjk
+         '''
          children: [{
             name: 'mode'
             desc: '模式'

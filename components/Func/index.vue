@@ -29,5 +29,6 @@
 
 <style lang="less">
    .Func {
+      padding: 48px;
    }
 </style>

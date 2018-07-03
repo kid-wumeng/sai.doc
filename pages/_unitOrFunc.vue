@@ -44,6 +44,26 @@
 
 
 <style lang="less">
+
+   @side-width: 240px;
+
    #unit-or-func {
+      height: 100%;
+      position: relative;
+      background-color: green;
+
+      .SideLv2 {
+         position: absolute;
+         left: 0;
+         top: 0;
+         width: @side-width;
+         height: 100%;
+         overflow: scroll;
+      }
+
+      .Unit,
+      .Func {
+         margin-left: @side-width;
+      }
    }
 </style>
