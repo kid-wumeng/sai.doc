@@ -5,7 +5,7 @@
             Name(:param="param")
             Type(:param="param")
          DescArea(:param="param")
-      ChildTable(:parent-param="param", :children="children")
+      ChildrenTable(:param="param")
 </template>
 
 
@@ -13,21 +13,17 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Row':        require('~/components/Row').default
-         'Column':     require('~/components/Column').default
-         'TextArea':   require('~/components/TextArea').default
-         'Name':       require('./Name').default
-         'Type':       require('./Type').default
-         'DescArea':   require('./DescArea').default
-         'ChildTable': require('./ChildTable').default
+         'Row':           require('~/components/Row').default
+         'Column':        require('~/components/Column').default
+         'Name':          require('./Name').default
+         'Type':          require('./Type').default
+         'DescArea':      require('./DescArea').default
+         'ChildrenTable': require('./ChildrenTable').default
 
       props:
          'param':
             type: Object
             required: true
-
-      computed:
-         children: -> @param.children ? []
 </script>
 
 
@@ -36,7 +32,7 @@
 
    @padding: 20px;
 
-   .ParamItem {
+   .ParamItem {      
       > .Row {
          > .Column {
             flex: none;
