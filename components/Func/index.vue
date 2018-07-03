@@ -1,7 +1,7 @@
 <template lang="jade">
    .Func
       .name {{ name }}
-      .desc {{ desc }}
+      TextArea.desc(:text="desc")
       Sign(v-for="(sign, i) in signs", :key="i", :sign="sign")
 </template>
 
@@ -11,7 +11,8 @@
    module.exports =
 
       components:
-         'Sign': require('./Sign').default
+         'TextArea': require('~/components/TextArea').default
+         'Sign':     require('./Sign').default
 
       props:
          'func':

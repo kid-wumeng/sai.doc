@@ -2,7 +2,7 @@ module.exports =
 
    name: 'len'
 
-   desc: '计算长度或数量'
+   desc: '计算*长度*或数量'
 
    signs: [{
       async: true
