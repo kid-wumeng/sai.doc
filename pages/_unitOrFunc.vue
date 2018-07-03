@@ -48,6 +48,7 @@
    @side-width: 160px;
 
    #unit-or-func {
+      padding: 40px;
       height: 100%;
       position: relative;
       background-color: green;
