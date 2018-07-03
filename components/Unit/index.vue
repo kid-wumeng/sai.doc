@@ -3,7 +3,7 @@
       .name {{ name }}
       .text {{ text }}
 
-      Group(v-for="(group, i) in groups", :key="i", :group="group")
+      GroupList(:groups="groups")
 </template>
 
 
@@ -12,7 +12,7 @@
    module.exports =
 
       components:
-         'Group': require('./Group').default
+         'GroupList': require('~/components/GroupList').default
 
       props:
          'unit':

@@ -1,20 +1,19 @@
 <template lang="jade">
-   SignList(:signs="signs")
+   TextArea.DescArea(:text="desc")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-
       components:
-         'SignList': require('~/components/SignList').default
+         'TextArea': require('~/components/TextArea').default
 
       props:
-         'func':
+         'sign':
             type: Object
             required: true
 
       computed:
-         signs: -> @func.signs ? []
+         desc: -> @sign.desc ? ''
 </script>

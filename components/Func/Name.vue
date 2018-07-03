@@ -6,6 +6,7 @@
 
 <script lang="coffee">
    module.exports =
+
       props:
          'func':
             type: Object

@@ -13,9 +13,8 @@
    global._ = Vue.prototype._ = require('lodash')
 
    global.utils = Vue.prototype.utils =
-      'displaySign': require('~/utils/displaySign')
-      'formatData':  require('~/utils/formatData')
-      'markdown':    require('~/utils/markdown')
+      'formatData': require('~/utils/formatData')
+      'markdown':   require('~/utils/markdown')
 
 
 

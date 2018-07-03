@@ -1,7 +1,7 @@
 <template lang="jade">
    Row.SignItem
       Column
-         Name(:sign="sign")
+         SignName(:sign="sign")
          DescArea(:sign="sign")
       SignTable(:sign="sign")
 </template>
@@ -13,8 +13,8 @@
       components:
          'Row':       require('~/components/Row').default
          'Column':    require('~/components/Column').default
+         'SignName':  require('~/components/SignName').default
          'SignTable': require('~/components/SignTable').default
-         'Name':      require('./Name').default
          'DescArea':  require('./DescArea').default
 
       props:
@@ -30,6 +30,13 @@
       > .Column {
          flex: none;
          width: 40%;
+
+         > .SignName {
+            line-height: 21px;
+            font-weight: 500;
+            font-size: 17px;
+         }
+
          > .DescArea {
             margin-top: 4px;
          }
