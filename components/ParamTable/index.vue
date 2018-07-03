@@ -1,6 +1,7 @@
 <template lang="jade">
    .ParamTable(v-if="show")
       ParamItem(v-for="(param, i) in params", :key="i", :param="param")
+      //- ReturnTable(:return="return")
 </template>
 
 
@@ -8,12 +9,17 @@
 <script lang="coffee">
    module.exports =
       components:
-         'ParamItem': require('./ParamItem').default
+         'ParamItem':   require('./ParamItem').default
+         'ReturnTable': require('./ReturnTable').default
 
       props:
          'params':
             type: Array
             default: -> []
+
+         # 'return':
+         #    type: Object
+         #    default: null
 
       computed:
          show: -> @params.length > 0

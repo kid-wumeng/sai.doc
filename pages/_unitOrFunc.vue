@@ -49,9 +49,8 @@
 
    #unit-or-func {
       padding: 40px;
-      height: 100%;
+      background-color: white;
       position: relative;
-      background-color: green;
 
       .SideLv2 {
          position: absolute;

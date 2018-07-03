@@ -1,6 +1,5 @@
 module.exports =
    name: 'len(string, mode)'
-   type: 'async-function'
 
    desc: '''
       统计字符串中的字符个数
@@ -9,7 +8,7 @@ module.exports =
    params: [{
       name: 'string'
       type: 'string'
-      required: true
+      optional: true
    },{
       name: 'options'
       type: 'object'
@@ -17,6 +16,7 @@ module.exports =
       children: [{
          name: 'autoIDStore'
          type: 'string'
+         optional: true
          desc: '''
             模式，默认值："length"
             * *length* - 以 String.prototype.length 统计

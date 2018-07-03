@@ -1,10 +1,9 @@
 <template lang="jade">
-   .Sign
-      Row
-         Column
-            Name(:sign="sign")
-            DescArea(:sign="sign")
-         ParamTable(:sign="sign")
+   Row.SignItem
+      Column
+         Name(:sign="sign")
+         DescArea(:sign="sign")
+      ParamTable(:sign="sign")
 </template>
 
 
@@ -27,21 +26,18 @@
 
 
 <style lang="less">
-   .Sign {
-      > .Row {
-
-         > .Column {
-            flex: none;
-            width: 40%;
-            > .DescArea {
-               margin-top: 4px;
-            }
+   .SignItem {
+      > .Column {
+         flex: none;
+         width: 40%;
+         > .DescArea {
+            margin-top: 4px;
          }
+      }
 
-         > .ParamTable {
-            flex: auto;
-            margin-left: 20px;
-         }
+      > .ParamTable {
+         flex: auto;
+         margin-left: 20px;
       }
    }
 </style>

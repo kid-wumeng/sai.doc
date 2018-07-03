@@ -1,37 +1,28 @@
 <template lang="jade">
    .Func
-      .name {{ name }}
-      TextArea.desc(:text="desc")
-      Sign(v-for="(sign, i) in signs", :key="i", :sign="sign")
+      DescArea(:func="func")
+      SignList(:func="func")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-
       components:
-         'TextArea': require('~/components/TextArea').default
-         'Sign':     require('~/components/Sign').default
+         'DescArea': require('./DescArea').default
+         'SignList': require('./SignList').default
 
       props:
          'func':
             type: Object
             required: true
-
-      computed:
-         name:  -> @func.name  ? 'func-name ???'
-         desc:  -> @func.desc  ? ''
-         signs: -> @func.signs ? []
 </script>
 
 
 
 <style lang="less">
    .Func {
-      overflow: scroll;
-
-      > * {
+      > .DescArea {
          margin-bottom: 40px;
       }
    }

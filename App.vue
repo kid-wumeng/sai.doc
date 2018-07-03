@@ -13,8 +13,9 @@
    global._ = Vue.prototype._ = require('lodash')
 
    global.utils = Vue.prototype.utils =
-      'formatData': require('~/utils/formatData')
-      'markdown':   require('~/utils/markdown')
+      'displaySign': require('~/utils/displaySign')
+      'formatData':  require('~/utils/formatData')
+      'markdown':    require('~/utils/markdown')
 
 
 
@@ -110,6 +111,7 @@
       color: #242424;
       // background-image: url(~/assets/images/bg.jpg);
       background-color: #FAF4E9;
+      background-color: white;
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
@@ -148,7 +150,6 @@
 
       .main {
          flex: auto;
-         background-color: white;
       }
    }
 

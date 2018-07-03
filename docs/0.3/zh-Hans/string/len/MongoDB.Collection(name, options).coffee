@@ -1,7 +1,6 @@
 module.exports =
-   class: true
-
    name: 'MongoDB.Collection(name, options)'
+   type: 'class'
    desc: '统计对象中的属性数量'
 
    params: [{
@@ -14,3 +13,8 @@ module.exports =
       type: 'object'
       desc: '选项配置'
    }]
+
+   return:
+      name: 'collection'
+      type: 'MongoDB.Collection'
+      desc: '集合对象'
