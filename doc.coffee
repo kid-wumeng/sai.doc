@@ -20,7 +20,6 @@ await db.drop()
 
 # Type & Value
 
-sai.isBuffer(data)
 sai.isMIME(data, mime)
 sai.isImage(data)
 

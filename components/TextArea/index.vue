@@ -119,7 +119,7 @@
             padding: 3px;
             display: block;
             font-family: "Monaco";
-            font-size: 12px;
+            font-size: 13px;
             color: #A2AEBA;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             overflow: scroll;

@@ -3,7 +3,7 @@ module.exports =
    name: 'isBuffer(...value)'
 
    desc: """
-      是否为 Buffer 实例对象 ？
+      是否为 Buffer 对象 ？
    """
 
    text: """
