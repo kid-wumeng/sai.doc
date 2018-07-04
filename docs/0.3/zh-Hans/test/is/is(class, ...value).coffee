@@ -13,10 +13,12 @@ module.exports =
       sai.is(String, new String('sai'))  // => true
       sai.is(Buffer, new String('sai'))  // => false
 
+
       // 注意，字面量并不是类的实例
       sai.is(Boolean, true)  // => false
       sai.is(Number,  1)     // => false
       sai.is(String, 'sai')  // => false
+
 
       // 当然，也支持自定义的类
       class Cat {}
@@ -27,6 +29,7 @@ module.exports =
 
       sai.is(Cat, cat)  // => true
       sai.is(Cat, dog)  // => false
+
 
       // 支持多值检测
       sai.is(Cat, cat1, cat2, cat3)  // => true

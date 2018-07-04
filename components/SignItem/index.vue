@@ -31,7 +31,7 @@
    .SignItem {
       > .Column {
          flex: none;
-         width: 40%;
+         width: 50%;
 
          > .SignName {
             line-height: 21px;
@@ -41,6 +41,10 @@
          }
 
          > .TextArea {
+            margin-top: 5px;
+         }
+
+         > .DescArea {
             margin-top: 16px;
          }
       }
