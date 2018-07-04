@@ -110,7 +110,7 @@
       pre {
          margin-top: 13px;
          margin-bottom: 13px;
-         padding: 5px 13px;
+         padding: 8px 16px;
          text-indent: 0;
          background-color: rgba(250, 250, 250, 1);
          border-radius: 3px;

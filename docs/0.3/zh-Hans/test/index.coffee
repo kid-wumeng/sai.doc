@@ -15,4 +15,5 @@ module.exports =
       require('./isInt')
       require('./isN')
       require('./isString')
+      require('./isBuffer')
    ]
