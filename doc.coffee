@@ -24,11 +24,6 @@ sai.isMIME(data, mime)
 sai.isImage(data)
 
 
-sai.isFunction(data)
-sai.isSyncFunction(data)
-sai.isAsyncFunction(data)
-
-
 sai.isPlainObject(data)
 sai.isObject(data)
 sai.isClass(data)
