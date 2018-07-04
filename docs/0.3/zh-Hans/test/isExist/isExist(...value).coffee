@@ -22,7 +22,7 @@ module.exports =
       sai.isExist(new Set)        // => false
 
 
-      // 可以检测 array-like
+      // 可以检测 Array-like
       sai.isExist(arguments)
 
 
@@ -57,7 +57,7 @@ module.exports =
          * nil
          * 字符串
          * 对象
-         * 数组 / array-like
+         * 数组 / Array-like
          * Map / Set
 
          除此之外的将会抛出异常

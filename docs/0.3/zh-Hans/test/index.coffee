@@ -22,6 +22,7 @@ module.exports =
       require('./isError')
       require('./isPromise')
       require('./isArray')
+      require('./isArrayLike')
       require('./isFunction')
       require('./isAsyncFunction')
       require('./isNil')

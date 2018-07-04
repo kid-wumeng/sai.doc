@@ -28,7 +28,6 @@ sai.isPlainObject(data)
 sai.isObject(data)
 
 
-sai.isArray(data)
 sai.isArrayLike(data)
 sai.isArguments(data)
 
