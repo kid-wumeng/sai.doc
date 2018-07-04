@@ -1,5 +1,5 @@
 <template lang="jade">
-   ParamTable.ReturnTable(title="return", :params="returns")
+   ParamTable.ThrowsTable(title="throws", :params="throws" )
 </template>
 
 
@@ -15,13 +15,5 @@
             default: null
 
       computed:
-         returns: -> if @sign.return then [@sign.return] else []
+         throws: -> @sign.throws ? []
 </script>
-
-
-
-<style lang="less" scoped>
-   .ReturnTable {
-      background-color: rgba(251, 251, 251, 1);
-   }
-</style>

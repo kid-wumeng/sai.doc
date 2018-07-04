@@ -24,6 +24,5 @@
 
 <style lang="less" scoped>
    .ChildrenTable {
-      background-color: rgba(250, 250, 250, 1);
    }
 </style>

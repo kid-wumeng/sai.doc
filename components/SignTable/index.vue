@@ -2,6 +2,7 @@
    .SignTable(v-if="sign")
       ParamsTable(:sign="sign")
       ReturnTable(:sign="sign")
+      ThrowsTable(:sign="sign")
 </template>
 
 
@@ -11,6 +12,7 @@
       components:
          'ParamsTable': require('./ParamsTable').default
          'ReturnTable': require('./ReturnTable').default
+         'ThrowsTable': require('./ThrowsTable').default
 
       props:
          'sign':
@@ -27,8 +29,15 @@
       box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
       overflow: hidden;
 
-      .ParamTable:last-child {
-         .ParamItem:last-child {
+      .ThrowsTable {
+         .ParamItem {
+            .Name {
+               line-height: 23px;
+               font-weight: 600;
+               font-size: 13px;
+               color: lighten(red, 28%);
+               text-shadow: none;
+            }
          }
       }
    }

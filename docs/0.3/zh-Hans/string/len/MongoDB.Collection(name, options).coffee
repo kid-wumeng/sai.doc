@@ -18,3 +18,11 @@ module.exports =
       name: 'collection'
       type: 'sai.MongoDB.Collection'
       desc: '集合对象'
+
+   throws: [{
+      name: 'DIVIDE_ZERO'
+      desc: '除数为零'
+   },{
+      name: 'TEST_FAIL'
+      desc: '检测失败'
+   }]

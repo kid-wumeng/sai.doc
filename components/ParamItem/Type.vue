@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Type {{ type }}
+   .Type(v-if="type") {{ type }}
 </template>
 
 
@@ -12,7 +12,7 @@
             required: true
 
       computed:
-         type: -> @param.type ? 'param-type ???'
+         type: -> @param.type ? ''
 </script>
 
 

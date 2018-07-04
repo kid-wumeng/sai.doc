@@ -25,6 +25,7 @@
    .Name {
       font-size: 14px;
       color: #273340;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);
       word-break: break-all;
       user-select: none;
 
