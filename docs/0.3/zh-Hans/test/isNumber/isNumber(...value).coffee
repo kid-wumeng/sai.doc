@@ -4,11 +4,11 @@ module.exports =
 
    desc: """
       是否为有效、有限的数字，而且是字面量 ？
-
-      本函数基于 isFinite 方法
    """
 
    text: """
+      本函数基于 isFinite 方法
+
       ```js
       sai.isNumber(1)                 // => true
       sai.isNumber(0)                 // => true
@@ -42,4 +42,3 @@ module.exports =
 
    return:
       type: 'boolean'
-      desc: ''

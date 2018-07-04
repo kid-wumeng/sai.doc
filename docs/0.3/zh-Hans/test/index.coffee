@@ -9,6 +9,7 @@ module.exports =
 
    items: [
       '类型检测'
+      require('./is')
       require('./isBoolean')
       require('./isNumber')
    ]

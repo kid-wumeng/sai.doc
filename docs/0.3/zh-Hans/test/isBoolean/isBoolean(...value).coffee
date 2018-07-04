@@ -27,4 +27,3 @@ module.exports =
 
    return:
       type: 'boolean'
-      desc: ''
