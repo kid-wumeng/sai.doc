@@ -12,5 +12,7 @@ module.exports =
       require('./is')
       require('./isBoolean')
       require('./isNumber')
+      require('./isInt')
+      require('./isN')
       require('./isString')
    ]

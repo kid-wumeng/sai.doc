@@ -12,7 +12,8 @@ module.exports =
       ```js
       sai.isNumber(1)                 // => true
       sai.isNumber(0)                 // => true
-      sai.isNumber(0.1)               // => true
+      sai.isNumber(-1)                // => true
+      sai.isNumber(+0.1)              // => true
       sai.isNumber(-0.1)              // => true
       sai.isNumber(2e64)              // => true
       sai.isNumber(0b10)              // => true

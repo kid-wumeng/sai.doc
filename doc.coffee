@@ -20,21 +20,6 @@ await db.drop()
 
 # Type & Value
 
-sai.isBoolean(data)
-sai.isTrue(data)
-sai.isFalse(data)
-
-
-sai.isNumber(data)
-sai.isFinite(data)
-sai.isInt(data)
-sai.isFloat(data)
-sai.isNaN(data)
-
-
-sai.isString(data)
-
-
 sai.isBuffer(data)
 sai.isMIME(data, mime)
 sai.isImage(data)
@@ -48,7 +33,6 @@ sai.isAsyncFunction(data)
 sai.isPlainObject(data)
 sai.isObject(data)
 sai.isClass(data)
-sai.is(data, class)
 
 
 sai.isArray(data)
