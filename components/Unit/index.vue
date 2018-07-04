@@ -1,48 +1,23 @@
 <template lang="jade">
    .Unit
-      .name {{ name }}
-      .text {{ text }}
-
-      GroupList(:groups="groups")
+      Name(:unit="unit")
+      DescArea(:unit="unit")
+      GroupList(:unit="unit")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-
       components:
-         'GroupList': require('~/components/GroupList').default
+         'Name':      require('./Name').default
+         'DescArea':  require('./DescArea').default
+         'GroupList': require('./GroupList').default
 
       props:
          'unit':
             type: Object
             required: true
-
-      computed:
-         name:  -> @unit.name  ? 'unit-name ???'
-         text:  -> @unit.text  ? ''
-         items: -> @unit.items ? []
-
-         groups: ->
-            groups = []
-            hint   = ''
-            funcs  = []
-
-            for item, i in @items
-
-                if typeof(item) is 'string'
-                   hint = item
-                else
-                   funcs.push(item)
-
-                next = @items[i+1]
-
-                if !next or typeof(next) is 'string'
-                   groups.push({ hint, funcs })
-                   funcs = []
-
-            return groups
 </script>
 
 
@@ -51,5 +26,13 @@
    .Unit {
       background-color: white;
       overflow: scroll;
+
+      > .Name {
+         margin-bottom: 20px;
+      }
+
+      > .DescArea {
+         margin-bottom: 80px;
+      }
    }
 </style>

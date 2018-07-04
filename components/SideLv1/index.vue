@@ -17,7 +17,7 @@
 
       methods:
          getTo: ( unit ) ->
-            return { path: '/_' + unit.path, query: @$route.query }
+            return { path: '/@' + unit.path, query: @$route.query }
 </script>
 
 
@@ -37,13 +37,13 @@
       > .home {
          text-align: center;
          font-family: "Futura";
-         font-size: 30px;
+         font-size: 28px;
          color: #CCC;
          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       }
 
       > .unit {
-         font-family: "Futura";
+         font-weight: 500;
          font-size: 14px;
          color: #CCC;
 

@@ -31,14 +31,15 @@
       .SignName {
          flex: none;
          width: 50%;
-         padding: 10px;
+         padding: 10px 16px;
          line-height: 21px;
          font-weight: 500;
          font-size: 14px;
+         color: #445669;
       }
 
       .DescArea {
-         padding: 10px;
+         padding: 10px 16px;
       }
    }
 </style>

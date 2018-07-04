@@ -1,9 +1,9 @@
 module.exports =
 
    path: 'string'
-   name: 'String'
+   name: '字符串 & 文书'
 
-   text: """
+   desc: """
       这是字符串单元
    """
 

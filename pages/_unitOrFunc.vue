@@ -22,8 +22,8 @@
 
          unitOrFunc: -> @$route.params.unitOrFunc ? ''
 
-         isUnit: -> @unitOrFunc and @unitOrFunc[0] is   '_'
-         isFunc: -> @unitOrFunc and @unitOrFunc[0] isnt '_'
+         isUnit: -> @unitOrFunc and @unitOrFunc[0] is   '@'
+         isFunc: -> @unitOrFunc and @unitOrFunc[0] isnt '@'
 
          name: ->
             switch

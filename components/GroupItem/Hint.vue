@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Hint {{ hint }}
+   .Hint(v-if="hint") String Operate
 </template>
 
 
@@ -19,5 +19,9 @@
 
 <style lang="less" scoped>
    .Hint {
+      text-align: center;
+      font-weight: 600;
+      font-size: 15px;
+      color: lighten(#A2AEBA, 18%);
    }
 </style>
