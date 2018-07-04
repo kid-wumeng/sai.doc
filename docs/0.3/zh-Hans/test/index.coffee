@@ -19,4 +19,5 @@ module.exports =
       require('./isRegExp')
       require('./isDate')
       require('./isFunction')
+      require('./isAsyncFunction')
    ]
