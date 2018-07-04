@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Hint(v-if="hint") String Operate
+   .Hint(v-if="hint") {{ hint }}
 </template>
 
 

@@ -1,7 +1,7 @@
 <template lang="jade">
    .Name
       span.left(v-if="optional") [
-      span.name {{ name }}
+      span.name(v-if="name") {{ name }}
       span.right(v-if="optional") ]
 </template>
 
@@ -15,7 +15,7 @@
             required: true
 
       computed:
-         name:     -> @param.name     ? 'param-name ???'
+         name:     -> @param.name     ? ''
          optional: -> @param.optional ? false
 </script>
 

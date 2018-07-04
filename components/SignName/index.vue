@@ -27,7 +27,7 @@
          displayName: ->
 
             name = @name
-            name = 'sai.'   + name if @sai
+            # name = 'sai.'   + name if @sai
             name = 'new '   + name if @news
             name = 'await ' + name if @await
 

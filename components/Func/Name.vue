@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Name sai.{{ name }}
+   .Name {{ name }}
 </template>
 
 

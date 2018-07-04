@@ -34,11 +34,12 @@
          > .SignName {
             line-height: 21px;
             font-weight: 500;
-            font-size: 17px;
+            font-size: 18px;
+            letter-spacing: 0.25px;
          }
 
          > .DescArea {
-            margin-top: 4px;
+            margin-top: 8px;
          }
       }
 

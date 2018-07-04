@@ -19,6 +19,7 @@
 
 <style lang="less" scoped>
    .DescArea {
+      text-indent: 2em;
       > * {
          margin-bottom: 0;
       }

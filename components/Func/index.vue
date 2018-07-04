@@ -1,6 +1,6 @@
 <template lang="jade">
    .Func
-      Name(:func="func")
+      //- Name(:func="func")
       DescArea(:func="func")
       SignList(:func="func")
 </template>
