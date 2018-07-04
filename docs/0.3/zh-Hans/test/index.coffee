@@ -23,4 +23,9 @@ module.exports =
       require('./isPromise')
       require('./isFunction')
       require('./isAsyncFunction')
+      require('./isNil')
+
+      '数据检测'
+      require('./isExist')
+      require('./isEmpty')
    ]

@@ -32,7 +32,7 @@
       .ThrowsTable {
          .ParamItem {
             .Name {
-               line-height: 23px;
+               line-height: 21px;
                font-weight: 600;
                font-size: 13px;
                color: lighten(red, 28%);

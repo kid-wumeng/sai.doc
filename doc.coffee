@@ -26,22 +26,12 @@ sai.isImage(data)
 
 sai.isPlainObject(data)
 sai.isObject(data)
-sai.isClass(data)
 
 
 sai.isArray(data)
 sai.isArrayLike(data)
 sai.isArrayBuffer(data)
 sai.isArguments(data)
-
-
-sai.isSymbol(data)
-
-
-sai.isNull(data)
-sai.isUndefined(data)
-sai.isNil(data)
-sai.isEmpty(data)
 
 
 
