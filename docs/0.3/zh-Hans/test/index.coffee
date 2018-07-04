@@ -21,6 +21,7 @@ module.exports =
       require('./isDate')
       require('./isError')
       require('./isPromise')
+      require('./isArray')
       require('./isFunction')
       require('./isAsyncFunction')
       require('./isNil')

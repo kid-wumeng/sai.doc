@@ -30,7 +30,6 @@ sai.isObject(data)
 
 sai.isArray(data)
 sai.isArrayLike(data)
-sai.isArrayBuffer(data)
 sai.isArguments(data)
 
 
