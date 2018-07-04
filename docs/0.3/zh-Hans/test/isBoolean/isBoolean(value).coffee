@@ -1,9 +1,9 @@
 module.exports =
 
-   name: 'isBoolean(value)'
+   name: 'isBoolean(...value)'
 
    desc: """
-      是否为布尔值，而且是字面量
+      是否为布尔值，而且是字面量 ？
    """
 
    text: """
@@ -11,12 +11,17 @@ module.exports =
       sai.isBoolean(true)               // => true
       sai.isBoolean(false)              // => true
       sai.isBoolean(new Boolean(true))  // => false
+      sai.isBoolean(1)                  // => false
+
+      // 支持多值检测
+      sai.isBoolean(true, false)  // => true
+      sai.isBoolean(true, 1)      // => false
       ```
    """
 
    params: [{
-      name: 'value'
-      type: '*'
+      name: '...value'
+      type: '...*'
       desc: '希望检测的值'
    }]
 
