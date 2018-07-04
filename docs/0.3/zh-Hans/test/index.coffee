@@ -18,4 +18,5 @@ module.exports =
       require('./isBuffer')
       require('./isRegExp')
       require('./isDate')
+      require('./isFunction')
    ]
