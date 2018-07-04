@@ -21,8 +21,8 @@ module.exports =
       sai.isAsyncFunction(Function)            // => false
 
       // 支持多值检测
-      sai.isAsyncFunction(af1, af2, af3)          // => true
-      sai.isAsyncFunction(af1,  f2, af3)          // => false
+      sai.isAsyncFunction(af1, af2, af3)       // => true
+      sai.isAsyncFunction(af1, af2,  f3)       // => false
       ```
    """
 
