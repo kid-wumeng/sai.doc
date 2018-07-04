@@ -10,4 +10,5 @@ module.exports =
    items: [
       '类型检测'
       require('./isBoolean')
+      require('./isTrue')
    ]

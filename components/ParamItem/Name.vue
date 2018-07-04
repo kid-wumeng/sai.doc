@@ -23,7 +23,7 @@
 
 <style lang="less" scoped>
    .Name {
-      font-size: 14px;
+      font-size: 15px;
       color: #273340;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);
       word-break: break-all;

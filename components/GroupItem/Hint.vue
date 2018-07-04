@@ -21,7 +21,7 @@
    .Hint {
       text-align: center;
       font-weight: 600;
-      font-size: 15px;
-      color: lighten(#A2AEBA, 18%);
+      font-size: 18px;
+      color: lighten(#A2AEBA, 10%);
    }
 </style>

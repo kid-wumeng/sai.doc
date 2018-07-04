@@ -45,7 +45,7 @@
 
 <style lang="less">
 
-   @side-width: 160px;
+   @side-width: 200px;
 
    #unit-or-func {
       position: relative;

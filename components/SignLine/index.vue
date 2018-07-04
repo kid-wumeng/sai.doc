@@ -35,7 +35,7 @@
          line-height: 21px;
          font-weight: 500;
          font-size: 14px;
-         color: #445669;
+         color: #272E3D;
       }
 
       .DescArea {

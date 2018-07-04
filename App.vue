@@ -150,7 +150,7 @@
       position: relative;
       overflow: hidden;
 
-      @side-width: 160px;
+      @side-width: 140px;
 
       .SideLv1 {
          position: absolute;

@@ -3,6 +3,7 @@
       Column
          SignName(:sign="sign")
          DescArea(:sign="sign")
+         TextArea(:sign="sign")
       SignTable(:sign="sign")
 </template>
 
@@ -16,6 +17,7 @@
          'SignName':  require('~/components/SignName').default
          'SignTable': require('~/components/SignTable').default
          'DescArea':  require('./DescArea').default
+         'TextArea':  require('./TextArea').default
 
       props:
          'sign':
@@ -38,8 +40,8 @@
             letter-spacing: 0.25px;
          }
 
-         > .DescArea {
-            margin-top: 8px;
+         > .TextArea {
+            margin-top: 16px;
          }
       }
 

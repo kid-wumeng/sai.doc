@@ -45,24 +45,26 @@
          > .func {
             display: block;
             padding: 10px 20px;
-            font-weight: 500;
          }
 
          > .hint {
             text-align: center;
             font-weight: 600;
-            font-size: 14px;
-            color: lighten(#A2AEBA, 18%);
+            font-size: 16px;
+            color: lighten(#A2AEBA, 10%);
          }
 
          > .func {
-            font-size: 16px;
-            color: #445669;
+            font-weight: 600;
+            font-size: 14px;
+            color: #272E3D;
 
             &:hover {
+               background-color: rgba(249, 249, 249, 1);
             }
 
             &[is-current-func] {
+               background-color: rgba(249, 249, 249, 1);
             }
          }
       }

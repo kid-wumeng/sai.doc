@@ -19,7 +19,7 @@
 
 <style lang="less" scoped>
    .Type {
-      font-size: 14px;
+      font-size: 13px;
       color: #A2AEBA;
       word-break: break-all;
       user-select: all;
