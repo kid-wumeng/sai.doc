@@ -35,13 +35,6 @@ sai.isArrayBuffer(data)
 sai.isArguments(data)
 
 
-sai.isPromise(data)
-sai.isStream(data)
-sai.isMap(data)
-sai.isSet(data)
-sai.isWeakMap(data)
-sai.isWeakSet(data)
-sai.isError(data)
 sai.isSymbol(data)
 
 
