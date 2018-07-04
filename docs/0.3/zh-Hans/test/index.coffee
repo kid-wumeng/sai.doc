@@ -16,4 +16,5 @@ module.exports =
       require('./isN')
       require('./isString')
       require('./isBuffer')
+      require('./isDate')
    ]
