@@ -40,7 +40,6 @@ sai.isArrayBuffer(data)
 sai.isArguments(data)
 
 
-sai.isDate(data)
 sai.isRegExp(data)
 sai.isPromise(data)
 sai.isStream(data)
