@@ -11,6 +11,9 @@
          'sign':
             type: Object
             required: true
+         'sai':
+            type: Boolean
+            default: false
 
       computed:
 
@@ -20,14 +23,14 @@
          name:  -> @sign.name  ? '???'
          async: -> @sign.async ? false
 
-         sai:   -> @type is 'class' or @type is 'func'
+         sais:  -> @type is 'class' or @type is 'func'
          news:  -> @type is 'class'
          await: -> @async
 
          displayName: ->
 
             name = @name
-            # name = 'sai.'   + name if @sai
+            name = 'sai.'   + name if @sais and @sai
             name = 'new '   + name if @news
             name = 'await ' + name if @await
 

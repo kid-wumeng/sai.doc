@@ -1,6 +1,6 @@
 <template lang="jade">
    Row.SignLine
-      SignName(:sign="sign")
+      SignName(:sign="sign" sai)
       DescArea(:sign="sign")
 </template>
 
@@ -32,10 +32,11 @@
          flex: none;
          width: 50%;
          padding: 10px 16px;
-         line-height: 21px;
-         font-weight: 500;
+         line-height: 22px;
+         font-weight: 400;
          font-size: 14px;
-         color: #272E3D;
+         color: #273340;
+         letter-spacing: 0.25px;
       }
 
       .DescArea {

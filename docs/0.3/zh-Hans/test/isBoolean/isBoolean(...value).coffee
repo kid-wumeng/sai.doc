@@ -3,13 +3,14 @@ module.exports =
    name: 'isBoolean(...value)'
 
    desc: """
-      是否为布尔值，而且是字面量 ？
+      是否为布尔直接量 ？
    """
 
    text: """
       ```js
       sai.isBoolean(true)               // => true
       sai.isBoolean(false)              // => true
+
       sai.isBoolean(new Boolean(true))  // => false
       sai.isBoolean(1)                  // => false
 

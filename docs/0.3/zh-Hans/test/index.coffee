@@ -4,7 +4,7 @@ module.exports =
    name: '测试'
 
    desc: """
-      这是字符串单元
+      本单元提供实用的测试套件。
    """
 
    items: [
@@ -12,4 +12,5 @@ module.exports =
       require('./is')
       require('./isBoolean')
       require('./isNumber')
+      require('./isString')
    ]

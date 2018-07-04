@@ -3,7 +3,7 @@ module.exports =
    name: 'isNumber(...value)'
 
    desc: """
-      是否为有效、有限的数字，而且是字面量 ？
+      是否为有效、有限的数字直接量 ？
    """
 
    text: """

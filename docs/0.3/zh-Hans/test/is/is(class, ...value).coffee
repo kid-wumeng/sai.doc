@@ -14,13 +14,13 @@ module.exports =
       sai.is(Buffer, new String('sai'))  // => false
 
 
-      // 注意，字面量并不是类的实例
+      // 注意，直接量并不是类的实例
       sai.is(Boolean, true)  // => false
       sai.is(Number,  1)     // => false
       sai.is(String, 'sai')  // => false
 
 
-      // 当然，也支持自定义的类
+      // 当然，也支持自定义类的检测
       class Cat {}
       class Dog {}
 
