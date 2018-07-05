@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.IntroArea(:text="sign.intro")
+   TextArea.SignIntro(:text="sign.intro")
 </template>
 
 
@@ -17,11 +17,13 @@
 
 
 
-<style lang="less" scoped>
-   .IntroArea {
-      text-indent: 2em;
-      > * {
-         margin-bottom: 0;
+<style lang="less">
+   .FuncPage {
+      .SignIntro {
+         text-indent: 2em;
+         > * {
+            margin-bottom: 0;
+         }
       }
    }
 </style>

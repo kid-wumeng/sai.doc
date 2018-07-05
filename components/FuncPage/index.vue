@@ -1,8 +1,8 @@
 <template lang="jade">
-   .FuncPage func-page
-      //- Name(:func="func")
-      //- DescArea(:func="func")
-      //- SignList(:func="func")
+   .FuncPage
+      //- FuncName(:func="func")
+      FuncDesc(:func="func")
+      SignList(:signs="signs")
 </template>
 
 
@@ -10,14 +10,17 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Name':     require('./Name').default
-         'DescArea': require('./DescArea').default
+         'FuncName': require('./FuncName').default
+         'FuncDesc': require('./FuncDesc').default
          'SignList': require('./SignList').default
 
       props:
          'func':
             type: Object
             required: true
+
+      computed:
+         signs: -> @func.signs
 </script>
 
 
@@ -27,11 +30,11 @@
       background-color: white;
       overflow: scroll;
 
-      > .Name {
+      > .FuncName {
          margin-bottom: 20px;
       }
 
-      > .DescArea {
+      > .FuncDesc {
          margin-bottom: 80px;
       }
    }

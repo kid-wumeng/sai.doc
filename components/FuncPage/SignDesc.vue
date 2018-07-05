@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.DetailArea(:text="sign.detail")
+   TextArea.SignDesc(:text="sign.desc")
 </template>
 
 
@@ -17,10 +17,13 @@
 
 
 
-<style lang="less" scoped>
-   .DetailArea {
-      > * {
-         margin-bottom: 0;
+<style lang="less">
+   .FuncPage {
+      .SignDesc {
+         text-indent: 2em;
+         > * {
+            margin-bottom: 0;
+         }
       }
    }
 </style>

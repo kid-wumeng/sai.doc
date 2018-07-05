@@ -1,20 +1,32 @@
 <template lang="jade">
-   SignList(:signs="signs")
+   .SignList
+      SignItem(v-for="(sign, i) in signs", :key="i", :sign="sign")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-
       components:
-         'SignList': require('~/components/SignList').default
+         'SignItem': require('./SignItem').default
 
       props:
-         'func':
-            type: Object
-            required: true
-
-      computed:
-         signs: -> @func.signs ? []
+         'signs':
+            type: Array
+            default: -> []
 </script>
+
+
+
+<style lang="less">
+   .FuncPage {
+      .SignList {
+         > .SignItem {
+            margin-bottom: 40px;
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+   }
+</style>

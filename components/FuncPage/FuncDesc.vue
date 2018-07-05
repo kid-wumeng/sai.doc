@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.DescArea(:text="sign.desc")
+   TextArea.FuncDesc(:text="func.desc")
 </template>
 
 
@@ -10,18 +10,18 @@
          'TextArea': require('~/components/TextArea').default
 
       props:
-         'sign':
+         'func':
             type: Object
             required: true
 </script>
 
 
 
-<style lang="less" scoped>
-   .DescArea {
-      text-indent: 2em;
-      > * {
-         margin-bottom: 0;
+<style lang="less">
+   .FuncPage {
+      .FuncDesc {
+         width: 600px;
+         text-indent: 2em;
       }
    }
 </style>
