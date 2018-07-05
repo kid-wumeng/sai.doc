@@ -48,4 +48,5 @@ module.exports =
    }]
 
    return:
+      name: 'isOrNot'
       type: 'boolean'

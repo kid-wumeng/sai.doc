@@ -22,10 +22,9 @@ await db.drop()
 
 sai.isMIME(data, mime)
 sai.isImage(data)
+sai.isEqual(datas)
 
 
-sai.isPlainObject(data)
-sai.isObject(data)
 
 
 # Object & Array
@@ -36,7 +35,6 @@ sai.del(data, path)
 sai.first(array)
 sai.last(array)
 sai.random(array, count)
-sai.equal(datas)
 sai.has(data, ...names)
 sai.in(data, enums)
 sai.len(data, mode)

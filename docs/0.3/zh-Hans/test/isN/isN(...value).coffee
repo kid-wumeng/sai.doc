@@ -44,4 +44,5 @@ module.exports =
    }]
 
    return:
+      name: 'isN'
       type: 'boolean'

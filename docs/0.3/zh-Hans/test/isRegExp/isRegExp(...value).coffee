@@ -24,4 +24,5 @@ module.exports =
    }]
 
    return:
+      name: 'isRegExp'
       type: 'boolean'

@@ -27,4 +27,5 @@ module.exports =
    }]
 
    return:
+      name: 'isBuffer'
       type: 'boolean'

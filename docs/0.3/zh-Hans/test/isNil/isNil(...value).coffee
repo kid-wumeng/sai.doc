@@ -30,4 +30,5 @@ module.exports =
    }]
 
    return:
+      name: 'isNil'
       type: 'boolean'

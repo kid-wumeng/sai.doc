@@ -43,4 +43,5 @@ module.exports =
    }]
 
    return:
+      name: 'isInt'
       type: 'boolean'

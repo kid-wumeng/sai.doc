@@ -33,4 +33,5 @@ module.exports =
    }]
 
    return:
+      name: 'isAsyncFunction'
       type: 'boolean'

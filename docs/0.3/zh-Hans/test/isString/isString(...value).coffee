@@ -28,4 +28,5 @@ module.exports =
    }]
 
    return:
+      name: 'isString'
       type: 'boolean'
