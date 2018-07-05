@@ -44,7 +44,7 @@ module.exports =
    params: [{
       name: 'value'
       type: '*'
-      desc: '希望检测的值'
+      desc: '希望判定的值'
    },{
       name: 'zero'
       type: 'boolean'
