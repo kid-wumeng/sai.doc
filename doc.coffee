@@ -29,7 +29,6 @@ sai.isEqual(datas)
 
 # Object & Array
 
-sai.get(data, path, [defaultValue])
 sai.set(data, path, value)
 sai.del(data, path)
 sai.random(array, count)

@@ -18,14 +18,15 @@ module.exports =
          }
       }
 
-      sai.get(data, 'sai.version')      // => '1.0'
-      sai.get(data, 'sai[version]')     // => '1.0'
-      sai.get(data, 'sai.authors.1')    // => 'kid'
-      sai.get(data, 'sai.authors[1]')   // => 'kid'
-      sai.get(data, 'sai.start')        // => undefined
-      sai.get(data, 'sai.start', 2018)  // => 2018
+      sai.get(data, 'sai.version')          // => '1.0'
+      sai.get(data, 'sai[version]')         // => '1.0'
+      sai.get(data, 'sai.authors.1')        // => 'kid'
+      sai.get(data, 'sai.authors[1]')       // => 'kid'
+      sai.get(data, ['sai', 'authors', 1])  // => 'kid'
+      sai.get(data, 'sai.start')            // => undefined
+      sai.get(data, 'sai.start', 2018)      // => 2018
 
-      // 取值符与原生 JavaScript 类似，可以是 . 或 []
+      // 路径操作符与原生 JavaScript 类似，可以用 . 或 []
       ```
 
       以下是 data 为数组时的情况：
@@ -51,7 +52,7 @@ module.exports =
       desc: '数据对象'
    },{
       name: 'path'
-      type: 'string | number'
+      type: 'string | number | array'
       desc: '路径或下标'
    },{
       name: 'defaultValue'
