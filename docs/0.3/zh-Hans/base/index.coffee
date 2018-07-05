@@ -14,5 +14,6 @@ module.exports =
       require('./first')
       require('./last')
       require('./popStart')
+      require('./popEnd')
       require('./concat')
    ]
