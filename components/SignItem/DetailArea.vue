@@ -19,7 +19,6 @@
 
 <style lang="less" scoped>
    .DetailArea {
-      text-indent: 2em;
       > * {
          margin-bottom: 0;
       }

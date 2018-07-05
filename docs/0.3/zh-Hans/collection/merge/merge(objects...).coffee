@@ -18,18 +18,18 @@ module.exports =
       一个简单示例，注意`'games'`替代了`'comic'`，因为`c.likes[0]`覆盖了`a.likes[0]`：
 
       ```js
-      let a = {
+      a = {
          name: 'kid',
          age: 18,
          likes: ['comic', 'music']
       }
 
-      let b = {
+      b = {
          name: 'sai',
          node: true
       }
 
-      let c = {
+      c = {
          likes: ['games']
       }
 
@@ -46,11 +46,11 @@ module.exports =
       下面这个示例，进一步展示了对数组的影响：
 
       ```js
-      let a = {
+      a = {
          persons: [{ name: 'kid' }, { name: 'sai' }]
       }
 
-      let b = {
+      b = {
          persons: [{ age: 18 }, { age: 24 }]
       }
 
@@ -67,8 +67,8 @@ module.exports =
       可以这么理解，数组即是对象，数组的下标是一种数字化的属性名。但是要注意，如果直接 merge 数组，最终返回的是对象：
 
       ```js
-      let a = ['a', 'b', 'c']
-      let b = ['d', 'e']
+      a = ['a', 'b', 'c']
+      b = ['d', 'e']
 
       sai.merge(a, b)
 

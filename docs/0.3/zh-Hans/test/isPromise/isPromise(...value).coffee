@@ -8,9 +8,9 @@ module.exports =
 
    text: """
       ```js
-      let p1 = new Promise(()=>{})
-      let p2 = new Promise(()=>{})
-      let pp = Promise.all([ p1, p2 ])
+      p1 = new Promise(()=>{})
+      p2 = new Promise(()=>{})
+      pp = Promise.all([ p1, p2 ])
 
       sai.isPromise( p1 )  // => true
       sai.isPromise( p2 )  // => true

@@ -52,10 +52,10 @@ module.exports =
       name: 'array'
       type: '*[]'
    },{
-      optional: true
       name: 'count'
       type: 'number'
       desc: '弹出几个 item ？默认值：1'
+      optional: true
    }]
 
    return:
