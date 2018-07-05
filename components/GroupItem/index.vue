@@ -34,7 +34,7 @@
 <style lang="less">
    .GroupItem {
       .Hint {
-         margin-bottom: 16px;
+         margin-bottom: 20px;
       }
    }
 </style>

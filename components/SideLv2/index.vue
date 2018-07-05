@@ -50,14 +50,16 @@
          > .hint {
             text-align: center;
             font-weight: 600;
-            font-size: 16px;
+            font-size: 15px;
             color: lighten(#A2AEBA, 10%);
          }
 
          > .func {
-            font-weight: 500;
+            font-weight: 400;
             font-size: 14px;
-            color: #272E3D;
+            color: #273340;
+            letter-spacing: 0.3px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
             &:hover {
                background-color: rgba(249, 249, 249, 1);

@@ -37,7 +37,7 @@
          font-size: 14px;
          color: #273340;
          letter-spacing: 0.3px;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
       }
 
       .DescArea {
