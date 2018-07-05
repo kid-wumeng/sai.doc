@@ -10,5 +10,7 @@ module.exports =
       '通用基本'
       '通用集合'
       '数组'
+      require('./first')
+      require('./last')
       require('./concat')
    ]

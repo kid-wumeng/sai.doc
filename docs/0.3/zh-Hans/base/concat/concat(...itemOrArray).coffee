@@ -34,15 +34,10 @@ module.exports =
    """
 
    params: [{
-      name: 'class'
-      type: 'function'
-      desc: '类 ( 构造函数 )'
-   },{
-      name: '...value'
+      name: '...itemOrArray'
       type: '...*'
-      desc: '希望检测的值'
    }]
 
    return:
-      name: 'isOrNot'
-      type: 'boolean'
+      name: 'array'
+      type: '*[]'
