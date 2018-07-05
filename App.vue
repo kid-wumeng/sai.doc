@@ -9,20 +9,20 @@
 
 <script lang="coffee">
 
-   Vue = require('vue').default ? require('vue')
+   global._ = require('lodash')
 
-   global._ = Vue.prototype._ = require('lodash')
+   if process.browser
+      Vue = require('vue').default
+   else
+      Vue = require('vue')
 
    Vue.prototype.formatSignName = require('~/utils/formatSignName')
-   Vue.prototype.to = require('~/utils/to')
+   Vue.prototype.markdown       = require('~/utils/markdown')
+   Vue.prototype.to             = require('~/utils/to')
 
-   global.utils = Vue.prototype.utils =
-      'formatData': require('~/utils/formatData')
-      'markdown':   require('~/utils/markdown')
 
 
    module.exports =
-
       components:
          'SideLv1': require('~/components/SideLv1').default
          'SideLv2': require('~/components/SideLv2').default
@@ -33,26 +33,23 @@
 
 
       mounted: ->
-         @$store.commit('update', @$route)
-         @setAppHeight()
+         @updateStore()
+         @updateStyle()
 
-         window.addEventListener('resize', @setAppHeight)
+         window.addEventListener('resize', @updateStyle)
 
 
       watch:
-         '$route': ( newRoute, oldRoute ) ->
+         '$route': ( r1, r2 ) ->
+            if (r1.query.ver isnt r2.query.ver) or (r1.query.lang isnt r2.query.lang)
+               @updateStore()
 
-            newVer  = newRoute.query.ver
-            oldVer  = oldRoute.query.ver
-
-            newLang = newRoute.query.lang
-            oldLang = oldRoute.query.lang
-
-            if ( newVer isnt oldVer ) or ( newLang isnt oldLang )
-               @$store.commit('update', newRoute)
 
       methods:
-         setAppHeight: ->
+         updateStore: ->
+            @$store.commit('update', @$route)
+
+         updateStyle: ->
             document.body.style.height = window.innerHeight + 'px'
 </script>
 
@@ -85,8 +82,8 @@
 
       .main {
          margin-left: @side-lv1-width + @side-lv2-width;
-         height: 100%;
-         overflow: scroll;
+         height:      100%;
+         overflow:    scroll;
       }
    }
 </style>

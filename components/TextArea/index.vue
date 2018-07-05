@@ -15,7 +15,7 @@
 
 
       computed:
-         html: -> utils.markdown(@text.trim())
+         html: -> @markdown(@text.trim())
 
 
       mounted: ->
