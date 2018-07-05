@@ -16,20 +16,20 @@ module.exports =
       require('./isN')
       require('./isString')
       require('./isSymbol')
-      require('./isRegExp')
-      require('./isBuffer')
-      require('./isDate')
-      require('./isError')
-      require('./isPromise')
       require('./isFunction')
       require('./isAsyncFunction')
       require('./isArray')
       require('./isArrayLike')
+      require('./isBuffer')
+      require('./isRegExp')
+      require('./isDate')
+      require('./isError')
+      require('./isPromise')
       require('./isObject')
       require('./isPlainObject')
       require('./isNil')
 
-      '数据检测'
+      '值检测'
       require('./isExist')
       require('./isEmpty')
    ]
