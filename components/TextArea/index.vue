@@ -67,7 +67,7 @@
       > h5,
       > h6 {
          font-weight: 600;
-         font-size: 24px;
+         font-size: 20px;
          &:not(:first-child) {
             margin-top: 40px;
          }
@@ -123,10 +123,10 @@
       pre {
          margin-top: 13px;
          margin-bottom: 13px;
-         padding-top: 8px;
-         padding-bottom: 9px;
-         padding-left: 16px;
-         padding-right: 16px;
+         padding-top: 7px;
+         padding-bottom: 8px;
+         padding-left: 13px;
+         padding-right: 13px;
          text-indent: 0;
          background-color: rgba(250, 250, 250, 1);
          border-radius: 3px;
@@ -134,6 +134,7 @@
          code {
             padding: 3px;
             display: block;
+            line-height: 22px;
             font-family: "Monaco";
             font-size: 13px;
             color: #A2AEBA;

@@ -60,7 +60,10 @@
       }
 
       > .DetailArea {
-         margin-top: 24px;
+         margin-top: 48px;
+         line-height: 28px;
+         font-size: 15px;
+         width: 60%;
       }
    }
 </style>
