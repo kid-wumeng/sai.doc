@@ -1,9 +1,13 @@
 module.exports =
 
-   name: 'set(data, path, value)'
+   name: 'del(data, path)'
 
    desc: """
-      设置 data 中路径为 path 的属性值
+      删除 data 中路径为 path 的属性值
+   """
+
+   intro: """
+      无论属性值存不存在
    """
 
    detail: """
@@ -11,26 +15,25 @@ module.exports =
 
       ```js
       data = {
+         chef: {
+            name: 'kid'
+         },
          menu: {
             fruits: ['apple', 'orange']
          }
       }
 
-      sai.set(data, 'chef.name', 'kid')
-      sai.set(data, 'menu.fruits[1]',      'banana')
-      sai.set(data, ['menu', 'fruits', 2], 'tomato')
+      sai.del(data, 'chef.name')
+      sai.del(data, 'menu.fruits[1]')
+      sai.del(data, ['menu', 'fruits', 2])
 
       // data = {
-      //    chef: {
-      //       name: 'kid'
-      //    },
+      //    chef: {},
       //    menu: {
-      //       fruits: ['apple', 'banana', 'tomato']
+      //       fruits: ['apple']
       //    }
       // }
       ```
-
-      如上所见，若路径不存在，set 会自行创建
 
       路径操作符可以参考 [sai.get](/get)
    """
@@ -43,8 +46,4 @@ module.exports =
       name: 'path'
       type: 'string | number | array'
       desc: '路径或下标'
-   },{
-      name: 'value'
-      type: '*'
-      desc: '希望设置的值'
    }]

@@ -9,4 +9,6 @@ module.exports =
    items: [
       require('./get')
       require('./set')
+      require('./del')
+      require('./has')
    ]

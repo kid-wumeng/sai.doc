@@ -43,6 +43,7 @@
       }
 
       > .unit {
+         text-align: center;
          font-weight: 500;
          font-size: 14px;
          color: #CCC;
