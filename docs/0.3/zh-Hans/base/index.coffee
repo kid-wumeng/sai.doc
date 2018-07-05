@@ -13,5 +13,6 @@ module.exports =
       '数组'
       require('./first')
       require('./last')
+      require('./popStart')
       require('./concat')
    ]

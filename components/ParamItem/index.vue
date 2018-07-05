@@ -28,7 +28,7 @@
 
 
 
-<style lang="less" scoped>
+<style lang="less">
 
    @padding: 20px;
 
@@ -48,6 +48,10 @@
          > .DescArea {
             flex: auto;
             padding: @padding;
+
+            ul, ol {
+               margin-left: 0 !important;
+            }
          }
       }
    }

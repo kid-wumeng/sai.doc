@@ -37,7 +37,6 @@ sai.has(data, ...names)
 sai.in(data, enums)
 sai.len(data, mode)
 sai.len(data, callback)
-sai.merge(...datas)
 sai.copy(data)
 sai.type(data)
 
