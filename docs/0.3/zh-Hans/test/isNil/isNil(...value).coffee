@@ -3,7 +3,7 @@ module.exports =
    name: 'isNil(...value)'
 
    desc: """
-      是否为 void 0 或 undefined 或 null？
+      是否为 undefined 或 null？
    """
 
    text: """

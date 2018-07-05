@@ -28,11 +28,6 @@ sai.isPlainObject(data)
 sai.isObject(data)
 
 
-sai.isArrayLike(data)
-sai.isArguments(data)
-
-
-
 # Object & Array
 
 sai.get(data, path, [defaultValue])

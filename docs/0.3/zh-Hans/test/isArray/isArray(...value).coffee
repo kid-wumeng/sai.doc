@@ -3,7 +3,7 @@ module.exports =
    name: 'isArray(...value)'
 
    desc: """
-      是否为 Array 对象或数组直接量 ？
+      是否为数组 ？
    """
 
    text: """

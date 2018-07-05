@@ -3,7 +3,7 @@ module.exports =
    name: 'isSymbol(...value)'
 
    desc: """
-      是否为 Symbol 对象 ？
+      是否为 Symbol ？
    """
 
    text: """
