@@ -20,5 +20,11 @@
 
 <style lang="less">
    .GroupList {
+      > .GroupItem {
+         margin-top: 48px;
+         &:first-child {
+            margin-top: 0;
+         }
+      }
    }
 </style>
