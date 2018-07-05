@@ -1,7 +1,7 @@
 <template lang="jade">
    #path
-      //- Unit(v-if="unit", :unit="unit")
-      //- Func(v-if="func", :func="func")
+      PackPage(v-if="pack", :pack="pack")
+      FuncPage(v-if="func", :func="func")
 </template>
 
 
@@ -9,26 +9,40 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Unit': require('~/components/Unit').default
-         'Func': require('~/components/Func').default
+         'PackPage': require('~/components/PackPage').default
+         'FuncPage': require('~/components/FuncPage').default
 
       computed:
-         doc:    -> @$store.state.doc
-         # units:  -> @$store.state.units
-         # funcs:  -> @$store.state.funcs
-         #
-         # unitOrFunc: -> @$route.params.unitOrFunc ? ''
-         #
-         # isUnit: -> @unitOrFunc and @unitOrFunc[0] is   '@'
-         # isFunc: -> @unitOrFunc and @unitOrFunc[0] isnt '@'
-         #
-         # name: ->
-         #    switch
-         #       when @isUnit then @unitOrFunc.slice(1)
-         #       when @isFunc then @unitOrFunc
-         #       else ''
-         #
-         # unit: -> @units[@name]
-         # func: -> @funcs[@name]
+         path: ->
+            @$route.params.path ? ''
 
+         type: ->
+            if @path[0] is '@'
+               return 'pack'
+            else
+               return 'func'
+
+         name: ->
+            if @path[0] is '@'
+               @path.slice(1)
+            else
+               @path
+
+         pack: -> @$store.state.packs[@name]
+         func: -> @$store.state.funcs[@name]
+
+         show: ->
+            switch
+               when @type is 'pack' and @pack then true
+               when @type is 'func' and @func then true
+               else                                false
 </script>
+
+
+
+<style lang="less">
+   #path {
+      height: 100%;
+      padding: 36px 46px;
+   }
+</style>

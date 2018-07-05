@@ -17,6 +17,12 @@
          path: ->
             @$route.params.path ? ''
 
+         type: ->
+            if @path[0] is '@'
+               return 'pack'
+            else
+               return 'func'
+
          name: ->
             if @path[0] is '@'
                @path.slice(1)
@@ -28,9 +34,9 @@
 
          items: ->
             switch
-               when @pack then @pack.items      ? []
-               when @func then @func.pack.items ? []
-               else                               []
+               when @type is 'pack' and @pack then @pack.items      ? []
+               when @type is 'func' and @func then @func.pack.items ? []
+               else                                                   []
 
       methods:
          isUnitItem: ( item ) ->
