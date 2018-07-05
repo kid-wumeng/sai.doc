@@ -48,7 +48,7 @@ module.exports =
       desc: '目标数组'
    },{
       name: 'itemOrArrays...'
-      type: '*...'
+      type: '* | *[]'
       desc: '希望添加的 item 或 array'
    }]
 

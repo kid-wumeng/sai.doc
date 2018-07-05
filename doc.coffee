@@ -40,19 +40,8 @@ sai.type(data)
 
 # String
 
-sai.isChar(string)
 sai.isEmail(string)
-sai.isUri(string)
 sai.isUrl(string)
-sai.isUrn(string)
-sai.isIP(string)
-sai.isIPv4(string)
-sai.isIPv6(string)
-sai.isFiniteString(string)
-sai.isIntString(string)
-sai.isFloatString(string)
-sai.isStart(string, start)
-sai.isEnd(string, end)
 
 
 

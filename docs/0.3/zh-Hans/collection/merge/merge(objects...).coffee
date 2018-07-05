@@ -99,7 +99,7 @@ module.exports =
 
    params: [{
       name: 'objects...'
-      type: 'object...'
+      type: 'object'
       desc: '源对象，数量不限'
    }]
 

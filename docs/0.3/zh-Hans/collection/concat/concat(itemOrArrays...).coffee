@@ -34,8 +34,8 @@ module.exports =
    """
 
    params: [{
-      name: '...itemOrArray'
-      type: '...*'
+      name: 'itemOrArrays...'
+      type: '* | *[]'
    }]
 
    return:
