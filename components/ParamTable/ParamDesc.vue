@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.DescArea(:text="desc")
+   TextArea.ParamDesc(:text="param.desc")
 </template>
 
 
@@ -13,17 +13,16 @@
          'param':
             type: Object
             required: true
-
-      computed:
-         desc: -> @param.desc ? ''
 </script>
 
 
 
-<style lang="less" scoped>
-   .DescArea {
-      > * {
-         margin-bottom: 0;
+<style lang="less">
+   .ParamTable {
+      .ParamDesc {
+         > * {
+            margin-bottom: 0;
+         }
       }
    }
 </style>

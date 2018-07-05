@@ -20,7 +20,6 @@
 
       methods:
          setHrWidth: ->
-
             rootWidth = @$el.offsetWidth
             textWidth = @$refs.text.offsetWidth
 
@@ -32,27 +31,29 @@
 
 
 
-<style lang="less" scoped>
-   .Title {
-      position: absolute;
-      top: -20px;
-      width: 100%;
-      height: 40px;
-      line-height: 40px;
-      text-align: center;
-      font-weight: 500;
-      font-size: 15px;
-      color: lighten(#A2AEBA, 18%);
-
-      hr {
+<style lang="less">
+   .ParamTable {
+      .Title {
          position: absolute;
-         top: 20px;
+         top: -20px;
          width: 100%;
-         border: none;
-         border-top: 1px solid lighten(#A2AEBA, 26%);
-      }
+         height: 40px;
+         line-height: 40px;
+         text-align: center;
+         font-weight: 500;
+         font-size: 15px;
+         color: lighten(#A2AEBA, 18%);
 
-      hr.left  { left:  0 }
-      hr.right { right: 0 }
+         hr {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            border: none;
+            border-top: 1px solid lighten(#A2AEBA, 26%);
+         }
+
+         hr.left  { left:  0 }
+         hr.right { right: 0 }
+      }
    }
 </style>

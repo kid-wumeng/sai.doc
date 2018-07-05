@@ -1,5 +1,5 @@
 <template lang="jade">
-   nuxt-link.FuncItem(:to="getTo(func)", :active="active") {{ name }}
+   nuxt-link.FuncItem(:to="to('/' + name)", :active="active") {{ name }}
 </template>
 
 
@@ -18,10 +18,6 @@
       computed:
          func: -> @item
          name: -> @func.name
-
-      methods:
-         getTo: ( func ) ->
-            return { path: '/' + func.name, query: @$route.query }
 </script>
 
 

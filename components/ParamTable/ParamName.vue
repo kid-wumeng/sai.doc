@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Name
+   .ParamName
       span.left(v-if="optional") [
       span.name(v-if="name") {{ name }}
       span.right(v-if="optional") ]
@@ -21,19 +21,21 @@
 
 
 
-<style lang="less" scoped>
-   .Name {
-      font-size: 15px;
-      color: #273340;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);
-      word-break: break-all;
-      user-select: none;
+<style lang="less">
+   .ParamTable {
+      .ParamName {
+         font-size: 15px;
+         color: #273340;
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);
+         word-break: break-all;
+         user-select: none;
 
-      .name {
-         user-select: all;
+         .name {
+            user-select: all;
+         }
+
+         .left::after   { content: " " }
+         .right::before { content: " " }
       }
-
-      .left::after   { content: " " }
-      .right::before { content: " " }
    }
 </style>

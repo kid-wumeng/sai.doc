@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Type(v-if="type") {{ type }}
+   .ParamType(v-if="type") {{ type }}
 </template>
 
 
@@ -17,11 +17,13 @@
 
 
 
-<style lang="less" scoped>
-   .Type {
-      font-size: 13px;
-      color: #A2AEBA;
-      word-break: break-all;
-      user-select: all;
+<style lang="less">
+   .ParamTable {
+      .ParamType {
+         font-size: 13px;
+         color: #A2AEBA;
+         word-break: break-all;
+         user-select: all;
+      }
    }
 </style>

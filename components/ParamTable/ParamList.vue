@@ -9,7 +9,7 @@
    module.exports =
 
       components:
-         'ParamItem': require('~/components/ParamItem').default
+         'ParamItem': require('./ParamItem').default
 
       props:
          'params':
@@ -17,12 +17,5 @@
             default: -> []
 
       computed:
-         show: -> @params.length > 0
+         show: -> Array.isArray(@params) and @params.length > 0
 </script>
-
-
-
-<style lang="less">
-   .ParamList {
-   }
-</style>

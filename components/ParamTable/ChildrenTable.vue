@@ -19,10 +19,3 @@
          title:  -> @param.name     ? '???'
          params: -> @param.children ? []
 </script>
-
-
-
-<style lang="less" scoped>
-   .ChildrenTable {
-   }
-</style>

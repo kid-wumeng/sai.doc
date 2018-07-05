@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Home home
+   .HomePage home
 </template>
 
 
@@ -14,6 +14,6 @@
 
 
 <style lang="less">
-   .Home {
+   .HomePage {
    }
 </style>

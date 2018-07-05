@@ -10,7 +10,7 @@
    module.exports =
 
       components:
-         'ParamList': require('~/components/ParamList').default
+         'ParamList': require('./ParamList').default
          'Title':     require('./Title').default
 
       props:
@@ -23,7 +23,7 @@
             default: -> []
 
       computed:
-         show: -> @params.length > 0
+         show: -> Array.isArray(@params) and @params.length > 0
 </script>
 
 

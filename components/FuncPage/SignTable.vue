@@ -1,8 +1,8 @@
 <template lang="jade">
    .SignTable(v-if="sign")
       ParamTable.params(v-if="params", :params="params")
-      ParamTable.return(v-if="result", :params="[result]")
-      ParamTable.throws(v-if="throws", :params="throws")
+      ParamTable.return(v-if="result", :params="[result]" title="return")
+      ParamTable.throws(v-if="throws", :params="throws"   title="throws")
 </template>
 
 
