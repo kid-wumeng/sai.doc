@@ -1,6 +1,6 @@
 module.exports =
 
-   name: 'merge(obj1, obj2, obj3, ...)'
+   name: 'merge(objects...)'
 
    desc: """
       深度归并多个对象，返回一个新对象
@@ -98,7 +98,7 @@ module.exports =
    """
 
    params: [{
-      name: 'srcObjects...'
+      name: 'objects...'
       type: 'object...'
       desc: '源对象，数量不限'
    }]

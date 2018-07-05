@@ -103,10 +103,8 @@
 
       a {
          font-weight: 600;
-         color: #3A97FC;
-         &:hover{
-            text-decoration: underline;
-         }
+         color: #7284a8;
+         text-decoration: underline;
       }
 
       p {

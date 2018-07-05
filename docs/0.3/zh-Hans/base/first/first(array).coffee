@@ -9,7 +9,7 @@ module.exports =
    text: """
       ```js
       array = ['a', 'b', 'c']
-      
+
       sai.first(array)  // => 'a'
       ```
    """
@@ -20,5 +20,5 @@ module.exports =
    }]
 
    return:
-      name: 'firstItem'
+      name: 'first\'s item'
       type: '*'

@@ -6,7 +6,7 @@ module.exports =
       向 array 的开头添加 item 或 array
    """
 
-   intro: """
+   detail: """
       ```js
       array = ['a', 'b']
       count = sai.pushStart(array, 'c')
@@ -38,6 +38,8 @@ module.exports =
       // array = ['c', 'd', 'e', 'a', 'b']
       // count = 5
       ```
+
+      本函数会影响目标数组，若不希望如此，可以尝试 [sai.concat](/concat)
    """
 
    params: [{
@@ -45,7 +47,6 @@ module.exports =
       type: '*[]'
       desc: '目标数组'
    },{
-      optional: true
       name: 'itemOrArrays...'
       type: '*...'
       desc: '希望添加的 item 或 array'

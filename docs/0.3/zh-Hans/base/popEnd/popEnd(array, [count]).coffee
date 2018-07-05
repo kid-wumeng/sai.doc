@@ -3,30 +3,48 @@ module.exports =
    name: 'popEnd(array, [count])'
 
    desc: """
-      弹出 array 最后面的 count 个 item
+      从 array 的末尾弹出 count 个 item
    """
 
    intro: """
       ```js
-      array = [1, 2, 3, 4, 5]
+      array = ['a', 'b', 'c', 'd']
       item  = sai.popEnd(array)
 
-      // item  = 5
-      // array = [1, 2, 3, 4]
+      // array = ['a', 'b', 'c']
+      // item  = 'd'
 
 
-      array = [1, 2, 3, 4, 5]
-      items = sai.popEnd(array, 3)
 
-      // items = [3, 4, 5]
-      // array = [1, 2]
+      array = ['a', 'b', 'c', 'd']
+      items = sai.popEnd(array, 2)
+
+      // array = ['a', 'b']
+      // items = ['c', 'd']
 
 
-      array = [1, 2, 3, 4, 5]
-      items = sai.popEnd(array, 7)
 
-      // items = [1, 2, 3, 4, 5]
+      array = ['a', 'b', 'c', 'd']
+      items = sai.popEnd(array, 5)
+
       // array = []
+      // items = ['a', 'b', 'c', 'd']
+
+
+
+      array = []
+      item  = sai.popEnd(array)
+
+      // array = []
+      // item  = undefined
+
+
+
+      array = []
+      items = sai.popEnd(array, 2)
+
+      // array = []
+      // items = []
       ```
    """
 
