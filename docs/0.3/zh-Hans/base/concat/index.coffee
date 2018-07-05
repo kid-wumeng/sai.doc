@@ -3,5 +3,5 @@ module.exports =
    name: 'concat'
 
    signs: [
-      require('./concat(...valueOrArray)')
+      require('./concat(...itemOrArray)')
    ]

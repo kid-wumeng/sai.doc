@@ -7,6 +7,8 @@ module.exports =
    """
 
    items: [
+      '通用基本'
+      '通用集合'
       '数组'
       require('./concat')
    ]
