@@ -81,9 +81,11 @@
 
       > ul,
       > ol {
-         margin-left: 1.5em;
+         margin-left: 2.4em;
          li {
-            list-style-position: outside;
+            line-height: 26px;
+            list-style-position: inside;
+            text-indent: 0;
          }
       }
 
@@ -104,6 +106,19 @@
          color: #3A97FC;
          &:hover{
             text-decoration: underline;
+         }
+      }
+
+      p {
+         code {
+            margin: 0 4px;
+            padding: 3px 6px;
+            font-family: "PT Mono";
+            font-size: 13px;
+            color: #F92672;
+            background-color: #F8F8F8;
+            border-radius: 2px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
          }
       }
 

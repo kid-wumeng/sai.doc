@@ -8,7 +8,8 @@ module.exports =
 
    items: [
       '通用基本'
-      '通用集合'
+      '对象'
+      require('./merge')
       '数组'
       require('./first')
       require('./last')

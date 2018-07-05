@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea(:text="sign.text")
+   TextArea.IntroArea(:text="sign.intro")
 </template>
 
 
@@ -18,7 +18,7 @@
 
 
 <style lang="less" scoped>
-   .TextArea {
+   .IntroArea {
       text-indent: 2em;
       > * {
          margin-bottom: 0;
