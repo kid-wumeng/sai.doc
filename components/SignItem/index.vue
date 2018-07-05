@@ -35,7 +35,7 @@
       > .Row {
          > .Column {
             flex: none;
-            width: 45%;
+            width: 40%;
 
             > .SignName {
                line-height: 21px;

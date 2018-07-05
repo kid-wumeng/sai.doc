@@ -13,6 +13,8 @@ module.exports =
       '数组'
       require('./first')
       require('./last')
+      require('./pushStart')
+      require('./pushEnd')
       require('./popStart')
       require('./popEnd')
       require('./concat')
