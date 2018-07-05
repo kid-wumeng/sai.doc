@@ -1,13 +1,13 @@
 module.exports =
 
-   path: 'base'
-   name: '基本扩展'
+   path: 'collection'
+   name: '集合'
 
    desc: """
    """
 
    items: [
-      '通用基本'
+      '通用'
       '对象'
       require('./merge')
       '数组'
