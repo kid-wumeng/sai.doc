@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isAsyncFunction(value)'
 
-   desc: """
-      是否为异步函数 ？
-   """
+   desc: '是否为异步函数 ？'
 
    detail: """
       # 基本用法

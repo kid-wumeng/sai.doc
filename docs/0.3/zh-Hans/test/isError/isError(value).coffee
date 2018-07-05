@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isError(value)'
 
-   desc: """
-      是否为 Error 对象 ？
-   """
+   desc: '是否为 Error 对象 ？'
 
    detail: """
       # 基本用法

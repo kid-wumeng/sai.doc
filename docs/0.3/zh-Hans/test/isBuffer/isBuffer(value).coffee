@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isBuffer(value)'
 
-   desc: """
-      是否为 Buffer 对象 ？
-   """
+   desc: '是否为 Buffer 对象 ？'
 
    detail: """
       # 基本用法

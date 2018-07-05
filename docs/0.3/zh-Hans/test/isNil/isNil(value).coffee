@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isNil(value)'
 
-   desc: """
-      是否为 undefined 或 null ？
-   """
+   desc: '是否为 undefined 或 null ？'
 
    detail: """
       # 基本用法

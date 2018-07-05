@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isPromise(value)'
 
-   desc: """
-      是否为 Promise 对象 ？
-   """
+   desc: '是否为 Promise 对象 ？'
 
    detail: """
       # 基本用法

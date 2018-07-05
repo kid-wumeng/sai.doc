@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isArrayLike(value)'
 
-   desc: """
-      是否为 Array-like ？
-   """
+   desc: '是否为 Array-like ？'
 
    detail: """
       # 基本用法

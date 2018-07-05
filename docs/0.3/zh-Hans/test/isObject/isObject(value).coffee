@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isObject(value)'
 
-   desc: """
-      是否为对象 ？
-   """
+   desc: '是否为对象 ？'
 
    detail: """
       # 基本用法

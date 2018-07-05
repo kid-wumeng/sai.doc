@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isNumber(value)'
 
-   desc: """
-      是否为有效、有穷的数 ？
-   """
+   desc: '是否为有效、有穷的数 ？'
 
    detail: """
       # 基本用法

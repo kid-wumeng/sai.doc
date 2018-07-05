@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isArray(value)'
 
-   desc: """
-      是否为 Array ？
-   """
+   desc: '是否为 Array ？'
 
    detail: """
       # 基本用法

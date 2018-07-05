@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isDate(value)'
 
-   desc: """
-      是否为 Date 对象 ？
-   """
+   desc: '是否为 Date 对象 ？'
 
    detail: """
       # 基本用法

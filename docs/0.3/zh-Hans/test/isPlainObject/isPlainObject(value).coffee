@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isPlainObject(value)'
 
-   desc: """
-      是否为朴素对象 ？
-   """
+   desc: '是否为朴素对象 ？'
 
    detail: """
       # 基本用法

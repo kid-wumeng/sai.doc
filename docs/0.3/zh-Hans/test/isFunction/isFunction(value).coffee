@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isFunction(value)'
 
-   desc: """
-      是否为函数 ？*包括异步函数*
-   """
+   desc: '是否为函数 ？*包括异步函数*'
 
    detail: """
       # 基本用法

@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isBoolean(value)'
 
-   desc: """
-      是否为布尔量 ？
-   """
+   desc: '是否为布尔量 ？'
 
    detail: """
       # 基本用法

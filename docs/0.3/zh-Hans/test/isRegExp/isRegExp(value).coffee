@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isRegExp(value)'
 
-   desc: """
-      是否为 RegExp 对象 ？
-   """
+   desc: '是否为 RegExp 对象 ？'
 
    detail: """
       # 基本用法

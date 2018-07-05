@@ -2,9 +2,7 @@ module.exports =
 
    name: 'isString(value)'
 
-   desc: """
-      是否为字符串 ？
-   """
+   desc: '是否为字符串 ？'
 
    detail: """
       # 基本用法
