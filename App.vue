@@ -13,6 +13,7 @@
 
    global._ = Vue.prototype._ = require('lodash')
 
+   Vue.prototype.formatSignName = require('~/utils/formatSignName')
    Vue.prototype.to = require('~/utils/to')
 
    global.utils = Vue.prototype.utils =

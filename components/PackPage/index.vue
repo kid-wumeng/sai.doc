@@ -1,8 +1,8 @@
 <template lang="jade">
-   .PackPage pack-page
-      //- Name(:pack="pack")
-      //- DescArea(:pack="pack")
-      //- GroupList(:pack="pack")
+   .PackPage
+      PackName(:pack="pack")
+      PackDesc(:pack="pack")
+      UnitList(:units="units")
 </template>
 
 
@@ -10,14 +10,37 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Name':      require('./Name').default
-         'DescArea':  require('./DescArea').default
-         'GroupList': require('./GroupList').default
+         'PackName': require('./PackName').default
+         'PackDesc': require('./PackDesc').default
+         'UnitList': require('./UnitList').default
 
       props:
          'pack':
             type: Object
             required: true
+
+      computed:
+         items: -> @pack.items ? []
+
+         units: ->
+            units = []
+            name  = ''
+            funcs = []
+
+            for item, i in @items
+
+               if _.isString(item)
+                   name = item
+               else
+                   funcs.push(item)
+
+               next = @items[i+1]
+
+               if _.isString(next) or _.isNil(next)
+                   units.push({ name, funcs })
+                   funcs = []
+
+            return units
 </script>
 
 
@@ -27,11 +50,7 @@
       background-color: white;
       overflow: scroll;
 
-      > .Name {
-         margin-bottom: 20px;
-      }
-
-      > .DescArea {
+      > .PackDesc {
          margin-bottom: 80px;
       }
    }

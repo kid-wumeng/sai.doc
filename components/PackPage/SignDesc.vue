@@ -1,29 +1,26 @@
 <template lang="jade">
-   TextArea.DescArea(:text="desc")
+   TextArea.SignDesc(:text="sign.desc")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-
       components:
          'TextArea': require('~/components/TextArea').default
 
       props:
-         'unit':
+         'sign':
             type: Object
             required: true
-
-      computed:
-         desc: -> @unit.desc ? ''
 </script>
 
 
 
-<style lang="less" scoped>
-   .DescArea {
-      width: 600px;
-      text-indent: 2em;
+<style lang="less">
+   .PackPage {
+      .SignDesc {
+         padding: 10px 16px;
+      }
    }
 </style>
