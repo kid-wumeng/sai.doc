@@ -9,7 +9,7 @@ module.exports =
    state:
       docs:        docs
       doc:         {}
-      units:       {}
+      packs:       {}
       funcs:       {}
       vers:        []
       ver:         ''
@@ -46,12 +46,12 @@ module.exports =
 
          doc         = _.merge({}, docDefault, doc)
 
-         units       = getUnits(doc)
+         packs       = getPacks(doc)
 
          funcs       = getFuncs(doc)
 
          state.doc   = doc
-         state.units = units
+         state.packs = packs
          state.funcs = funcs
          state.vers  = vers
          state.ver   = ver
@@ -62,21 +62,21 @@ module.exports =
 
 
 
-getUnits = ( doc ) =>
+getPacks = ( doc ) =>
 
-   units = {}
+   packs = {}
 
-   for unit in doc.units ? []
+   for pack in doc.packs ? []
 
-      if units[unit.path]
-         error = "单元路径重复，unit: #{unit.path}"
+      if packs[pack.path]
+         error = "包路径重复，pack: #{pack.path}"
          alert(error)
          throw new Error(error)
 
       else
-         units[unit.path] = unit
+         packs[pack.path] = pack
 
-   return units
+   return packs
 
 
 
@@ -85,16 +85,16 @@ getFuncs = ( doc ) =>
 
    funcs = {}
 
-   for unit in doc.units ? []
+   for pack in doc.packs ? []
 
-       for func in unit.items ? []
+       for func in pack.items ? []
 
            if _.isPlainObject(func)
 
-              func.unit = unit
+              func.pack = pack
 
               if funcs[func.name]
-                 error = "方法名重复，unit: #{unit.path}，item: #{func.name}"
+                 error = "方法名重复，pack: #{pack.path}，item: #{func.name}"
                  alert(error)
                  throw new Error(error)
 

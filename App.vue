@@ -1,6 +1,7 @@
 <template lang="jade">
    #App(v-if="ready")
-      SideLv1(:units="units")
+      SideLv1
+      SideLv2
       nuxt.main
 </template>
 
@@ -12,21 +13,22 @@
 
    global._ = Vue.prototype._ = require('lodash')
 
+   Vue.prototype.to = require('~/utils/to')
+
    global.utils = Vue.prototype.utils =
       'formatData': require('~/utils/formatData')
       'markdown':   require('~/utils/markdown')
-
 
 
    module.exports =
 
       components:
          'SideLv1': require('~/components/SideLv1').default
+         'SideLv2': require('~/components/SideLv2').default
 
 
       computed:
          ready: -> @$store.state.ready
-         units: -> @$store.state.doc.units ? []
 
 
       mounted: ->
@@ -46,7 +48,6 @@
             oldLang = oldRoute.query.lang
 
             if ( newVer isnt oldVer ) or ( newLang isnt oldLang )
-               console.log '098765'
                @$store.commit('update', newRoute)
 
       methods:
@@ -57,92 +58,6 @@
 
 
 <style lang="less">
-
-   @font-face {
-      font-family: "Lato";
-      font-weight: 400;
-      src: url(~/assets/fonts/Lato-Regular.ttf);
-   }
-
-   @font-face {
-      font-family: "Lato";
-      font-weight: 500;
-      src: url(~/assets/fonts/Lato-Medium.ttf);
-   }
-
-   @font-face {
-      font-family: "Lato";
-      font-weight: 600;
-      src: url(~/assets/fonts/Lato-Semibold.ttf);
-   }
-
-   @font-face {
-      font-family: "Ubuntu";
-      font-weight: 400;
-      src: url(~/assets/fonts/Ubuntu-R.ttf);
-   }
-
-   @font-face {
-      font-family: "Ubuntu";
-      font-weight: 500;
-      src: url(~/assets/fonts/Ubuntu-M.ttf);
-   }
-
-   @font-face {
-      font-family: "Ubuntu";
-      font-weight: 600;
-      src: url(~/assets/fonts/Ubuntu-B.ttf);
-   }
-
-   @font-face {
-      font-family: "Adele";
-      font-weight: 400;
-      src: url(~/assets/fonts/ADELE-Light.ttf);
-   }
-
-   * {
-      box-sizing: border-box;
-      margin: 0;
-      border: 0;
-      padding: 0;
-   }
-
-   html {
-      height: 100%;
-   }
-
-   body {
-      font-family: "Ubuntu", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
-      color: #242424;
-      background-color: #FAF4E9;
-      background-color: white;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-   }
-
-   li {
-      list-style-position: inside;
-   }
-
-   a {
-      color: inherit;
-      text-decoration: none;
-   }
-
-   #__nuxt {
-     height: 100%;
-   }
-
-   #__layout {
-     height: 100%;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-   }
-
    #App {
       max-width: 1680px;
       width: 100%;
@@ -150,21 +65,27 @@
       position: relative;
       overflow: hidden;
 
-      @side-width: 140px;
+      @side-lv1-width: 140px;
+      @side-lv2-width: 200px;
 
       .SideLv1 {
          position: absolute;
-         left: 0;
-         top: 0;
-         width: @side-width;
-         height: 100%;
+         top:      0;
+         left:     0;
+         width:    @side-lv1-width;
+      }
+
+      .SideLv2 {
+         position: absolute;
+         top:      0;
+         left:     @side-lv1-width;
+         width:    @side-lv2-width;
       }
 
       .main {
-         margin-left: @side-width;
+         margin-left: @side-lv1-width + @side-lv2-width;
          height: 100%;
          overflow: scroll;
       }
    }
-
 </style>

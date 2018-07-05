@@ -1,74 +1,53 @@
 <template lang="jade">
    .SideLv2
       .item(v-for="(item, i) in items", :key="i")
-         .hint(v-if="isHint(item)") {{ item }}
-         nuxt-link.func(v-else :to="getTo(item)", :is-current-func="isCurrentFunc(item)") {{ item.name }}
+         UnitItem(:item="item", v-if="isUnitItem(item)")
+         FuncItem(:item="item", v-else :active="isCurrentFunc(item)")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
+      components:
+         'UnitItem': require('./UnitItem').default
+         'FuncItem': require('./FuncItem').default
 
-      props:
-         'items':
-            type: Array
-            default: -> []
+      computed:
+         path: ->
+            @$route.params.path ? ''
 
-         'func':
-            type: Object
-            default: null
+         name: ->
+            if @path[0] is '@'
+               @path.slice(1)
+            else
+               @path
 
+         pack: -> @$store.state.packs[@name]
+         func: -> @$store.state.funcs[@name]
+
+         items: ->
+            switch
+               when @pack then @pack.items      ? []
+               when @func then @func.pack.items ? []
+               else                               []
 
       methods:
-         isHint: ( item ) ->
-            return typeof(item) is 'string'
+         isUnitItem: ( item ) ->
+            return _.isString( item )
 
-         isCurrentFunc: ( func ) ->
-            return @func and @func.name is func.name
-
-         getTo: ( func ) ->
-            return { path: '/' + func.name, query: @$route.query }
+         isCurrentFunc: ( item ) ->
+            return item.name is @func?.name
 </script>
 
 
 
 <style lang="less">
    .SideLv2 {
-      overflow: scroll;
+      height: 100%;
       padding: 20px 0;
+      overflow: scroll;
       border-right: 1px solid rgba(0, 0, 0, 0.1);
       box-shadow: 1px 0 10px rgba(0, 0, 0, 0.1);
-
-      .item {
-         > .hint,
-         > .func {
-            display: block;
-            padding: 10px 20px;
-         }
-
-         > .hint {
-            text-align: center;
-            font-weight: 600;
-            font-size: 15px;
-            color: lighten(#A2AEBA, 10%);
-         }
-
-         > .func {
-            font-weight: 400;
-            font-size: 14px;
-            color: #273340;
-            letter-spacing: 0.3px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
-
-            &:hover {
-               background-color: rgba(249, 249, 249, 1);
-            }
-
-            &[is-current-func] {
-               background-color: rgba(249, 249, 249, 1);
-            }
-         }
-      }
    }
 </style>

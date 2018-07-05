@@ -1,7 +1,7 @@
 module.exports =
 
-   path: 'string'
    name: '字符串'
+   path: 'string'
 
    desc: """
    """

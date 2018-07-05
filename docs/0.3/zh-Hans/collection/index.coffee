@@ -1,7 +1,7 @@
 module.exports =
 
-   path: 'collection'
    name: '集合'
+   path: 'collection'
 
    desc: """
    """

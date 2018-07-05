@@ -1,7 +1,7 @@
 module.exports =
 
-   path: 'base'
    name: '基础'
+   path: 'base'
 
    desc: """
    """

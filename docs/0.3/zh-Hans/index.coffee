@@ -1,6 +1,6 @@
 module.exports =
 
-   units: [
+   packs: [
       require('./base')
       require('./collection')
       require('./string')

@@ -1,7 +1,7 @@
 module.exports =
 
-   path: 'test'
    name: '测试'
+   path: 'test'
 
    desc: """
       本单元提供实用的测试套件。

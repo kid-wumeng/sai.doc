@@ -1,35 +1,32 @@
 <template lang="jade">
    .SideLv1
-      nuxt-link.home(to="/") Sai
-      nuxt-link.unit(v-for="unit in units", :key="unit.name", :to="getTo(unit)") {{ unit.name }}
+      Logo
+      PackList(:packs="packs")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
+      components:
+         'Logo':     require('./Logo').default
+         'PackList': require('./PackList').default
 
-      props:
-         'units':
-            type: Array
-            default: -> []
-
-
-      methods:
-         getTo: ( unit ) ->
-            return { path: '/@' + unit.path, query: @$route.query }
+      computed:
+         packs: -> @$store.state.doc.packs ? []
 </script>
 
 
 
 <style lang="less">
    .SideLv1 {
-      overflow: scroll;
+      height: 100%;
       padding: 20px 0;
       background-color: #272E3D;
+      overflow: scroll;
 
       > .home,
-      > .unit {
+      > .pack {
          display: block;
          padding: 10px 20px;
       }
@@ -42,7 +39,7 @@
          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       }
 
-      > .unit {
+      > .pack {
          text-align: center;
          font-weight: 500;
          font-size: 14px;
@@ -53,7 +50,7 @@
             background-color: white;
          }
 
-         &[is-current-unit] {
+         &[is-current-pack] {
             font-weight: 500;
          }
       }
