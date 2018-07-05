@@ -1,35 +1,31 @@
 module.exports =
 
-   name: 'isArray(...value)'
+   name: 'isArray(value)'
 
    desc: """
-      是否为数组 ？
+      是否为 Array ？
    """
 
-   text: """
+   detail: """
+      # 基本用法
+
       ```js
       sai.isArray(new Array)               // => true
-      sai.isArray([])                      // => true
       sai.isArray([1, 2, 3])               // => true
 
       sai.isArray(arguments)               // => false
       sai.isArray('abc')                   // => false
       sai.isArray(new Buffer('abc'))       // => false
       sai.isArray(document.body.children)  // => false
-      sai.isArray(Array)                   // => false
-
-      // 支持多值检测
-      sai.isArray(array1, array2,  array3 )  // => true
-      sai.isArray(array1, array2, 'array3')  // => false
       ```
    """
 
    params: [{
-      name: '...value'
-      type: '...*'
+      name: 'value'
+      type: '*'
       desc: '希望检测的值'
    }]
 
    return:
-      name: 'isArray'
+      name: 'result'
       type: 'boolean'

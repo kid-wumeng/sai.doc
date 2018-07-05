@@ -1,28 +1,26 @@
 module.exports =
 
-   name: 'isSymbol(...value)'
+   name: 'isSymbol(value)'
 
    desc: """
       是否为 Symbol ？
    """
 
-   text: """
+   detail: """
+      # 基本用法
+
       ```js
       sai.isSymbol(Symbol())  // => true
       sai.isSymbol(Symbol)    // => false
-
-      // 支持多值检测
-      sai.isSymbol(sb1, sb2, sb3)  // => true
-      sai.isSymbol(sb1, 's', sb3)  // => false
       ```
    """
 
    params: [{
-      name: '...value'
-      type: '...*'
+      name: 'value'
+      type: '*'
       desc: '希望检测的值'
    }]
 
    return:
-      name: 'isSymbol'
+      name: 'result'
       type: 'boolean'

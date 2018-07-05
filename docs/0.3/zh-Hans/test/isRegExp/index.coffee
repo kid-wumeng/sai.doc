@@ -3,5 +3,5 @@ module.exports =
    name: 'isRegExp'
 
    signs: [
-      require('./isRegExp(...value)')
+      require('./isRegExp(value)')
    ]

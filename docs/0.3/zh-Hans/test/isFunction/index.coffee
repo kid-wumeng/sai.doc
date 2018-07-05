@@ -3,5 +3,5 @@ module.exports =
    name: 'isFunction'
 
    signs: [
-      require('./isFunction(...value)')
+      require('./isFunction(value)')
    ]

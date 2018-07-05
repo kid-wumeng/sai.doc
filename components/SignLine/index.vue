@@ -1,6 +1,6 @@
 <template lang="jade">
    Row.SignLine
-      SignName(:sign="sign" sai)
+      SignName(:sign="sign")
       DescArea(:sign="sign")
 </template>
 

@@ -3,5 +3,5 @@ module.exports =
    name: 'isError'
 
    signs: [
-      require('./isError(...value)')
+      require('./isError(value)')
    ]

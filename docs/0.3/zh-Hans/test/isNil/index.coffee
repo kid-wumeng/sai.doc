@@ -3,5 +3,5 @@ module.exports =
    name: 'isNil'
 
    signs: [
-      require('./isNil(...value)')
+      require('./isNil(value)')
    ]

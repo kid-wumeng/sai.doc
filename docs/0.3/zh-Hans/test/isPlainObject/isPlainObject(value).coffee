@@ -1,12 +1,14 @@
 module.exports =
 
-   name: 'isPlainObject(...value)'
+   name: 'isPlainObject(value)'
 
    desc: """
       是否为朴素对象 ？
    """
 
-   text: """
+   detail: """
+      # 基本用法
+
       ```js
       sai.isPlainObject({})                   // => true
       sai.isPlainObject(new Object)           // => true
@@ -17,28 +19,25 @@ module.exports =
       sai.isPlainObject(()=>{})               // => false
       sai.isPlainObject(class{})              // => false
       sai.isPlainObject(/^sai$/g)             // => false
-      sai.isPlainObject(new Date)             // => false
-      sai.isPlainObject(new Number(0))        // => false
-      sai.isPlainObject(new String(''))       // => false
+      sai.isObject(new Date)                  // => false
+      sai.isObject(new Boolean(true))         // => false
+      sai.isObject(new Number(1))             // => false
+      sai.isObject(new String('sai'))         // => false
 
       sai.isPlainObject(true)                 // => false
       sai.isPlainObject(1)                    // => false
       sai.isPlainObject('sai')                // => false
       sai.isPlainObject(null)                 // => false
       sai.isPlainObject(undefined)            // => false
-
-      // 支持多值检测
-      sai.isPlainObject({},  1  [])           // => true
-      sai.isPlainObject({}, '1' [])           // => false
       ```
    """
 
    params: [{
-      name: '...value'
-      type: '...*'
+      name: 'value'
+      type: '*'
       desc: '希望检测的值'
    }]
 
    return:
-      name: 'isPlainObject'
+      name: 'result'
       type: 'boolean'

@@ -3,5 +3,5 @@ module.exports =
    name: 'isPromise'
 
    signs: [
-      require('./isPromise(...value)')
+      require('./isPromise(value)')
    ]

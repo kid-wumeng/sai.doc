@@ -1,12 +1,14 @@
 module.exports =
 
-   name: 'isObject(...value)'
+   name: 'isObject(value)'
 
    desc: """
       是否为对象 ？
    """
 
-   text: """
+   detail: """
+      # 基本用法
+
       ```js
       sai.isObject({})                   // => true
       sai.isObject(new Object)           // => true
@@ -18,27 +20,24 @@ module.exports =
       sai.isObject(class{})              // => true
       sai.isObject(/^sai$/g)             // => true
       sai.isObject(new Date)             // => true
-      sai.isObject(new Number(0))        // => true
-      sai.isObject(new String(''))       // => true
+      sai.isObject(new Boolean(true))    // => true
+      sai.isObject(new Number(1))        // => true
+      sai.isObject(new String('sai'))    // => true
 
       sai.isObject(true)                 // => false
       sai.isObject(1)                    // => false
       sai.isObject('sai')                // => false
       sai.isObject(null)                 // => false
       sai.isObject(undefined)            // => false
-
-      // 支持多值检测
-      sai.isObject({},  1  [])           // => true
-      sai.isObject({}, '1' [])           // => false
       ```
    """
 
    params: [{
-      name: '...value'
-      type: '...*'
+      name: 'value'
+      type: '*'
       desc: '希望检测的值'
    }]
 
    return:
-      name: 'isObject'
+      name: 'result'
       type: 'boolean'

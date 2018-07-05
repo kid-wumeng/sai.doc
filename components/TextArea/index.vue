@@ -53,7 +53,7 @@
       > h3,
       > h4,
       > h5,
-      > h6           { margin-bottom: 10px }
+      > h6           { margin-bottom: 20px }
       > p            { margin-bottom: 6px }
       > blockquote   { margin-bottom: 6px }
       > ul           { margin-bottom: 6px }
@@ -69,7 +69,7 @@
          font-weight: 600;
          font-size: 20px;
          &:not(:first-child) {
-            margin-top: 40px;
+            margin-top: 60px;
          }
       }
 

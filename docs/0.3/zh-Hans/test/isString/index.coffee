@@ -3,5 +3,5 @@ module.exports =
    name: 'isString'
 
    signs: [
-      require('./isString(...value)')
+      require('./isString(value)')
    ]

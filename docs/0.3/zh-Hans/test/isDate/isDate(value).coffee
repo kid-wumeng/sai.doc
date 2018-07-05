@@ -1,27 +1,26 @@
 module.exports =
 
-   name: 'isDate(...value)'
+   name: 'isDate(value)'
 
    desc: """
       是否为 Date 对象 ？
    """
 
-   text: """
+   detail: """
+      # 基本用法
+
       ```js
       sai.isDate(new Date(2018, 6, 5))  // => true
-
-      // 支持多值检测
-      sai.isDate(date1, date2,  date3)  // => true
-      sai.isDate(date1, '2018', date3)  // => false
+      sai.isDate('2018-07-05')          // => false
       ```
    """
 
    params: [{
-      name: '...value'
-      type: '...*'
+      name: 'value'
+      type: '*'
       desc: '希望检测的值'
    }]
 
    return:
-      name: 'isDate'
+      name: 'result'
       type: 'boolean'

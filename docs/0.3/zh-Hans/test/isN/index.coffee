@@ -3,5 +3,5 @@ module.exports =
    name: 'isN'
 
    signs: [
-      require('./isN(...value)')
+      require('./isN(value, [zero])')
    ]

@@ -53,5 +53,5 @@ module.exports =
    }]
 
    return:
-      name: 'isOrNot'
+      name: 'result'
       type: 'boolean'

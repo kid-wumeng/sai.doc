@@ -3,5 +3,5 @@ module.exports =
    name: 'isObject'
 
    signs: [
-      require('./isObject(...value)')
+      require('./isObject(value)')
    ]
