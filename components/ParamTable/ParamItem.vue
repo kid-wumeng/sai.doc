@@ -30,7 +30,7 @@
 
 <style lang="less">
 
-   @padding: 20px;
+   @padding: 28px;
 
    .ParamTable {
       .ParamItem {

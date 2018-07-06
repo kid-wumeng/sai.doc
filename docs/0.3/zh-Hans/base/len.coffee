@@ -11,34 +11,72 @@ module.exports =
       params: [{
          name: 'data'
          type: 'object'
-         desc: '希望测量的数据'
+         desc: """
+         希望测量的数据，预期的类型：
+
+         * Array, Array-like
+         * Set, Map
+         * 字符串
+         * 对象
+         """
       },{
          name: 'mode'
          type: 'string'
-         desc: ''
+         desc: """
+         字符串长度计算模式，默认值：*length*
+
+         * *length* - data.length
+         * *cjk* - 中日韩字符占 2 位，其余占 1 位
+
+         *mode 仅在 data 为字符串时可用*
+         """
          optional: true
       }]
       return:
          name: 'length | size'
          type: 'number'
          desc: '数据的长度、成员数量等'
+      throws: [{
+         name: 'INVALID_TYPE'
+         desc: 'data 不是预期的类型'
+      }]
    },{
       name: 'len(data, callback)'
-      desc: '测量 data 的大小'
-      more: '根据 data 类型的不同，会运用不同的策略'
+      desc: '测量 data 的大小，由 callback 决定每个成员的大小'
       params: [{
          name: 'data'
          type: 'object'
-         desc: '希望测量的数据'
+         desc: """
+         希望测量的数据，预期的类型：
+
+         * Array, Array-like
+         * Set, Map
+         * 字符串
+         * 对象
+         """
       },{
          name: 'callback'
          type: 'function'
-         desc: '计数器'
+         desc: """
+         计量器
+
+         以下类型使用 callback(item, i)
+
+         * Array, Array-like
+         * Set, Map
+         * 字符串
+
+         对象使用 callback(name, value)
+         """
       }]
       return:
          name: 'length | size'
          type: 'number'
          desc: '数据的长度、成员数量等'
+      throws: [{
+         name: 'INVALID_TYPE'
+         desc: 'data 不是预期的类型'
+      }]
    }]
 
 
@@ -96,5 +134,44 @@ module.exports =
 
       date = new Date
       sai.len(date)  // => 0，因为 date 上的属性都是不可枚举的
+      ```
+
+      # 使用自定义的计量器
+
+      len 的第 2 个参数可以传入一个回调函数，这个函数会在遍历每一个成员时被调用，它的返回值是当前成员应该被计算的大小。以下是一些例子：
+
+      例1，Array 中字符类型元素占 2 位，其余占 1 位
+
+      ```js
+      sai.len([1, '2', 3], (item, i) => {
+         if (sai.isString(item))
+            return 2
+         else
+            return 1
+      })
+
+      // => 4
+      ```
+
+      例2，忽视字符串中的空白符
+
+      ```js
+      sai.len('A BC', (char, i) => { sai.isSpace(char) ? 0 : 1 })
+
+      // => 3
+      ```
+
+      例3，统计所有水果的总价
+
+      ```js
+      fruitPrices = {
+         cherry: 1.5,
+         orange: 2.5,
+         banana: 3
+      }
+
+      sai.len(fruitPrices, (name, value) => value)
+
+      // => 7
       ```
    """

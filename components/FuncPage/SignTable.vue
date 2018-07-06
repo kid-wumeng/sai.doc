@@ -39,7 +39,7 @@
 
          .throws {
             .ParamItem {
-               .Name {
+               .ParamName {
                   line-height: 21px;
                   font-weight: 600;
                   font-size: 13px;
