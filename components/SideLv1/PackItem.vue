@@ -11,6 +11,10 @@
             type: Object
             required: true
 
+         'active':
+            type: Boolean
+            default: false
+
       computed:
          name: -> @pack.name
          path: -> @pack.path
