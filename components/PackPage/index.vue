@@ -51,7 +51,11 @@
       overflow: scroll;
 
       > .PackDesc {
-         margin-bottom: 80px;
+         margin-top: 20px;
+      }
+
+      > .UnitList {
+         margin-top: 80px;
       }
    }
 </style>
