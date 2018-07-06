@@ -24,7 +24,7 @@
          font-size: 14px;
 
          > * {
-            margin-bottom: 6px;
+            margin-bottom: 10px;
          }
 
          li {

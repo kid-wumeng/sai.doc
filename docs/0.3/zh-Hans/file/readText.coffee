@@ -6,7 +6,7 @@ module.exports =
 
    signs: [{
       name: 'readText( path )'
-      desc: '读文件，返回 String'
+      desc: '读取文件，返回 String'
       async: true
 
       params: [{

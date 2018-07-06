@@ -39,7 +39,7 @@
          .errors {
             .ParamItem {
                .ParamName {
-                  line-height: 23px;
+                  line-height: 21px;
                   font-weight: 600;
                   font-size: 13px;
                   color: lighten(red, 26%);
@@ -47,7 +47,8 @@
                }
 
                .ParamDesc {
-                  line-height: 23px;
+                  line-height: 21px;
+                  font-size: 13px;
                }
             }
          }

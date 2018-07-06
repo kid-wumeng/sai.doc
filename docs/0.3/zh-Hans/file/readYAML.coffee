@@ -1,12 +1,13 @@
 module.exports =
 
 
-   name: 'readJSON'
+   name: 'readYAML'
 
 
    signs: [{
-      name: 'readJSON( path )'
-      desc: '读取文件，返回 JSON 对象'
+      name: 'readYAML( path )'
+      desc: '读取文件，返回 YAML 对象'
+      more: '关于 [YAML Ain\'t Markup Language](http://yaml.org/) 的介绍'
       async: true
 
       params: [{
@@ -16,7 +17,7 @@ module.exports =
       }]
 
       return:
-         name: 'json'
+         name: 'yaml'
          type: 'plain-object'
 
       errors: [
@@ -31,6 +32,6 @@ module.exports =
       # 基本用法
 
       ```js
-      json = await sai.readJSON('/assets/test.json')
+      yaml = await sai.readYAML('/assets/test.yaml')
       ```
    """

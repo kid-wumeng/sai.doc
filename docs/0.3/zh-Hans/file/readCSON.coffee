@@ -1,12 +1,13 @@
 module.exports =
 
 
-   name: 'readJSON'
+   name: 'readCSON'
 
 
    signs: [{
-      name: 'readJSON( path )'
-      desc: '读取文件，返回 JSON 对象'
+      name: 'readCSON( path )'
+      desc: '读取文件，返回 CSON 对象'
+      more: '关于 [CoffeeScript-Object-Notation](https://www.npmjs.com/package/cson) 的介绍'
       async: true
 
       params: [{
@@ -16,7 +17,7 @@ module.exports =
       }]
 
       return:
-         name: 'json'
+         name: 'cson'
          type: 'plain-object'
 
       errors: [
@@ -31,6 +32,6 @@ module.exports =
       # 基本用法
 
       ```js
-      json = await sai.readJSON('/assets/test.json')
+      cson = await sai.readCSON('/assets/test.cson')
       ```
    """

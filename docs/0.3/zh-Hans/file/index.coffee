@@ -10,9 +10,12 @@ module.exports =
       require('./readFile')
       require('./readText')
       require('./readJSON')
+      require('./readCSON')
+      require('./readYAML')
 
       '目录'
       require('./isDir')
+      require('./readDir')
 
       '文件 & 目录'
    ]

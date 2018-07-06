@@ -6,7 +6,7 @@ module.exports =
 
    signs: [{
       name: 'readFile( path )'
-      desc: '读文件，返回 Buffer'
+      desc: '读取文件，返回 Buffer'
       async: true
 
       params: [{
