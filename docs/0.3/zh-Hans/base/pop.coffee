@@ -1,16 +1,16 @@
 module.exports =
 
 
-   name: 'popEnd'
+   name: 'pop'
 
 
    signs: [{
-      name: 'popEnd(array, [count])'
+      name: 'pop(array, [count])'
       desc: '从 array 的末尾弹出 count 个 item'
 
       params: [{
          name: 'array'
-         type: '*[]'
+         type: 'Array'
       },{
          name: 'count'
          type: 'number'
@@ -20,7 +20,7 @@ module.exports =
 
       return:
          name: 'item | items'
-         type: '* | *[]'
+         type: '* | Array'
          desc: """
             * 若 count = 1，返回 item
             * 若 count > 1，返回 items
@@ -38,7 +38,7 @@ module.exports =
 
       ```js
       array = ['a', 'b', 'c', 'd']
-      item  = sai.popEnd(array)
+      item  = sai.pop(array)
 
       // array = ['a', 'b', 'c']
       // item  = 'd'
@@ -48,7 +48,7 @@ module.exports =
 
       ```js
       array = ['a', 'b', 'c', 'd']
-      items = sai.popEnd(array, 2)
+      items = sai.pop(array, 2)
 
       // array = ['a', 'b']
       // items = ['c', 'd']
@@ -58,7 +58,7 @@ module.exports =
 
       ```js
       array = []
-      item  = sai.popEnd(array)
+      item  = sai.pop(array)
 
       // array = []
       // item  = undefined
@@ -68,7 +68,7 @@ module.exports =
 
       ```js
       array = []
-      items = sai.popEnd(array, 2)
+      items = sai.pop(array, 2)
 
       // array = []
       // items = []

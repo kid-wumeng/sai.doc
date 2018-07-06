@@ -10,13 +10,13 @@ module.exports =
 
       params: [{
          name: 'itemOrArrays...'
-         type: '* | *[]'
+         type: '* | Array'
          desc: '期望合并在一起的 item 或 array'
       }]
 
       return:
          name: 'array'
-         type: '*[]'
+         type: 'Array'
          desc: '合并之后的新数组'
    }]
 

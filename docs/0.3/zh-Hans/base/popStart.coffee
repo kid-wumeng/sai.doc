@@ -10,7 +10,7 @@ module.exports =
 
       params: [{
          name: 'array'
-         type: '*[]'
+         type: 'Array'
       },{
          name: 'count'
          type: 'number'
@@ -20,7 +20,7 @@ module.exports =
 
       return:
          name: 'item | items'
-         type: '* | *[]'
+         type: '* | Array'
          desc: """
             * 若 count = 1，返回 item
             * 若 count > 1，返回 items

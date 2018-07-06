@@ -1,20 +1,20 @@
 module.exports =
 
 
-   name: 'pushEnd'
+   name: 'push'
 
 
    signs: [{
-      name: 'pushEnd(array, itemOrArrays...)'
+      name: 'push(array, itemOrArrays...)'
       desc: '向 array 的末尾添加 item 或 array'
 
       params: [{
          name: 'array'
-         type: '*[]'
+         type: 'Array'
          desc: '目标数组'
       },{
          name: 'itemOrArrays...'
-         type: '* | *[]'
+         type: '* | Array'
          desc: '期望添加的 item 或 array'
       }]
 
@@ -35,7 +35,7 @@ module.exports =
 
       ```js
       array = ['a', 'b']
-      count = sai.pushEnd(array, 'c', 'd')
+      count = sai.push(array, 'c', 'd')
 
       // array = ['a', 'b', 'c', 'd']
       // count = 4
@@ -45,7 +45,7 @@ module.exports =
 
       ```js
       array = ['a', 'b']
-      count = sai.pushEnd(array, ['c', 'd'], ['e', 'f'])
+      count = sai.push(array, ['c', 'd'], ['e', 'f'])
 
       // array = ['a', 'b', 'c', 'd', 'e', 'f']
       // count = 6
@@ -55,7 +55,7 @@ module.exports =
 
       ```js
       array = ['a', 'b']
-      count = sai.pushEnd(array, 'c', ['d', 'e'])
+      count = sai.push(array, 'c', ['d', 'e'])
 
       // array = ['a', 'b', 'c', 'd', 'e']
       // count = 5

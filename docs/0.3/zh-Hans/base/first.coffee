@@ -10,7 +10,7 @@ module.exports =
 
       params: [{
          name: 'array'
-         type: '*[]'
+         type: 'Array'
       }]
 
       return:

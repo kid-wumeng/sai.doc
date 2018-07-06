@@ -18,6 +18,7 @@ await db.drop()
 
 
 
+
 # Type & Value
 
 sai.isMIME(data, mime)
@@ -31,24 +32,12 @@ sai.isEqual(datas)
 
 sai.random(array, count)
 sai.in(data, enums)
-sai.len(data, mode)
-sai.len(data, callback)
 sai.copy(data)
 sai.type(data)
 
 
 
-# String
-
-sai.isEmail(string)
-sai.isUrl(string)
-
-
-
 # File & Directory
-
-      sai.thisPath(path)
-      sai.rootPath(path)
 
 await sai.isFile(path)
 await sai.isDir(path)

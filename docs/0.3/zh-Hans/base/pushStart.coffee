@@ -10,11 +10,11 @@ module.exports =
 
       params: [{
          name: 'array'
-         type: '*[]'
+         type: 'Array'
          desc: '目标数组'
       },{
          name: 'itemOrArrays...'
-         type: '* | *[]'
+         type: '* | Array'
          desc: '期望添加的 item 或 array'
       }]
 
