@@ -1,6 +1,6 @@
 <template lang="jade">
    #index
-      Home
+      HomePage
 </template>
 
 
@@ -8,7 +8,7 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Home': require('~/components/Home').default
+         'HomePage': require('~/components/HomePage').default
 </script>
 
 
