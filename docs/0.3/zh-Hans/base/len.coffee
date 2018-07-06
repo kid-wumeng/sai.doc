@@ -8,6 +8,7 @@ module.exports =
       name: 'len(data, [mode])'
       desc: '测量 data 的大小'
       more: '根据 data 类型的不同，会运用不同的策略'
+
       params: [{
          name: 'data'
          type: 'object / string'
@@ -32,17 +33,22 @@ module.exports =
          """
          optional: true
       }]
+
       return:
          name: 'length | size'
          type: 'number'
          desc: '数据的长度、成员数量等'
+
       throws: [{
          name: 'INVALID_TYPE'
          desc: 'data 不是预期的类型'
       }]
+
    },{
+
       name: 'len(data, callback)'
       desc: '测量 data 的大小，由 callback 决定每个成员的大小'
+
       params: [{
          name: 'data'
          type: 'object / object'
@@ -69,10 +75,12 @@ module.exports =
             其余对象使用 callback(name, value)
          """
       }]
+
       return:
          name: 'length | size'
          type: 'number'
          desc: '数据的长度、成员数量等'
+
       throws: [{
          name: 'INVALID_TYPE'
          desc: 'data 不是预期的类型'

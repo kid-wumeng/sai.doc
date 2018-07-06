@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isError(value)'
       desc: '是否为 Error 对象 ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

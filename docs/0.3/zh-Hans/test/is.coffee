@@ -7,6 +7,7 @@ module.exports =
    signs: [{
       name: 'is(value, class)'
       desc: 'value 是否为 class 的实例对象 ？'
+
       params: [{
          name: 'class'
          type: 'function'
@@ -16,6 +17,7 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isAsyncFunction(value)'
       desc: '是否为异步函数 ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

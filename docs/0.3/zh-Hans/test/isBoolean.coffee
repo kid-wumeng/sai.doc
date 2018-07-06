@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isBoolean(value)'
       desc: '是否为布尔量 ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

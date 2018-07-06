@@ -7,14 +7,17 @@ module.exports =
    signs: [{
       name: 'isEmpty(data)'
       desc: '数据为空，无任何值 ？'
+
       params: [{
          name: 'data'
          type: '*'
          desc: '期望检测的数据，类型参考 [sai.len](/len)'
       }]
+
       return:
          name: 'result'
          type: 'boolean'
+         
       throws: [{
          name: 'INVALID_TYPE'
          desc: '参考 [sai.len](/len)'

@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isPlainObject(value)'
       desc: '是否为朴素对象 ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

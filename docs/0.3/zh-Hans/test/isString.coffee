@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isString(value)'
       desc: '是否为字符串 ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

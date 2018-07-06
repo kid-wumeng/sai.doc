@@ -7,6 +7,7 @@ module.exports =
    signs: [{
       name: 'set(data, path, value)'
       desc: '设置 data 中路径为 path 的属性值'
+
       params: [{
          name: 'data'
          type: 'object'
@@ -19,6 +20,7 @@ module.exports =
          type: '*'
          desc: '期望设置的值'
       }]
+      
       throws: [{
          name: 'INVALID_TYPE'
          desc: 'data 或 path 类型不正确'

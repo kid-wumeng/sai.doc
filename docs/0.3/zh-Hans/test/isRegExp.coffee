@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isRegExp(value)'
       desc: '是否为 RegExp 对象 ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

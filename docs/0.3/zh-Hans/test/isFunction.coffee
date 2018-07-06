@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isFunction(value)'
       desc: '是否为函数 ？*包括异步函数*'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

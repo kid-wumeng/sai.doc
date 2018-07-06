@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isArrayLike(value)'
       desc: '是否为 Array-like ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

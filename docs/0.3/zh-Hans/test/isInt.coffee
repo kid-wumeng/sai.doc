@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isInt(value)'
       desc: '是否为有效、有穷的*整数* ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

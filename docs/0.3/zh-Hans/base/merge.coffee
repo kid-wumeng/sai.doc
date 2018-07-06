@@ -14,15 +14,18 @@ module.exports =
          * 仅处理可枚举属性
          * *返回的是新对象，不会改变源对象*
       """
+
       params: [{
          name: 'objects...'
          type: 'object'
          desc: '源对象，数量不限'
       }]
+
       return:
          name: 'newObject'
          type: 'object'
          desc: '归并后形成的新对象'
+         
       throws: [{
          name: 'INVALID_TYPE'
          desc: '混进了不是 object 的参数'

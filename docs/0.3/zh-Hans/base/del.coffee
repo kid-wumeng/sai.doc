@@ -7,6 +7,7 @@ module.exports =
    signs: [{
       name: 'del(data, path)'
       desc: '删除 data 中路径为 path 的属性值'
+
       params: [{
          name: 'data'
          type: 'object'
@@ -15,6 +16,7 @@ module.exports =
          type: 'string'
          desc: '事先无需检测属性存在与否，即使不存在，也不会有任何副作用'
       }]
+
       throws: [{
          name: 'INVALID_TYPE'
          desc: 'data 或 path 类型不正确'

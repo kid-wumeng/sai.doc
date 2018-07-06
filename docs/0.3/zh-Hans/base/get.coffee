@@ -7,6 +7,7 @@ module.exports =
    signs: [{
       name: 'get(data, path, [defaultValue])'
       desc: '获取 data 中路径为 path 的属性值'
+
       params: [{
          name: 'data'
          type: 'object'
@@ -19,10 +20,12 @@ module.exports =
          desc: '若发现取值是 undefined，则会返回 defaultValue（ 如果设置过 ）'
          optional: true
       }]
+
       return:
          name: 'value'
          type: '*'
          desc: '取出的值'
+
       throws: [{
          name: 'INVALID_TYPE'
          desc: 'data 或 path 类型不正确'

@@ -7,11 +7,13 @@ module.exports =
    signs: [{
       name: 'isNil(value)'
       desc: '是否为 undefined 或 null ？'
+
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
       }]
+      
       return:
          name: 'result'
          type: 'boolean'

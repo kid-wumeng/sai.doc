@@ -7,6 +7,7 @@ module.exports =
    signs: [{
       name: 'isN(value, [zero])'
       desc: '是否为有效、有穷的*自然数* ？*默认 0 是自然数*'
+
       params: [{
          name: 'value'
          type: '*'
@@ -17,6 +18,7 @@ module.exports =
          desc: '0 是不是自然数 ？默认值：true'
          optional: true
       }]
+      
       return:
          name: 'result'
          type: 'boolean'
