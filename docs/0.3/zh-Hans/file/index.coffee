@@ -7,9 +7,12 @@ module.exports =
    items: [
       '文件'
       require('./isFile')
+      require('./readFile')
+      require('./readText')
+      require('./readJSON')
 
       '目录'
       require('./isDir')
-      
+
       '文件 & 目录'
    ]

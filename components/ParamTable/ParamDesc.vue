@@ -23,6 +23,10 @@
          line-height: 22px;
          font-size: 14px;
 
+         > * {
+            margin-bottom: 6px;
+         }
+
          li {
             margin-bottom: 10px;
             margin-left: 5px;

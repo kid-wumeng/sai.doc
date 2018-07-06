@@ -40,32 +40,17 @@ sai.type(data)
 # File & Directory
 
 
-await sai.readFile(path, encoding)
+await sai.readFile(path, 'utf8')
 await sai.readDir(path)
+
+await sai.readText(path)
+await sai.read(path)
 
 await sai.writeFile(path, data)
 
-await sai.statFile(path)
-await sai.statDir(path)
-
-await sai.countFile(path)
-await sai.countDir(path)
-await sai.countFileOrDir(path)
-
-await sai.ensureFile(path)
-await sai.ensureDir(path)
-
-await sai.createFile(path)
 await sai.createDir(path)
+
+await sai.appendFile(path)
 
 await sai.deleteFile(path)
 await sai.deleteDir(path)
-await sai.deleteFileOrDir(path)
-
-await sai.moveFile(fromPath, toPath)
-await sai.moveDir(fromPath, toPath)
-await sai.moveFileOrDir(fromPath, toPath)
-
-await sai.copyFile(fromPath, toPath)
-await sai.copyDir(fromPath, toPath)
-await sai.copyFileOrDir(fromPath, toPath)

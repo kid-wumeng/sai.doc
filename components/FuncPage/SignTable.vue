@@ -2,7 +2,7 @@
    .SignTable(v-if="sign")
       ParamTable.params(v-if="params", :params="params")
       ParamTable.return(v-if="result", :params="[result]" title="return")
-      ParamTable.throws(v-if="throws", :params="throws"   title="throws")
+      ParamTable.errors(v-if="errors", :params="errors"   title="errors")
 </template>
 
 
@@ -20,7 +20,7 @@
       computed:
          params: -> @sign.params
          result: -> @sign.return
-         throws: -> @sign.throws
+         errors: -> @sign.errors
 </script>
 
 
@@ -36,14 +36,18 @@
             background-color: rgba(251, 251, 251, 1);
          }
 
-         .throws {
+         .errors {
             .ParamItem {
                .ParamName {
-                  line-height: 26px;
+                  line-height: 23px;
                   font-weight: 600;
-                  font-size: 14px;
-                  color: lighten(red, 24%);
+                  font-size: 13px;
+                  color: lighten(red, 26%);
                   text-shadow: none;
+               }
+
+               .ParamDesc {
+                  line-height: 23px;
                }
             }
          }

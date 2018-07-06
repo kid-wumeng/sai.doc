@@ -18,7 +18,7 @@ module.exports =
          type: '* | undefined'
          desc: '最后一个元素'
 
-      throws: [{
+      errors: [{
          name: 'INVALID_TYPE'
          desc: 'array 类型不正确'
       }]

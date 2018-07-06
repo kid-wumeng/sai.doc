@@ -39,7 +39,7 @@ module.exports =
          type: 'number'
          desc: '数据的长度、成员数量等'
 
-      throws: [{
+      errors: [{
          name: 'INVALID_TYPE'
          desc: 'data 不是预期的类型'
       }]
@@ -81,7 +81,7 @@ module.exports =
          type: 'number'
          desc: '数据的长度、成员数量等'
 
-      throws: [{
+      errors: [{
          name: 'INVALID_TYPE'
          desc: 'data 不是预期的类型'
       }]

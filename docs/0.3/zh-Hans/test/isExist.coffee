@@ -18,7 +18,7 @@ module.exports =
          name: 'result'
          type: 'boolean'
          
-      throws: [{
+      errors: [{
          name: 'INVALID_TYPE'
          desc: '参考 [sai.len](/len)'
       }]

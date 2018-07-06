@@ -12,6 +12,7 @@ module.exports =
       params: [{
          name: 'path'
          type: 'string'
+         desc: '文件路径'
       }]
 
       return:
@@ -28,6 +29,6 @@ module.exports =
       # 基本用法
 
       ```js
-      result = await sai.isFile('/assets/images/bg.jpg')
+      result = await sai.isFile('/assets/test.jpg')
       ```
    """
