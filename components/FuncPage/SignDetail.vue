@@ -20,11 +20,9 @@
 <style lang="less">
    .FuncPage {
       .SignDetail {
-         line-height: 28px;
-         font-size: 15px;
-
-         > * {
-            margin-bottom: 0;
+         > :not(h1, h2, h3, h4, h5, h6, pre) {
+            margin-left: 12px;
+            margin-right: 12px;
          }
       }
    }

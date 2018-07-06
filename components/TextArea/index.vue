@@ -53,11 +53,11 @@
       > h3,
       > h4,
       > h5,
-      > h6           { margin-bottom: 20px }
-      > p            { margin-bottom: 6px }
-      > blockquote   { margin-bottom: 6px }
-      > ul           { margin-bottom: 6px }
-      > ol           { margin-bottom: 6px }
+      > h6           { margin-bottom: 24px }
+      > p            { margin-bottom: 14px }
+      > blockquote   { margin-bottom: 14px }
+      > ul           { margin-bottom: 14px }
+      > ol           { margin-bottom: 14px }
       > *:last-child { margin-bottom: 0 !important }
 
       > h1,
@@ -67,9 +67,11 @@
       > h5,
       > h6 {
          font-weight: 600;
-         font-size: 20px;
+         font-size: 19px;
+         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
          &:not(:first-child) {
-            margin-top: 60px;
+            margin-top: 80px;
          }
       }
 
@@ -81,6 +83,7 @@
 
       > ul,
       > ol {
+         margin-top: 6px;
          margin-left: 2.4em;
          li {
             line-height: 26px;
@@ -121,8 +124,7 @@
       }
 
       pre {
-         margin-top: 13px;
-         margin-bottom: 13px;
+         margin-bottom: 12px;
          padding-top: 9px;
          padding-bottom: 10px;
          padding-left: 17px;
