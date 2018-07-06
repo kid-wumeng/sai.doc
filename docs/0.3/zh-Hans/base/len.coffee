@@ -12,23 +12,23 @@ module.exports =
          name: 'data'
          type: 'object'
          desc: """
-         希望测量的数据，预期的类型：
+            希望测量的数据，预期的类型：
 
-         * Array, Array-like
-         * Set, Map
-         * 字符串
-         * 对象
+            * Array, Array-like
+            * Set, Map
+            * 字符串
+            * 对象
          """
       },{
          name: 'mode'
          type: 'string'
          desc: """
-         字符串长度计算模式，默认值：*length*
+            字符串长度计算模式，默认值：*length*
 
-         * *length* - data.length
-         * *cjk* - 中日韩字符占 2 位，其余占 1 位
+            * *length* - data.length
+            * *cjk* - 中日韩字符占 2 位，其余占 1 位
 
-         *mode 仅在 data 为字符串时可用*
+            *mode 仅在 data 为字符串时可用*
          """
          optional: true
       }]
@@ -47,26 +47,26 @@ module.exports =
          name: 'data'
          type: 'object'
          desc: """
-         希望测量的数据，预期的类型：
+            希望测量的数据，预期的类型：
 
-         * Array, Array-like
-         * Set, Map
-         * 字符串
-         * 对象
+            * Array, Array-like
+            * Set, Map
+            * 字符串
+            * 对象
          """
       },{
          name: 'callback'
          type: 'function'
          desc: """
-         计量器
+            计量器
 
-         以下类型使用 callback(item, i)
+            以下类型使用 callback(item, i)
 
-         * Array, Array-like
-         * Set, Map
-         * 字符串
+            * Array, Array-like
+            * Set, Map
+            * 字符串
 
-         对象使用 callback(name, value)
+            对象使用 callback(name, value)
          """
       }]
       return:

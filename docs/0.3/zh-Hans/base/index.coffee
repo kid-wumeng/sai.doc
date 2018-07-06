@@ -9,10 +9,10 @@ module.exports =
       require('./len')
 
       '对象'
+      require('./has')
       require('./get')
       require('./set')
       require('./del')
-      require('./has')
       require('./merge')
 
       '数组'

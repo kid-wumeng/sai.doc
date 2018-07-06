@@ -67,7 +67,7 @@
       > h5,
       > h6 {
          font-weight: 500;
-         font-size: 19px;
+         font-size: 18px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 
          &:not(:first-child) {
