@@ -37,7 +37,7 @@
          > .Row {
             > .Column {
                flex: none;
-               width: 35%;
+               width: 45%;
                line-height: 22px;
                padding: @padding;
 

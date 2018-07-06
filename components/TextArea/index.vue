@@ -99,7 +99,7 @@
          font-weight: 500;
          font-style: normal;
          color: #000;
-         text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+         text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
          user-select: all;
       }
 
