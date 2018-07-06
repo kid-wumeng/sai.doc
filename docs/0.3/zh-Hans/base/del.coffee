@@ -34,6 +34,8 @@ module.exports =
          }
       }
 
+
+
       sai.del(data, 'a.b.0')  // 点号语法
       sai.del(data, 'a.b[0])  // 括号语法
 
@@ -42,6 +44,8 @@ module.exports =
       //       b: [undefined, 'item2']
       //    }
       // }
+
+
 
       sai.del(data, 'a.b')
 

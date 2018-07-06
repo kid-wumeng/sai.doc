@@ -20,10 +20,11 @@
 <style lang="less">
    .ParamTable {
       .ParamDesc {
-         text-align: left;
-         word-break: keep-all;
+         line-height: 22px;
+         font-size: 14px;
 
          li {
+            margin-bottom: 10px;
             margin-left: 5px;
             > * {
                margin-left: -6px;

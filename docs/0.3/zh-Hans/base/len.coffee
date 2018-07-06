@@ -11,7 +11,7 @@ module.exports =
 
       params: [{
          name: 'data'
-         type: 'object / string'
+         type: 'object | string'
          desc: """
             期望测量的数据。预期的类型：
 
@@ -72,7 +72,7 @@ module.exports =
             * Set, Map
             * 字符串
 
-            其余对象使用 callback(name, value)
+            其它对象使用 callback(name, value)
          """
       }]
 
@@ -137,11 +137,11 @@ module.exports =
             type: 'cat'
          }
       }
-      sai.len(data)  // => 3，不会计入孙代的数量
+      sai.len(data)    // => 3，不会计入孙代的数量
 
 
       date = new Date
-      sai.len(date)  // => 0，因为 date 上的属性都是不可枚举的
+      sai.len(date)    // => 0，因为 date 上的属性都是不可枚举的
       ```
 
       # 使用自定义的计量器

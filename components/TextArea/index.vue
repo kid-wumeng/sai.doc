@@ -42,11 +42,9 @@
 
 <style lang="less">
    .TextArea {
-      line-height: 22px;
-      text-align: justify;
+      line-height: 23px;
       font-size: 14px;
-      color: #273340;
-      word-break: break-all;
+      color: #161616;
 
       > h1,
       > h2,
@@ -66,8 +64,8 @@
       > h4,
       > h5,
       > h6 {
-         font-weight: 500;
-         font-size: 18px;
+         font-weight: 600;
+         font-size: 20px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 
          &:not(:first-child) {
@@ -86,15 +84,22 @@
          margin-top: 6px;
          margin-left: 2.4em;
          li {
-            line-height: 26px;
+            line-height: 19px;
             list-style-position: inside;
             text-indent: 0;
+            margin-bottom: 16px;
+
+            &:last-child {
+               margin-bottom: 0 !important;
+            }
          }
       }
 
       em {
-         font-weight: 600;
+         font-weight: 500;
          font-style: normal;
+         color: #000;
+         text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
          user-select: all;
       }
 
@@ -105,21 +110,18 @@
       }
 
       a {
-         font-weight: 600;
-         color: #7284a8;
+         font-weight: 500;
+         color: lighten(#2f54eb, 10%);
          text-decoration: underline;
       }
 
-      p {
+      :not(pre) {
          code {
             margin: 0 4px;
-            padding: 3px 6px;
-            font-family: "PT Mono";
-            font-size: 13px;
-            color: #F92672;
-            background-color: #F8F8F8;
-            border-radius: 2px;
+            font-family: "Ubuntu";
+            color: #728fcb;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            user-select: all;
          }
       }
 
@@ -136,9 +138,9 @@
          code {
             padding: 3px;
             display: block;
-            line-height: 22px;
+            line-height: 23px;
             font-family: "Monaco";
-            font-size: 13px;
+            font-size: 14px;
             color: #A2AEBA;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             overflow: scroll;
@@ -147,8 +149,7 @@
             .token.prolog,
             .token.doctype,
             .token.cdata {
-               font-style: italic;
-               color: #A2AEBA;
+               color: #b6ad9a;
             }
 
             .token.punctuation {
@@ -167,7 +168,7 @@
 
             .token.property,
             .token.function {
-               color: #272E3D;
+               color: #b29762;
             }
 
             .token.tag-id,
@@ -232,18 +233,9 @@
                cursor: help;
             }
 
-            .line-numbers .line-numbers-rows {
-               border-right-color: #ece8de;
-            }
-
-            .line-numbers-rows > span:before {
-               color: #cdc4b1;
-            }
-
-            .line-highlight {
-               background: rgba(45, 32, 6, 0.2);
-               background: -webkit-linear-gradient(left, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));
-               background: linear-gradient(to right, rgba(45, 32, 6, 0.2) 70%, rgba(45, 32, 6, 0));
+            pre > code.highlight {
+               outline: .4em solid #896724;
+               outline-offset: .4em;
             }
          }
       }

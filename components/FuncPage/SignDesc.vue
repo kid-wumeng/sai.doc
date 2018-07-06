@@ -20,7 +20,6 @@
 <style lang="less">
    .FuncPage {
       .SignDesc {
-         text-align: left;
          text-indent: 2em;
 
          > * {

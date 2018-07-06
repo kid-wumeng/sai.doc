@@ -6,7 +6,12 @@ module.exports =
 
    signs: [{
       name: 'pop(array, [count])'
-      desc: '从 array 的末尾弹出 count 个 item'
+      desc: '从 array 的末尾弹出 item'
+      more: """
+         * 本函数是 Array.prototype.pop() 的拓展
+         * 支持一次弹出多个 item
+         * *会改变原始 Array*
+      """
 
       params: [{
          name: 'array'

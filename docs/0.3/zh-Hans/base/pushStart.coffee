@@ -6,7 +6,13 @@ module.exports =
 
    signs: [{
       name: 'pushStart(array, itemOrArrays...)'
-      desc: '向 array 的开头添加 item 或 array'
+      desc: '向 array 的开头追加 item'
+      more: """
+         * 本函数是`[].unshift`的拓展
+         * 可一次追加多个 item / Array
+         * 若追加 Array，会自动拆出 item（ 类似 [sai.concat](/concat) ）
+         * *会改变原始 Array*
+      """
 
       params: [{
          name: 'array'
@@ -15,13 +21,13 @@ module.exports =
       },{
          name: 'itemOrArrays...'
          type: '* | Array'
-         desc: '期望添加的 item 或 array'
+         desc: '要添加的 item 或 array'
       }]
 
       return:
          name: 'length'
          type: 'number'
-         desc: '添加后 array 的长度'
+         desc: '添加后，array 的长度'
 
       throws: [{
          name: 'INVALID_TYPE'
@@ -34,31 +40,31 @@ module.exports =
       # 添加 item
 
       ```js
-      array = ['a', 'b']
-      count = sai.pushStart(array, 'c', 'd')
+      arr = ['a', 'b']
+      len = sai.pushStart(arr, 'c', 'd')
 
-      // array = ['c', 'd', 'a', 'b']
-      // count = 4
+      // arr = ['c', 'd', 'a', 'b']
+      // len = 4
       ```
 
-      # 添加 array
+      # 添加 Array
 
       ```js
-      array = ['a', 'b']
-      count = sai.pushStart(array, ['c', 'd'], ['e', 'f'])
+      arr = ['a', 'b']
+      len = sai.pushStart(arr, ['c', 'd'], ['e', 'f'])
 
-      // array = ['c', 'd', 'a', 'b', 'e', 'f']
-      // count = 6
+      // arr = ['c', 'd', 'a', 'b', 'e', 'f']
+      // len = 6
       ```
 
       # 混合添加
 
       ```js
-      array = ['a', 'b']
-      count = sai.pushStart(array, 'c', ['d', 'e'])
+      arr = ['a', 'b']
+      len = sai.pushStart(arr, 'c', ['d', 'e'])
 
-      // array = ['c', 'd', 'e', 'a', 'b']
-      // count = 5
+      // arr = ['c', 'd', 'e', 'a', 'b']
+      // len = 5
       ```
 
       本函数会影响目标数组，若不希望如此，可以尝试 [sai.concat](/concat)

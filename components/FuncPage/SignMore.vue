@@ -20,11 +20,11 @@
 <style lang="less">
    .FuncPage {
       .SignMore {
-         text-align: left;
-         text-indent: 2em;
-
-         > * {
-            margin-bottom: 0;
+         ul, ol {
+            margin-left: 0;
+            li {
+               margin-bottom: 18px;
+            }
          }
       }
    }
