@@ -10,14 +10,14 @@ module.exports =
       more: '根据 data 类型的不同，会运用不同的策略'
       params: [{
          name: 'data'
-         type: 'object'
+         type: 'object / string'
          desc: """
-            希望测量的数据，预期的类型：
+            期望测量的数据。预期的类型：
 
             * Array, Array-like
             * Set, Map
             * 字符串
-            * 对象
+            * 拥有可枚举属性的对象
          """
       },{
          name: 'mode'
@@ -45,14 +45,14 @@ module.exports =
       desc: '测量 data 的大小，由 callback 决定每个成员的大小'
       params: [{
          name: 'data'
-         type: 'object'
+         type: 'object / object'
          desc: """
-            希望测量的数据，预期的类型：
+            期望测量的数据。预期的类型：
 
             * Array, Array-like
             * Set, Map
             * 字符串
-            * 对象
+            * 拥有可枚举属性的对象
          """
       },{
          name: 'callback'
@@ -66,7 +66,7 @@ module.exports =
             * Set, Map
             * 字符串
 
-            对象使用 callback(name, value)
+            其余对象使用 callback(name, value)
          """
       }]
       return:
@@ -173,5 +173,12 @@ module.exports =
       sai.len(fruitPrices, (name, value) => value)
 
       // => 7
+      ```
+
+      # data 为 undefined 或 null 时一律返回 0
+
+      ```js
+      sai.len(undefined, 'cjk')   // => 0
+      sai.len(null, (item) => 1)  // => 0
       ```
    """

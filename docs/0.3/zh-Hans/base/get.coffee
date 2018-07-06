@@ -23,6 +23,10 @@ module.exports =
          name: 'value'
          type: '*'
          desc: '取出的值'
+      throws: [{
+         name: 'INVALID_TYPE'
+         desc: 'data 或 path 类型不正确'
+      }]
    }]
 
 

@@ -13,7 +13,11 @@ module.exports =
       },{
          name: 'path'
          type: 'string'
-         desc: '无需事先判断属性是否存在，静默实施，存不存在无所谓'
+         desc: '事先无需检测属性存在与否，即使不存在，也不会有任何副作用'
+      }]
+      throws: [{
+         name: 'INVALID_TYPE'
+         desc: 'data 或 path 类型不正确'
       }]
    }]
 
