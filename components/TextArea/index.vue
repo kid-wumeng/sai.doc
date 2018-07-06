@@ -66,9 +66,9 @@
       > h4,
       > h5,
       > h6 {
-         font-weight: 600;
+         font-weight: 500;
          font-size: 19px;
-         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 
          &:not(:first-child) {
             margin-top: 80px;

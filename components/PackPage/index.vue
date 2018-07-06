@@ -48,7 +48,6 @@
 <style lang="less">
    .PackPage {
       background-color: white;
-      overflow: scroll;
 
       > .PackDesc {
          margin-top: 20px;

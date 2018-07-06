@@ -1,17 +1,46 @@
 module.exports =
 
-   name: 'len(data, [mode])'
 
-   desc: '测量 data 的大小'
+   name: 'len'
 
-   intro: """
-      根据 data 类型的不同，会运用不同的策略：
 
-      * 字符串      - length | 或由指定 mode 而得到结果
-      * Array-like - length
-      * Map, Set   - size
-      * 对象        - 可枚举属性的数量
-   """
+   signs: [{
+      name: 'len(data, [mode])'
+      desc: '测量 data 的大小'
+      more: '根据 data 类型的不同，会运用不同的策略'
+      params: [{
+         name: 'data'
+         type: 'object'
+         desc: '希望测量的数据'
+      },{
+         name: 'mode'
+         type: 'string'
+         desc: ''
+         optional: true
+      }]
+      return:
+         name: 'length | size'
+         type: 'number'
+         desc: '数据的长度、成员数量等'
+   },{
+      name: 'len(data, callback)'
+      desc: '测量 data 的大小'
+      more: '根据 data 类型的不同，会运用不同的策略'
+      params: [{
+         name: 'data'
+         type: 'object'
+         desc: '希望测量的数据'
+      },{
+         name: 'callback'
+         type: 'function'
+         desc: '计数器'
+      }]
+      return:
+         name: 'length | size'
+         type: 'number'
+         desc: '数据的长度、成员数量等'
+   }]
+
 
    detail: """
       # 测量 Array 与 Array-like 长度
@@ -68,25 +97,4 @@ module.exports =
       date = new Date
       sai.len(date)  // => 0，因为 date 上的属性都是不可枚举的
       ```
-
    """
-
-   params: [{
-      name: 'data'
-      type: 'object'
-      desc: '数据对象'
-   },{
-      name: 'path'
-      type: 'string | number | array'
-      desc: '路径或下标'
-   },{
-      name: 'defaultValue'
-      type: '*'
-      desc: '当取值不存在时返回，默认值：undefined'
-      optional: true
-   }]
-
-   return:
-      name: 'value'
-      type: '*'
-      desc: '取出的值'

@@ -28,9 +28,9 @@
 <style lang="less">
    .FuncPage {
       .SignTable {
-         border: 1px solid lighten(#A2AEBA, 20%);
+         border: 1px solid lighten(#A2AEBA, 18%);
          border-radius: 2px;
-         box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);
+         box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
          overflow: hidden;
 
          .return {

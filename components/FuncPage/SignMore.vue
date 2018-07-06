@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.SignDetail(:text="sign.detail")
+   TextArea.SignMore(:text="sign.more")
 </template>
 
 
@@ -19,10 +19,10 @@
 
 <style lang="less">
    .FuncPage {
-      .SignDetail {
-         > :not(h1, h2, h3, h4, h5, h6, pre) {
-            margin-left: 12px;
-            margin-right: 12px;
+      .SignMore {
+         text-indent: 2em;
+         > * {
+            margin-bottom: 0;
          }
       }
    }

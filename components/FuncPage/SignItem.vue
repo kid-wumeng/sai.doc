@@ -1,12 +1,10 @@
 <template lang="jade">
-   .SignItem
-      Row
-         Column
-            SignName(:sign="sign")
-            SignDesc(:sign="sign")
-            SignIntro(:sign="sign")
-         SignTable(:sign="sign")
-      SignDetail(:sign="sign")
+   Row.SignItem
+      Column
+         SignName(:sign="sign")
+         SignDesc(:sign="sign")
+         SignMore(:sign="sign")
+      SignTable(:sign="sign")
 </template>
 
 
@@ -14,13 +12,12 @@
 <script lang="coffee">
    module.exports =
       components:
-         'Row':        require('~/components/Row').default
-         'Column':     require('~/components/Column').default
-         'SignName':   require('./SignName').default
-         'SignDesc':   require('./SignDesc').default
-         'SignIntro':  require('./SignIntro').default
-         'SignTable':  require('./SignTable').default
-         'SignDetail': require('./SignDetail').default
+         'Row':       require('~/components/Row').default
+         'Column':    require('~/components/Column').default
+         'SignName':  require('./SignName').default
+         'SignDesc':  require('./SignDesc').default
+         'SignMore':  require('./SignMore').default
+         'SignTable': require('./SignTable').default
 
       props:
          'sign':
@@ -33,29 +30,22 @@
 <style lang="less">
    .FuncPage {
       .SignItem {
-         > .Row {
-            > .Column {
-               flex: none;
-               width: 40%;
+         > .Column {
+            flex: none;
+            width: 40%;
 
-               > .SignDesc {
-                  margin-top: 16px;
-               }
-
-               > .SignIntro {
-                  margin-top: 5px;
-               }
+            > .SignDesc {
+               margin-top: 16px;
             }
 
-            > .SignTable {
-               flex: auto;
-               margin-left: 36px;
+            > .SignMore {
+               margin-top: 5px;
             }
          }
 
-         > .SignDetail {
-            margin-top: 70px;
-            width: 60%;
+         > .SignTable {
+            flex: auto;
+            margin-left: 36px;
          }
       }
    }
