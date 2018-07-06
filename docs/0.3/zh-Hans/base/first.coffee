@@ -6,7 +6,7 @@ module.exports =
 
    signs: [{
       name: 'first(array)'
-      desc: '获取 array 的第一个 item'
+      desc: '获取 array 的第一个元素'
 
       params: [{
          name: 'array'
@@ -14,8 +14,14 @@ module.exports =
       }]
 
       return:
-         name: 'first\'s item'
-         type: '*'
+         name: 'item'
+         type: '* | undefined'
+         desc: '第一个元素'
+
+      throws: [{
+         name: 'INVALID_TYPE'
+         desc: 'array 类型不正确'
+      }]
    }]
 
 

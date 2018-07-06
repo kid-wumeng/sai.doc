@@ -24,8 +24,8 @@ module.exports =
       return:
          name: 'newObject'
          type: 'object'
-         desc: '归并后形成的新对象'
-         
+         desc: '归并之后的新对象'
+
       throws: [{
          name: 'INVALID_TYPE'
          desc: '混进了不是 object 的参数'

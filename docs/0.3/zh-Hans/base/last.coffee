@@ -6,7 +6,7 @@ module.exports =
 
    signs: [{
       name: 'last(array)'
-      desc: '获取 array 的最后一个 item'
+      desc: '获取 array 的最后一个元素'
 
       params: [{
          name: 'array'
@@ -14,8 +14,14 @@ module.exports =
       }]
 
       return:
-         name: 'last\'s item'
-         type: '*'
+         name: 'item'
+         type: '* | undefined'
+         desc: '最后一个元素'
+
+      throws: [{
+         name: 'INVALID_TYPE'
+         desc: 'array 类型不正确'
+      }]
    }]
 
 
