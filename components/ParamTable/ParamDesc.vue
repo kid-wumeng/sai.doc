@@ -21,6 +21,7 @@
    .ParamTable {
       .ParamDesc {
          text-align: left;
+         word-break: keep-all;
 
          li {
             margin-left: 5px;

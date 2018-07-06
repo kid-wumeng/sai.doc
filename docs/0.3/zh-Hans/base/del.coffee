@@ -13,6 +13,7 @@ module.exports =
       },{
          name: 'path'
          type: 'string'
+         desc: '无需事先判断属性是否存在，静默实施，存不存在无所谓'
       }]
    }]
 

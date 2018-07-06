@@ -13,6 +13,7 @@ module.exports =
       },{
          name: 'path'
          type: 'string'
+         desc: '*若对应属性不存在，则会一路创建*'
       },{
          name: 'value'
          type: '*'
