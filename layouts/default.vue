@@ -13,7 +13,6 @@
 
 
 <style lang="less">
-
    @font-face {
       font-family: "Lato";
       font-weight: 400;
