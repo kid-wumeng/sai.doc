@@ -22,7 +22,7 @@
    .PackPage {
       .UnitList {
          > .UnitItem {
-            margin-bottom: 60px;
+            margin-bottom: 48px;
          }
       }
    }

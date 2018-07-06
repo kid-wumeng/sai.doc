@@ -31,7 +31,6 @@
          border: 1px solid lighten(#A2AEBA, 18%);
          border-radius: 2px;
          box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
-         overflow: hidden;
 
          .return {
             background-color: rgba(251, 251, 251, 1);

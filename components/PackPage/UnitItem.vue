@@ -36,7 +36,7 @@
    .PackPage {
       .UnitItem {
          .UnitName {
-            margin-bottom: 20px;
+            margin-bottom: 16px;
          }
       }
    }

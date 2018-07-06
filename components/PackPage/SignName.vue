@@ -18,10 +18,10 @@
    .PackPage {
       .SignName {
          flex: none;
-         padding: 10px 16px;
+         padding: 8px 16px;
          line-height: 22px;
          font-weight: 400;
-         font-size: 14px;
+         font-size: 13px;
          color: #273340;
          letter-spacing: 0.3px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
