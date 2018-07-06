@@ -127,10 +127,7 @@
 
       pre {
          margin-bottom: 12px;
-         padding-top: 9px;
-         padding-bottom: 10px;
-         padding-left: 17px;
-         padding-right: 17px;
+         padding: 16px 20px;
          text-indent: 0;
          background-color: rgba(250, 250, 250, 1);
          border-radius: 3px;
@@ -168,7 +165,8 @@
 
             .token.property,
             .token.function {
-               color: #b29762;
+               font-weight: 600;
+               color: #445669;
             }
 
             .token.tag-id,

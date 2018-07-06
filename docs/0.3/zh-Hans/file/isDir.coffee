@@ -1,12 +1,12 @@
 module.exports =
 
 
-   name: 'isFile'
+   name: 'isDir'
 
 
    signs: [{
-      name: 'isFile( path )'
-      desc: '是文件吗 ？'
+      name: 'isDir( path )'
+      desc: '是目录吗 ？'
       async: true
 
       params: [{
@@ -19,7 +19,7 @@ module.exports =
          type: 'boolean'
          desc: """
             * 资源不存在，返回 false
-            * 资源是目录，返回 false
+            * 资源是文件，返回 false
          """
    }]
 
@@ -28,6 +28,6 @@ module.exports =
       # 基本用法
 
       ```js
-      result = await sai.isFile('/assets/images/bg.jpg')
+      result = await sai.isDir('/assets/images')
       ```
    """

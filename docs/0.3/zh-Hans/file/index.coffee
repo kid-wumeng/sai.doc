@@ -5,6 +5,11 @@ module.exports =
    desc: ''
 
    items: [
-      '通用'
-      '对象'
+      '文件'
+      require('./isFile')
+
+      '目录'
+      require('./isDir')
+      
+      '文件 & 目录'
    ]

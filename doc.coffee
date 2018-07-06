@@ -39,8 +39,6 @@ sai.type(data)
 
 # File & Directory
 
-await sai.isFile(path)
-await sai.isDir(path)
 
 await sai.readFile(path, encoding)
 await sai.readDir(path)

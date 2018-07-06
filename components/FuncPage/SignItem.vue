@@ -32,7 +32,7 @@
       .SignItem {
          > .Column {
             flex: none;
-            width: 50%;
+            width: 40%;
 
             > .SignDesc {
                margin-top: 30px;
