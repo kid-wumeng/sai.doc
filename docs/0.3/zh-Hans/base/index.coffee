@@ -1,6 +1,6 @@
 module.exports =
 
-   name: '基础'
+   name: '基石'
    path: 'base'
 
    desc: """

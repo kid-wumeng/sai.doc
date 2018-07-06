@@ -68,6 +68,7 @@
 
       .SideLv1 {
          position: absolute;
+         z-index:  200;
          top:      0;
          left:     0;
          width:    @side-lv1-width;
@@ -75,6 +76,7 @@
 
       .SideLv2 {
          position: absolute;
+         z-index:  100;
          top:      0;
          left:     @side-lv1-width;
          width:    @side-lv2-width;
