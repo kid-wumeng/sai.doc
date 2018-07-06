@@ -29,7 +29,11 @@ module.exports =
       require('./isPlainObject')
       require('./isNil')
 
-      '值检测'
+      '格式判定'
+      require('./isEmail')
+      require('./isURL')
+
+      '数据检测'
       require('./isExist')
       require('./isEmpty')
    ]

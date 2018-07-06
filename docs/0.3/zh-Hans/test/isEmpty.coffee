@@ -10,7 +10,7 @@ module.exports =
       params: [{
          name: 'data'
          type: '*'
-         desc: '希望检测的数据，类型参考 [sai.len](/len)'
+         desc: '期望检测的数据，类型参考 [sai.len](/len)'
       }]
       return:
          name: 'result'

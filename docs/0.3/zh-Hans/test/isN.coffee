@@ -10,7 +10,7 @@ module.exports =
       params: [{
          name: 'value'
          type: '*'
-         desc: '希望判定的值'
+         desc: '期望判定的值'
       },{
          name: 'zero'
          type: 'boolean'
@@ -51,7 +51,7 @@ module.exports =
 
       # 0 判定
 
-      若希望 0 不计入自然数：
+      若期望 0 不计入自然数：
 
       ```js
       sai.isN(0, zero = false)  // => false

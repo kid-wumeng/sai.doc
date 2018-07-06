@@ -17,7 +17,7 @@ module.exports =
       },{
          name: 'value'
          type: '*'
-         desc: '希望设置的值'
+         desc: '期望设置的值'
       }]
       throws: [{
          name: 'INVALID_TYPE'

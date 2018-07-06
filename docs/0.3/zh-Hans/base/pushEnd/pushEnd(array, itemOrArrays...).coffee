@@ -39,7 +39,7 @@ module.exports =
       // count = 5
       ```
 
-      本函数会影响目标数组，若不希望如此，可以尝试 [sai.concat](/concat)
+      本函数会影响目标数组，若不期望如此，可以尝试 [sai.concat](/concat)
    """
 
    params: [{
@@ -49,7 +49,7 @@ module.exports =
    },{
       name: 'itemOrArrays...'
       type: '* | *[]'
-      desc: '希望添加的 item 或 array'
+      desc: '期望添加的 item 或 array'
    }]
 
    return:
