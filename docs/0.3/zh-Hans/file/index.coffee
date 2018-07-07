@@ -8,6 +8,9 @@ module.exports =
       '基础'
       require('./isFile')
       require('./isDir')
+      require('./readDir')
+      require('./ensureDir')
+      require('./emptyDir')
 
       '读文件'
       require('./readFile')
@@ -22,7 +25,4 @@ module.exports =
       require('./writeJSON')
       require('./writeCSON')
       require('./writeYAML')
-
-      '操纵目录'
-      require('./readDir')
    ]

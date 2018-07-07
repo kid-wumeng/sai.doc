@@ -33,7 +33,7 @@
       position: relative;
 
       .ParamItem {
-         border-top: 1px solid lighten(#A2AEBA, 27%);
+         border-top: 1px solid lighten(#A2AEBA, 26%);
       }
    }
 </style>

@@ -27,7 +27,7 @@
          }
 
          li {
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             margin-left: 5px;
             > * {
                margin-left: -6px;

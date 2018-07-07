@@ -39,7 +39,7 @@
       }
 
       > .FuncDesc {
-         margin-top: 55px;
+         margin-top: 54px;
       }
 
       > hr {

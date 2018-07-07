@@ -55,5 +55,12 @@
       overflow: scroll;
       border-right: 1px solid lighten(#A2AEBA, 24%);
       box-shadow: 1px 0 5px rgba(0, 0, 0, 0.08);
+
+      > .item:not(:first-child) {
+         > .UnitItem {
+            margin-top: 36px;
+            border-top: 1px solid lighten(#A2AEBA, 26%);
+         }
+      }
    }
 </style>

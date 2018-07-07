@@ -33,14 +33,5 @@ sai.type(data)
 
 
 
-await sai.writeFile(path, data)
-await sai.writeText(path, data)
-
-await sai.writeJSON(path, data)
-await sai.writeCSON(path, data)
-await sai.writeYAML(path, data)
-
-await sai.createDir(path)
-
 await sai.deleteFile(path)
 await sai.deleteDir(path)

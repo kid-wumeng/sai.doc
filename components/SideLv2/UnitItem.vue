@@ -21,7 +21,7 @@
    .SideLv2 {
       .UnitItem {
          display: block;
-         padding: 10px 20px;
+         padding: 16px 20px;
          text-align: center;
          font-weight: 600;
          font-size: 15px;

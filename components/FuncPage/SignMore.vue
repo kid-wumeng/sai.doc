@@ -20,8 +20,15 @@
 <style lang="less">
    .FuncPage {
       .SignMore {
+         line-height: 20px;
+         font-size: 14px;
+
          ul, ol {
-            margin-left: 0;
+            margin-left: 5px;
+
+            li {
+               margin-bottom: 8px;
+            }
          }
       }
    }
