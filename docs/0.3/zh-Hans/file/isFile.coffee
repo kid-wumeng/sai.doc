@@ -3,7 +3,7 @@ module.exports =
 
    name: 'isFile'
 
-   
+
    desc: """
       ```js
       result = await sai.isFile('/assets/test.jpg')
@@ -12,9 +12,9 @@ module.exports =
 
 
    signs: [{
+      async: true
       name: 'isFile( path )'
       desc: '是文件吗 ？'
-      async: true
 
       params: [{
          name: 'path'

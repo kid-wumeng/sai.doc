@@ -12,10 +12,10 @@ module.exports =
 
 
    signs: [{
+      async: true
       name: 'readCSON( path, [encoding] )'
       desc: '读取文件，返回 CSON 对象'
       more: '关于 [CoffeeScript-Object-Notation](https://www.npmjs.com/package/cson) 的介绍'
-      async: true
 
       params: [{
          name: 'path'

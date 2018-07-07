@@ -12,9 +12,9 @@ module.exports =
 
 
    signs: [{
+      async: true
       name: 'readJSON( path, [encoding] )'
       desc: '读取文件，返回 JSON 对象'
-      async: true
 
       params: [{
          name: 'path'

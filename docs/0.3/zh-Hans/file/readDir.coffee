@@ -12,9 +12,9 @@ module.exports =
 
 
    signs: [{
+      async: true
       name: 'readDir( path )'
       desc: '读取目录下的所有子资源信息，返回一个 Array'
-      async: true
 
       params: [{
          name: 'path'

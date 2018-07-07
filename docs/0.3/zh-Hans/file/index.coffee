@@ -9,6 +9,8 @@ module.exports =
       require('./isFile')
       require('./readFile')
       require('./readText')
+      require('./writeFile')
+      require('./writeText')
 
       '目录'
       require('./isDir')

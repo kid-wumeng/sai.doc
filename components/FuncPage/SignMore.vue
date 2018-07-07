@@ -22,9 +22,6 @@
       .SignMore {
          ul, ol {
             margin-left: 0;
-            li {
-               margin-bottom: 18px;
-            }
          }
       }
    }

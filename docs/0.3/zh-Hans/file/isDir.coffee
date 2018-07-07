@@ -12,9 +12,9 @@ module.exports =
 
 
    signs: [{
+      async: true
       name: 'isDir( path )'
       desc: '是目录吗 ？'
-      async: true
 
       params: [{
          name: 'path'

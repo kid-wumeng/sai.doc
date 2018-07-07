@@ -12,9 +12,9 @@ module.exports =
 
 
    signs: [{
+      async: true
       name: 'readFile( path )'
       desc: '读取文件，返回 Buffer'
-      async: true
 
       params: [{
          name: 'path'
