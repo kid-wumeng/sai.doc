@@ -20,7 +20,7 @@
 <style lang="less">
    .ParamTable {
       .ParamType {
-         font-size: 13px;
+         font-size: 14px;
          color: #A2AEBA;
          word-break: break-all;
          user-select: all;

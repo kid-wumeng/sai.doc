@@ -29,8 +29,6 @@ sai.in(datas)
 
 
 
-sai.isID(start, end)
-
 sai.random([min], [max])
 sai.random(array, [pop])
 sai.clone(data)

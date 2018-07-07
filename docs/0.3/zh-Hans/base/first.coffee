@@ -22,7 +22,7 @@ module.exports =
 
       return:
          name: 'item'
-         type: '* | undefined'
+         type: '*'
          desc: '第一个元素'
 
       errors: [

@@ -30,7 +30,7 @@ module.exports =
 
       return:
          name: 'newObject'
-         type: 'object'
+         type: 'plain-object'
          desc: '归并之后的新对象'
 
       errors: [

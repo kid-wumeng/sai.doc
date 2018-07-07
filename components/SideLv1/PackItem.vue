@@ -28,9 +28,9 @@
          display: block;
          padding: 10px 20px;
          text-align: center;
-         font-weight: 500;
+         font-weight: 600;
          font-size: 14px;
-         color: #CCC;
+         color: #F2F2F2;
 
          &:hover,
          &[active] {

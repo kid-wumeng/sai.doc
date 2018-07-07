@@ -20,7 +20,7 @@ module.exports =
 
       params: [{
          name: 'data'
-         type: 'object | string'
+         type: 'Array-like, Object'
          desc: """
             期望测量的数据。预期的类型：
 
@@ -44,7 +44,7 @@ module.exports =
       }]
 
       return:
-         name: 'length | size'
+         name: 'len'
          type: 'number'
          desc: '数据的长度、成员数量等'
 
@@ -59,7 +59,7 @@ module.exports =
 
       params: [{
          name: 'data'
-         type: 'object / object'
+         type: 'Array-like, Object'
          desc: """
             期望测量的数据。预期的类型：
 
@@ -76,7 +76,7 @@ module.exports =
 
             以下类型使用 callback(item, i)
 
-            * Array, Array-like
+            * Array-like
             * Set, Map
             * 字符串
 
@@ -85,7 +85,7 @@ module.exports =
       }]
 
       return:
-         name: 'length | size'
+         name: 'len'
          type: 'number'
          desc: '数据的长度、成员数量等'
 

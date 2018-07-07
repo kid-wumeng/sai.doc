@@ -22,7 +22,7 @@ module.exports =
 
       return:
          name: 'item'
-         type: '* | undefined'
+         type: '*'
          desc: '最后一个元素'
 
       errors: [

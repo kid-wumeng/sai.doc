@@ -17,7 +17,7 @@ module.exports =
 
       params: [{
          name: 'itemOrArrays...'
-         type: '* | Array'
+         type: '*, Array'
          desc: '期望合并在一起的 item 或 array'
       }]
 
