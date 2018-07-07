@@ -4,6 +4,13 @@ module.exports =
    name: 'isFunction'
 
 
+   desc: """
+      ```js
+      sai.isFunction(sai.noop)
+      ```
+   """
+
+
    signs: [{
       name: 'isFunction(value)'
       desc: '是否为函数 ？*包括异步函数*'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

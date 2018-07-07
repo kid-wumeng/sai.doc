@@ -4,6 +4,13 @@ module.exports =
    name: 'isError'
 
 
+   desc: """
+      ```js
+      sai.isError(error)
+      ```
+   """
+
+
    signs: [{
       name: 'isError(value)'
       desc: '是否为 Error 对象 ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

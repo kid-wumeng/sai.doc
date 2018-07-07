@@ -4,6 +4,13 @@ module.exports =
    name: 'is'
 
 
+   desc: """
+      ```js
+      sai.is('abc', String)
+      ```
+   """
+
+
    signs: [{
       name: 'is(value, class)'
       desc: 'value 是否为 class 的实例对象 ？'
@@ -17,14 +24,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

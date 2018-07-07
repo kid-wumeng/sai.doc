@@ -4,6 +4,13 @@ module.exports =
    name: 'isURL'
 
 
+   desc: """
+      ```js
+      sai.isURL('https://google.com')
+      ```
+   """
+
+
    signs: [{
       name: 'isURL(string)'
       desc: '是否为 URL 的格式 ？'
@@ -25,11 +32,11 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
-      
+
       ```js
-      sai.isURL('http://google.com')  // => true
-      sai.isURL('sai@gmail.com')      // => false
+      sai.isURL('https://google.com')  // => true
+      sai.isURL('sai@gmail.com')       // => false
       ```
    """

@@ -4,6 +4,15 @@ module.exports =
    name: 'isExist'
 
 
+   desc: """
+      ```js
+      sai.isExist({})
+      sai.isExist([])
+      sai.isExist('')
+      ```
+   """
+
+
    signs: [{
       name: 'isExist(data)'
       desc: '数据中至少有一个值 ？'
@@ -17,7 +26,7 @@ module.exports =
       return:
          name: 'result'
          type: 'boolean'
-         
+
       errors: [{
          name: 'INVALID_TYPE'
          desc: '参考 [sai.len](/len)'

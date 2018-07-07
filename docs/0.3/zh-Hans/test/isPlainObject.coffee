@@ -4,6 +4,13 @@ module.exports =
    name: 'isPlainObject'
 
 
+   desc: """
+      ```js
+      sai.isPlainObject({})
+      ```
+   """
+
+
    signs: [{
       name: 'isPlainObject(value)'
       desc: '是否为朴素对象 ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

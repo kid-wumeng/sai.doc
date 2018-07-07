@@ -4,6 +4,13 @@ module.exports =
    name: 'isString'
 
 
+   desc: """
+      ```js
+      sai.isString('abc')
+      ```
+   """
+
+
    signs: [{
       name: 'isString(value)'
       desc: '是否为字符串 ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

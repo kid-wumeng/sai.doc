@@ -4,6 +4,13 @@ module.exports =
    name: 'isNumber'
 
 
+   desc: """
+      ```js
+      sai.isNumber(1)
+      ```
+   """
+
+
    signs: [{
       name: 'isNumber(value)'
       desc: '是否为有效、有穷的数 ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       本函数基于`isFinite`封装

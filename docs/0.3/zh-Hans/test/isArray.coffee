@@ -4,6 +4,13 @@ module.exports =
    name: 'isArray'
 
 
+   desc: """
+      ```js
+      sai.isArray([1, 2, 3])
+      ```
+   """
+
+
    signs: [{
       name: 'isArray(value)'
       desc: '是否为 Array ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

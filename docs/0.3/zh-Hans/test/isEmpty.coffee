@@ -4,6 +4,15 @@ module.exports =
    name: 'isEmpty'
 
 
+   desc: """
+      ```js
+      sai.isEmpty({})
+      sai.isEmpty([])
+      sai.isEmpty('')
+      ```
+   """
+
+
    signs: [{
       name: 'isEmpty(data)'
       desc: '数据为空，无任何值 ？'
@@ -17,7 +26,7 @@ module.exports =
       return:
          name: 'result'
          type: 'boolean'
-         
+
       errors: [{
          name: 'INVALID_TYPE'
          desc: '参考 [sai.len](/len)'
@@ -25,7 +34,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       本质上是`sai.len(data) === 0`的语法糖，data 类型与 [sai.len](/len) 一致

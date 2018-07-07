@@ -4,6 +4,13 @@ module.exports =
    name: 'isInt'
 
 
+   desc: """
+      ```js
+      sai.isInt(1)
+      ```
+   """
+
+
    signs: [{
       name: 'isInt(value)'
       desc: '是否为有效、有穷的*整数* ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       本函数基于`isFinite`封装，在 [sai.isNumber](/isNumber) 之上加入对整数的判定

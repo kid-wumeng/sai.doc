@@ -4,6 +4,13 @@ module.exports =
    name: 'isEmail'
 
 
+   desc: """
+      ```js
+      sai.isEmail('sai@gmail.com')
+      ```
+   """
+
+
    signs: [{
       name: 'isEmail(string)'
       desc: '是否为 Email 地址的格式 ？'
@@ -25,7 +32,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

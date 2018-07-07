@@ -4,6 +4,14 @@ module.exports =
    name: 'isNil'
 
 
+   desc: """
+      ```js
+      sai.isNil(undefined)
+      sai.isNil(null)
+      ```
+   """
+
+
    signs: [{
       name: 'isNil(value)'
       desc: '是否为 undefined 或 null ？'
@@ -13,14 +21,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

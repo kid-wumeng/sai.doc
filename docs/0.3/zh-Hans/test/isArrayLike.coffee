@@ -4,6 +4,13 @@ module.exports =
    name: 'isArrayLike'
 
 
+   desc: """
+      ```js
+      sai.isArrayLike(arguments)
+      ```
+   """
+
+
    signs: [{
       name: 'isArrayLike(value)'
       desc: '是否为 Array-like ？'
@@ -13,14 +20,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

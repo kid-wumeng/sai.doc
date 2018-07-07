@@ -4,6 +4,14 @@ module.exports =
    name: 'isObject'
 
 
+   desc: """
+      ```js
+      sai.isObject({})
+      sai.isObject(new Date)
+      ```
+   """
+
+
    signs: [{
       name: 'isObject(value)'
       desc: '是否为对象 ？'
@@ -13,14 +21,14 @@ module.exports =
          type: '*'
          desc: '期望判定的值'
       }]
-      
+
       return:
          name: 'result'
          type: 'boolean'
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js
