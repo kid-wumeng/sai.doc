@@ -20,7 +20,7 @@
 <style lang="less">
    .FuncPage {
       .FuncMore {
-         width: 540px;
+         width: 640px;
 
          > :not(h1, h2, h3, h4, h5, h6, pre) {
             margin-left: 12px;

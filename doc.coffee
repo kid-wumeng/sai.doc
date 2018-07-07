@@ -31,7 +31,6 @@ sai.in(datas)
 
 sai.random([min], [max])
 sai.random(array, [pop])
-sai.clone(data)
 sai.type(data)
 
 

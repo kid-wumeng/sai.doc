@@ -3,7 +3,7 @@ module.exports =
 
    INVALID_PARAMS:
       name: 'INVALID_PARAMS'
-      desc: '参数无效\n非预期的类型或格式'
+      desc: '参数无效\n不是预期的类型或格式'
 
 
    FILE_NOT_FOUND:

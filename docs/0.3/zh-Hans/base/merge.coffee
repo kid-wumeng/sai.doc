@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       name: 'merge( objects... )'
-      desc: '深度归并多个对象，返回归并后的新对象'
+      desc: '*深度*归并多个对象，返回归并后的新对象'
       more: """
          * 顺序从左往右
          * 右边的会覆盖左边的同位置属性

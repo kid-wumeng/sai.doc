@@ -7,6 +7,7 @@ module.exports =
    items: [
       '通用'
       require('./len')
+      require('./clone')
 
       '对象'
       require('./has')
