@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: 'ensureDir( path, file )'
+      name: 'ensureDir( path )'
       desc: '确保目录存在'
       more: """
          * 若目录已存在，则什么也不做

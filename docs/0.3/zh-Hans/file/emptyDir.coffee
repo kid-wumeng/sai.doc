@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: 'emptyDir( path, file )'
+      name: 'emptyDir( path )'
       desc: '清空目录'
       more: """
          * 目录已存在：清空所有子资源

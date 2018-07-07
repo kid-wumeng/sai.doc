@@ -11,6 +11,8 @@ module.exports =
       require('./readDir')
       require('./ensureDir')
       require('./emptyDir')
+      require('./copy')
+      require('./remove')
 
       '读文件'
       require('./readFile')
