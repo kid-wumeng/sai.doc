@@ -11,6 +11,7 @@ module.exports =
       require('./readDir')
       require('./ensureDir')
       require('./emptyDir')
+      require('./move')
       require('./copy')
       require('./remove')
 

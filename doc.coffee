@@ -30,8 +30,3 @@ sai.in(datas)
 
 
 sai.type(data)
-
-
-
-await sai.deleteFile(path)
-await sai.deleteDir(path)

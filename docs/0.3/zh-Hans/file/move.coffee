@@ -1,29 +1,29 @@
 module.exports =
 
 
-   name: 'copy'
+   name: 'move'
 
 
    desc: """
       ```js
-      await sai.copy('/assets/test.jpg', '/images/logo.jpg')
+      await sai.move('/assets/test.jpg', '/images/logo.jpg')
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'copy( srcPath, destPath )'
-      desc: '拷贝文件或目录'
+      name: 'move( srcPath, destPath )'
+      desc: '移动文件或目录'
 
       params: [{
          name: 'srcPath'
          type: 'string'
-         desc: '源资源路径'
+         desc: '当前路径'
       },{
          name: 'destPath'
          type: 'string'
-         desc: '新资源路径'
+         desc: '新路径'
       }]
 
       errors: [

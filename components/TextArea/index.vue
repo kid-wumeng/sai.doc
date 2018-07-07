@@ -104,7 +104,7 @@
 
       strong {
          font-weight: 600;
-         color: red;
+         color: #F62459;
          user-select: all;
       }
 

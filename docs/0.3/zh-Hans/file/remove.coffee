@@ -16,12 +16,12 @@ module.exports =
       async: true
       name: 'remove( path )'
       desc: '删除文件或目录'
-      more: '*即使目录不为空也会被删除*，类似`rm -rf`'
+      more: '**注意，即使目录不为空，也会删除**，类似`rm -rf`'
 
       params: [{
          name: 'path'
          type: 'string'
-         desc: '资源路径'
+         desc: '要删除的资源路径'
       }]
 
       errors: [
