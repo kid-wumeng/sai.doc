@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'set(data, path, value)'
+      name: 'set( data, path, value )'
       desc: '设置 data 中路径为 path 的属性值'
 
       params: [{

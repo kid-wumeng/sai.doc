@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isAsyncFunction(value)'
+      name: 'isAsyncFunction( value )'
       desc: '是否为异步函数 ？'
 
       params: [{

@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isN(value, [zero])'
+      name: 'isN( value, [zero] )'
       desc: '是否为有效、有穷的*自然数* ？*默认 0 是自然数*'
 
       params: [{

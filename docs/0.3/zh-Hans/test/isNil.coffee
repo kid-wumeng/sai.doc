@@ -13,7 +13,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isNil(value)'
+      name: 'isNil( value )'
       desc: '是否为 undefined 或 null ？'
 
       params: [{

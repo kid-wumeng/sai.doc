@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isSymbol(value)'
+      name: 'isSymbol( value )'
       desc: '是否为 Symbol ？'
 
       params: [{

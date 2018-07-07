@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isURL(string)'
+      name: 'isURL( string )'
       desc: '是否为 URL 的格式 ？'
 
       params: [{

@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isArrayLike(value)'
+      name: 'isArrayLike( value )'
       desc: '是否为 Array-like ？'
 
       params: [{

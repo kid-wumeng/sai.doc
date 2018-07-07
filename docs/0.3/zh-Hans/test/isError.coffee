@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isError(value)'
+      name: 'isError( value )'
       desc: '是否为 Error 对象 ？'
 
       params: [{

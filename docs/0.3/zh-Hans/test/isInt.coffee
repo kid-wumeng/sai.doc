@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isInt(value)'
+      name: 'isInt( value )'
       desc: '是否为有效、有穷的*整数* ？'
 
       params: [{

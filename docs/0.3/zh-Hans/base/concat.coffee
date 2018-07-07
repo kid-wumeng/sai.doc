@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'concat(itemOrArrays...)'
+      name: 'concat( itemOrArrays... )'
       desc: '将多个 item 或 array 合并成一个 array'
 
       params: [{

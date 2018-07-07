@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'first(array)'
+      name: 'first( array )'
       desc: '获取 array 的第一个元素'
 
       params: [{

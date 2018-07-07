@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isBuffer(value)'
+      name: 'isBuffer( value )'
       desc: '是否为 Buffer 对象 ？'
 
       params: [{

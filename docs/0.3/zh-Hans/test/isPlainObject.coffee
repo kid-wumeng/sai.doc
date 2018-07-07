@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isPlainObject(value)'
+      name: 'isPlainObject( value )'
       desc: '是否为朴素对象 ？'
 
       params: [{

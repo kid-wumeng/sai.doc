@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'has(data, path)'
+      name: 'has( data, path )'
       desc: '检测 data 中路径为 path 的属性值是否存在'
 
       params: [{

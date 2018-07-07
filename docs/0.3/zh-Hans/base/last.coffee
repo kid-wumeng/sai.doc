@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'last(array)'
+      name: 'last( array )'
       desc: '获取 array 的最后一个元素'
 
       params: [{

@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isFunction(value)'
+      name: 'isFunction( value )'
       desc: '是否为函数 ？*包括异步函数*'
 
       params: [{

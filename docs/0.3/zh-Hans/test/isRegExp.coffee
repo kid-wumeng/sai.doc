@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isRegExp(value)'
+      name: 'isRegExp( value )'
       desc: '是否为 RegExp 对象 ？'
 
       params: [{

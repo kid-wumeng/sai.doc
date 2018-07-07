@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'get(data, path, [defaultValue])'
+      name: 'get( data, path, [defaultValue] )'
       desc: '获取 data 中路径为 path 的属性值'
 
       params: [{

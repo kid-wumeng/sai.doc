@@ -13,7 +13,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isObject(value)'
+      name: 'isObject( value )'
       desc: '是否为对象 ？'
 
       params: [{

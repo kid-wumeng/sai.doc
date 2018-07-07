@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'is(value, class)'
+      name: 'is( value, class )'
       desc: 'value 是否为 class 的实例对象 ？'
 
       params: [{

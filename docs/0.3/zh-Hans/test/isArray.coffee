@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isArray(value)'
+      name: 'isArray( value )'
       desc: '是否为 Array ？'
 
       params: [{

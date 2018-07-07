@@ -14,7 +14,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isEmpty(data)'
+      name: 'isEmpty( data )'
       desc: '数据为空，无任何值 ？'
 
       params: [{

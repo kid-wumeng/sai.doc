@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isDate(value)'
+      name: 'isDate( value )'
       desc: '是否为 Date 对象 ？'
 
       params: [{

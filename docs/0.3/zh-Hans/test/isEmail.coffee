@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isEmail(string)'
+      name: 'isEmail( string )'
       desc: '是否为 Email 地址的格式 ？'
 
       params: [{

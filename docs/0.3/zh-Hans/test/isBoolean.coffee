@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isBoolean(value)'
+      name: 'isBoolean( value )'
       desc: '是否为布尔量 ？'
 
       params: [{

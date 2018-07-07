@@ -14,7 +14,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isExist(data)'
+      name: 'isExist( data )'
       desc: '数据中至少有一个值 ？'
 
       params: [{

@@ -12,7 +12,7 @@ module.exports =
 
 
    signs: [{
-      name: 'isPromise(value)'
+      name: 'isPromise( value )'
       desc: '是否为 Promise 对象 ？'
 
       params: [{
