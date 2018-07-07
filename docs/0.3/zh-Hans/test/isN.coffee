@@ -12,18 +12,13 @@ module.exports =
 
 
    signs: [{
-      name: 'isN( value, [zero] )'
+      name: 'isN( value )'
       desc: '是否为有效、有穷的*自然数* ？*默认 0 是自然数*'
 
       params: [{
          name: 'value'
          type: '*'
          desc: '期望判定的值'
-      },{
-         name: 'zero'
-         type: 'boolean'
-         desc: '0 是不是自然数 ？默认值：true'
-         optional: true
       }]
 
       return:
@@ -56,13 +51,5 @@ module.exports =
       sai.isN(NaN)               // => false
       sai.isN(Infinity)          // => false
       sai.isN(-Infinity)         // => false
-      ```
-
-      # 0 判定
-
-      若期望 0 不计入自然数：
-
-      ```js
-      sai.isN(0, zero = false)  // => false
       ```
    """

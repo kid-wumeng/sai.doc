@@ -14,6 +14,7 @@ module.exports =
       require('./isNumber')
       require('./isInt')
       require('./isN')
+      require('./isID')
       require('./isString')
       require('./isSymbol')
       require('./isFunction')
