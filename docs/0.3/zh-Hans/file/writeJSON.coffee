@@ -1,26 +1,37 @@
 module.exports =
 
 
-   name: 'readCSON'
+   name: 'writeJSON'
 
 
    desc: """
       ```js
-      data = await sai.readCSON('/assets/test.cson')
+      await sai.writeJSON('/assets/test.json', data)
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'readCSON( path, [encoding] )'
-      desc: '读取文件，返回 CSON 对象'
-      more: '关于 [CoffeeScript Object Notation](https://www.npmjs.com/package/cson) 的介绍'
+      name: 'writeJSON( path, data )'
+      desc: '写入文件'
+      more: """
+         * 若文件已存在，则*完全覆写*
+         * 若文件不存在，则*自动创建* ( 包括上游路径 )
+         
+         关于 [JavaScript Object Notation](https://json.org) 的介绍
+      """
 
       params: [{
          name: 'path'
          type: 'string'
          desc: '文件路径'
+      },{
+         name: 'data'
+         type: 'object'
+         desc: """
+            要写入的 JSON 格式数据
+         """
       },{
          name: 'encoding'
          type: 'string'
@@ -32,13 +43,8 @@ module.exports =
          optional: true
       }]
 
-      return:
-         name: 'data'
-         type: 'plain-object'
-
       errors: [
          require('../errors').INVALID_PARAMS
-         require('../errors').FILE_NOT_FOUND
          require('../errors').TEXT_PARSE_FAIL
       ]
    }]

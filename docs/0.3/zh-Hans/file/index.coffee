@@ -5,19 +5,24 @@ module.exports =
    desc: ''
 
    items: [
-      '文件'
+      '基础'
       require('./isFile')
+      require('./isDir')
+
+      '读文件'
       require('./readFile')
       require('./readText')
-      require('./writeFile')
-      require('./writeText')
-
-      '目录'
-      require('./isDir')
-      require('./readDir')
-
-      '格式化读写'
       require('./readJSON')
       require('./readCSON')
       require('./readYAML')
+
+      '写文件'
+      require('./writeFile')
+      require('./writeText')
+      require('./writeJSON')
+      require('./writeCSON')
+      require('./writeYAML')
+
+      '操纵目录'
+      require('./readDir')
    ]

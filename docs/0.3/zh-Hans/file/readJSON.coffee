@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      json = await sai.readJSON('/assets/test.json')
+      data = await sai.readJSON('/assets/test.json')
       ```
    """
 
@@ -32,7 +32,7 @@ module.exports =
       }]
 
       return:
-         name: 'json'
+         name: 'data'
          type: 'plain-object'
 
       errors: [

@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      yaml = await sai.readYAML('/assets/test.yaml')
+      data = await sai.readYAML('/assets/test.yaml')
       ```
    """
 
@@ -15,7 +15,7 @@ module.exports =
       async: true
       name: 'readYAML( path, [encoding] )'
       desc: '读取文件，返回 YAML 对象'
-      more: '关于 [YAML Ain\'t Markup Language](http://yaml.org/) 的介绍'
+      more: '关于 [YAML Ain\'t Markup Language](http://yaml.org) 的介绍'
 
       params: [{
          name: 'path'
@@ -33,7 +33,7 @@ module.exports =
       }]
 
       return:
-         name: 'yaml'
+         name: 'data'
          type: 'plain-object'
 
       errors: [

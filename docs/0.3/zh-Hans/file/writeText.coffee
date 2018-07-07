@@ -14,7 +14,7 @@ module.exports =
    signs: [{
       async: true
       name: 'writeText( path, text )'
-      desc: '写入文件'
+      desc: '写入文本'
       more: """
          * 若文件已存在，则*完全覆写*
          * 若文件不存在，则*自动创建* ( 包括上游路径 )
