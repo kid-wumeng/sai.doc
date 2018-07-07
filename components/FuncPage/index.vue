@@ -4,7 +4,7 @@
       FuncDesc(:func="func")
       hr
       SignList(:signs="signs")
-      FuncDetail(:func="func")
+      FuncMore(:func="func")
 </template>
 
 
@@ -16,7 +16,7 @@
          'FuncName':   require('./FuncName').default
          'FuncDesc':   require('./FuncDesc').default
          'SignList':   require('./SignList').default
-         'FuncDetail': require('./FuncDetail').default
+         'FuncMore': require('./FuncMore').default
 
       props:
          'func':
@@ -32,7 +32,7 @@
 <style lang="less">
    .FuncPage {
       padding-top: 55px;
-      padding-bottom: 55px;
+      padding-bottom: 75px;
 
       > *:not(hr) {
          margin: 0 50px;
@@ -52,7 +52,7 @@
          margin-top: 75px;
       }
 
-      > .FuncDetail {
+      > .FuncMore {
          margin-top: 75px;
       }
    }

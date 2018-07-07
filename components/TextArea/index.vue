@@ -137,7 +137,7 @@
             display: block;
             line-height: 23px;
             font-family: "Monaco";
-            font-size: 14px;
+            font-size: 13px;
             color: #A2AEBA;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             overflow: scroll;

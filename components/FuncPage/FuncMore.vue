@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.FuncDetail(:text="func.detail")
+   TextArea.FuncMore(:text="func.more")
 </template>
 
 
@@ -19,7 +19,7 @@
 
 <style lang="less">
    .FuncPage {
-      .FuncDetail {
+      .FuncMore {
          width: 540px;
 
          > :not(h1, h2, h3, h4, h5, h6, pre) {
