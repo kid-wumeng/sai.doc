@@ -39,7 +39,7 @@
             }
 
             > .SignMore {
-               margin-top: 20px;
+               margin-top: 24px;
             }
          }
 

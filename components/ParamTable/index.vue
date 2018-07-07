@@ -34,9 +34,6 @@
 
       .ParamItem {
          border-top: 1px solid lighten(#A2AEBA, 27%);
-         &:first-child {
-            border-top: none;
-         }
       }
    }
 </style>

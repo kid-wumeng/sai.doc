@@ -28,13 +28,16 @@
 <style lang="less">
    .FuncPage {
       .SignTable {
+         border: 1px solid lighten(#A2AEBA, 18%);
+         border-radius: 2px;
+         box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
 
          > .ParamTable {
-            border: 1px solid lighten(#A2AEBA, 18%);
-            border-radius: 2px;
-            box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
-            margin-bottom: 30px;
-
+            &:first-child {
+               .ParamItem:first-child {
+                  border-top: none;
+               }
+            }
             &:last-child {
                margin-bottom: 0;
             }

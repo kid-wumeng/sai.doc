@@ -22,7 +22,7 @@
    .FuncPage {
       .SignList {
          > .SignItem {
-            margin-bottom: 40px;
+            margin-bottom: 70px;
             &:last-child {
                margin-bottom: 0;
             }

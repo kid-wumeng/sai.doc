@@ -8,6 +8,7 @@ module.exports =
       '通用'
       require('./len')
       require('./clone')
+      require('./random')
 
       '对象'
       require('./has')
