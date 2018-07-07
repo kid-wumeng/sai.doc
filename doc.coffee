@@ -29,8 +29,6 @@ sai.in(datas)
 
 
 
-sai.random([min], [max])
-sai.random(array, [pop])
 sai.type(data)
 
 

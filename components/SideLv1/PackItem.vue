@@ -1,5 +1,5 @@
 <template lang="jade">
-   nuxt-link.PackItem(:to="to('/@' + path)") {{ name }}
+   nuxt-link.PackItem(:to="to('/@' + path)", :active="active") {{ name }}
 </template>
 
 
