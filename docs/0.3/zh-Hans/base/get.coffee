@@ -33,10 +33,9 @@ module.exports =
          type: '*'
          desc: '取出的值'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: 'data 或 path 类型不正确'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 

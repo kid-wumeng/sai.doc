@@ -21,21 +21,20 @@ module.exports =
       },{
          name: 'path'
          type: 'string'
-         desc: '*若对应属性不存在，则会一路创建*'
+         desc: '*若对应属性不存在，会一路创建*'
       },{
          name: 'value'
          type: '*'
          desc: '期望设置的值'
       }]
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: 'data 或 path 类型不正确'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

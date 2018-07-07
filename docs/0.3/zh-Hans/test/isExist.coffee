@@ -27,14 +27,13 @@ module.exports =
          name: 'result'
          type: 'boolean'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: '参考 [sai.len](/len)'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       本质上是`sai.len(data) > 0`的语法糖，data 类型与 [sai.len](/len) 一致

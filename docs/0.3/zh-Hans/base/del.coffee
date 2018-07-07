@@ -24,10 +24,9 @@ module.exports =
          desc: '事先无需检测属性存在与否，即使不存在，也不会有任何副作用'
       }]
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: 'data 或 path 类型不正确'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 

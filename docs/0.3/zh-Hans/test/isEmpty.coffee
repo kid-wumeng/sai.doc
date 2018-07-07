@@ -27,10 +27,9 @@ module.exports =
          name: 'result'
          type: 'boolean'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: '参考 [sai.len](/len)'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 

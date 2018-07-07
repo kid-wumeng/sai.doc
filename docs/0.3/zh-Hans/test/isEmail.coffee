@@ -25,10 +25,9 @@ module.exports =
          name: 'result'
          type: 'boolean'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: '参数必须是字符串'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 

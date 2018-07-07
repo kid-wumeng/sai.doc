@@ -33,10 +33,9 @@ module.exports =
          type: 'object'
          desc: '归并之后的新对象'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: '混进了不是 object 的参数'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 

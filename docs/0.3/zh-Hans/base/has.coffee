@@ -28,10 +28,9 @@ module.exports =
          type: 'boolean'
          desc: '*仅当属性值为 undefined 时才会被判定为不存在*'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: 'data 或 path 类型不正确'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 

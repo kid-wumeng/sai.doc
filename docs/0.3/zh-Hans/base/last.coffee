@@ -25,10 +25,9 @@ module.exports =
          type: '* | undefined'
          desc: '最后一个元素'
 
-      errors: [{
-         name: 'INVALID_TYPE'
-         desc: 'array 类型不正确'
-      }]
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
 
 
