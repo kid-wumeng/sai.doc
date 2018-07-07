@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      text = await sai.readText('/assets/test.txt')
+      text = await sai.readText('/assets/test.txt', 'base64')
       ```
    """
 
@@ -26,7 +26,7 @@ module.exports =
          desc: """
             字符编码格式，默认值：*utf8*
 
-            可选值参考：[Node.js - Buffers and Character Encodings](http://nodejs.cn/api/en/buffer.html#buffer_buffers_and_character_encodings)
+            可选值参考：[Node.js - Buffers and Character Encodings](https://nodejs.org/dist/latest-v10.x/docs/api/buffer.html#buffer_buffers_and_character_encodings)
          """
          optional: true
       }]
