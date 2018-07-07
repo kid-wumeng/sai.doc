@@ -4,6 +4,13 @@ module.exports =
    name: 'isDir'
 
 
+   desc: """
+      ```js
+      result = await sai.isDir('/assets')
+      ```
+   """
+
+
    signs: [{
       name: 'isDir( path )'
       desc: '是目录吗 ？'
@@ -23,12 +30,3 @@ module.exports =
             * 资源是文件，返回 false
          """
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      result = await sai.isDir('/assets')
-      ```
-   """

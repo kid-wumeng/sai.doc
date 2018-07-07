@@ -4,6 +4,13 @@ module.exports =
    name: 'readYAML'
 
 
+   desc: """
+      ```js
+      yaml = await sai.readYAML('/assets/test.yaml')
+      ```
+   """
+
+
    signs: [{
       name: 'readYAML( path )'
       desc: '读取文件，返回 YAML 对象'
@@ -26,12 +33,3 @@ module.exports =
          require('../errors').TEXT_PARSE_FAIL
       ]
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      yaml = await sai.readYAML('/assets/test.yaml')
-      ```
-   """

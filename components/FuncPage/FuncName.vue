@@ -18,7 +18,7 @@
    .FuncPage {
       .FuncName {
          font-weight: 400;
-         font-size: 26px;
+         font-size: 28px;
          color: #273340;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
          user-select: all;

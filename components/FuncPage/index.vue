@@ -32,7 +32,7 @@
 <style lang="less">
    .FuncPage {
       padding-top: 55px;
-      padding-bottom: 75px;
+      padding-bottom: 50px;
 
       > *:not(hr) {
          margin: 0 50px;
@@ -43,13 +43,13 @@
       }
 
       > hr {
-         margin-top: 75px;
+         margin-top: 70px;
          border: none;
          border-bottom: 1px dashed lighten(#A2AEBA, 22%);
       }
 
       > .SignList {
-         margin-top: 75px;
+         margin-top: 70px;
       }
 
       > .FuncMore {

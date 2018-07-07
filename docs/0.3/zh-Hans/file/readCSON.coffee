@@ -4,6 +4,13 @@ module.exports =
    name: 'readCSON'
 
 
+   desc: """
+      ```js
+      cson = await sai.readCSON('/assets/test.cson')
+      ```
+   """
+
+
    signs: [{
       name: 'readCSON( path )'
       desc: '读取文件，返回 CSON 对象'
@@ -26,12 +33,3 @@ module.exports =
          require('../errors').TEXT_PARSE_FAIL
       ]
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      cson = await sai.readCSON('/assets/test.cson')
-      ```
-   """

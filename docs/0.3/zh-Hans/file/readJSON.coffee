@@ -4,6 +4,13 @@ module.exports =
    name: 'readJSON'
 
 
+   desc: """
+      ```js
+      json = await sai.readJSON('/assets/test.json')
+      ```
+   """
+
+
    signs: [{
       name: 'readJSON( path )'
       desc: '读取文件，返回 JSON 对象'
@@ -25,12 +32,3 @@ module.exports =
          require('../errors').TEXT_PARSE_FAIL
       ]
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      json = await sai.readJSON('/assets/test.json')
-      ```
-   """

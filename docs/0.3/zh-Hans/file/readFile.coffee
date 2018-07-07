@@ -4,6 +4,13 @@ module.exports =
    name: 'readFile'
 
 
+   desc: """
+      ```js
+      file = await sai.readFile('/assets/test.jpg')
+      ```
+   """
+
+
    signs: [{
       name: 'readFile( path )'
       desc: '读取文件，返回 Buffer'
@@ -24,12 +31,3 @@ module.exports =
          require('../errors').FILE_NOT_FOUND
       ]
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      file = await sai.readFile('/assets/test.jpg')
-      ```
-   """

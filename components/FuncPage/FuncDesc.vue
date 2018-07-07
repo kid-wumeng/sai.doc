@@ -22,6 +22,10 @@
       .FuncDesc {
          > pre {
             display: inline-block;
+            padding: 24px 36px 25px 34px;
+            > code {
+               font-size: 15px;
+            }
          }
       }
    }

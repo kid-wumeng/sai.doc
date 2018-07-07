@@ -4,6 +4,13 @@ module.exports =
    name: 'readDir'
 
 
+   desc: """
+      ```js
+      children = await sai.readDir('/assets')
+      ```
+   """
+
+
    signs: [{
       name: 'readDir( path )'
       desc: '读取目录下的所有子资源信息，返回一个 Array'
@@ -38,7 +45,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
 
       # 基本用法
 

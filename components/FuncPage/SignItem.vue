@@ -45,7 +45,7 @@
 
          > .SignTable {
             flex: auto;
-            margin-left: 36px;
+            margin-left: 50px;
          }
       }
    }

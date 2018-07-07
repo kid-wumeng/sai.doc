@@ -3,6 +3,13 @@ module.exports =
 
    name: 'isFile'
 
+   
+   desc: """
+      ```js
+      result = await sai.isFile('/assets/test.jpg')
+      ```
+   """
+
 
    signs: [{
       name: 'isFile( path )'
@@ -23,12 +30,3 @@ module.exports =
             * 资源是目录，返回 false
          """
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      result = await sai.isFile('/assets/test.jpg')
-      ```
-   """
