@@ -1,7 +1,8 @@
 <template lang="jade">
    .FuncPage
-      //- FuncName(:func="func")
+      FuncName(:func="func")
       FuncDesc(:func="func")
+      hr
       SignList(:signs="signs")
       FuncDetail(:func="func")
 </template>
@@ -11,6 +12,7 @@
 <script lang="coffee">
    module.exports =
       components:
+         'Column':     require('~/components/Column').default
          'FuncName':   require('./FuncName').default
          'FuncDesc':   require('./FuncDesc').default
          'SignList':   require('./SignList').default
@@ -29,18 +31,29 @@
 
 <style lang="less">
    .FuncPage {
-      background-color: white;
+      padding-top: 55px;
+      padding-bottom: 55px;
 
-      > .FuncName {
-         margin-bottom: 20px;
+      > *:not(hr) {
+         margin: 0 50px;
       }
 
       > .FuncDesc {
-         margin-bottom: 80px;
+         margin-top: 55px;
+      }
+
+      > hr {
+         margin-top: 75px;
+         border: none;
+         border-bottom: 1px dashed lighten(#A2AEBA, 22%);
       }
 
       > .SignList {
-         margin-bottom: 80px;
+         margin-top: 75px;
+      }
+
+      > .FuncDetail {
+         margin-top: 75px;
       }
    }
 </style>

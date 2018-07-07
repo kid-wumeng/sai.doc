@@ -1,8 +1,5 @@
 <template lang="jade">
-   .Title(v-if="title")
-      hr.left(ref="left")
-      hr.right(ref="right")
-      span(ref="text") {{ title.toUpperCase() }}
+   .Title(v-if="title"): span {{ title.toUpperCase() }}
 </template>
 
 
@@ -13,47 +10,34 @@
          'title':
             type: String
             default: ''
-
-      mounted: ->
-         if @title
-            @setHrWidth()
-
-      methods:
-         setHrWidth: ->
-            rootWidth = @$el.offsetWidth
-            textWidth = @$refs.text.offsetWidth
-
-            hrWidth = (rootWidth - textWidth) / 2 - 12
-
-            @$refs.left.style.width  = hrWidth + 'px'
-            @$refs.right.style.width = hrWidth + 'px'
 </script>
 
 
 
 <style lang="less">
+
+   @height: 26px;
+
    .ParamTable {
       .Title {
-         position: absolute;
-         top: -20px;
-         width: 100%;
-         height: 40px;
-         line-height: 40px;
-         text-align: center;
-         font-weight: 500;
-         font-size: 15px;
-         color: lighten(#A2AEBA, 18%);
+         position:    absolute;
+         top:        -@height / 2;
+         width:       100%;
+         height:      @height;
+         line-height: @height;
+         text-align:  center;
 
-         hr {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            border: none;
-            border-top: 1px solid lighten(#A2AEBA, 26%);
+         span {
+            display: inline-block;
+            padding: 0 10px;
+            font-weight: 500;
+            font-size: 13px;
+            color: lighten(#A2AEBA, 0%);
+            background-color: rgba(255, 255, 255, 1);
+            border: 1px solid lighten(#A2AEBA, 18%);
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
          }
-
-         hr.left  { left:  0 }
-         hr.right { right: 0 }
       }
    }
 </style>

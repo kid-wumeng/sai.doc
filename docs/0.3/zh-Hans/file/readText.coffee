@@ -4,8 +4,15 @@ module.exports =
    name: 'readText'
 
 
+   desc: """
+      ```js
+      text = await sai.readText('/assets/test.txt')
+      ```
+   """
+
+
    signs: [{
-      name: 'readText( path )'
+      name: 'readText( path, [encoding] )'
       desc: '读取文件，返回 String'
       async: true
 
@@ -33,12 +40,3 @@ module.exports =
          require('../errors').FILE_NOT_FOUND
       ]
    }]
-
-
-   detail: """
-      # 基本用法
-
-      ```js
-      text = await sai.readText('/assets/test.txt')
-      ```
-   """

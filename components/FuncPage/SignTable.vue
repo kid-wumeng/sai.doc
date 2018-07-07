@@ -28,27 +28,27 @@
 <style lang="less">
    .FuncPage {
       .SignTable {
-         border: 1px solid lighten(#A2AEBA, 18%);
-         border-radius: 2px;
-         box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
 
-         .return {
-            background-color: rgba(251, 251, 251, 1);
+         > .ParamTable {
+            border: 1px solid lighten(#A2AEBA, 18%);
+            border-radius: 2px;
+            box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
+            margin-bottom: 40px;
          }
 
          .errors {
             .ParamItem {
                .ParamName {
-                  line-height: 21px;
+                  line-height: 25px;
                   font-weight: 600;
-                  font-size: 13px;
+                  font-size: 14px;
                   color: lighten(red, 26%);
                   text-shadow: none;
                }
 
                .ParamDesc {
-                  line-height: 21px;
-                  font-size: 13px;
+                  line-height: 25px;
+                  font-size: 14px;
                }
             }
          }

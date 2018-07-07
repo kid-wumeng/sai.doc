@@ -19,38 +19,33 @@ await db.drop()
 
 
 
-# Type & Value
-
+sai.mime(file)
 sai.isMIME(data, mime)
 sai.isImage(data)
 sai.isEqual(datas)
+sai.in(datas)
 
 
 
 
-# Object & Array
 
-sai.random(array, count)
-sai.in(data, enums)
-sai.copy(data)
+sai.isID(start, end)
+
+sai.random([min], [max])
+sai.random(array, [pop])
+sai.clone(data)
 sai.type(data)
 
 
 
-# File & Directory
-
-
-await sai.readFile(path, 'utf8')
-await sai.readDir(path)
-
-await sai.readText(path)
-await sai.read(path)
-
 await sai.writeFile(path, data)
+await sai.writeText(path, data)
+
+await sai.writeJSON(path, data)
+await sai.writeCSON(path, data)
+await sai.writeYAML(path, data)
 
 await sai.createDir(path)
-
-await sai.appendFile(path)
 
 await sai.deleteFile(path)
 await sai.deleteDir(path)

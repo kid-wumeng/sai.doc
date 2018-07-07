@@ -19,3 +19,13 @@
          title:  -> @param.name     ? '???'
          params: -> @param.children ? []
 </script>
+
+
+
+<style lang="less">
+   .ParamTable {
+      .ChildrenTable {
+         border-top: 1px solid lighten(#A2AEBA, 27%);
+      }
+   }
+</style>

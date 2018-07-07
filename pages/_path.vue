@@ -43,6 +43,5 @@
 <style lang="less">
    #path {
       height: 100%;
-      padding: 36px 46px;
    }
 </style>

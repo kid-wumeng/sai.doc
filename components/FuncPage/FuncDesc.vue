@@ -20,8 +20,9 @@
 <style lang="less">
    .FuncPage {
       .FuncDesc {
-         width: 600px;
-         text-indent: 2em;
+         > pre {
+            display: inline-block;
+         }
       }
    }
 </style>

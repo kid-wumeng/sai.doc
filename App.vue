@@ -63,8 +63,8 @@
       position: relative;
       overflow: hidden;
 
-      @side-lv1-width: 140px;
-      @side-lv2-width: 200px;
+      @side-lv1-width: 110px;
+      @side-lv2-width: 180px;
 
       .SideLv1 {
          position: absolute;

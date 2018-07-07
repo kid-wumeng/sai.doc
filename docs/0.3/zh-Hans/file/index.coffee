@@ -9,13 +9,13 @@ module.exports =
       require('./isFile')
       require('./readFile')
       require('./readText')
-      require('./readJSON')
-      require('./readCSON')
-      require('./readYAML')
 
       '目录'
       require('./isDir')
       require('./readDir')
 
-      '文件 & 目录'
+      '格式化读写'
+      require('./readJSON')
+      require('./readCSON')
+      require('./readYAML')
    ]

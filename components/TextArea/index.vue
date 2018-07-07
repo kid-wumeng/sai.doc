@@ -42,9 +42,9 @@
 
 <style lang="less">
    .TextArea {
-      line-height: 23px;
-      font-size: 14px;
-      color: #161616;
+      line-height: 25px;
+      font-size: 15px;
+      color: #273340;
 
       > h1,
       > h2,
@@ -96,7 +96,7 @@
       }
 
       em {
-         font-weight: 500;
+         font-weight: 600;
          font-style: normal;
          color: #000;
          text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);

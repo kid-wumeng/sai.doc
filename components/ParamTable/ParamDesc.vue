@@ -34,6 +34,10 @@
                margin-left: -6px;
             }
          }
+
+         em {
+            font-weight: 500;
+         }
       }
    }
 </style>

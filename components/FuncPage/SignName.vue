@@ -17,9 +17,9 @@
 <style lang="less">
    .FuncPage {
       .SignName {
-         line-height: 21px;
+         line-height: 23px;
          font-weight: 500;
-         font-size: 22px;
+         font-size: 19px;
          color: #445669;
          letter-spacing: 0.25px;
          user-select: all;

@@ -30,16 +30,17 @@
 
 <style lang="less">
 
-   @padding: 28px;
+   @padding-x: 28px;
+   @padding-y: 32px;
 
    .ParamTable {
       .ParamItem {
          > .Row {
             > .Column {
                flex: none;
-               width: 40%;
+               width: 50%;
                line-height: 22px;
-               padding: @padding;
+               padding: @padding-y @padding-x;
 
                > .ParamType {
                   margin-top: 4px;
@@ -47,8 +48,9 @@
             }
 
             > .ParamDesc {
+               align-self: stretch;
                flex: auto;
-               padding: @padding;
+               padding: @padding-y @padding-x;
 
                ul, ol {
                   margin-left: 0 !important;
