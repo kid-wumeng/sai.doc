@@ -4,6 +4,13 @@ module.exports =
    name: 'concat'
 
 
+   desc: """
+      ```js
+      array = sai.concat('a', [1, 2], 'b', [3, 4, 5])
+      ```
+   """
+
+
    signs: [{
       name: 'concat(itemOrArrays...)'
       desc: '将多个 item 或 array 合并成一个 array'
@@ -21,7 +28,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 合并 item
 
       ```js

@@ -4,6 +4,13 @@ module.exports =
    name: 'has'
 
 
+   desc: """
+      ```js
+      exist = sai.has(data, 'a.b.c[1]')
+      ```
+   """
+
+
    signs: [{
       name: 'has(data, path)'
       desc: '检测 data 中路径为 path 的属性值是否存在'
@@ -20,7 +27,7 @@ module.exports =
          name: 'result'
          type: 'boolean'
          desc: '*仅当属性值为 undefined 时才会被判定为不存在*'
-         
+
       errors: [{
          name: 'INVALID_TYPE'
          desc: 'data 或 path 类型不正确'
@@ -28,7 +35,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

@@ -4,6 +4,13 @@ module.exports =
    name: 'get'
 
 
+   desc: """
+      ```js
+      value = sai.get(data, 'a.b.c[1]', 'defaults')
+      ```
+   """
+
+
    signs: [{
       name: 'get(data, path, [defaultValue])'
       desc: '获取 data 中路径为 path 的属性值'
@@ -33,7 +40,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

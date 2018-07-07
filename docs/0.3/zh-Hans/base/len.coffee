@@ -4,6 +4,15 @@ module.exports =
    name: 'len'
 
 
+   desc: """
+      ```js
+      len = sai.len(array)
+      len = sai.len(object)
+      len = sai.len(string, 'cjk')
+      ```
+   """
+
+
    signs: [{
       name: 'len(data, [mode])'
       desc: '测量 data 的大小'
@@ -88,7 +97,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 测量 Array 与 Array-like 长度
 
       ```js

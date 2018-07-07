@@ -21,9 +21,9 @@
    .FuncPage {
       .FuncDesc {
          > pre {
-            display: inline-block;
             padding: 24px 36px 25px 34px;
             > code {
+               line-height: 29px;
                font-size: 15px;
             }
          }

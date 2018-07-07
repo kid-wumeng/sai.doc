@@ -4,6 +4,13 @@ module.exports =
    name: 'merge'
 
 
+   desc: """
+      ```js
+      data = sai.merge(data1, data2, data3)
+      ```
+   """
+
+
    signs: [{
       name: 'merge(objects...)'
       desc: '深度归并多个对象，返回归并后的新对象'
@@ -33,7 +40,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

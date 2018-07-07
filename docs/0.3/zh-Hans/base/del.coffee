@@ -4,6 +4,13 @@ module.exports =
    name: 'del'
 
 
+   desc: """
+      ```js
+      sai.del(data, 'a.b.c[1]')
+      ```
+   """
+
+
    signs: [{
       name: 'del(data, path)'
       desc: '删除 data 中路径为 path 的属性值'
@@ -24,7 +31,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

@@ -4,6 +4,13 @@ module.exports =
    name: 'first'
 
 
+   desc: """
+      ```js
+      firstItem = sai.first(array)
+      ```
+   """
+
+
    signs: [{
       name: 'first(array)'
       desc: '获取 array 的第一个元素'
@@ -25,7 +32,7 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
       # 基本用法
 
       ```js

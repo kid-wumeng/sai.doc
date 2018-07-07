@@ -4,6 +4,13 @@ module.exports =
    name: 'set'
 
 
+   desc: """
+      ```js
+      sai.set(data, 'a.b.c[1]', value)
+      ```
+   """
+
+
    signs: [{
       name: 'set(data, path, value)'
       desc: '设置 data 中路径为 path 的属性值'
@@ -20,7 +27,7 @@ module.exports =
          type: '*'
          desc: '期望设置的值'
       }]
-      
+
       errors: [{
          name: 'INVALID_TYPE'
          desc: 'data 或 path 类型不正确'

@@ -4,6 +4,13 @@ module.exports =
    name: 'last'
 
 
+   desc: """
+      ```js
+      lastItem = sai.last(array)
+      ```
+   """
+
+
    signs: [{
       name: 'last(array)'
       desc: '获取 array 的最后一个元素'
@@ -25,7 +32,9 @@ module.exports =
    }]
 
 
-   detail: """
+   more: """
+      # 基本用法
+
       ```js
       array = ['a', 'b', 'c']
 
