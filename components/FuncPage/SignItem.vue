@@ -33,6 +33,7 @@
          > .Column {
             flex: none;
             width: 40%;
+            align-items: flex-start;
 
             > .SignDesc {
                margin-top: 30px;

@@ -6,6 +6,7 @@ module.exports =
 
    items: [
       '通用'
+      require('./type')
       require('./len')
       require('./clone')
       require('./random')
