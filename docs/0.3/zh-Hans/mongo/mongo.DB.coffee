@@ -40,7 +40,7 @@ module.exports =
 
       params: [{
          name: 'options'
-         type: 'object'
+         type: 'plain-object'
          desc: '选项'
          optional: true
          children: [{

@@ -5,6 +5,7 @@ module.exports =
    desc: ''
 
    items: [
+      'DB'
       require('./mongo.DB')
       require('./mongo.DB@uri')
       require('./mongo.DB@connect')
@@ -13,6 +14,8 @@ module.exports =
       require('./mongo.DB@col')
 
       'Collection'
-      require('./mongo.Collection')
+      require('./mongo.Collection@findOne')
+      require('./mongo.Collection@find')
       require('./mongo.Collection@insertOne')
+      require('./mongo.Collection@insertMany')
    ]
