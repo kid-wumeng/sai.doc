@@ -1,6 +1,6 @@
 module.exports =
 
-   name: '测试'
+   name: '判定 & 测试'
    path: 'test'
 
    desc: """

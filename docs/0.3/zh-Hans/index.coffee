@@ -1,7 +1,8 @@
 module.exports =
 
    packs: [
-      require('./base')
+      require('./core')
       require('./test')
       require('./file')
+      require('./database')
    ]

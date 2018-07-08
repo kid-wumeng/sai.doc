@@ -1,7 +1,7 @@
 module.exports =
 
-   path: 'base'
-   name: '基本包'
+   path: 'core'
+   name: '核心扩展'
    desc: '基本包提供最常用的功能，包括对基本类型、对象、数组等的扩展'
 
    items: [
