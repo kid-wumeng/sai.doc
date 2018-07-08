@@ -18,7 +18,12 @@ module.exports =
 
       params: [
          require('./_id')
-         require('./_queryOptions')
+         require('./_queryOptions')([
+            'pick'
+            'omit'
+            'hide'
+            'rawOptions'
+         ], 'http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#findOne')
       ]
 
       return:
@@ -32,7 +37,12 @@ module.exports =
 
       params: [
          require('./_query')
-         require('./_queryOptions')
+         require('./_queryOptions')([
+            'pick'
+            'omit'
+            'hide'
+            'rawOptions'
+         ], 'http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#findOne')
       ]
 
       return:

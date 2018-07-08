@@ -18,7 +18,17 @@ module.exports =
 
       params: [
          require('./_query')
-         require('./_queryOptions')
+         require('./_queryOptions')([
+            'sort'
+            'desc'
+            'skip'
+            'page'
+            'size'
+            'pick'
+            'omit'
+            'hide'
+            'rawOptions'
+         ], 'http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#find')
       ]
 
       return:
