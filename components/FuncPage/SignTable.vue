@@ -1,5 +1,5 @@
 <template lang="jade">
-   .SignTable(v-if="sign")
+   .SignTable(v-if="show")
       ParamTable.params(v-if="params", :params="params")
       ParamTable.return(v-if="result", :params="[result]" title="return")
       ParamTable.errors(v-if="errors", :params="errors"   title="errors")
@@ -21,6 +21,8 @@
          params: -> @sign.params
          result: -> @sign.return
          errors: -> @sign.errors
+
+         show: -> @sign and ( @params?.length or @return or @errors?.length )
 </script>
 
 

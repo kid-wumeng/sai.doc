@@ -1,11 +1,12 @@
 <template lang="jade">
-   nuxt-link.FuncItem(:to="to('/' + name)", :active="active") {{ name }}
+   nuxt-link.FuncItem(:to="to('/' + name)", :active="active") {{ displayName }}
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
+
       props:
          'item':
             type: Object
@@ -17,15 +18,16 @@
 
       computed:
          func: -> @item
+         name: -> @func.name ? ''
 
-         name: ->
-            name = @func.name ? ''
-            i = name.indexOf('@')
+         displayName: ->
+
+            i = @name.indexOf('@')
 
             if i > -1
-               return name.slice(i)
+               return @name.slice(i)
             else
-               return name
+               return @name
 </script>
 
 
