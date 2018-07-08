@@ -9,4 +9,3 @@ module.exports = ( link ) =>
 
       参考 [MongoDB Driver API](#{link})
    """
-   optional: true

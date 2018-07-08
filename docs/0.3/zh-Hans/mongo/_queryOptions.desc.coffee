@@ -6,4 +6,3 @@ module.exports =
       默认值：*false*
       是否逆序 ？
    """
-   optional: true

@@ -25,6 +25,7 @@
 <style lang="less">
    .ParamTable {
       .ChildrenTable {
+         background-color: rgba(250, 250, 250, 0.8);
          border-top: 1px solid lighten(#A2AEBA, 27%);
       }
    }

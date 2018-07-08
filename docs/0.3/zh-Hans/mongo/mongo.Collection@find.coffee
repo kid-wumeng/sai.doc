@@ -13,8 +13,8 @@ module.exports =
 
    signs: [{
       async: true
-      name: '@find( [query], [options] )'
-      desc: '查找文档 ( 批量 )'
+      name: '@find( query, options )'
+      desc: '查询文档 ( 批量 )'
 
       params: [
          require('./_query')

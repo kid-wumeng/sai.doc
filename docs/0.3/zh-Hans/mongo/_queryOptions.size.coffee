@@ -6,4 +6,3 @@ module.exports =
       默认值：*0*
       每页文档条数
    """
-   optional: true

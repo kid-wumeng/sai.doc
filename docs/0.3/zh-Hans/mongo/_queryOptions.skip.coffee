@@ -6,4 +6,3 @@ module.exports =
       默认值：*1*
       跳过的文档条数
    """
-   optional: true

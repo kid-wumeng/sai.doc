@@ -6,4 +6,3 @@ module.exports =
       默认值：*[]*
       忽略的字段
    """
-   optional: true
