@@ -17,7 +17,15 @@
 
       computed:
          func: -> @item
-         name: -> @func.name
+
+         name: ->
+            name = @func.name ? ''
+            i = name.indexOf('@')
+
+            if i > -1
+               return name.slice(i)
+            else
+               return name
 </script>
 
 
