@@ -5,13 +5,14 @@ module.exports =
    desc: ''
 
    items: [
-      require('./MongoDB')
-      require('./MongoDB@uri')
-      require('./MongoDB@connect')
-      require('./MongoDB@close')
-      require('./MongoDB@drop')
-      require('./MongoDB@col')
+      require('./mongo.DB')
+      require('./mongo.DB@uri')
+      require('./mongo.DB@connect')
+      require('./mongo.DB@close')
+      require('./mongo.DB@drop')
+      require('./mongo.DB@col')
 
       'Collection'
-      require('./MongoDB.Collection@insertOne')
+      require('./mongo.Collection')
+      require('./mongo.Collection@insertOne')
    ]

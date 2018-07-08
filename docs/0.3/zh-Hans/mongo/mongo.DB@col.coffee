@@ -1,12 +1,12 @@
 module.exports =
 
 
-   name: 'MongoDB@col'
+   name: 'mongo.DB@col'
 
 
    desc: """
       ```js
-      db = new sai.MongoDB({
+      db = new sai.mongo.DB({
          host: '127.0.0.1',
          name: 'test'
       })
@@ -29,6 +29,6 @@ module.exports =
 
       return:
          name: 'collection'
-         type: 'sai.MongoDB.Collection'
+         type: 'sai.mongo.Collection'
          desc: '集合'
    }]

@@ -1,12 +1,12 @@
 module.exports =
 
 
-   name: 'MongoDB@uri'
+   name: 'mongo.DB@uri'
 
 
    desc: """
       ```js
-      db = new sai.MongoDB({
+      db = new sai.mongo.DB({
          host: '127.0.0.1',
          name: 'test',
          user: 'kid',

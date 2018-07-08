@@ -1,23 +1,22 @@
 module.exports =
 
 
-   name: 'MongoDB@drop'
+   name: 'mongo.DB@connect'
 
 
    desc: """
       ```js
-      db = new sai.MongoDB({
+      db = new sai.mongo.DB({
          host: '127.0.0.1',
          name: 'test'
       })
 
       await db.connect()
-      await db.drop()
       ```
    """
 
 
    signs: [{
       async: true
-      name: '@drop()'
+      name: '@connect()'
    }]

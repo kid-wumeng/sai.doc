@@ -1,12 +1,12 @@
 module.exports =
 
 
-   name: 'MongoDB'
+   name: 'mongo.DB'
 
 
    desc: """
       ```js
-      db = new sai.MongoDB({
+      db = new sai.mongo.DB({
          host: '127.0.0.1',
          name: 'test'
       })
@@ -19,8 +19,10 @@ module.exports =
 
 
    signs: [{
-      name: 'new MongoDB( [options] )'
+      name: 'new mongo.DB( [options] )'
       more: """
+         基于 [MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/3.1) 封装
+
          选项与默认值：
 
          ```js
@@ -96,5 +98,5 @@ module.exports =
 
       return:
          name: 'db'
-         type: 'sai.MongoDB'
+         type: 'sai.mongo.DB'
    }]
