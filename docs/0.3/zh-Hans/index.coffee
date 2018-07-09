@@ -8,6 +8,7 @@ module.exports =
       require('./net')
       require('./mongo')
       require('./code')
+      require('./date')
    ]
 
 
