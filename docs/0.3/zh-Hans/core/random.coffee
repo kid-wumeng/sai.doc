@@ -13,40 +13,6 @@ module.exports =
 
 
    signs: [{
-      name: 'random()'
-      desc: '随机获取 0 ~ 100 之间的一个整数'
-
-      return:
-         name: 'n'
-         type: '0, int+'
-         desc: '随机整数'
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
-
-   },{
-
-      name: 'random( max )'
-      desc: '随机获取 0 ~ max 之间的一个整数'
-
-      params: [{
-         name: 'max'
-         type: '0, int+'
-         desc: '最大值'
-      }]
-
-      return:
-         name: 'n'
-         type: '0, int+'
-         desc: '随机整数'
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
-
-   },{
-
       name: 'random( min, max )'
       desc: '随机获取 min ~ max 之间的一个整数'
 
@@ -54,10 +20,12 @@ module.exports =
          name: 'min'
          type: 'int'
          desc: '最小值'
+         default: 0
       },{
          name: 'max'
          type: 'int'
          desc: '最大值'
+         default: 100
       }]
 
       return:
