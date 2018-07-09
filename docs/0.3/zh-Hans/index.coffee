@@ -1,12 +1,15 @@
 module.exports =
 
+
    packs: [
       require('./core')
       require('./test')
       require('./file')
       require('./net')
       require('./mongo')
+      require('./code')
    ]
+
 
    more: """
       # 文档使用的 Param 类型

@@ -12,7 +12,7 @@ module.exports =
       require('./http.patch')
       require('./http.delete')
 
-      'HTTP 客户端'
+      'HTTP Client'
       require('./http.Client')
       require('./http.Client@url')
       require('./http.Client@get')
@@ -21,7 +21,7 @@ module.exports =
       require('./http.Client@patch')
       require('./http.Client@delete')
 
-      'HTTP 服务端'
+      'HTTP Server'
       require('./http.Server')
       require('./http.Server@all')
       require('./http.Server@get')
