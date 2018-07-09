@@ -1,4 +1,3 @@
-sai.mime(file)
 sai.isMIME(data, mime)
 sai.isImage(data)
 sai.isEqual(datas)

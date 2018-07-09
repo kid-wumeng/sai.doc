@@ -31,4 +31,5 @@ module.exports =
       require('./writeYAML')
 
       '类型判定'
+      require('./isMime')
    ]
