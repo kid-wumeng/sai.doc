@@ -23,10 +23,10 @@ module.exports =
       more: """
          基于 [MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/3.1) 封装
 
-         选项与默认值：
+         选项与默认值
 
          ```js
-         new sai.MongoDB({
+         new sai.mongo.DB({
             host: '127.0.0.1',
             port: 27017,
             name: 'test',
