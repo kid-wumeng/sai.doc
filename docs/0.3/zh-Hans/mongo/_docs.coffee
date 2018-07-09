@@ -1,7 +1,7 @@
 module.exports =
 
    name: 'docs'
-   type: 'plain-object[]'
+   type: 'Array[object]'
    desc: """
       包含：
 

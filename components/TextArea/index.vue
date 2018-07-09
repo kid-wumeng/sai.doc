@@ -95,6 +95,7 @@
       > ol {
          margin-top: 6px;
          margin-left: 2.4em;
+         
          li {
             line-height: 19px;
             list-style-position: inside;
@@ -102,13 +103,14 @@
             margin-bottom: 16px;
 
             &:last-child {
-               margin-bottom: 0 !important;
+               margin-bottom: 0;
             }
          }
       }
 
       > .table-wrap {
          display: inline-block;
+         text-indent: 0 !important;
          border: 1px solid lighten(#A2AEBA, 21%);
          border-radius: 2px;
          box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);

@@ -21,6 +21,7 @@
    .ParamTable {
       .ParamDesc {
          font-size: 14px;
+         color: #707C88;
 
          > * {
             margin-bottom: 10px;
@@ -29,13 +30,19 @@
          li {
             margin-bottom: 8px;
             margin-left: 5px;
+
             > * {
                margin-left: -6px;
+            }
+
+            &:last-child {
+               margin-bottom: 8px;
             }
          }
 
          em {
             font-weight: 500;
+            color: #445669;
          }
       }
    }

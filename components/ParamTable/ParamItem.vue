@@ -5,9 +5,8 @@
             ParamName(:param="param")
             ParamType(:param="param")
          Column.right
-            ParamRequired(:param="param")
-            ParamDesc(:param="param")
             ParamDefault(:param="param")
+            ParamDesc(:param="param")
       ChildrenTable(:param="param")
 </template>
 
@@ -20,7 +19,6 @@
          'Column':        require('~/components/Column').default
          'ParamName':     require('./ParamName').default
          'ParamType':     require('./ParamType').default
-         'ParamRequired': require('./ParamRequired').default
          'ParamDefault':  require('./ParamDefault').default
          'ParamDesc':     require('./ParamDesc').default
          'ChildrenTable': require('./ChildrenTable').default
@@ -35,20 +33,19 @@
 
 <style lang="less">
 
-   @padding-x: 28px;
-   @padding-y: 32px;
+   @padding-x: 29px;
+   @padding-y: 31px;
 
    .ParamTable {
       .ParamItem {
          > .Row {
             > .Column.left {
                flex: none;
-               width: 45%;
-               line-height: 22px;
+               width: 40%;
                padding: @padding-y @padding-x;
 
                > .ParamType {
-                  margin-top: 4px;
+                  margin-top: 16px;
                }
             }
 
@@ -57,14 +54,14 @@
                flex: auto;
                padding: @padding-y @padding-x;
 
+               > .ParamDefault {
+                  margin-bottom: 10px;
+               }
+
                > .ParamDesc {
                   ul, ol {
                      margin-left: 0 !important;
                   }
-               }
-
-               > .ParamDefault {
-                  margin-top: 2px;
                }
             }
          }

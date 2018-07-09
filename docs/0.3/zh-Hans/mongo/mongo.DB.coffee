@@ -46,53 +46,38 @@ module.exports =
          children: [{
             name: 'host'
             type: 'string'
-            desc: """
-               主机地址 ( IP / 域名 )
-               默认值：*"127.0.0.1"*
-            """
-            optional: true
+            desc: '主机地址 ( IP / 域名 )'
+            default: '127.0.0.1'
          },{
             name: 'port'
-            type: 'int'
-            desc: """
-               端口号
-               默认值：*27017*
-            """
-            optional: true
+            type: '0, int+'
+            desc: '端口号'
+            default: 27017
          },{
             name: 'name'
             type: 'string'
-            desc: """
-               使用的数据库名
-               默认值：*"test"*
-            """
-            optional: true
+            desc: '使用的数据库名'
+            default: 'test'
          },{
             name: 'user'
             type: 'string'
             desc: '登录用户名'
-            optional: true
+            default: ''
          },{
             name: 'pass'
             type: 'string'
             desc: '登录密码'
-            optional: true
+            default: ''
          },{
             name: 'autoID'
             type: 'boolean'
-            desc: """
-               当插入新文档时，是否自动生成自增ID ？
-               默认值：*false*
-            """
-            optional: true
+            desc: '当插入新文档时，是否自动生成自增ID ？'
+            default: false
          },{
             name: 'autoIDStore'
             type: 'string'
-            desc: """
-               记录自增ID的集合名
-               默认值：*"id_store"*
-            """
-            optional: true
+            desc: '记录自增ID的集合名'
+            default: 'id_store'
          }]
       }]
 

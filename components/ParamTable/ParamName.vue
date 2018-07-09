@@ -16,7 +16,7 @@
 
       computed:
          name:     -> @param.name     ? ''
-         optional: -> @param.optional ? false
+         optional: -> @param.type and !@param.required
 </script>
 
 
@@ -24,7 +24,7 @@
 <style lang="less">
    .ParamTable {
       .ParamName {
-         font-size: 15px;
+         font-size: 16px;
          color: #273340;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);
          word-break: break-all;

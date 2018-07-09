@@ -16,8 +16,8 @@
 
       computed:
          defaults:        -> @param.default
-         defaultsFormat:  -> @formatValue(@defaults)
-         defaultsDisplay: -> "default → _#{@defaultsFormat}_"
+         defaultsFormat:  -> @formatValue(@defaults).replace(/\*/g, '&#42;')
+         defaultsDisplay: -> "default → *#{@defaultsFormat}*"
 </script>
 
 
@@ -25,7 +25,8 @@
 <style lang="less">
    .ParamTable {
       .ParamDefault {
-         font-size: 14px;
+         line-height: 21px;
+         font-size: 15px;
          color: #A2AEBA;
 
          > * {

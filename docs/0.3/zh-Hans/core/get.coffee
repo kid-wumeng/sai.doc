@@ -18,14 +18,16 @@ module.exports =
       params: [{
          name: 'data'
          type: 'object'
+         required: true
       },{
          name: 'path'
          type: 'string'
+         required: true
       },{
          name: 'defaultValue'
          type: '*'
          desc: '若发现取值是 undefined，则会返回 defaultValue（ 如果设置过 ）'
-         optional: true
+         default: undefined
       }]
 
       return:

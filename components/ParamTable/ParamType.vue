@@ -21,7 +21,8 @@
    .ParamTable {
       .ParamType {
          font-size: 14px;
-         color: #A2AEBA;
+         font-weight: 500;
+         color: lighten(#A2AEBA, 12%);
          word-break: break-all;
          user-select: all;
       }

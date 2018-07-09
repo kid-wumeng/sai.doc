@@ -1,6 +1,6 @@
 module.exports =
 
    name: 'omit'
-   type: 'string[]'
+   type: 'Array[string]'
    desc: '忽略的字段'
    default: []

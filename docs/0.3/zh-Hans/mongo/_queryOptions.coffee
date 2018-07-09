@@ -15,6 +15,6 @@ module.exports = ( children = [], rawLink = '' ) =>
 
    return
       name: 'options'
-      type: 'Array-like[string]'
+      type: 'object'
       default: {}
       children: children.map (name) => childrenParams[name]

@@ -18,10 +18,12 @@ module.exports =
       params: [{
          name: 'data'
          type: 'object'
+         required: true
       },{
          name: 'path'
          type: 'string'
          desc: '事先无需检测属性存在与否，即使不存在，也不会有任何副作用'
+         required: true
       }]
 
       errors: [

@@ -19,6 +19,7 @@ module.exports =
          name: 'data'
          type: '*'
          desc: '原始数据'
+         required: true
       }]
 
       return:

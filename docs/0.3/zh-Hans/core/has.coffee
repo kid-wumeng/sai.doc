@@ -18,9 +18,11 @@ module.exports =
       params: [{
          name: 'data'
          type: 'object'
+         required: true
       },{
          name: 'path'
          type: 'string'
+         required: true
       }]
 
       return:

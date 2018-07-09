@@ -20,27 +20,25 @@ module.exports =
 
       params: [{
          name: 'data'
-         type: 'Array-like, Object'
+         type: 'object'
          desc: """
-            期望测量的数据。预期的类型：
+            测量目标，一般多是：
 
-            * Array, Array-like
+            * Array-like
             * Set, Map
-            * 字符串
-            * 拥有可枚举属性的对象
+            * 朴素对象
          """
+         required: true
       },{
          name: 'mode'
          type: 'string'
          desc: """
-            字符串长度计算模式，默认值：*length*
+            字符串长度计算模式，仅在 data 为 string 时可用
 
             * *length* - data.length
             * *cjk* - 中日韩字符占 2 位，其余占 1 位
-
-            *mode 仅在 data 为字符串时可用*
          """
-         optional: true
+         default: 'length'
       }]
 
       return:
@@ -59,28 +57,21 @@ module.exports =
 
       params: [{
          name: 'data'
-         type: 'Array-like, Object'
+         type: 'object'
          desc: """
-            期望测量的数据。预期的类型：
-
-            * Array, Array-like
+            测量目标，一般多是：
+            * Array-like
             * Set, Map
-            * 字符串
-            * 拥有可枚举属性的对象
+            * 朴素对象
          """
+         required: true
       },{
          name: 'callback'
          type: 'function'
          desc: """
             计量器
-
-            以下类型使用 callback(item, i)
-
-            * Array-like
-            * Set, Map
-            * 字符串
-
-            其它对象使用 callback(name, value)
+            Array-like, Set, Map 使用 callback(item, i)
+            其它对象使用 callback(value, key)
          """
       }]
 
@@ -188,12 +179,5 @@ module.exports =
       sai.len(fruitPrices, (name, value) => value)
 
       // => 7
-      ```
-
-      # data 为 undefined 或 null 时一律返回 0
-
-      ```js
-      sai.len(undefined, 'cjk')   // => 0
-      sai.len(null, (item) => 1)  // => 0
       ```
    """
