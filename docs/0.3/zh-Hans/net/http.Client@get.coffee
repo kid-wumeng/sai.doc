@@ -6,17 +6,17 @@ module.exports =
 
    desc: """
       ```js
-      res = await client.get(url, data, options)
+      res = await client.get('/users/1', data, options)
       ```
    """
 
 
    signs: [{
-      name: '@get( url, data, options )'
+      name: '@get( path, data, options )'
       desc: '发送 GET 请求'
 
       params: [
-         require('./params/http.requestUrl')
+         require('./params/http.requestPath')
          require('./params/http.requestData')
          require('./params/http.requestOptions')
       ]

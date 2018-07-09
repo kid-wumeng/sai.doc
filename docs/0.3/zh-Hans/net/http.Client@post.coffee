@@ -6,17 +6,17 @@ module.exports =
 
    desc: """
       ```js
-      res = await client.post(url, data, options)
+      res = await client.post('/users/1', data, options)
       ```
    """
 
 
    signs: [{
-      name: '@post( url, data, options )'
+      name: '@post( path, data, options )'
       desc: '发送 POST 请求'
 
       params: [
-         require('./params/http.requestUrl')
+         require('./params/http.requestPath')
          require('./params/http.requestData')
          require('./params/http.requestOptions')
       ]

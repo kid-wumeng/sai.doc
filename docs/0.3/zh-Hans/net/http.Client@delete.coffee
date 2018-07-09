@@ -6,17 +6,17 @@ module.exports =
 
    desc: """
       ```js
-      res = await client.delete(url, data, options)
+      res = await client.delete('/users/1', data, options)
       ```
    """
 
 
    signs: [{
-      name: '@delete( url, data, options )'
+      name: '@delete( path, data, options )'
       desc: '发送 DELETE 请求'
 
       params: [
-         require('./params/http.requestUrl')
+         require('./params/http.requestPath')
          require('./params/http.requestData')
          require('./params/http.requestOptions')
       ]

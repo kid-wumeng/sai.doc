@@ -6,17 +6,17 @@ module.exports =
 
    desc: """
       ```js
-      res = await client.patch(url, data, options)
+      res = await client.patch('/users/1', data, options)
       ```
    """
 
 
    signs: [{
-      name: '@patch( url, data, options )'
+      name: '@patch( path, data, options )'
       desc: '发送 PATCH 请求'
 
       params: [
-         require('./params/http.requestUrl')
+         require('./params/http.requestPath')
          require('./params/http.requestData')
          require('./params/http.requestOptions')
       ]
