@@ -23,6 +23,7 @@ module.exports =
 
       'HTTP 服务端'
       require('./http.Server')
+      require('./http.Server@all')
       require('./http.Server@get')
       require('./http.Server@post')
       require('./http.Server@put')
