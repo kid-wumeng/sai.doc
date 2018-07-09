@@ -23,4 +23,5 @@ module.exports =
       require('./mongo.Collection@updateMany')
       require('./mongo.Collection@deleteOne')
       require('./mongo.Collection@deleteMany')
+      require('./mongo.Collection@aggregate')
    ]
