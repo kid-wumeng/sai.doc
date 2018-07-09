@@ -1,8 +1,6 @@
 module.exports =
 
    name: 'size'
-   type: 'int+'
-   desc: """
-      默认值：*0*
-      每页文档条数
-   """
+   type: '0, int+'
+   desc: '每页文档条数'
+   default: 0

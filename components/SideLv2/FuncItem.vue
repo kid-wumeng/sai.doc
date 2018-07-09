@@ -48,7 +48,10 @@
          }
 
          &[active] {
-            background-color: rgba(249, 249, 249, 1);
+            font-weight: 500;
+            color: #F2F2F2;
+            background-color: #272E3D;
+            text-shadow: none;
          }
       }
    }

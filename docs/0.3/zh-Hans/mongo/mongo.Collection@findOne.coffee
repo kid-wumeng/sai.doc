@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: '@findOne( id, [options] )'
+      name: '@findOne( id, options )'
       desc: '查询文档'
 
       params: [
@@ -32,7 +32,7 @@ module.exports =
    },{
 
       async: true
-      name: '@findOne( query, [options] )'
+      name: '@findOne( query, options )'
       desc: '查询文档'
 
       params: [

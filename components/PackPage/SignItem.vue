@@ -25,6 +25,7 @@
    .PackPage {
       .SignItem {
          border-bottom: 1px solid lighten(#A2AEBA, 26%);
+         
          &:last-child {
             border-bottom: none;
          }

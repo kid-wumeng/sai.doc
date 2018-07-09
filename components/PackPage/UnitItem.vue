@@ -25,6 +25,7 @@
 
             for func in @funcs
                 for sign in func.signs ? []
+                    sign.func = func
                     signs.push(sign)
 
             return signs

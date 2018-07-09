@@ -1,10 +1,12 @@
 <template lang="jade">
    .ParamItem
       Row
-         Column
+         Column.left
             ParamName(:param="param")
             ParamType(:param="param")
-         ParamDesc(:param="param")
+         Column.right
+            ParamDefault(:param="param")
+            ParamDesc(:param="param")
       ChildrenTable(:param="param")
 </template>
 
@@ -17,6 +19,7 @@
          'Column':        require('~/components/Column').default
          'ParamName':     require('./ParamName').default
          'ParamType':     require('./ParamType').default
+         'ParamDefault':  require('./ParamDefault').default
          'ParamDesc':     require('./ParamDesc').default
          'ChildrenTable': require('./ChildrenTable').default
 
@@ -36,7 +39,7 @@
    .ParamTable {
       .ParamItem {
          > .Row {
-            > .Column {
+            > .Column.left {
                flex: none;
                width: 45%;
                line-height: 22px;
@@ -47,13 +50,17 @@
                }
             }
 
-            > .ParamDesc {
+            > .Column.right {
                align-self: stretch;
                flex: auto;
                padding: @padding-y @padding-x;
 
-               ul, ol {
-                  margin-left: 0 !important;
+               > .ParamDesc {
+                  margin-top: 2px;
+
+                  ul, ol {
+                     margin-left: 0 !important;
+                  }
                }
             }
          }

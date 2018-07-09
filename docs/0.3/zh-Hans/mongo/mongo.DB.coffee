@@ -19,7 +19,7 @@ module.exports =
 
 
    signs: [{
-      name: 'new mongo.DB( [options] )'
+      name: 'new mongo.DB( options )'
       more: """
          基于 [MongoDB Node.js Driver](http://mongodb.github.io/node-mongodb-native/3.1) 封装
 

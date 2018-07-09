@@ -19,7 +19,7 @@ module.exports =
 
 
    signs: [{
-      name: 'new mongo.Collection( [options] )'
+      name: 'new mongo.Collection( options )'
       more: """
          选项与默认值：
 

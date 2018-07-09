@@ -13,4 +13,8 @@ module.exports = to = ( path, query ) ->
       query = @$route.query
 
 
+   if path[0] isnt '/'
+      path = '/' + path
+
+
    return { path, query }

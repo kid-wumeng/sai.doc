@@ -17,6 +17,7 @@
       Vue = require('vue')
 
    Vue.prototype.formatSignName = require('~/utils/formatSignName')
+   Vue.prototype.formatValue    = require('~/utils/formatValue')
    Vue.prototype.markdown       = require('~/utils/markdown')
    Vue.prototype.to             = require('~/utils/to')
 

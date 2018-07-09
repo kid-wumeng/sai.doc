@@ -2,7 +2,5 @@ module.exports =
 
    name: 'hide'
    type: 'boolean'
-   desc: """
-      默认值：*false*
-      是否包含隐藏的字段
-   """
+   desc: '是否包含隐藏的字段'
+   default: false
