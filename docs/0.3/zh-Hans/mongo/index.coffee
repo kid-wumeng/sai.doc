@@ -24,4 +24,5 @@ module.exports =
       require('./mongo.Collection@deleteOne')
       require('./mongo.Collection@deleteMany')
       require('./mongo.Collection@aggregate')
+      require('./mongo.Collection@hide')
    ]
