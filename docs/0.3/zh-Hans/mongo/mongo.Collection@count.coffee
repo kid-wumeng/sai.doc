@@ -17,7 +17,7 @@ module.exports =
       desc: '查询文档数量'
 
       params: [
-         require('./_query')
+         require('./params/query')
       ]
 
       return:

@@ -17,8 +17,8 @@ module.exports =
       desc: '查询文档'
 
       params: [
-         require('./_id')
-         require('./_queryOptions')([
+         require('./params/id')
+         require('./params/queryOptions')([
             'pick'
             'omit'
             'hide'
@@ -27,7 +27,7 @@ module.exports =
       ]
 
       return:
-         require('./_doc')
+         require('./return/doc')
 
    },{
 
@@ -36,8 +36,8 @@ module.exports =
       desc: '查询文档'
 
       params: [
-         require('./_query')
-         require('./_queryOptions')([
+         require('./params/query')
+         require('./params/queryOptions')([
             'pick'
             'omit'
             'hide'
@@ -46,5 +46,5 @@ module.exports =
       ]
 
       return:
-         require('./_doc')
+         require('./return/doc')
    }]

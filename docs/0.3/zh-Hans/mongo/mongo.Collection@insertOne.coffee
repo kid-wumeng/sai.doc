@@ -29,9 +29,9 @@ module.exports =
 
       params: [{
          name: 'doc'
-         type: 'plain-object'
+         type: 'object'
       }]
 
       return:
-         require('./_doc')
+         require('./return/doc')
    }]

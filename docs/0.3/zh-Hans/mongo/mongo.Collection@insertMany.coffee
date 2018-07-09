@@ -22,5 +22,5 @@ module.exports =
       }]
 
       return:
-         require('./_docs')
+         require('./return/docs')
    }]

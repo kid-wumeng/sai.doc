@@ -17,8 +17,8 @@ module.exports =
       desc: '查询文档 ( 批量 )'
 
       params: [
-         require('./_query')
-         require('./_queryOptions')([
+         require('./params/query')
+         require('./params/queryOptions')([
             'sort'
             'desc'
             'skip'
@@ -32,5 +32,5 @@ module.exports =
       ]
 
       return:
-         require('./_docs')
+         require('./return/docs')
    }]
