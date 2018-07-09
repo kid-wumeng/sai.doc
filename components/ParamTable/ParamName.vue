@@ -1,8 +1,8 @@
 <template lang="jade">
    .ParamName
-      span.left(v-if="defaults") [
+      span.left(v-if="optional") [
       span.name(v-if="name") {{ name }}
-      span.right(v-if="defaults") ]
+      span.right(v-if="optional") ]
 </template>
 
 
@@ -16,7 +16,7 @@
 
       computed:
          name:     -> @param.name ? ''
-         defaults: -> @param.default
+         optional: -> @param.optional or _.has(@param, 'default')
 </script>
 
 

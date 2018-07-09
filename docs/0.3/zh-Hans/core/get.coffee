@@ -26,6 +26,7 @@ module.exports =
          type: '*'
          desc: '若发现取值是 undefined，则会返回 defaultValue（ 如果设置过 ）'
          default: undefined
+         optional: true
       }]
 
       return:

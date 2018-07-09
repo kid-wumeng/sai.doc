@@ -33,7 +33,7 @@ module.exports =
 
       return:
          name: 'data'
-         type: 'plain-object'
+         type: 'object'
 
       errors: [
          require('../errors').INVALID_PARAMS

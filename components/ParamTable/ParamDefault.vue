@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.ParamDefault(v-if="defaultsFormat !== ''", :text="defaultsDisplay")
+   TextArea.ParamDefault(v-if="optional", :text="defaultsDisplay")
 </template>
 
 
@@ -15,6 +15,7 @@
             required: true
 
       computed:
+         optional:        -> @param.optional or _.has(@param, 'default')
          defaults:        -> @param.default
          defaultsFormat:  -> @formatValue(@defaults).replace(/\*/g, '&#42;')
          defaultsDisplay: -> "default → *#{@defaultsFormat}*"

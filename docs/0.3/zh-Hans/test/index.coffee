@@ -35,6 +35,5 @@ module.exports =
       require('./isURL')
 
       '数据检测'
-      require('./isExist')
       require('./isEmpty')
    ]

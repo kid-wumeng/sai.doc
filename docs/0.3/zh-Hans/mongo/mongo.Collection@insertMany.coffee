@@ -18,7 +18,7 @@ module.exports =
 
       params: [{
          name: 'docs'
-         type: 'plain-object[]'
+         type: 'Array[object]'
       }]
 
       return:

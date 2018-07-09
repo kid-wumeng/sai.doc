@@ -18,7 +18,7 @@ module.exports =
 
       return:
          name: 'n'
-         type: 'int'
+         type: '0, int+'
          desc: '随机整数'
 
       errors: [
@@ -30,13 +30,13 @@ module.exports =
 
       params: [{
          name: 'max'
-         type: 'int'
+         type: '0, int+'
          desc: '最大值'
       }]
 
       return:
          name: 'n'
-         type: 'int'
+         type: '0, int+'
          desc: '随机整数'
 
       errors: [
