@@ -15,7 +15,7 @@ module.exports =
       name: 'milliSecond( date )'
       desc: '获取毫秒数 ( 0 - 999 )'
 
-      paramilliSecond: [{
+      params: [{
          name: 'date'
          type: 'Date'
       }]
