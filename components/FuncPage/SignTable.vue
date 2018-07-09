@@ -48,9 +48,9 @@
          .errors {
             .ParamItem {
                .ParamName {
-                  line-height: 23px;
-                  font-weight: 400;
-                  font-size: 14px;
+                  line-height: 22px;
+                  font-weight: 600;
+                  font-size: 13px;
                   color: #FFA631;
                   text-shadow: none;
                   position: relative;

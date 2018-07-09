@@ -36,7 +36,7 @@
    .SideLv2 {
       .FuncItem {
          display: block;
-         padding: 12px 20px;
+         padding: 10px 20px;
          font-weight: 400;
          font-size: 14px;
          color: #273340;
@@ -48,6 +48,7 @@
          }
 
          &[active] {
+            font-weight: 500;
             color: #F2F2F2;
             background-color: #272E3D;
             text-shadow: none;

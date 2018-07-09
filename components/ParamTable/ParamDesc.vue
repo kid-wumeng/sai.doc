@@ -21,7 +21,7 @@
    .ParamTable {
       .ParamDesc {
          font-size: 14px;
-         color: #707C88;
+         color: darken(#707C88, 5%);
 
          > * {
             margin-bottom: 10px;

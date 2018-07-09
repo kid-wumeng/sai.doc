@@ -24,7 +24,7 @@
 <style lang="less">
    .ParamTable {
       .ParamName {
-         line-height: 20px;
+         line-height: 21px;
          text-align: justify;
          font-size: 16px;
          color: #273340;
@@ -36,8 +36,8 @@
             user-select: all;
          }
 
-         .left { margin-right: 7px }
-         .right { margin-left: 7px }
+         .left { margin-right: 3px }
+         .right { margin-left: 3px }
       }
    }
 </style>

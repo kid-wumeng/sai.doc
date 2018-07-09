@@ -33,7 +33,7 @@
 
 <style lang="less">
 
-   @padding-x: 29px;
+   @padding-x: 31px;
    @padding-y: 31px;
 
    .ParamTable {

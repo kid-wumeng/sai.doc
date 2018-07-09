@@ -20,9 +20,9 @@
 <style lang="less">
    .ParamTable {
       .ParamType {
-         font-size: 14px;
-         font-weight: 500;
-         color: lighten(#A2AEBA, 12%);
+         font-size: 15px;
+         font-weight: 400;
+         color: lighten(#A2AEBA, 0%);
          word-break: break-all;
          user-select: all;
       }

@@ -7,7 +7,7 @@ module.exports =
    desc: """
       ```js
       client = new sai.http.Client({
-         urlBase: 'http://127.0.0.1:8080',
+         urlBase: 'http://127.0.0.1:8080'
       })
 
       res = await client.get('/users/1')

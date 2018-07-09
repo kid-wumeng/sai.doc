@@ -26,7 +26,7 @@
 <style lang="less">
    .ParamTable {
       .ParamDefault {
-         line-height: 20px;
+         line-height: 21px;
          font-size: 15px;
          color: #A2AEBA;
 
