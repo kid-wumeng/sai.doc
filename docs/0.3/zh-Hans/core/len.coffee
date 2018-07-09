@@ -42,7 +42,7 @@ module.exports =
 
       return:
          name: 'len'
-         type: 'number'
+         type: 'int ≥ 0'
          desc: '数据的长度、成员数量等'
 
       errors: [
@@ -75,7 +75,7 @@ module.exports =
 
       return:
          name: 'len'
-         type: 'number'
+         type: 'int ≥ 0'
          desc: '数据的长度、成员数量等'
 
       errors: [

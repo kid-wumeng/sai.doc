@@ -51,7 +51,7 @@ module.exports =
             default: '127.0.0.1'
          },{
             name: 'port'
-            type: '0, int+'
+            type: 'int ≥ 0'
             desc: '端口号'
             default: 27017
          },{

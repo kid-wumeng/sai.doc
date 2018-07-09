@@ -1,4 +1,4 @@
 module.exports =
 
    name: 'id'
-   type: 'int+'
+   type: 'int ≥ 0'

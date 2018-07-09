@@ -19,4 +19,6 @@ module.exports =
       require('./mongo.Collection@count')
       require('./mongo.Collection@insertOne')
       require('./mongo.Collection@insertMany')
+      require('./mongo.Collection@updateOne')
+      require('./mongo.Collection@updateMany')
    ]

@@ -25,7 +25,7 @@ module.exports =
    signs: [{
       async: true
       name: '@insertOne( doc )'
-      desc: '插入一条文档'
+      desc: '插入文档'
 
       params: [{
          name: 'doc'

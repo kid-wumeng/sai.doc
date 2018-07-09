@@ -25,6 +25,7 @@
    .ParamTable {
       .ParamName {
          line-height: 20px;
+         text-align: justify;
          font-size: 16px;
          color: #273340;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);
@@ -35,8 +36,8 @@
             user-select: all;
          }
 
-         .left::after   { content: " " }
-         .right::before { content: " " }
+         .left { margin-right: 7px }
+         .right { margin-left: 7px }
       }
    }
 </style>

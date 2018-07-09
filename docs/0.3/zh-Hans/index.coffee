@@ -15,12 +15,7 @@ module.exports =
       | _*_             | 任意类型，无限制
       | *boolean*       | 布尔量
       | *number*        | 数
-      | *number+*       | 正数，不含零
-      | *number-*       | 负数，不含零
       | *int*           | 整数
-      | *int+*          | 正整数，不含零
-      | *int-*          | 负整数，不含零
-      | *0*             | 零
       | *string*        | 字符串
       | *function*      | 函数，无论是不是异步
       | *Array*         | 数组，元素类型不限
