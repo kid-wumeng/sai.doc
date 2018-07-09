@@ -7,4 +7,8 @@ module.exports =
    items: [
       'HTTP'
       require('./http.get')
+      require('./http.post')
+      require('./http.put')
+      require('./http.patch')
+      require('./http.delete')
    ]
