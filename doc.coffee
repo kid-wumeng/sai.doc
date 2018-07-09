@@ -1,5 +1,2 @@
-sai.isMIME(data, mime)
-sai.isImage(data)
-sai.isEqual(datas)
 sai.in(datas)
 sai.ms(datas)

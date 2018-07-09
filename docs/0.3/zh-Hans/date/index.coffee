@@ -15,4 +15,5 @@ module.exports =
       require('./week')
       require('./timeStamp')
       require('./formatDate')
+      require('./ms')
    ]
