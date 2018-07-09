@@ -74,10 +74,8 @@ module.exports =
       },{
          name: 'isPop'
          type: 'boolean'
-         desc: """
-            是否弹出选中的元素 ？默认 false
-         """
-         optional: true
+         desc: '是否弹出选中的元素 ？'
+         default: false
       }]
 
       return:

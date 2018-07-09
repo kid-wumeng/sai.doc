@@ -24,14 +24,14 @@ module.exports =
          name: 'mode'
          type: 'string'
          desc: """
-            返回 children 的形式，默认值：*path*
+            返回 children 的形式
 
             * *path* - 子资源的绝对路径
             * *name* - 子资源的名称
             * *data* - 子资源的基本信息
             * *stat* - 子资源的详细信息
          """
-         optional: true
+         default: 'path'
       }]
 
       return:

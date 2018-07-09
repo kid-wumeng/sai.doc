@@ -40,9 +40,10 @@ module.exports =
 
       params: [{
          name: 'options'
-         type: 'plain-object'
+         type: 'object'
          desc: '选项'
-         optional: true
+         default: {}
+
          children: [{
             name: 'host'
             type: 'string'

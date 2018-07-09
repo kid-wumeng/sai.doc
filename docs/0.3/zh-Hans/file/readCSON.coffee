@@ -25,11 +25,10 @@ module.exports =
          name: 'encoding'
          type: 'string'
          desc: """
-            字符编码格式，默认值：*utf8*
-
+            字符编码格式
             可选值参考：[Node.js - Buffers and Character Encodings](https://nodejs.org/dist/latest-v10.x/docs/api/buffer.html#buffer_buffers_and_character_encodings)
          """
-         optional: true
+         default: 'utf8'
       }]
 
       return:
