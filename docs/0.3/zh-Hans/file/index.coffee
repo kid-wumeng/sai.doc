@@ -14,6 +14,7 @@ module.exports =
       require('./move')
       require('./copy')
       require('./remove')
+      require('./mime')
 
       '读文件'
       require('./readFile')
@@ -28,4 +29,6 @@ module.exports =
       require('./writeJSON')
       require('./writeCSON')
       require('./writeYAML')
+
+      '类型判定'
    ]
