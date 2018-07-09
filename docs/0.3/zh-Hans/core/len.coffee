@@ -28,7 +28,6 @@ module.exports =
             * Set, Map
             * 朴素对象
          """
-         required: true
       },{
          name: 'mode'
          type: 'string'
@@ -64,7 +63,6 @@ module.exports =
             * Set, Map
             * 朴素对象
          """
-         required: true
       },{
          name: 'callback'
          type: 'function'

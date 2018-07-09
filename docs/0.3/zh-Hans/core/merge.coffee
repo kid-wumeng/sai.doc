@@ -26,7 +26,6 @@ module.exports =
          name: 'objects...'
          type: 'object'
          desc: '源对象，数量不限'
-         required: true
       }]
 
       return:

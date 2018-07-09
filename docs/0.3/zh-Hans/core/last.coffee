@@ -18,7 +18,6 @@ module.exports =
       params: [{
          name: 'array'
          type: 'Array'
-         required: true
       }]
 
       return:

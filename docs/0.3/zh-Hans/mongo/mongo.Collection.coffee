@@ -40,7 +40,6 @@ module.exports =
          name: 'options'
          type: 'object'
          desc: '选项'
-         optional: true
          children: [{
             name: 'host'
             type: 'string'
@@ -48,7 +47,6 @@ module.exports =
                主机地址 ( IP / 域名 )
                默认值：*"127.0.0.1"*
             """
-            optional: true
          },{
             name: 'port'
             type: 'int'
@@ -56,7 +54,6 @@ module.exports =
                端口号
                默认值：*27017*
             """
-            optional: true
          },{
             name: 'name'
             type: 'string'
@@ -64,17 +61,14 @@ module.exports =
                使用的数据库名
                默认值：*"test"*
             """
-            optional: true
          },{
             name: 'user'
             type: 'string'
             desc: '登录用户名'
-            optional: true
          },{
             name: 'pass'
             type: 'string'
             desc: '登录密码'
-            optional: true
          },{
             name: 'autoID'
             type: 'boolean'
@@ -82,7 +76,6 @@ module.exports =
                当插入新文档时，是否自动生成自增ID ？
                默认值：*false*
             """
-            optional: true
          },{
             name: 'autoIDStore'
             type: 'string'
@@ -90,7 +83,6 @@ module.exports =
                记录自增ID的集合名
                默认值：*"id_store"*
             """
-            optional: true
          }]
       }]
 

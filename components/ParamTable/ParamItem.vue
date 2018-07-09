@@ -45,7 +45,7 @@
                padding: @padding-y @padding-x;
 
                > .ParamType {
-                  margin-top: 16px;
+                  margin-top: 14px;
                }
             }
 

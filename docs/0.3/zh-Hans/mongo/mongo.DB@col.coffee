@@ -25,7 +25,6 @@ module.exports =
          name: 'name'
          type: 'string'
          desc: '集合名'
-         required: true
       }]
 
       return:

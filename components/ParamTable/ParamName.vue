@@ -1,8 +1,8 @@
 <template lang="jade">
    .ParamName
-      span.left(v-if="optional") [
+      span.left(v-if="defaults") [
       span.name(v-if="name") {{ name }}
-      span.right(v-if="optional") ]
+      span.right(v-if="defaults") ]
 </template>
 
 
@@ -15,8 +15,8 @@
             required: true
 
       computed:
-         name:     -> @param.name     ? ''
-         optional: -> @param.type and !@param.required
+         name:     -> @param.name ? ''
+         defaults: -> @param.default
 </script>
 
 
@@ -24,6 +24,7 @@
 <style lang="less">
    .ParamTable {
       .ParamName {
+         line-height: 20px;
          font-size: 16px;
          color: #273340;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.175);

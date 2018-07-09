@@ -19,7 +19,6 @@ module.exports =
          name: 'itemOrArrays...'
          type: '*'
          desc: '期望合并在一起的 item 或 array'
-         required: true
       }]
 
       return:
