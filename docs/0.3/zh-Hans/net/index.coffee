@@ -14,4 +14,9 @@ module.exports =
 
       'HTTP 客户端'
       require('./http.Client')
+      require('./http.Client@get')
+      require('./http.Client@post')
+      require('./http.Client@put')
+      require('./http.Client@patch')
+      require('./http.Client@delete')
    ]
