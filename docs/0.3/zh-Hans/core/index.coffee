@@ -11,15 +11,18 @@ module.exports =
       require('./clone')
       require('./random')
 
-      '对象'
+      'Object'
       require('./has')
       require('./get')
       require('./set')
       require('./del')
       require('./merge')
 
-      '数组'
+      'Array-like'
       require('./first')
       require('./last')
       require('./concat')
+
+      'Object & Array-like'
+      require('./count')
    ]

@@ -17,7 +17,7 @@ module.exports =
 
       params: [{
          name: 'array'
-         type: 'Array'
+         type: 'Array-like'
       }]
 
       return:
