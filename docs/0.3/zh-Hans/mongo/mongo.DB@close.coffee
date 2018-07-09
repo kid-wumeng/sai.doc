@@ -20,4 +20,5 @@ module.exports =
    signs: [{
       async: true
       name: '@close()'
+      desc: '关闭连接'
    }]

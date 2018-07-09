@@ -20,4 +20,5 @@ module.exports =
    signs: [{
       async: true
       name: '@drop()'
+      desc: '删除当前连接的数据库'
    }]

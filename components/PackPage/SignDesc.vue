@@ -20,8 +20,8 @@
 <style lang="less">
    .PackPage {
       .SignDesc {
-         padding: 8px 16px;
-         font-size: 13px;
+         padding: 10px 16px;
+         font-size: 14px;
       }
    }
 </style>

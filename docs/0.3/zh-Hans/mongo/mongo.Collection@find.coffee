@@ -14,7 +14,7 @@ module.exports =
    signs: [{
       async: true
       name: '@find( query, options )'
-      desc: '查询文档 ( 批量 )'
+      desc: '查找文档，依据 Query ( 批量 )'
 
       params: [
          require('./params/query')

@@ -20,6 +20,7 @@ module.exports =
 
    signs: [{
       name: '@uri()'
+      desc: '构造符合 MongoDB 标准的 URI'
       more: """
          MongoDB URI 格式参考 [Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/)
       """

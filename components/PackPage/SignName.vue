@@ -26,7 +26,7 @@
          align-items: center;
 
          > a {
-            padding: 8px 16px;
+            padding: 10px 16px;
             line-height: 22px;
             font-weight: 400;
             font-size: 13px;

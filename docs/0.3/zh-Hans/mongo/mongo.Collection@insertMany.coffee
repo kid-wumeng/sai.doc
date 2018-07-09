@@ -14,7 +14,7 @@ module.exports =
    signs: [{
       async: true
       name: '@insertMany( docs )'
-      desc: '插入多条文档 ( 批量 )'
+      desc: '插入文档 ( 批量 )'
 
       params: [{
          name: 'docs'

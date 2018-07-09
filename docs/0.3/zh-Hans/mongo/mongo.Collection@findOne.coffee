@@ -14,7 +14,7 @@ module.exports =
    signs: [{
       async: true
       name: '@findOne( id, options )'
-      desc: '查询文档'
+      desc: '查找文档，依据 ID'
 
       params: [
          require('./params/id')
@@ -33,7 +33,7 @@ module.exports =
 
       async: true
       name: '@findOne( query, options )'
-      desc: '查询文档'
+      desc: '查找文档，依据 Query'
 
       params: [
          require('./params/query')

@@ -14,7 +14,7 @@ module.exports =
    signs: [{
       async: true
       name: '@count( query )'
-      desc: '查询文档条数'
+      desc: '统计文档条数'
 
       params: [
          require('./params/query')

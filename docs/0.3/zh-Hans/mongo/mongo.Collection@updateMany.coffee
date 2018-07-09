@@ -19,7 +19,7 @@ module.exports =
    signs: [{
       async: true
       name: '@updateMany( query, modifier )'
-      desc: '更新多条文档 ( 批量 )'
+      desc: '更新文档，依据 Query ( 批量 )'
 
       params: [
          require('./params/query')

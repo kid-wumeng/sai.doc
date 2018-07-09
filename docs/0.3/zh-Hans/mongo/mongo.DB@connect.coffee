@@ -19,4 +19,5 @@ module.exports =
    signs: [{
       async: true
       name: '@connect()'
+      desc: '连接'
    }]

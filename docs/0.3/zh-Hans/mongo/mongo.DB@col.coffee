@@ -20,6 +20,7 @@ module.exports =
 
    signs: [{
       name: '@col( name )'
+      desc: '返回 name 对应的 Collection 对象'
 
       params: [{
          name: 'name'

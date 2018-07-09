@@ -19,7 +19,7 @@ module.exports =
    signs: [{
       async: true
       name: '@updateOne( id, modifier )'
-      desc: '更新文档'
+      desc: '更新文档，依据 ID'
 
       params: [
          require('./params/id')
@@ -35,7 +35,7 @@ module.exports =
 
       async: true
       name: '@updateOne( query, modifier )'
-      desc: '更新文档'
+      desc: '更新文档，依据 Query'
 
       params: [
          require('./params/query')
