@@ -22,5 +22,5 @@ module.exports =
 
       return:
          name: 'month'
-         type: 'int ≥ 1'
+         type: 'int, 1 ~ 12'
    }]

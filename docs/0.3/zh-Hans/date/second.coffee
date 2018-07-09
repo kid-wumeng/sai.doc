@@ -22,5 +22,5 @@ module.exports =
 
       return:
          name: 'second'
-         type: 'int ≥ 0'
+         type: 'int, 0 ~ 59'
    }]

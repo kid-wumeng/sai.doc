@@ -12,4 +12,5 @@ module.exports =
       require('./minute')
       require('./second')
       require('./milliSecond')
+      require('./week')
    ]

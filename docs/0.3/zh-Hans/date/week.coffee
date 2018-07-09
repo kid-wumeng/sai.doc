@@ -1,19 +1,19 @@
 module.exports =
 
 
-   name: 'day'
+   name: 'week'
 
 
    desc: """
       ```js
-      day = sai.day(date)
+      week = sai.week(date)
       ```
    """
 
 
    signs: [{
-      name: 'day( date )'
-      desc: '获取日期 ( 1 - 28, 29, 30, 31 )'
+      name: 'week( date )'
+      desc: '获取星期数 ( 0 - 6 )'
 
       params: [{
          name: 'date'
@@ -21,6 +21,6 @@ module.exports =
       }]
 
       return:
-         name: 'day'
-         type: 'int, 1 ~ 31'
+         name: 'week'
+         type: 'int, 0 ~ 6'
    }]

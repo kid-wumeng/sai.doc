@@ -22,5 +22,5 @@ module.exports =
 
       return:
          name: 'hour'
-         type: 'int ≥ 0'
+         type: 'int, 0 ~ 23'
    }]
