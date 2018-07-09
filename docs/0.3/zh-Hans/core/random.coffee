@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      n = sai.random(0, 100)
+      n    = sai.random(0, 100)
       item = sai.random(['a', 'b', 'c'])
       ```
    """

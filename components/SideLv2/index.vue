@@ -43,7 +43,7 @@
             return _.isString( item )
 
          isCurrentFunc: ( item ) ->
-            return item.name is @func?.name
+            return @type is 'func' and item.name is @func?.name
 </script>
 
 

@@ -3,6 +3,7 @@ module.exports =
 
    packs: [
       require('./core')
+      require('./is')
       require('./test')
       require('./file')
       require('./net')

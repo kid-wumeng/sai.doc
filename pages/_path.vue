@@ -1,7 +1,7 @@
 <template lang="jade">
    #path
-      PackPage(v-if="pack", :pack="pack")
-      FuncPage(v-if="func", :func="func")
+      PackPage(v-if="type === 'pack'", :pack="pack")
+      FuncPage(v-if="type === 'func'", :func="func")
 </template>
 
 
