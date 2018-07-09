@@ -4,6 +4,7 @@ module.exports =
       require('./core')
       require('./test')
       require('./file')
+      require('./net')
       require('./mongo')
    ]
 
