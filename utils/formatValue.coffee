@@ -18,7 +18,4 @@ module.exports = formatValue = ( value ) =>
    if _.isNull(value)
       return 'null'
 
-   if _.isUndefined(value)
-      return 'undefined'
-
    return ''

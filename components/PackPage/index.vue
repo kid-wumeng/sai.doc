@@ -48,7 +48,6 @@
 <style lang="less">
    .PackPage {
       padding: 55px 50px;
-      background-color: white;
 
       > .PackDesc {
          margin-top: 20px;

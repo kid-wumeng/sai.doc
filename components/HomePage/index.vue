@@ -1,19 +1,23 @@
 <template lang="jade">
-   .HomePage home
+   .HomePage(v-if="doc")
+      DocMore(:doc="doc")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
-      methods:
-         getTo: ( unit ) ->
-            return { path: '/_' + unit.path, query: @$route.query }
+      components:
+         DocMore: require('./DocMore').default
+
+      computed:
+         doc: -> @$store.state.doc
 </script>
 
 
 
 <style lang="less">
    .HomePage {
+      padding: 55px 50px;
    }
 </style>

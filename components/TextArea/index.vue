@@ -30,12 +30,24 @@
          format: ->
             if @text
                @formatAs()
+               @formatTables()
+
 
          formatAs: ->
             as = @$el.querySelectorAll('a')
 
             for a in as
                 a.setAttribute('target', '_blank')
+
+
+         formatTables: ->
+            tables = @$el.querySelectorAll('table')
+
+            for table in tables
+                tableWrap = document.createElement('div')
+                tableWrap.classList.add('table-wrap')
+                table.parentNode.replaceChild(tableWrap, table)
+                tableWrap.appendChild(table)
 </script>
 
 
@@ -91,6 +103,59 @@
 
             &:last-child {
                margin-bottom: 0 !important;
+            }
+         }
+      }
+
+      > .table-wrap {
+         display: inline-block;
+         border: 1px solid lighten(#A2AEBA, 21%);
+         border-radius: 2px;
+         box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
+         margin-bottom: 12px;
+
+         table {
+            border-collapse: collapse;
+
+            tr {
+               th, td {
+                  padding: 6px 16px;
+                  border: 1px solid lighten(#A2AEBA, 26%);
+               }
+
+               th {
+                  font-weight: 600;
+                  font-size: 13px;
+                  color: #A2AEBA;
+               }
+
+               td {
+                  font-size: 13px;
+               }
+            }
+
+            tr {
+               th:first-child, td:first-child {
+                  border-left: none;
+               }
+            }
+
+            tr {
+               th:last-child, td:last-child {
+                  border-right: none;
+               }
+            }
+
+            tr:first-child {
+               th, td {
+                  border-top: none;
+               }
+            }
+
+            tr:last-child {
+               td {
+                  border-bottom: none;
+               }
             }
          }
       }

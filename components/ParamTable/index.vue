@@ -1,5 +1,5 @@
 <template lang="jade">
-   .ParamTable(v-if="show")
+   .ParamTable(v-if="show", :exist-title="!!title")
       Title(:title="title")
       ParamList(:params="params")
 </template>
@@ -34,6 +34,13 @@
 
       .ParamItem {
          border-top: 1px solid lighten(#A2AEBA, 26%);
+      }
+   }
+
+   .ParamTable[exist-title] {
+      margin-top: 30px;
+      .ParamItem:first-child {
+         padding-top: 10px;
       }
    }
 </style>

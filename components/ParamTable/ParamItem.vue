@@ -5,8 +5,9 @@
             ParamName(:param="param")
             ParamType(:param="param")
          Column.right
-            ParamDefault(:param="param")
+            ParamRequired(:param="param")
             ParamDesc(:param="param")
+            ParamDefault(:param="param")
       ChildrenTable(:param="param")
 </template>
 
@@ -19,6 +20,7 @@
          'Column':        require('~/components/Column').default
          'ParamName':     require('./ParamName').default
          'ParamType':     require('./ParamType').default
+         'ParamRequired': require('./ParamRequired').default
          'ParamDefault':  require('./ParamDefault').default
          'ParamDesc':     require('./ParamDesc').default
          'ChildrenTable': require('./ChildrenTable').default
@@ -56,11 +58,13 @@
                padding: @padding-y @padding-x;
 
                > .ParamDesc {
-                  margin-top: 2px;
-
                   ul, ol {
                      margin-left: 0 !important;
                   }
+               }
+
+               > .ParamDefault {
+                  margin-top: 2px;
                }
             }
          }
