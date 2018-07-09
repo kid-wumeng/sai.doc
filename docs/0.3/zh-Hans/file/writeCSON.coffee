@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: 'writeCSON( path, data )'
+      name: 'writeCSON( path, data, encoding )'
       desc: '写入文件'
       more: """
          * 若文件已存在，则*完全覆写*

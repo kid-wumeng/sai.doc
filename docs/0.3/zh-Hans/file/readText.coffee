@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: 'readText( path, [encoding] )'
+      name: 'readText( path, encoding )'
       desc: '读取文件，返回 String'
 
       params: [{

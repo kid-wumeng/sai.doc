@@ -14,7 +14,7 @@ module.exports =
 
 
    signs: [{
-      name: 'len( data, [mode] )'
+      name: 'len( data, mode )'
       desc: '测量 data 的大小'
       more: '根据 data 类型的不同，会运用不同的策略'
 

@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: 'writeText( path, text )'
+      name: 'writeText( path, text, encoding )'
       desc: '写入文本'
       more: """
          * 若文件已存在，则*完全覆写*

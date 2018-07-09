@@ -24,7 +24,9 @@ module.exports =
       errors: [
          require('../errors').INVALID_PARAMS
       ]
+
    },{
+
       name: 'random( max )'
       desc: '随机获取 0 ~ max 之间的一个整数'
 
@@ -42,7 +44,9 @@ module.exports =
       errors: [
          require('../errors').INVALID_PARAMS
       ]
+
    },{
+
       name: 'random( min, max )'
       desc: '随机获取 min ~ max 之间的一个整数'
 
@@ -64,8 +68,10 @@ module.exports =
       errors: [
          require('../errors').INVALID_PARAMS
       ]
+
    },{
-      name: 'random( array, [isPop] )'
+
+      name: 'random( array, isPop )'
       desc: '随机获取 array 的一个元素'
 
       params: [{
