@@ -1,52 +1,18 @@
 <template lang="jade">
-   .TextArea(v-if="text" v-html="html")
+   Markdown.TextArea(:text="text")
 </template>
 
 
 
 <script lang="coffee">
    module.exports =
+      components:
+         'Markdown': require('~/components/Markdown').default
 
       props:
          'text':
             type: String
             default: ''
-
-
-      computed:
-         html: -> @markdown(@text.trim())
-
-
-      mounted: ->
-         @format()
-
-
-      updated: ->
-         @format()
-
-
-      methods:
-         format: ->
-            if @text
-               @formatAs()
-               @formatTables()
-
-
-         formatAs: ->
-            as = @$el.querySelectorAll('a')
-
-            for a in as
-                a.setAttribute('target', '_blank')
-
-
-         formatTables: ->
-            tables = @$el.querySelectorAll('table')
-
-            for table in tables
-                tableWrap = document.createElement('div')
-                tableWrap.classList.add('table-wrap')
-                table.parentNode.replaceChild(tableWrap, table)
-                tableWrap.appendChild(table)
 </script>
 
 
@@ -54,133 +20,45 @@
 <style lang="less">
    .TextArea {
       line-height: 25px;
-      font-size: 15px;
+      font-size: 14px;
       color: #273340;
 
-      > h1,
-      > h2,
-      > h3,
-      > h4,
-      > h5,
-      > h6           { margin-bottom: 24px }
-      > p            { margin-bottom: 14px }
-      > blockquote   { margin-bottom: 14px }
-      > ul           { margin-bottom: 14px }
-      > ol           { margin-bottom: 14px }
-      > *:last-child { margin-bottom: 0 !important }
+      h1, h2, h3, h4, h5, h6 { margin-bottom: 24px }
+      p                      { margin-bottom: 14px }
+      blockquote             { margin-bottom: 14px }
+      ul                     { margin-bottom: 14px }
+      ol                     { margin-bottom: 14px }
+      *:last-child           { margin-bottom:  0px }
 
-      > h1,
-      > h2,
-      > h3,
-      > h4,
-      > h5,
-      > h6 {
+      h1, h2, h3, h4, h5, h6 {
          font-weight: 600;
          font-size: 20px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-
          &:not(:first-child) {
             margin-top: 80px;
          }
       }
 
-      > blockquote {
+      blockquote {
          padding: 0.8em 1.1em;
          color: #A2AEBA;
          border: 1px dashed #A2AEBA;
       }
 
-      > ul,
-      > ol {
-         margin-top: 6px;
-         margin-left: 2.4em;
-
+      ul, ol {
          li {
-            line-height: 19px;
-            list-style-position: inside;
-            text-indent: 0;
-            margin-bottom: 16px;
-
-            &:last-child {
-               margin-bottom: 0;
+            &::before {
+               margin-right: 12px !important;
+               width: 4px !important;
+               height: 4px !important;
             }
+         }
+         li:not(:last-child) {
+            margin-bottom: 4px;
          }
       }
 
-      > .table-wrap {
-         display: inline-block;
-         text-indent: 0 !important;
-         border: 1px solid lighten(#A2AEBA, 21%);
-         border-radius: 2px;
-         box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
-         margin-bottom: 12px;
-
-         table {
-            border-collapse: collapse;
-
-            tr {
-               th, td {
-                  padding: 6px 16px;
-                  border: 1px solid lighten(#A2AEBA, 26%);
-               }
-
-               th {
-                  font-weight: 600;
-                  font-size: 13px;
-                  color: #A2AEBA;
-               }
-
-               td {
-                  font-size: 13px;
-               }
-            }
-
-            tr {
-               th:first-child, td:first-child {
-                  border-left: none;
-               }
-            }
-
-            tr {
-               th:last-child, td:last-child {
-                  border-right: none;
-               }
-            }
-
-            tr:first-child {
-               th, td {
-                  border-top: none;
-               }
-            }
-
-            tr:last-child {
-               td {
-                  border-bottom: none;
-               }
-            }
-         }
-      }
-
-      em {
-         font-weight: 600;
-         font-style: normal;
-         text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
-         user-select: all;
-      }
-
-      strong {
-         font-weight: 600;
-         color: #F62459;
-         user-select: all;
-      }
-
-      a {
-         font-weight: 500;
-         color: lighten(#2f54eb, 10%);
-         text-decoration: underline;
-      }
-
-      :not(pre) {
+      :not( pre ) {
          code {
             margin: 0 4px;
             font-family: "Ubuntu";
@@ -194,15 +72,15 @@
          margin-bottom: 12px;
          padding: 16px 20px;
          text-indent: 0;
-         background-color: rgba(250, 250, 250, 1);
+         background-color: rgba(251, 251, 251, 1);
          border-radius: 3px;
 
          code {
             padding: 3px;
             display: block;
-            line-height: 23px;
-            font-family: "Monaco";
-            font-size: 13px;
+            line-height: 26px;
+            font-family: "Inconsolata";
+            font-size: 15px;
             color: #A2AEBA;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             overflow: scroll;

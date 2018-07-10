@@ -22,7 +22,7 @@
       display: inline-block;
       border: 1px solid lighten(#A2AEBA, 24%);
       border-radius: 2px;
-      box-shadow: 0 0 12px rgba(100, 100, 100, 0.12);
+      box-shadow: 0 0 15px rgba(175, 175, 175, 0.2);
 
       > table {
          width: 100%;

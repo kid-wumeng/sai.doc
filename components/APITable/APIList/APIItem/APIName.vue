@@ -1,5 +1,5 @@
 <template lang="jade">
-   .APIName(v-if="api.name") {{ api.name }}
+   .APIName(v-if="api.name", :optional="optional") {{ api.name }}
 </template>
 
 
@@ -12,14 +12,24 @@
             required: true
 
       computed:
-         optional: -> @param.optional or _.has(@param, 'default')
+         optional: -> @api.optional or _.has(@api, 'default')
 </script>
 
 
 
 <style lang="less">
    .APIName {
-      font-weight: 600;
+      font-family: "Ubuntu";
+      font-weight: 500;
+      font-size: 13px;
+      white-space: nowrap;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
       user-select: all;
+   }
+
+   .APIName[optional] {
+      font-weight: 400;
+      text-shadow: none;
+      opacity: 0.5;
    }
 </style>

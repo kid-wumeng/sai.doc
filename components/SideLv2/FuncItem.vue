@@ -36,9 +36,9 @@
    .SideLv2 {
       .FuncItem {
          display: block;
-         padding: 10px 20px;
+         padding: 9px 20px;
          font-weight: 400;
-         font-size: 14px;
+         font-size: 12px;
          color: #273340;
          letter-spacing: 0.3px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);

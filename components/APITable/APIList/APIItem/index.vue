@@ -1,9 +1,9 @@
 <template lang="jade">
    tr.APIItem
-      td(valign="top"): APIName(:api="api")
-      td(valign="top"): APIType(:api="api")
-      td(valign="top"): APIDesc(:api="api")
-      td(valign="top"): APIDefault(:api="api")
+      td(valign="top"):                     APIName(:api="api")
+      td(valign="top" v-if="!hideType"):    APIType(:api="api")
+      td(valign="top"):                     APIDesc(:api="api")
+      td(valign="top" v-if="!hideDefault"): APIDefault(:api="api")
 </template>
 
 
@@ -20,6 +20,14 @@
          'api':
             type: Object
             required: true
+
+         'hideType':
+            type: Boolean
+            default: false
+
+         'hideDefault':
+            type: Boolean
+            default: false
 </script>
 
 

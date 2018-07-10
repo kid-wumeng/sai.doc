@@ -1,5 +1,5 @@
 <template lang="jade">
-   Markdown.APIDesc(:text="api.desc")
+   Markdown.APIDesc(:text="desc")
 </template>
 
 
@@ -13,6 +13,9 @@
          'api':
             type: Object
             required: true
+
+      computed:
+         desc: -> @api.desc ? '...'
 </script>
 
 

@@ -1,6 +1,6 @@
 module.exports =
 
-   name: '判定'
+   name: '类型判定'
    path: 'is'
 
    desc: """

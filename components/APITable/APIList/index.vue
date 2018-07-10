@@ -1,6 +1,6 @@
 <template lang="jade">
    Table.APIList(auto)
-      APIItem(v-for="(api, i) in apis", :api="api", :key="i")
+      APIItem(v-for="(api, i) in apis", :api="api", :key="i", :hide-type="hideType", :hide-default="hideDefault")
 </template>
 
 
@@ -15,10 +15,19 @@
          'apis':
             type: Array
             required: true
+
+         'hideType':
+            type: Boolean
+            default: false
+
+         'hideDefault':
+            type: Boolean
+            default: false
 </script>
 
 
 <style lang="less">
    .APIList {
+      background-color: white;
    }
 </style>

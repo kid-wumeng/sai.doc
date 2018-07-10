@@ -21,11 +21,12 @@
    .SideLv2 {
       .UnitItem {
          display: block;
-         padding: 16px 20px;
+         padding: 0 20px;
          text-align: center;
-         font-weight: 600;
-         font-size: 15px;
-         color: lighten(#A2AEBA, 10%);
+         font-weight: 500;
+         font-size: 13px;
+         color: #A2AEBA;
+         margin-bottom: 8px;
       }
    }
 </style>

@@ -16,7 +16,10 @@
 
 <style lang="less">
    .APIType {
-      font-size: 14px;
-      color: #8A939D;
+      text-align: center;
+      font-family: "Monaco";
+      font-size: 12px;
+      color: #A2AEBA;
+      white-space: nowrap;
    }
 </style>

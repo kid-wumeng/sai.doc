@@ -29,7 +29,7 @@
          padding: 11px 20px;
          text-align: center;
          font-weight: 600;
-         font-size: 14px;
+         font-size: 13px;
          color: #F2F2F2;
 
          &:hover,

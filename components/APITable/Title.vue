@@ -16,6 +16,10 @@
 
 <style lang="less">
    .Title {
-      font-size: 14px;
+      margin-left: 6px;
+      margin-bottom: 9px;
+      font-weight: 500;
+      font-size: 12px;
+      color: lighten(#A2AEBA, 18%);
    }
 </style>

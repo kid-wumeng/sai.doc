@@ -1,7 +1,7 @@
 <template lang="jade">
    .APITable(v-if="show")
       Title(:title="title")
-      APIList(:apis="apis")
+      APIList(:apis="apis", :hide-type="hideType", :hide-default="hideDefault")
 </template>
 
 
@@ -21,6 +21,14 @@
             type: Array
             default: -> []
 
+         'hideType':
+            type: Boolean
+            default: false
+
+         'hideDefault':
+            type: Boolean
+            default: false
+
       computed:
          show: -> Array.isArray(@apis) and @apis.length > 0
 </script>
@@ -29,9 +37,5 @@
 
 <style lang="less">
    .APITable {
-      .Title {
-         margin-left: 12px;
-         margin-bottom: 12px;
-      }
    }
 </style>

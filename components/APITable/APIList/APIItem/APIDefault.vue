@@ -1,5 +1,6 @@
 <template lang="jade">
    Markdown.APIDefault(v-if="optional", :text="defaultsDisplay")
+   Markdown.APIDefault(v-else, text="required" required)
 </template>
 
 
@@ -25,10 +26,20 @@
 
 <style lang="less">
    .APIDefault {
-      color: lighten(#A2AEBA, 15%);
+      color: lighten(#A2AEBA, 20%);
+      white-space: nowrap;
+
       em {
-         font-style: italic;
+         font-weight: 400;
          color: #273340;
       }
+   }
+
+   .APIDefault[required] {
+      text-align: center;
+      font-family: "Ubuntu";
+      font-weight: 500;
+      font-size: 13px;
+      color: lighten(#A2AEBA, 20%);
    }
 </style>

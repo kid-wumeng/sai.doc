@@ -58,8 +58,7 @@
 
       > .item:not(:first-child) {
          > .UnitItem {
-            margin-top: 36px;
-            border-top: 1px solid lighten(#A2AEBA, 26%);
+            margin-top: 24px;
          }
       }
    }

@@ -42,10 +42,10 @@
 
 <style lang="less">
    .Markdown {
-      > ul, > ol {
-         > li {
+      ul, ol {
+         li {
             list-style: none;
-            &:before {
+            &::before {
                content: "";
                margin-right: 7px;
                display: inline-block;
@@ -64,6 +64,18 @@
          font-style: normal;
          text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
          user-select: all;
+      }
+
+      strong {
+         font-weight: 600;
+         color: #F62459;
+         user-select: all;
+      }
+
+      a {
+         font-weight: 600;
+         color: lighten(#2f54eb, 10%);
+         text-decoration: underline;
       }
    }
 </style>
