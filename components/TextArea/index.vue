@@ -5,7 +5,6 @@
 
 
 <script lang="coffee">
-
    module.exports =
 
       props:
@@ -95,7 +94,7 @@
       > ol {
          margin-top: 6px;
          margin-left: 2.4em;
-         
+
          li {
             line-height: 19px;
             list-style-position: inside;
