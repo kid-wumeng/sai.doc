@@ -67,7 +67,7 @@
    }
 
    body {
-      font-family: "Ubuntu", "Helvetica Neue", "Arial", "Verdana", "Roboto", "PingFang SC", "Hiragino Sans GB", sans-serif;;
+      font-family: "Ubuntu", "Helvetica Neue", "Arial", "Verdana", "Roboto", "Hiragino Sans GB", "PingFang SC", sans-serif;;
       color: #242424;
       background-color: #FAF4E9;
       background-color: white;
