@@ -47,7 +47,7 @@
             list-style: none;
             &:before {
                content: "";
-               margin-right: 6px;
+               margin-right: 7px;
                display: inline-block;
                width: 3px;
                height: 3px;
@@ -60,7 +60,7 @@
       }
 
       em {
-         font-weight: 500;
+         font-weight: 600;
          font-style: normal;
          text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
          user-select: all;

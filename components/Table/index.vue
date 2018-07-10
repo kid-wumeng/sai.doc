@@ -20,9 +20,9 @@
 <style lang="less">
    .Table {
       display: inline-block;
-      border: 1px solid lighten(#A2AEBA, 21%);
+      border: 1px solid lighten(#A2AEBA, 24%);
       border-radius: 2px;
-      box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
+      box-shadow: 0 0 12px rgba(100, 100, 100, 0.12);
 
       > table {
          width: 100%;
@@ -31,17 +31,12 @@
 
          > tbody {
             > tr {
-               border-bottom: 1px solid lighten(#A2AEBA, 26%);
-               &:last-child {
-                   border-bottom: none;
-               }
                > * {
-                  padding: 10px 20px;
+                  border: 1px dashed lighten(#A2AEBA, 26%);
                }
                > *:first-child { border-left:  none }
                > *:last-child  { border-right: none }
             }
-
             > tr:first-child > *  { border-top:    none }
             > tr:last-child  > td { border-bottom: none }
          }

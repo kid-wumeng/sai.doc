@@ -1,6 +1,6 @@
 <template lang="jade">
    .APITable(v-if="show")
-      //- Title(:title="title")
+      Title(:title="title")
       APIList(:apis="apis")
 </template>
 
@@ -10,7 +10,7 @@
    module.exports =
       components:
          'APIList': require('./APIList').default
-      #    'Title':     require('./Title').default
+         'Title':   require('./Title').default
 
       props:
          'title':
@@ -29,17 +29,9 @@
 
 <style lang="less">
    .APITable {
-      position: relative;
-      margin: 100px;
-      // .APIItem {
-      //    border-top: 1px solid lighten(#A2AEBA, 26%);
-      // }
-   }
-
-   .APITable[exist-title] {
-      // margin-top: 30px;
-      // .APIItem:first-child {
-      //    padding-top: 10px;
-      // }
+      .Title {
+         margin-left: 12px;
+         margin-bottom: 12px;
+      }
    }
 </style>

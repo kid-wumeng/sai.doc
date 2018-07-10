@@ -19,8 +19,7 @@
 
 <style lang="less">
    .APIName {
-      font-weight: 500;
-      text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      font-weight: 600;
       user-select: all;
    }
 </style>

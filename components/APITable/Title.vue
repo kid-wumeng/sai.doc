@@ -1,5 +1,5 @@
 <template lang="jade">
-   .APIType(v-if="api.type") {{ api.type }}
+   .Title(v-if="title") {{ title.toUpperCase() }}
 </template>
 
 
@@ -7,16 +7,15 @@
 <script lang="coffee">
    module.exports =
       props:
-         'api':
-            type: Object
-            required: true
+         'title':
+            type: String
+            required:true
 </script>
 
 
 
 <style lang="less">
-   .APIType {
+   .Title {
       font-size: 14px;
-      color: #8A939D;
    }
 </style>

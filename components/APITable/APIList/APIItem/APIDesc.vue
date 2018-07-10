@@ -19,8 +19,10 @@
 
 <style lang="less">
    .APIDesc {
+      position: relative;
+      font-size: 13px;
       li {
-         margin-left: 1em;
+         margin-left: 4px;
       }
    }
 </style>

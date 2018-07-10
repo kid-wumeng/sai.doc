@@ -20,12 +20,5 @@
 
 <style lang="less">
    .APIList {
-      border: 1px solid lighten(#A2AEBA, 24%);
-      border-radius: 2px;
-      box-shadow: 0 0 15px rgba(100, 100, 100, 0.12);
-
-      .APIItem:not(:first-child) {
-         border-top: 1px solid lighten(#A2AEBA, 26%);
-      }
    }
 </style>
