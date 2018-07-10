@@ -20,7 +20,7 @@
 <style lang="less">
    .TextArea {
       line-height: 25px;
-      font-size: 14px;
+      font-size: 13px;
       color: #273340;
 
       h1, h2, h3, h4, h5, h6 { margin-bottom: 24px }
@@ -54,7 +54,7 @@
             }
          }
          li:not(:last-child) {
-            margin-bottom: 4px;
+            margin-bottom: 6px;
          }
       }
 
@@ -78,9 +78,9 @@
          code {
             padding: 3px;
             display: block;
-            line-height: 26px;
+            line-height: 22px;
             font-family: "Inconsolata";
-            font-size: 15px;
+            font-size: 14px;
             color: #A2AEBA;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
             overflow: scroll;

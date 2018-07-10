@@ -28,9 +28,10 @@
          display: block;
          padding: 11px 20px;
          text-align: center;
-         font-weight: 600;
+         font-family: "Futura";
+         font-weight: 500;
          font-size: 13px;
-         color: #F2F2F2;
+         color: white;
 
          &:hover,
          &[active] {

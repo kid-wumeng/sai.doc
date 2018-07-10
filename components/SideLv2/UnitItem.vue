@@ -23,8 +23,9 @@
          display: block;
          padding: 0 20px;
          text-align: center;
+         font-family: "Futura";
          font-weight: 500;
-         font-size: 13px;
+         font-size: 12px;
          color: #A2AEBA;
          margin-bottom: 8px;
       }

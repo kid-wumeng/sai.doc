@@ -60,14 +60,14 @@
       }
 
       em {
-         font-weight: 600;
+         font-weight: 500;
          font-style: normal;
          text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
          user-select: all;
       }
 
       strong {
-         font-weight: 600;
+         font-weight: 500;
          color: #F62459;
          user-select: all;
       }

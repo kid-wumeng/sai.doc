@@ -20,6 +20,6 @@
       margin-bottom: 9px;
       font-weight: 500;
       font-size: 12px;
-      color: lighten(#A2AEBA, 18%);
+      color: lighten(#A2AEBA, 15%);
    }
 </style>

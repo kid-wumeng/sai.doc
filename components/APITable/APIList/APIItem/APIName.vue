@@ -30,6 +30,6 @@
    .APIName[optional] {
       font-weight: 400;
       text-shadow: none;
-      opacity: 0.5;
+      opacity: 0.6;
    }
 </style>

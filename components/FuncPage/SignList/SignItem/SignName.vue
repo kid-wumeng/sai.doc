@@ -21,8 +21,8 @@
          display: inline-block;
          line-height: 23px;
          font-weight: 500;
-         font-size: 18px;
-         letter-spacing: 0.25px;
+         font-size: 16px;
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
          user-select: all;
       }
    }

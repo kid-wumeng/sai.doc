@@ -40,10 +40,10 @@
             flex: none;
             width: 35%;
             .SignDesc {
-               margin-top: 26px;
+               margin-top: 20px;
             }
             .SignMore {
-               margin-top: 20px;
+               margin-top: 14px;
             }
          }
          .Column.right {
