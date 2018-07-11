@@ -19,20 +19,20 @@
 
 <style lang="less">
    .TextArea {
-      line-height: 25px;
+      line-height: 22px;
       font-size: 13px;
       color: #273340;
 
-      h1, h2, h3, h4, h5, h6 { margin-bottom: 24px }
-      p                      { margin-bottom: 14px }
-      blockquote             { margin-bottom: 14px }
-      ul                     { margin-bottom: 14px }
-      ol                     { margin-bottom: 14px }
+      h1, h2, h3, h4, h5, h6 { margin-bottom: 28px }
+      p                      { margin-bottom: 12px }
+      blockquote             { margin-bottom: 12px }
+      ul                     { margin-bottom: 12px }
+      ol                     { margin-bottom: 12px }
       *:last-child           { margin-bottom:  0px }
 
       h1, h2, h3, h4, h5, h6 {
          font-weight: 600;
-         font-size: 20px;
+         font-size: 19px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
          &:not(:first-child) {
             margin-top: 80px;
@@ -58,6 +58,10 @@
          }
       }
 
+      em {
+         font-weight: 600 !important;
+      }
+
       :not( pre ) {
          code {
             margin: 0 4px;
@@ -70,15 +74,14 @@
 
       pre {
          margin-bottom: 12px;
-         padding: 16px 20px;
+         padding: 20px 28px;
          text-indent: 0;
          background-color: rgba(251, 251, 251, 1);
-         border-radius: 3px;
+         border-radius: 2px;
 
          code {
-            padding: 3px;
             display: block;
-            line-height: 22px;
+            line-height: 21px;
             font-family: "Inconsolata";
             font-size: 14px;
             color: #A2AEBA;
@@ -89,6 +92,7 @@
             .token.prolog,
             .token.doctype,
             .token.cdata {
+               font-size: 13px;
                color: #b6ad9a;
             }
 

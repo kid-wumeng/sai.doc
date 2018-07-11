@@ -9,6 +9,7 @@
 <script lang="coffee">
    module.exports =
       components:
+         'Column':  require('~/components/Column').default
          'APIList': require('./APIList').default
          'Title':   require('./Title').default
 

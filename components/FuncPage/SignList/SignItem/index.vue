@@ -1,13 +1,14 @@
 <template lang="jade">
-   Row.SignItem
-      Column.left
-         SignName(:sign="sign")
-         SignDesc(:sign="sign")
-         SignMore(:sign="sign")
-      Column.right
-         SignParams(:sign="sign")
-         SignReturn(:sign="sign")
-         SignErrors(:sign="sign")
+   .SignItem
+      Row
+         Column.left
+            SignName(:sign="sign")
+            SignDesc(:sign="sign")
+            SignMore(:sign="sign")
+         Column.right
+            SignParams(:sign="sign")
+            SignReturn(:sign="sign")
+            SignErrors(:sign="sign")
 </template>
 
 
@@ -36,20 +37,22 @@
    .FuncPage {
       .SignItem {
          padding: 50px;
-         .Column.left {
-            flex: none;
-            width: 35%;
-            .SignDesc {
-               margin-top: 20px;
+         > .Row {
+            > .Column.left {
+               flex: none;
+               width: 35%;
+               .SignDesc {
+                  margin-top: 20px;
+               }
+               .SignMore {
+                  margin-top: 14px;
+               }
             }
-            .SignMore {
-               margin-top: 14px;
-            }
-         }
-         .Column.right {
-            margin-left: 50px;
-            > *:not(:last-child) {
-               margin-bottom: 30px;
+            > .Column.right {
+               margin-left: 50px;
+               > *:not(:last-child) {
+                  margin-bottom: 30px;
+               }
             }
          }
       }

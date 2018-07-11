@@ -22,7 +22,7 @@
    .FuncPage {
       .SignList {
          .SignItem:nth-child(even) {
-            background-color: rgba(251, 251, 251, 1);
+            background-color: rgba(250, 250, 250, 1);
          }
       }
    }

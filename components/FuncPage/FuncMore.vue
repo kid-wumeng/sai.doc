@@ -18,18 +18,17 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .FuncMore {
-         width: 640px;
+   .FuncPage .FuncMore {
+      width: 640px;
+      padding: 50px;
+      color: #000;
 
-         > :not(h1, h2, h3, h4, h5, h6, pre) {
-            margin-left: 12px;
-            margin-right: 12px;
-         }
-
-         > pre {
-            margin-bottom: 30px;
-         }
+      > :not(h1, h2, h3, h4, h5, h6, pre) {
+         text-indent: 2em;
+      }
+      > pre {
+         margin-bottom: 30px;
+         background-color: rgba(250, 250, 250, 1);
       }
    }
 </style>

@@ -19,6 +19,7 @@
 
 <style lang="less">
    .APIName {
+      text-align: center;
       font-family: "Ubuntu";
       font-weight: 500;
       font-size: 13px;
@@ -30,6 +31,6 @@
    .APIName[optional] {
       font-weight: 400;
       text-shadow: none;
-      opacity: 0.6;
+      opacity: 0.7;
    }
 </style>

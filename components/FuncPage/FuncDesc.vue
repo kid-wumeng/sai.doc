@@ -23,8 +23,9 @@
          > pre {
             padding: 20px 32px 21px 30px;
             > code {
-               line-height: 26px;
-               font-size: 14px;
+               line-height: 25px;
+               font-family: "Monaco";
+               font-size: 13px;
             }
          }
       }

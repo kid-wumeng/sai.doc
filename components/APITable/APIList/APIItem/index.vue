@@ -1,9 +1,9 @@
 <template lang="jade">
    tr.APIItem
-      td(valign="top"):                     APIName(:api="api")
-      td(valign="top" v-if="!hideType"):    APIType(:api="api")
-      td(valign="top"):                     APIDesc(:api="api")
-      td(valign="top" v-if="!hideDefault"): APIDefault(:api="api")
+      td(valign="middle"):                     APIName(:api="api")
+      td(valign="middle" v-if="!hideType"):    APIType(:api="api")
+      td(valign="middle"):                     APIDesc(:api="api")
+      td(valign="middle" v-if="!hideDefault"): APIDefault(:api="api")
 </template>
 
 
@@ -39,7 +39,7 @@
       font-size: 15px;
       color: #273340;
       td {
-         padding: 9px 16px;
+         padding: 10px 18px;
       }
    }
 </style>

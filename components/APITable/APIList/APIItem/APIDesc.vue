@@ -1,5 +1,6 @@
 <template lang="jade">
-   Markdown.APIDesc(:text="desc")
+   Markdown.APIDesc(v-if="desc", :text="desc")
+   Markdown.APIDesc(v-else, text="..." empty)
 </template>
 
 
@@ -15,17 +16,20 @@
             required: true
 
       computed:
-         desc: -> @api.desc ? '...'
+         desc: -> @api.desc
 </script>
 
 
 
 <style lang="less">
    .APIDesc {
-      position: relative;
       font-size: 13px;
       li {
          margin-left: 4px;
       }
+   }
+   .APIDesc[empty] {
+      color: #A2AEBA;
+      user-select: none;
    }
 </style>

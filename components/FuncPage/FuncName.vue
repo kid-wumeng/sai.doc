@@ -17,7 +17,6 @@
 <style lang="less">
    .FuncPage {
       .FuncName {
-         display: inline-block;
          font-weight: 400;
          font-size: 28px;
          color: #273340;

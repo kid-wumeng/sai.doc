@@ -44,7 +44,7 @@
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
          &:hover {
-            background-color: rgba(249, 249, 249, 1);
+            background-color: rgba(250, 250, 250, 1);
          }
 
          &[active] {
