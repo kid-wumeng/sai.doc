@@ -25,9 +25,6 @@
             padding: 50px 50px;
             padding-top: 45px;
          }
-         > .UnitItem:nth-child(even) {
-            background-color: rgba(251, 251, 251, 1);
-         }
       }
    }
 </style>

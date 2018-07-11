@@ -20,6 +20,13 @@
 <style lang="less">
    .FuncPage {
       .SignMore {
+         pre {
+            code {
+               line-height: 25px;
+               font-family: "Monaco";
+               font-size: 13px;
+            }
+         }
       }
    }
 </style>

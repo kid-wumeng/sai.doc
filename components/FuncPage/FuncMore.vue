@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.FuncMore(:text="func.more")
+   TextArea.FuncMore(:text="func.more" show-lang)
 </template>
 
 

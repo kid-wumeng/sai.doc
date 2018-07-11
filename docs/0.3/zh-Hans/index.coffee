@@ -14,9 +14,9 @@ module.exports =
 
 
    terms:
-      params: '参数表'
+      params: '方法参数'
       return: '返回值'
-      errors: '异常处理'
+      errors: '可能的异常'
 
 
    more: """

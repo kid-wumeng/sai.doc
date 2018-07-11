@@ -34,14 +34,14 @@
          .name {
             font-family: "Futura";
             font-weight: 500;
-            font-size: 13px;
+            font-size: 14px;
             color: white;
          }
          .path {
             margin-top: 3px;
             font-weight: 300;
             font-size: 12px;
-            color: darken(#A2AEBA, 18%);
+            color: darken(#A2AEBA, 15%);
          }
 
          &:hover {

@@ -1,5 +1,5 @@
 <template lang="jade">
-   .Markdown(v-if="text" v-html="html")
+   .Markdown(v-if="text" v-html="html", :show-lang="showLang")
 </template>
 
 
@@ -10,6 +10,10 @@
          'text':
             type: String
             default: ''
+
+         'showLang':
+            type: Boolean
+            default: false
 
       computed:
          html: -> @markdown(@text.trim())
@@ -25,6 +29,7 @@
             if @text
                @formatAs()
                @formatTables()
+               @formatPres()
 
          formatAs: ->
             for a in @$el.querySelectorAll('a')
@@ -36,6 +41,14 @@
                 tableWrap.classList.add('table')
                 table.parentNode.replaceChild(tableWrap, table)
                 tableWrap.appendChild(table)
+
+         formatPres: ->
+            for pre in @$el.querySelectorAll('pre')
+                if code = pre.querySelector('code')
+                   if code.classList.contains('language-js')
+                      pre.setAttribute('lang-js', true)
+                   if code.classList.contains('language-coffee')
+                      pre.setAttribute('lang-coffee', true)
 </script>
 
 
@@ -77,5 +90,24 @@
          color: #2f54eb;
          text-decoration: underline;
       }
+   }
+
+   .Markdown[show-lang] {
+      pre {
+         position: relative;
+      }
+
+      pre[lang-js]::after,
+      pre[lang-coffee]::after {
+         position: absolute;
+         right: 16px;
+         top: 10px;
+         font-weight: 600;
+         font-size: 13px;
+         color: lighten(#A2AEBA, 18%);
+      }
+
+      pre[lang-js]::after     { content: "JS"     }
+      pre[lang-coffee]::after { content: "Coffee" }
    }
 </style>

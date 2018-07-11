@@ -51,7 +51,6 @@
    .PackPage {
       > .Column {
          padding: 50px;
-         background-color: rgba(251, 251, 251, 1);
          > .PackDesc {
             margin-top: 20px;
          }

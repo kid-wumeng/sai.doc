@@ -1,5 +1,5 @@
 <template lang="jade">
-   Markdown.TextArea(:text="text")
+   Markdown.TextArea(:text="text", :show-lang="showLang")
 </template>
 
 
@@ -13,6 +13,10 @@
          'text':
             type: String
             default: ''
+
+         'showLang':
+            type: Boolean
+            default: false
 </script>
 
 
