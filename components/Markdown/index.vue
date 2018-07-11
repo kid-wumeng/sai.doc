@@ -33,7 +33,7 @@
          formatTables: ->
             for table in @$el.querySelectorAll('table')
                 tableWrap = document.createElement('div')
-                tableWrap.classList.add('Table')
+                tableWrap.classList.add('table')
                 table.parentNode.replaceChild(tableWrap, table)
                 tableWrap.appendChild(table)
 </script>
@@ -50,10 +50,9 @@
                margin-right: 7px;
                display: inline-block;
                width: 3px;
-               height: 3px;
+               height: 1px;
                vertical-align: middle;
                background-color: currentColor;
-               border-radius: 50%;
                overflow: hidden;
             }
          }
@@ -62,7 +61,7 @@
       em {
          font-weight: 500;
          font-style: normal;
-         text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+         text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
          user-select: all;
       }
 
@@ -73,8 +72,9 @@
       }
 
       a {
-         font-weight: 600;
-         color: lighten(#2f54eb, 10%);
+         font-family: "Futura";
+         font-weight: 500;
+         color: #2f54eb;
          text-decoration: underline;
       }
    }

@@ -1,6 +1,6 @@
 <template lang="jade">
    .SignReturn(v-if="sign.return")
-      APITable(title="return", :apis="apis" hide-default)
+      APITable(:title="title", :apis="apis" hide-default)
 </template>
 
 
@@ -16,6 +16,7 @@
             required: true
 
       computed:
+         title: -> @$store.state.doc?.terms?.return ? 'return'
          apis: -> [@sign.return]
 </script>
 

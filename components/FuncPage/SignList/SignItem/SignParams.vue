@@ -20,8 +20,8 @@
 
          groups: ->
             groups = [{
-               title: ''
-               apis: @params
+               title: @$store.state.doc?.terms?.params ? 'params'
+               apis:  @params
             }]
 
             for param in @params

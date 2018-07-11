@@ -15,6 +15,5 @@
 
 <style lang="less">
    .APITable {
-      margin: 100px;
    }
 </style>

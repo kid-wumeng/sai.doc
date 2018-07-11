@@ -17,9 +17,9 @@
 <style lang="less">
    .Title {
       margin-left: 6px;
-      margin-bottom: 9px;
+      margin-bottom: 10px;
       font-weight: 500;
-      font-size: 12px;
-      color: lighten(#A2AEBA, 15%);
+      font-size: 13px;
+      color: lighten(#A2AEBA, 10%);
    }
 </style>

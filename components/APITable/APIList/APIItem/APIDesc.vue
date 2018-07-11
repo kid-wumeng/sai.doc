@@ -27,6 +27,9 @@
       li {
          margin-left: 4px;
       }
+      em {
+         font-weight: 600;
+      }
    }
    .APIDesc[empty] {
       color: #A2AEBA;

@@ -18,6 +18,6 @@
 
 <style lang="less">
    .HomePage {
-      padding: 55px 50px;
+      padding: 50px 50px;
    }
 </style>

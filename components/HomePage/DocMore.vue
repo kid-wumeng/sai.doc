@@ -20,16 +20,17 @@
 <style lang="less">
    .HomePage {
       .DocMore {
-         width: 640px;
-
-         > :not(h1, h2, h3, h4, h5, h6, pre) {
+         > :not(h1, h2, h3, h4, h5, h6, .table, pre) {
+            width: 600px;
             text-indent: 2em;
-            margin-left: 12px;
-            margin-right: 12px;
          }
-
          > pre {
             margin-bottom: 30px;
+         }
+         > .table {
+            th, td {
+               padding: 11px 19px;
+            }
          }
       }
    }

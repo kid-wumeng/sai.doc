@@ -20,24 +20,21 @@
 <style lang="less">
    .Table {
       display: inline-block;
-      border: 1px dashed lighten(#A2AEBA, 16%);
+      border: 1px dashed lighten(#A2AEBA, 24%);
 
       > table {
          width: 100%;
          table-layout: fixed;
          border-collapse: collapse;
-
-         > tbody {
-            > tr {
-               > * {
-                  border: 1px dotted lighten(#A2AEBA, 24%);
-               }
-               > *:first-child { border-left:  none }
-               > *:last-child  { border-right: none }
+         tr {
+            > * {
+               border: 1px dashed lighten(#A2AEBA, 24%);
             }
-            > tr:first-child > *  { border-top:    none }
-            > tr:last-child  > td { border-bottom: none }
+            > *:first-child { border-left:  none }
+            > *:last-child  { border-right: none }
          }
+         tr:first-child > *  { border-top:    none }
+         tr:last-child  > td { border-bottom: none }
       }
    }
 

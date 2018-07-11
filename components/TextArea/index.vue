@@ -28,6 +28,7 @@
       blockquote             { margin-bottom: 12px }
       ul                     { margin-bottom: 12px }
       ol                     { margin-bottom: 12px }
+      .Table                 { margin-bottom: 12px }
       *:last-child           { margin-bottom:  0px }
 
       h1, h2, h3, h4, h5, h6 {
@@ -58,8 +59,28 @@
          }
       }
 
+      .table {
+         display: inline-block;
+         border: 1px dashed lighten(#A2AEBA, 22%);
+
+         > table {
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            tr {
+               > * {
+                  border: 1px dashed lighten(#A2AEBA, 22%);
+               }
+               > *:first-child { border-left:  none }
+               > *:last-child  { border-right: none }
+            }
+            tr:first-child > *  { border-top:    none }
+            tr:last-child  > td { border-bottom: none }
+         }
+      }
+
       em {
-         font-weight: 600 !important;
+         font-weight: 500 !important;
       }
 
       :not( pre ) {

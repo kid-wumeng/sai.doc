@@ -40,18 +40,18 @@
          > .Row {
             > .Column.left {
                flex: none;
-               width: 35%;
+               width: 40%;
                .SignDesc {
-                  margin-top: 20px;
+                  margin-top: 28px;
                }
                .SignMore {
-                  margin-top: 14px;
+                  margin-top: 22px;
                }
             }
             > .Column.right {
-               margin-left: 50px;
-               > *:not(:last-child) {
-                  margin-bottom: 30px;
+               margin-left: 40px;
+               > *:not(:first-child) {
+                  margin-top: 30px;
                }
             }
          }

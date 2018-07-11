@@ -1,6 +1,6 @@
 <template lang="jade">
    .SignErrors(v-if="sign.errors")
-      APITable(title="errors", :apis="sign.errors" hide-type hide-default)
+      APITable(:title="title", :apis="sign.errors" hide-type hide-default)
 </template>
 
 
@@ -14,6 +14,9 @@
          'sign':
             type: Object
             required: true
+
+      computed:
+         title: -> @$store.state.doc?.terms?.errors ? 'error'
 </script>
 
 

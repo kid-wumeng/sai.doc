@@ -13,6 +13,12 @@ module.exports =
    ]
 
 
+   terms:
+      params: '参数表'
+      return: '返回值'
+      errors: '异常处理'
+
+
    more: """
       # 参数表术语约定
 
