@@ -36,21 +36,20 @@
    .SideLv2 {
       .FuncItem {
          display: block;
-         padding: 9px 20px;
-         font-weight: 400;
+         padding: 11px 20px;
+         font-family: "Futura";
          font-size: 12px;
-         color: #273340;
+         color: lighten(#273340, 10%);
          letter-spacing: 0.3px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
          &:hover {
-            background-color: rgba(250, 250, 250, 1);
+            background-color: rgba(249, 249, 249, 1);
          }
 
          &[active] {
-            font-weight: 500;
-            color: #F2F2F2;
-            background-color: #273340;
+            color: #FFF;
+            background-color: lighten(#273340, 5%);
             text-shadow: none;
          }
       }

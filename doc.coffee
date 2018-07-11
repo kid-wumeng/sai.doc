@@ -3,7 +3,6 @@ sai.test(user, 'name')
    .min(6).error('should gte 6')
 
 
-FuncPage
 HomePage
 PackPage
 SideLv1

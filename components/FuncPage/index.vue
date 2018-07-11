@@ -34,7 +34,8 @@
    .FuncPage {
       > .Column {
          padding: 50px;
-         background-color: rgba(250, 250, 250, 1);
+         padding-bottom: 40px;
+         background-color: rgba(251, 251, 251, 1);
          .FuncDesc {
             margin-top: 30px;
          }

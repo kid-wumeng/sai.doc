@@ -21,16 +21,18 @@
    .APIName {
       text-align: center;
       font-family: "Ubuntu";
-      font-weight: 500;
+      font-weight: 400;
       font-size: 13px;
       white-space: nowrap;
-      text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
       user-select: all;
+      -webkit-font-smoothing: subpixel-antialiased;
    }
 
    .APIName[optional] {
-      font-weight: 400;
+      font-weight: 300;
       text-shadow: none;
-      opacity: 0.7;
+      opacity: 0.8;
+      -webkit-font-smoothing: subpixel-antialiased;
    }
 </style>

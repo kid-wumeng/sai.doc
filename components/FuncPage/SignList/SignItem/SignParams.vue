@@ -20,7 +20,7 @@
 
          groups: ->
             groups = [{
-               title: 'params'
+               title: ''
                apis: @params
             }]
 

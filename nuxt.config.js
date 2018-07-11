@@ -35,6 +35,10 @@ module.exports =
       }]
    },
 
+   loading: {
+      color: '#A2AEBA'
+   },
+
    render: {
       resourceHints: false
    }

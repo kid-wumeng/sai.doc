@@ -33,6 +33,12 @@
 
    @font-face {
       font-family: "Ubuntu";
+      font-weight: 300;
+      src: url(~/assets/fonts/Ubuntu-L.ttf);
+   }
+
+   @font-face {
+      font-family: "Ubuntu";
       font-weight: 400;
       src: url(~/assets/fonts/Ubuntu-R.ttf);
    }

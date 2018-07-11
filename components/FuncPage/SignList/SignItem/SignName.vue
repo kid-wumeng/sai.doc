@@ -20,7 +20,7 @@
          align-self: flex-start;
          display: inline-block;
          line-height: 23px;
-         font-weight: 500;
+         font-weight: 300;
          font-size: 16px;
          color: #273340;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);

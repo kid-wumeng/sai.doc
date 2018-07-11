@@ -20,9 +20,7 @@
 <style lang="less">
    .Table {
       display: inline-block;
-      border: 1px solid lighten(#A2AEBA, 24%);
-      border-radius: 2px;
-      box-shadow: 0 0 15px rgba(175, 175, 175, 0.2);
+      border: 1px dashed lighten(#A2AEBA, 16%);
 
       > table {
          width: 100%;
@@ -32,7 +30,7 @@
          > tbody {
             > tr {
                > * {
-                  border: 1px dashed lighten(#A2AEBA, 26%);
+                  border: 1px dotted lighten(#A2AEBA, 24%);
                }
                > *:first-child { border-left:  none }
                > *:last-child  { border-right: none }
