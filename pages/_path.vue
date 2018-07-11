@@ -17,13 +17,13 @@
             @$route.params.path ? ''
 
          type: ->
-            if @path[0] is '~'
+            if @path[0] is '@'
                return 'pack'
             else
                return 'func'
 
          name: ->
-            if @path[0] is '~'
+            if @path[0] is '@'
                @path.slice(1)
             else
                @path

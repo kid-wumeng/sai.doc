@@ -34,10 +34,10 @@
    .FuncPage {
       > .Column {
          padding: 50px;
-         padding-bottom: 40px;
-         background-color: rgba(251, 251, 251, 1);
+         padding-bottom: 46px;
+         background-color: #2A2833;
          .FuncDesc {
-            margin-top: 30px;
+            margin-top: 36px;
          }
       }
    }

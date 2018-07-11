@@ -55,11 +55,11 @@ module.exports =
 
       sai.merge(a, b)
 
-      // => {
-      //    name:    'sai',
-      //    version: '2.0',
-      //    repo:    'https://github.com/kid-wumeng/Sai'
-      // }
+      /* => {
+          name:    'sai',
+          version: '2.0',
+          repo:    'https://github.com/kid-wumeng/Sai'
+      } */
       ```
 
       JavaScript 中 Array 也是对象，索引即是属性名，下面的例子漂亮地展示了 Array 的按位归并，`browsers[0]`先后被 firefox, chrome 覆写：

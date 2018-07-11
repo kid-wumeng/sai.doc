@@ -22,7 +22,7 @@
    .SideLv1 {
       height: 100%;
       padding: 20px 0;
-      background-color: lighten(#273340, 5%);
+      background-color: #2A2833;
       overflow: scroll;
    }
 </style>

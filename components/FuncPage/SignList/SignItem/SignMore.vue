@@ -21,6 +21,7 @@
    .FuncPage {
       .SignMore {
          pre {
+            border-radius: 3px;
             code {
                line-height: 25px;
                font-family: "Monaco";

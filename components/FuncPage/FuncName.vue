@@ -17,10 +17,9 @@
 <style lang="less">
    .FuncPage {
       .FuncName {
-         font-weight: 300;
+         font-weight: 400;
          font-size: 27px;
-         color: #273340;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+         color: #fff;
          user-select: all;
       }
    }

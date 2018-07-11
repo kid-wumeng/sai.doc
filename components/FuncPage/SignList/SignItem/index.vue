@@ -40,7 +40,7 @@
          > .Row {
             > .Column.left {
                flex: none;
-               width: 40%;
+               width: 35%;
                .SignDesc {
                   margin-top: 28px;
                }
@@ -49,7 +49,7 @@
                }
             }
             > .Column.right {
-               margin-left: 40px;
+               margin-left: 50px;
                > *:not(:first-child) {
                   margin-top: 30px;
                }

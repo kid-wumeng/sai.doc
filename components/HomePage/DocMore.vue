@@ -32,6 +32,10 @@
                padding: 11px 19px;
             }
          }
+
+         em {
+            font-weight: 400 !important;
+         }
       }
    }
 </style>

@@ -23,24 +23,25 @@
 
 <style lang="less">
    .TextArea {
-      line-height: 22px;
-      font-size: 13px;
+      line-height: 23px;
+      font-size: 14px;
       color: #273340;
 
       h1, h2, h3, h4, h5, h6 { margin-bottom: 28px }
-      p                      { margin-bottom: 12px }
-      blockquote             { margin-bottom: 12px }
-      ul                     { margin-bottom: 12px }
-      ol                     { margin-bottom: 12px }
-      .Table                 { margin-bottom: 12px }
+      p                      { margin-bottom: 16px }
+      blockquote             { margin-bottom: 16px }
+      ul                     { margin-bottom: 16px }
+      ol                     { margin-bottom: 16px }
+      .Table                 { margin-bottom: 16px }
       *:last-child           { margin-bottom:  0px }
 
       h1, h2, h3, h4, h5, h6 {
          font-weight: 600;
-         font-size: 19px;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+         font-size: 20px;
+         color: #111;
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
          &:not(:first-child) {
-            margin-top: 80px;
+            margin-top: 100px;
          }
       }
 
@@ -91,123 +92,153 @@
          code {
             margin: 0 4px;
             font-family: "Ubuntu";
+            font-weight: 400;
             color: #728fcb;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-            user-select: all;
+            letter-spacing: 0.35px;
+            text-shadow: none;
          }
       }
 
       pre {
          margin-bottom: 12px;
-         padding: 20px 28px;
+         padding: 24px 32px;
          text-indent: 0;
-         background-color: rgba(251, 251, 251, 1);
-         border-radius: 2px;
+         background: #2A2833;
+         -webkit-font-smoothing: subpixel-antialiased;
 
          code {
             display: block;
             line-height: 21px;
             font-family: "Inconsolata";
             font-size: 14px;
-            color: #A2AEBA;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+            color: #D2CDE5 !important;
+            letter-spacing: 0.15px;
             overflow: scroll;
-
-            .token.comment,
-            .token.prolog,
-            .token.doctype,
-            .token.cdata {
-               font-size: 13px;
-               color: #b6ad9a;
-            }
-
-            .token.punctuation {
-               color: #b6ad9a;
-            }
-
-            .token.namespace {
-               opacity: .7;
-            }
-
-            .token.tag,
-            .token.operator,
-            .token.number {
-               color: #063289;
-            }
-
-            .token.property,
-            .token.function {
-               font-weight: 600;
-               color: #445669;
-            }
-
-            .token.tag-id,
-            .token.selector,
-            .token.atrule-id {
-               color: #2d2006;
-            }
-
-            code.language-javascript,
-            .token.attr-name {
-               color: #896724;
-            }
-
-            code.language-css,
-            code.language-scss,
-            .token.boolean,
-            .token.string,
-            .token.entity,
-            .token.url,
-            .language-css .token.string,
-            .language-scss .token.string,
-            .style .token.string,
-            .token.attr-value,
-            .token.keyword,
-            .token.control,
-            .token.directive,
-            .token.unit,
-            .token.statement,
-            .token.regex,
-            .token.atrule {
-               color: #728fcb;
-            }
-
-            .token.placeholder,
-            .token.variable {
-               color: #93abdc;
-            }
-
-            .token.deleted {
-               text-decoration: line-through;
-            }
-
-            .token.inserted {
-               border-bottom: 1px dotted #2d2006;
-               text-decoration: none;
-            }
-
-            .token.italic {
-               font-style: italic;
-            }
-
-            .token.important,
-            .token.bold {
-               font-weight: bold;
-            }
-
-            .token.important {
-               color: #896724;
-            }
-
-            .token.entity {
-               cursor: help;
-            }
-
-            pre > code.highlight {
-               outline: .4em solid #896724;
-               outline-offset: .4em;
-            }
          }
+      }
+
+       // Duotone Dark ( https://github.com/PrismJS/prism-themes/blob/master/themes/prism-duotone-dark.css )
+
+      code[class*="language-"],
+      pre[class*="language-"] {
+         color: #9a86fd;
+      }
+
+      pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+      code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+         text-shadow: none;
+         background: #6a51e6;
+      }
+
+      pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+      code[class*="language-"]::selection, code[class*="language-"] ::selection {
+         text-shadow: none;
+         background: #6a51e6;
+      }
+
+      pre[class*="language-"] {
+         padding: 1em;
+         margin: .5em 0;
+         overflow: auto;
+      }
+
+      :not(pre) > code[class*="language-"] {
+         padding: .1em;
+         border-radius: .3em;
+      }
+
+      .token.comment,
+      .token.prolog,
+      .token.doctype,
+      .token.cdata {
+         font-size: 13px;
+         color: #6c6783;
+      }
+
+      .token.punctuation {
+         color: #6c6783;
+      }
+
+      .token.namespace {
+         opacity: .7;
+      }
+
+      .token.tag,
+      .token.operator,
+      .token.number {
+         color: #e09142;
+      }
+
+      .token.property,
+      .token.function {
+         color: #9a86fd;
+      }
+
+      .token.tag-id,
+      .token.selector,
+      .token.atrule-id {
+         color: #eeebff;
+      }
+
+      code.language-javascript,
+      .token.attr-name {
+         color: #c4b9fe;
+      }
+
+      code.language-css,
+      code.language-scss,
+      .token.boolean,
+      .token.string,
+      .token.entity,
+      .token.url,
+      .language-css .token.string,
+      .language-scss .token.string,
+      .style .token.string,
+      .token.attr-value,
+      .token.keyword,
+      .token.control,
+      .token.directive,
+      .token.unit,
+      .token.statement,
+      .token.regex,
+      .token.atrule {
+         color: #ffcc99;
+      }
+
+      .token.placeholder,
+      .token.variable {
+         color: #ffcc99;
+      }
+
+      .token.deleted {
+         text-decoration: line-through;
+      }
+
+      .token.inserted {
+         border-bottom: 1px dotted #eeebff;
+         text-decoration: none;
+      }
+
+      .token.italic {
+         font-style: italic;
+      }
+
+      .token.important,
+      .token.bold {
+         font-weight: bold;
+      }
+
+      .token.important {
+         color: #c4b9fe;
+      }
+
+      .token.entity {
+         cursor: help;
+      }
+
+      pre > code.highlight {
+         outline: .4em solid #8a75f5;
+         outline-offset: .4em;
       }
    }
 </style>

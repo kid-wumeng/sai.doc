@@ -18,7 +18,7 @@
    .APIType {
       text-align: center;
       font-family: "Monaco";
-      font-size: 12px;
+      font-size: 13px;
       color: #A2AEBA;
       white-space: nowrap;
    }

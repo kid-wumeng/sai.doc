@@ -37,11 +37,11 @@
       .FuncItem {
          display: block;
          padding: 12px 20px;
-         font-weight: 300;
+         font-weight: 400;
          font-size: 12px;
-         color: #273340;
+         color: lighten(#2A2833, 10%);
          letter-spacing: 0.35px;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
          &:hover {
             background-color: rgba(250, 250, 250, 1);
@@ -50,7 +50,7 @@
          &[active] {
             font-weight: 500;
             color: #F2F2F2;
-            background-color: lighten(#273340, 5%);
+            background-color: #2A2833;
             text-shadow: none;
          }
       }

@@ -19,7 +19,7 @@
 
 <style lang="less">
    .Table {
-      display: inline-block;
+      display: block;
       border: 1px dashed lighten(#A2AEBA, 24%);
 
       > table {

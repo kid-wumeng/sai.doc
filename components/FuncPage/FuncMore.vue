@@ -19,16 +19,23 @@
 
 <style lang="less">
    .FuncPage .FuncMore {
-      width: 640px;
-      padding: 50px;
-      color: #000;
+      padding: 50px 0;
 
-      > :not(h1, h2, h3, h4, h5, h6, pre) {
+      > pre {
+         padding: 20px 30px;
+      }
+
+      > :not( pre ) {
+         padding: 0 40px;
+      }
+
+      > :not( h1, h2, h3, h4, h5, h6, pre ) {
+         width: 640px;
          text-indent: 2em;
       }
+
       > pre {
          margin-bottom: 30px;
-         background-color: rgba(250, 250, 250, 1);
       }
    }
 </style>
