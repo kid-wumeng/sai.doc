@@ -40,7 +40,7 @@
          font-weight: 300;
          font-size: 12px;
          color: #273340;
-         letter-spacing: 0.75px;
+         letter-spacing: 0.35px;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 
          &:hover {
@@ -48,7 +48,7 @@
          }
 
          &[active] {
-            font-weight: 400;
+            font-weight: 500;
             color: #F2F2F2;
             background-color: lighten(#273340, 5%);
             text-shadow: none;
