@@ -18,10 +18,11 @@
 
 
 <style lang="less">
-   PackPage {
+   .PackPage {
       .PackDesc {
          width: 600px;
          text-indent: 2em;
+         font-size: 14px;
       }
    }
 </style>

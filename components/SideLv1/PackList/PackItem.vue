@@ -28,7 +28,8 @@
    .SideLv1 {
       .PackItem {
          display: block;
-         padding: 12px 20px;
+         padding: 14px 20px;
+         text-align: center;
 
          .name {
             font-family: "Futura";
@@ -37,7 +38,7 @@
             color: white;
          }
          .path {
-            margin-top: 4px;
+            margin-top: 3px;
             font-weight: 300;
             font-size: 12px;
             color: darken(#A2AEBA, 18%);

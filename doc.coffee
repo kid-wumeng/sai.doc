@@ -5,5 +5,3 @@ sai.test(user, 'name')
 
 HomePage
 PackPage
-SideLv1
-SideLv2

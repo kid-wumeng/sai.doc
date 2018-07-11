@@ -1,5 +1,5 @@
 <template lang="jade">
-   TextArea.SignDesc(:text="sign.desc")
+   Markdown.SignDesc(:text="sign.desc")
 </template>
 
 
@@ -7,7 +7,7 @@
 <script lang="coffee">
    module.exports =
       components:
-         'TextArea': require('~/components/TextArea').default
+         'Markdown': require('~/components/Markdown').default
 
       props:
          'sign':
@@ -20,8 +20,9 @@
 <style lang="less">
    .PackPage {
       .SignDesc {
-         padding: 10px 16px;
-         font-size: 14px;
+         padding: 16px 24px;
+         font-size: 13px;
+         color: #273340;
       }
    }
 </style>

@@ -23,9 +23,9 @@
       .SignErrors {
          .APIName {
             font-family: "Ubuntu";
-            font-weight: 400;
+            font-weight: 300;
             font-size: 12px;
-            color: lighten(red, 20%);
+            color: lighten(red, 27%);
             text-shadow: none;
          }
       }

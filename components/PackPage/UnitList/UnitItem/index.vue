@@ -35,10 +35,5 @@
 
 <style lang="less">
    .PackPage {
-      .UnitItem {
-         .UnitName {
-            margin-bottom: 16px;
-         }
-      }
    }
 </style>

@@ -1,6 +1,5 @@
 <template lang="jade">
-   .SignName
-      nuxt-link(:to="to(funcName)") {{ formatSignName(sign) }}
+   .SignName: nuxt-link(:to="to(funcName)") {{ formatSignName(sign) }}
 </template>
 
 
@@ -21,20 +20,16 @@
 <style lang="less">
    .PackPage {
       .SignName {
-         flex: none;
-         display: flex;
-         align-items: center;
-
-         > a {
-            padding: 10px 16px;
-            line-height: 22px;
+         padding: 0 24px;
+         a {
+            display: inline-block;
+            padding: 16px 0;
             font-weight: 400;
-            font-size: 13px;
-            color: #273340;
-            letter-spacing: 0.3px;
+            font-size: 12px;
+            color: lighten(#273340, 15%);
+            letter-spacing: 0.15px;
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
             word-break: break-all;
-
          }
       }
    }

@@ -1,7 +1,8 @@
 <template lang="jade">
    .PackPage
-      PackName(:pack="pack")
-      PackDesc(:pack="pack")
+      Column
+         PackName(:pack="pack")
+         PackDesc(:pack="pack")
       UnitList(:units="units")
 </template>
 
@@ -10,6 +11,7 @@
 <script lang="coffee">
    module.exports =
       components:
+         'Column':   require('~/components/Column').default
          'PackName': require('./PackName').default
          'PackDesc': require('./PackDesc').default
          'UnitList': require('./UnitList').default
@@ -47,14 +49,15 @@
 
 <style lang="less">
    .PackPage {
-      padding: 55px 50px;
-
-      > .PackDesc {
-         margin-top: 20px;
-      }
-
-      > .UnitList {
-         margin-top: 80px;
+      > .Column {
+         padding: 50px;
+         background-color: rgba(251, 251, 251, 1);
+         > .PackDesc {
+            margin-top: 20px;
+         }
+         > .UnitList {
+            margin-top: 48px;
+         }
       }
    }
 </style>

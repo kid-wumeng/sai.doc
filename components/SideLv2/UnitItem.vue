@@ -25,7 +25,7 @@
          text-align: center;
          font-family: "Futura";
          font-weight: 500;
-         font-size: 12px;
+         font-size: 13px;
          color: #A2AEBA;
          margin-bottom: 8px;
       }
