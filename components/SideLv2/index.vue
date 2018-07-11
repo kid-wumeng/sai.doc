@@ -53,8 +53,7 @@
       height: 100%;
       padding: 20px 0;
       overflow: scroll;
-      border-right: 1px solid lighten(#A2AEBA, 30%);
-      box-shadow: 1px 0 15px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.12);
 
       > .item:not(:first-child) {
          > .UnitItem {

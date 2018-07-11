@@ -20,15 +20,15 @@
 <style lang="less">
    .PackPage {
       .SignName {
-         padding: 0 24px;
+         padding: 0 22px;
+         text-align: center;
          a {
             display: inline-block;
-            padding: 16px 0;
+            padding: 14px 0;
             font-weight: 400;
             font-size: 12px;
-            color: lighten(#273340, 15%);
-            letter-spacing: 0.15px;
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+            color: #273340;
+            letter-spacing: 0.25px;
             word-break: break-all;
          }
       }

@@ -1,5 +1,5 @@
 <template lang="jade">
-   Table.SignList(v-if="signs.length")
+   Table.SignList(v-if="signs.length" auto)
       SignItem(v-for="(sign, i) in signs", :key="i", :sign="sign")
 </template>
 
