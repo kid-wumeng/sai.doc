@@ -19,7 +19,7 @@
 
 <style lang="less">
    .FuncPage .FuncMore {
-      padding: 50px 0;
+      padding: 50px 0 0;
 
       > pre {
          padding: 38px 42px;
@@ -33,6 +33,9 @@
       }
       > pre {
          margin-bottom: 50px;
+      }
+      > pre:last-child {
+         margin-bottom: 0;
       }
    }
 </style>

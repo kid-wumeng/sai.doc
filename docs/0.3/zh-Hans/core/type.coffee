@@ -93,7 +93,7 @@ module.exports =
       sai.type(new Person)  // => Person
       ```
 
-      # 其它
+      # Others
 
       ```js
       sai.type(undefined)            // undefined
@@ -102,13 +102,13 @@ module.exports =
       sai.type(Infinity)             // Number
       ```
 
-      值得一提的是，JavaScript 有个古怪的特性，NaN 不等于任何东西，包括它自己，所以你不应该用 sai.type 去比较 NaN：
+      注意，JavaScript 有个古怪的特性，NaN 不等于任何东西，包括它自己，所以你不应该用 sai.type 去比较 NaN：
 
       ```js
-      // JavaScript 的古怪特性：
+      // JavaScript 的古怪特性
       NaN === NaN  // => false
 
-      // 所以下面这样是
+      // 所以下面这样是不行的
       if (sai.type(value) === NaN)
          // ...
 
