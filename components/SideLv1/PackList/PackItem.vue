@@ -44,7 +44,7 @@
          }
 
          &:hover {
-            background-color: lighten(#2A2833, 2%);
+            background-color: lighten(#2A2833, 6%);
          }
 
          &[active] {

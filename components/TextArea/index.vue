@@ -27,21 +27,22 @@
       font-size: 14px;
       color: #273340;
 
-      h1, h2, h3, h4, h5, h6 { margin-bottom: 28px }
-      p                      { margin-bottom: 16px }
-      blockquote             { margin-bottom: 16px }
-      ul                     { margin-bottom: 16px }
-      ol                     { margin-bottom: 16px }
-      .Table                 { margin-bottom: 16px }
+      h1, h2, h3, h4, h5, h6 { margin-bottom: 20px }
+      p                      { margin-bottom: 20px }
+      blockquote             { margin-bottom: 20px }
+      ul                     { margin-bottom: 20px }
+      ol                     { margin-bottom: 20px }
+      .Table                 { margin-bottom: 20px }
+      pre                    { margin-bottom: 20px }
       *:last-child           { margin-bottom:  0px }
 
       h1, h2, h3, h4, h5, h6 {
          font-weight: 600;
-         font-size: 20px;
+         font-size: 18px;
          color: #111;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
          &:not(:first-child) {
-            margin-top: 100px;
+            margin-top: 80px;
          }
       }
 
@@ -100,20 +101,19 @@
       }
 
       pre {
-         margin-bottom: 12px;
-         padding: 24px 32px;
+         padding: 36px 44px;
          text-indent: 0;
          background: #2A2833;
-         -webkit-font-smoothing: subpixel-antialiased;
 
          code {
             display: block;
-            line-height: 21px;
-            font-family: "Inconsolata";
-            font-size: 14px;
+            line-height: 23px;
+            font-family: "Monaco";
+            font-size: 13px;
             color: #D2CDE5 !important;
             letter-spacing: 0.15px;
             overflow: scroll;
+            -webkit-font-smoothing: subpixel-antialiased;
          }
       }
 
@@ -151,6 +151,7 @@
       .token.prolog,
       .token.doctype,
       .token.cdata {
+         font-family: "Ubuntu Mono";
          font-size: 13px;
          color: #6c6783;
       }

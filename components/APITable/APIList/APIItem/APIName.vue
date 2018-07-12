@@ -24,7 +24,6 @@
       font-weight: 500;
       font-size: 14px;
       color: #273340;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       white-space: nowrap;
       user-select: all;
       -webkit-font-smoothing: subpixel-antialiased;

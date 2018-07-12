@@ -72,10 +72,10 @@
       }
 
       em {
-         font-weight: 400;
+         font-weight: 500;
          font-style: normal;
          color: #000;
-         text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+         text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
          user-select: all;
       }
 
@@ -102,10 +102,10 @@
       pre[lang-coffee]::after {
          position: absolute;
          right: 16px;
-         top: 10px;
+         top: 14px;
          font-weight: 600;
-         font-size: 13px;
-         color: lighten(#A2AEBA, 18%);
+         font-size: 16px;
+         color: #A2AEBA;
       }
 
       pre[lang-js]::after     { content: "JS"     }
