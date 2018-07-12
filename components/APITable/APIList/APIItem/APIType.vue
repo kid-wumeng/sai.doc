@@ -15,7 +15,7 @@
 
 
 <style lang="less">
-   .APIType {
+   .APITable .APIType {
       text-align: center;
       font-family: "Monaco";
       font-size: 13px;

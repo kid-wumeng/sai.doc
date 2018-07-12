@@ -34,25 +34,23 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .SignItem {
-         padding: 50px;
-         > .Row {
-            > .Column.left {
-               flex: none;
-               width: 35%;
-               .SignDesc {
-                  margin-top: 28px;
-               }
-               .SignMore {
-                  margin-top: 22px;
-               }
+   .FuncPage .SignItem {
+      padding: 50px;
+      > .Row {
+         > .Column.left {
+            flex: none;
+            width: 35%;
+            .SignDesc {
+               margin-top: 28px;
             }
-            > .Column.right {
-               margin-left: 50px;
-               > *:not(:first-child) {
-                  margin-top: 40px;
-               }
+            .SignMore {
+               margin-top: 22px;
+            }
+         }
+         > .Column.right {
+            margin-left: 50px;
+            > *:not(:first-child) {
+               margin-top: 40px;
             }
          }
       }

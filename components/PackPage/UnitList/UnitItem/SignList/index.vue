@@ -20,9 +20,7 @@
 
 
 <style lang="less">
-   .PackPage {
-      .SignList {
-         background-color: white;
-      }
+   .PackPage .SignList {
+      background-color: white;
    }
 </style>

@@ -33,10 +33,3 @@
       computed:
          show: -> Array.isArray(@apis) and @apis.length > 0
 </script>
-
-
-
-<style lang="less">
-   .APITable {
-   }
-</style>

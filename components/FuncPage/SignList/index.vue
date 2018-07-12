@@ -19,11 +19,9 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .SignList {
-         .SignItem:nth-child(even) {
-            background-color: rgba(251, 251, 251, 1);
-         }
+   .FuncPage .SignList {
+      .SignItem:nth-child(even) {
+         background-color: rgba(251, 251, 251, 1);
       }
    }
 </style>

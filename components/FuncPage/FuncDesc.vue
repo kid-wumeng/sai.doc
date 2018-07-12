@@ -18,15 +18,13 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .FuncDesc {
-         > pre {
-            padding: 0;
-            margin-left: 2em;
-            > code {
-               line-height: 26px;
-               font-size: 14px;
-            }
+   .FuncPage .FuncDesc {
+      > pre {
+         padding: 0;
+         margin-left: 2em;
+         > code {
+            line-height: 26px;
+            font-size: 14px;
          }
       }
    }

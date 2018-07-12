@@ -23,11 +23,9 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .SignReturn {
-         .APIName {
-            font-weight: 300;
-         }
+   .FuncPage .SignReturn {
+      .APIName {
+         font-weight: 300;
       }
    }
 </style>

@@ -22,7 +22,7 @@
 
 
 <style lang="less">
-   .APIDesc {
+   .APITable .APIDesc {
       font-size: 13px;
       li {
          margin-left: 4px;
@@ -31,7 +31,7 @@
          font-weight: 600;
       }
    }
-   .APIDesc[empty] {
+   .APITable .APIDesc[empty] {
       color: #A2AEBA;
       user-select: none;
    }

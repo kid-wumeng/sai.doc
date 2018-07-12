@@ -17,12 +17,3 @@
             type: Object
             required: true
 </script>
-
-
-
-<style lang="less">
-   .PackPage {
-      .SignItem {
-      }
-   }
-</style>

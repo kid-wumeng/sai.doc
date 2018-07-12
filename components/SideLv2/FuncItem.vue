@@ -33,25 +33,23 @@
 
 
 <style lang="less">
-   .SideLv2 {
-      .FuncItem {
-         display: block;
-         padding: 12px 20px;
-         font-weight: 400;
-         font-size: 13px;
-         color: lighten(#1D262F, 10%);
-         letter-spacing: 0.1px;
+   .SideLv2 .FuncItem {
+      display: block;
+      padding: 12px 20px;
+      font-weight: 400;
+      font-size: 13px;
+      color: lighten(#1D262F, 10%);
+      letter-spacing: 0.1px;
 
-         &:hover {
-            background-color: rgba(248, 248, 248, 1);
-         }
+      &:hover {
+         background-color: rgba(248, 248, 248, 1);
+      }
 
-         &[active] {
-            font-weight: 500;
-            color: #FFF;
-            background-color: #1D262F;
-            text-shadow: none;
-         }
+      &[active] {
+         font-weight: 500;
+         color: #FFF;
+         background-color: #1D262F;
+         text-shadow: none;
       }
    }
 </style>

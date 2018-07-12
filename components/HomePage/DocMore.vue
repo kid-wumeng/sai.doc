@@ -18,24 +18,24 @@
 
 
 <style lang="less">
-   .HomePage {
-      .DocMore {
-         > :not(h1, h2, h3, h4, h5, h6, .table, pre) {
-            width: 600px;
-            text-indent: 2em;
-         }
-         > pre {
-            margin-bottom: 30px;
-         }
-         > .table {
-            th, td {
-               padding: 11px 19px;
-            }
-         }
+   .HomePage .DocMore {
+      > :not(h1, h2, h3, h4, h5, h6, .table, pre) {
+         width: 600px;
+         text-indent: 2em;
+      }
+      
+      > pre {
+         margin-bottom: 30px;
+      }
 
-         em {
-            font-weight: 400 !important;
+      > .table {
+         th, td {
+            padding: 11px 19px;
          }
+      }
+
+      em {
+         font-weight: 400 !important;
       }
    }
 </style>

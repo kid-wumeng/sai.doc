@@ -15,12 +15,10 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .FuncName {
-         font-weight: 400;
-         font-size: 27px;
-         color: #FFF;
-         user-select: all;
-      }
+   .FuncPage .FuncName {
+      font-weight: 400;
+      font-size: 27px;
+      color: #FFF;
+      user-select: all;
    }
 </style>

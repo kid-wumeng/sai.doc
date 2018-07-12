@@ -18,7 +18,7 @@
 
 
 <style lang="less">
-   .APIName {
+   .APITable .APIName {
       text-align: center;
       font-family: "Ubuntu";
       font-weight: 500;
@@ -29,7 +29,7 @@
       -webkit-font-smoothing: subpixel-antialiased;
    }
 
-   .APIName[optional] {
+   .APITable .APIName[optional] {
       font-weight: 300;
    }
 </style>

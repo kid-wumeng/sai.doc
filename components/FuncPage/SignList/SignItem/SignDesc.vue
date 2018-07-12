@@ -18,9 +18,7 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .SignDesc {
-         text-indent: 2em;
-      }
+   .FuncPage .SignDesc {
+      text-indent: 2em;
    }
 </style>

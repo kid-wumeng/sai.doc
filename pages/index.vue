@@ -10,10 +10,3 @@
       components:
          'HomePage': require('~/components/HomePage').default
 </script>
-
-
-
-<style lang="less">
-   .APITable {
-   }
-</style>

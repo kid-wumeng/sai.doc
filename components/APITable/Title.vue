@@ -15,7 +15,7 @@
 
 
 <style lang="less">
-   .Title {
+   .APITable .Title {
       margin-left: 6px;
       margin-bottom: 10px;
       font-weight: 400;

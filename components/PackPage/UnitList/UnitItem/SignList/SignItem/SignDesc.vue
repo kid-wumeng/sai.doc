@@ -18,11 +18,9 @@
 
 
 <style lang="less">
-   .PackPage {
-      .SignDesc {
-         padding: 14px 20px;
-         font-size: 13px;
-         color: #273340;
-      }
+   .PackPage .SignDesc {
+      padding: 14px 20px;
+      font-size: 13px;
+      color: #273340;
    }
 </style>

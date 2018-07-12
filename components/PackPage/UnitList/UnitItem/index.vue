@@ -30,10 +30,3 @@
 
             return signs
 </script>
-
-
-
-<style lang="less">
-   .PackPage {
-   }
-</style>

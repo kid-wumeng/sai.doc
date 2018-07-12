@@ -33,7 +33,7 @@
 
 
 <style lang="less">
-   .APIItem {
+   .APITable .APIItem {
       line-height: 21px;
       font-family: "Inconsolata";
       font-size: 15px;

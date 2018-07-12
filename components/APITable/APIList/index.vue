@@ -27,7 +27,7 @@
 
 
 <style lang="less">
-   .APIList {
+   .APITable .APIList {
       background-color: white;
    }
 </style>

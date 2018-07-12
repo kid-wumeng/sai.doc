@@ -37,11 +37,9 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .SignParams {
-         .APITable:not(:last-child) {
-            margin-bottom: 30px;
-         }
+   .FuncPage .SignParams {
+      .APITable:not(:last-child) {
+         margin-bottom: 30px;
       }
    }
 </style>

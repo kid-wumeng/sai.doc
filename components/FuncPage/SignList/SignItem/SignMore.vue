@@ -18,12 +18,10 @@
 
 
 <style lang="less">
-   .FuncPage {
-      .SignMore {
-         pre {
-            padding: 24px 28px;
-            border-radius: 2px;
-         }
+   .FuncPage .SignMore {
+      pre {
+         padding: 24px 28px;
+         border-radius: 2px;
       }
    }
 </style>

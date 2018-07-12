@@ -25,7 +25,7 @@
 
 
 <style lang="less">
-   .APIDefault {
+   .APITable .APIDefault {
       color: lighten(#A2AEBA, 20%);
       white-space: nowrap;
 
@@ -36,7 +36,7 @@
       }
    }
 
-   .APIDefault[required] {
+   .APITable .APIDefault[required] {
       text-align: center;
       font-family: "Ubuntu";
       font-weight: 600;

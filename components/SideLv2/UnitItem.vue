@@ -18,16 +18,14 @@
 
 
 <style lang="less">
-   .SideLv2 {
-      .UnitItem {
-         display: block;
-         padding: 0 20px;
-         text-align: center;
-         font-family: "Futura";
-         font-weight: 500;
-         font-size: 13px;
-         color: #A2AEBA;
-         margin-bottom: 8px;
-      }
+   .SideLv2 .UnitItem {
+      display: block;
+      padding: 0 20px;
+      text-align: center;
+      font-family: "Futura";
+      font-weight: 500;
+      font-size: 13px;
+      color: #A2AEBA;
+      margin-bottom: 8px;
    }
 </style>

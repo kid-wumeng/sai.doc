@@ -19,12 +19,10 @@
 
 
 <style lang="less">
-   .PackPage {
-      .UnitList {
-         > .UnitItem {
-            padding: 50px 50px;
-            padding-top: 45px;
-         }
+   .PackPage .UnitList {
+      > .UnitItem {
+         padding: 50px 50px;
+         padding-top: 45px;
       }
    }
 </style>
