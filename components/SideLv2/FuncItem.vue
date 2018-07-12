@@ -36,12 +36,11 @@
    .SideLv2 {
       .FuncItem {
          display: block;
-         padding: 11px 20px;
-         font-weight: 400;
+         padding: 12px 20px;
+         font-weight: 500;
          font-size: 13px;
          color: lighten(#2A2833, 10%);
          letter-spacing: 0.1px;
-         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
          &:hover {
             background-color: rgba(248, 248, 248, 1);

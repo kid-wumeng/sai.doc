@@ -24,11 +24,10 @@
          a {
             display: inline-block;
             padding: 14px 0;
-            font-weight: 400;
+            font-weight: 500;
             font-size: 13px;
-            color: #23222B;
-            letter-spacing: 0.15px;
-            // text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+            color: lighten(#2A2833, 10%);
+            letter-spacing: 0.1px;
             word-break: break-all;
          }
       }

@@ -88,7 +88,7 @@
       a {
          font-family: "Futura";
          font-weight: 500;
-         color: #16A085;
+         color: #2f54eb;
          text-decoration: underline;
       }
    }
