@@ -96,13 +96,13 @@ module.exports =
       # Others
 
       ```js
-      sai.type(undefined)            // undefined
-      sai.type(null)                 // null
-      sai.type(NaN)                  // NaN
-      sai.type(Infinity)             // Number
+      sai.type(undefined)  // => undefined
+      sai.type(null)       // => null
+      sai.type(NaN)        // => NaN
+      sai.type(Infinity)   // => Number
       ```
 
-      注意，JavaScript 有个古怪的特性，NaN 不等于任何东西，包括它自己，所以你不应该用 sai.type 去比较 NaN：
+      注意，JavaScript 有个古怪的特性，NaN 不等于任何东西，包括它自己。所以你不应该用 sai.type 去比较 NaN：
 
       ```js
       // JavaScript 的古怪特性

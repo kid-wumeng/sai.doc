@@ -1,7 +1,7 @@
 <template lang="jade">
-   nuxt-link.PackItem(:to="to('/@' + path)", :active="active")
+   nuxt-link.PackItem(:to="to('/~' + path)", :active="active")
       .name {{ name }}
-      .path @{{ path }}
+      .path ~{{ path }}
 </template>
 
 
