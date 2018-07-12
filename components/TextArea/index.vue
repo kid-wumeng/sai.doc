@@ -89,17 +89,6 @@
          font-weight: 500 !important;
       }
 
-      :not( pre ) {
-         code {
-            margin: 0 4px;
-            font-family: "Ubuntu";
-            font-weight: 400;
-            color: #728fcb;
-            letter-spacing: 0.35px;
-            text-shadow: none;
-         }
-      }
-
       pre {
          padding: 36px 44px;
          text-indent: 0;
@@ -151,8 +140,7 @@
       .token.prolog,
       .token.doctype,
       .token.cdata {
-         font-family: "Ubuntu Mono";
-         font-size: 13px;
+         font-family: "Inconsolata";
          color: #6c6783;
       }
 

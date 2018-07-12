@@ -4,13 +4,6 @@ module.exports =
    name: 'type'
 
 
-   desc: """
-      ```js
-      sai.type(value)
-      ```
-   """
-
-
    signs: [{
       name: 'type( value )'
       desc: '获取值的类型'
@@ -22,8 +15,15 @@ module.exports =
 
       return:
          name: 'type'
-         type: 'function, nil'
+         type: 'function, nil, NaN'
    }]
+
+
+   desc: """
+      ```js
+      sai.type('abc')  // => String
+      ```
+   """
 
 
    more: """
@@ -35,41 +35,47 @@ module.exports =
       sai.type(true)               // => Boolean
       sai.type(1)                  // => Number
       sai.type('abc')              // => String
+      sai.type(Symbol())           // => Symbol
+
+      sai.type(new Boolean(true))  // => Boolean
+      sai.type(new Number(1))      // => Number
+      sai.type(new String('abc'))  // => String
       ```
 
-      # nil
+      # 函数
 
       ```js
-      sai.type(null)       // => null
-      sai.type(undefined)  // => undefined
+      sai.type(()=>{})       // => Function
+      sai.type(async()=>{})  // => Function
       ```
 
       # 对象
 
+      返回构造类
+
       ```js
-      sai.type([])             // => Array
-      sai.type({})             // => Object
-      sai.type(()=>{})         // => Function
-      sai.type(new Number(1))  // => Number
-      sai.type(new Date)       // => Date
+      sai.type({})                // => Object
+      sai.type([])                // => Array
+      sai.type(new Date)          // => Date
+      sai.type(new Buffer('abc')) // => Buffer
       ```
 
-      注意，理论上`Object`是任何对象的基类，但`Object.create(null)`会创建一个无原型对象 ( 构造器为空 )。为了方便使用，`sai.type`会判定其为`Object`类型：
+      因为在 JavaScript 里，类的构造器其实就是一个函数：
+
+      ```js
+      sai.type(class Sai {})  // => Function
+      sai.type(String)        // => Function
+      sai.type(Buffer)        // => Function
+      sai.type(Object)        // => Function
+      sai.type(Function)      // => Function
+      ```
+
+      注意，理论上 Object 是任何对象的基类，但`Object.create(null)`会创建一个无原型对象 ( 构造器为空 )。为了方便使用，sai.type 会判定其为 Object 类型：
 
       ```js
       data = Object.create(null)  // => {}
       data.constructor            // => undefined
       sai.type(data)              // => Object
-      ```
-
-      # 任何 class 的类型都是`Function`
-
-      因为在 JavaScript 里，类的构造器其实就是一个函数：
-
-      ```js
-      sai.type(String)  // => Function
-      sai.type(Buffer)  // => Function
-      sai.type(Object)  // => Function
       ```
 
       # 继承对象
@@ -81,8 +87,16 @@ module.exports =
       class Monkey extends Animal {}
       class Person extends Monkey {}
 
-      me = new Person()
+      sai.type(new Person)  // => Person
+      ```
 
-      sai.type(me)  // => Person
+      # 特别情况
+
+      ```js
+      sai.type(undefined)            // undefined
+      sai.type(null)                 // null
+      sai.type(NaN)                  // NaN
+      sai.type(Infinity)             // Number
+      sai.type(Object.create(null))  // Object
       ```
    """

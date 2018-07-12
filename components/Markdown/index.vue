@@ -91,6 +91,17 @@
          color: #2f54eb;
          text-decoration: underline;
       }
+
+      :not( pre ) code {
+         margin: 0 5px;
+         padding: 5px 7px;
+         font-family: "Inconsolata";
+         font-size: 13px;
+         color: #F92672;
+         background-color: #F8F8F8;
+         border-radius: 2px;
+         -webkit-font-smoothing: subpixel-antialiased;
+      }
    }
 
    .Markdown[show-lang] {
