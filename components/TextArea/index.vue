@@ -92,86 +92,66 @@
       pre {
          padding: 36px 44px;
          text-indent: 0;
-         background: #2A2833;
+         background: #1D262F;
 
          code {
             display: block;
             line-height: 23px;
             font-family: "Monaco";
             font-size: 13px;
-            color: #D2CDE5 !important;
-            letter-spacing: 0.15px;
+            color: #FFF !important;
             overflow: scroll;
             -webkit-font-smoothing: subpixel-antialiased;
          }
       }
 
-       // Duotone Dark ( https://github.com/PrismJS/prism-themes/blob/master/themes/prism-duotone-dark.css )
-
-      code[class*="language-"],
       pre[class*="language-"] {
-         color: #9a86fd;
+        padding: 1em;
+        margin: .5em 0;
+        overflow: auto;
       }
 
-      pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
-      code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
-         text-shadow: none;
-         background: #6a51e6;
-      }
-
-      pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
-      code[class*="language-"]::selection, code[class*="language-"] ::selection {
-         text-shadow: none;
-         background: #6a51e6;
-      }
-
-      pre[class*="language-"] {
-         padding: 1em;
-         margin: .5em 0;
-         overflow: auto;
-      }
-
+      /* Inline code */
       :not(pre) > code[class*="language-"] {
-         padding: .1em;
-         border-radius: .3em;
+        padding: .1em;
+        border-radius: .3em;
       }
 
       .token.comment,
       .token.prolog,
       .token.doctype,
       .token.cdata {
-         font-family: "Inconsolata";
-         color: #6c6783;
+        color: #4a5f78;
       }
 
       .token.punctuation {
-         color: #6c6783;
+        color: #4a5f78;
       }
 
       .token.namespace {
-         opacity: .7;
+        opacity: .7;
       }
 
       .token.tag,
       .token.operator,
       .token.number {
-         color: #e09142;
+        color: #0aa370;
       }
 
       .token.property,
       .token.function {
-         color: #9a86fd;
+        color: #57718e;
       }
 
       .token.tag-id,
       .token.selector,
       .token.atrule-id {
-         color: #eeebff;
+        color: #ebf4ff;
       }
 
       code.language-javascript,
       .token.attr-name {
-         color: #c4b9fe;
+        color: #7eb6f6;
       }
 
       code.language-css,
@@ -191,43 +171,64 @@
       .token.statement,
       .token.regex,
       .token.atrule {
-         color: #ffcc99;
+        color: #47ebb4;
       }
 
       .token.placeholder,
       .token.variable {
-         color: #ffcc99;
+        color: #47ebb4;
       }
 
       .token.deleted {
-         text-decoration: line-through;
+        text-decoration: line-through;
       }
 
       .token.inserted {
-         border-bottom: 1px dotted #eeebff;
-         text-decoration: none;
+        border-bottom: 1px dotted #ebf4ff;
+        text-decoration: none;
       }
 
       .token.italic {
-         font-style: italic;
+        font-style: italic;
       }
 
       .token.important,
       .token.bold {
-         font-weight: bold;
+        font-weight: bold;
       }
 
       .token.important {
-         color: #c4b9fe;
+        color: #7eb6f6;
       }
 
       .token.entity {
-         cursor: help;
+        cursor: help;
       }
 
       pre > code.highlight {
-         outline: .4em solid #8a75f5;
-         outline-offset: .4em;
+        outline: .4em solid #34659d;
+        outline-offset: .4em;
       }
+
+      /* overrides color-values for the Line Numbers plugin
+       * http://prismjs.com/plugins/line-numbers/
+       */
+      .line-numbers .line-numbers-rows {
+        border-right-color: #1f2932;
+      }
+
+      .line-numbers-rows > span:before {
+        color: #2c3847;
+      }
+
+      /* overrides color-values for the Line Highlight plugin
+      * http://prismjs.com/plugins/line-highlight/
+      */
+      .line-highlight {
+        background: rgba(10, 163, 112, 0.2);
+        background: -webkit-linear-gradient(left, rgba(10, 163, 112, 0.2) 70%, rgba(10, 163, 112, 0));
+        background: linear-gradient(to right, rgba(10, 163, 112, 0.2) 70%, rgba(10, 163, 112, 0));
+      }
+
    }
 </style>

@@ -114,9 +114,10 @@
          position: absolute;
          right: 16px;
          top: 14px;
+         font-family: "Ubuntu";
          font-weight: 600;
-         font-size: 16px;
-         color: #A2AEBA;
+         font-size: 18px;
+         color: #777;
       }
 
       pre[lang-js]::after     { content: "JS"     }

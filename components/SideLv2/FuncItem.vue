@@ -37,9 +37,9 @@
       .FuncItem {
          display: block;
          padding: 12px 20px;
-         font-weight: 500;
+         font-weight: 400;
          font-size: 13px;
-         color: lighten(#2A2833, 10%);
+         color: lighten(#1D262F, 10%);
          letter-spacing: 0.1px;
 
          &:hover {
@@ -48,8 +48,8 @@
 
          &[active] {
             font-weight: 500;
-            color: #F2F2F2;
-            background-color: #2A2833;
+            color: #FFF;
+            background-color: #1D262F;
             text-shadow: none;
          }
       }

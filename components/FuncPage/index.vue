@@ -35,7 +35,7 @@
       > .Column {
          padding: 50px;
          padding-bottom: 55px;
-         background-color: #2A2833;
+         background-color: #1D262F;
          .FuncDesc {
             margin-top: 45px;
          }

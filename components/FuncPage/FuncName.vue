@@ -19,7 +19,7 @@
       .FuncName {
          font-weight: 400;
          font-size: 27px;
-         color: #fff;
+         color: #FFF;
          user-select: all;
       }
    }

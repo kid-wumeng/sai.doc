@@ -26,7 +26,7 @@
             > code {
                line-height: 26px;
                font-family: "Monaco";
-               font-size: 15px;
+               font-size: 14px;
             }
          }
       }

@@ -23,16 +23,17 @@
 
       > pre {
          padding: 38px 42px;
+         margin-bottom: 50px;
+         code {
+            letter-spacing: 0.2px;
+         }
       }
       > :not( pre ) {
-         padding: 0 40px;
+         padding: 0 20px;
       }
       > :not( h1, h2, h3, h4, h5, h6, pre ) {
-         width: 700px;
+         width: 600px;
          text-indent: 2em;
-      }
-      > pre {
-         margin-bottom: 50px;
       }
       > pre:last-child {
          margin-bottom: 0;
