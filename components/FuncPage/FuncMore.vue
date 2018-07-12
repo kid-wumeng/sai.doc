@@ -28,7 +28,7 @@
          padding: 0 40px;
       }
       > :not( h1, h2, h3, h4, h5, h6, pre ) {
-         width: 640px;
+         width: 700px;
          text-indent: 2em;
       }
       > pre {
