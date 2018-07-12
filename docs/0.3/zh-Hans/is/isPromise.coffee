@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isPromise( promise )
+      sai.isPromise(new Promise(()=>{}))  // => true
       ```
    """
 

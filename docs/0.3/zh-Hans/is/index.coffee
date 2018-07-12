@@ -29,6 +29,7 @@ module.exports =
       require('./isObject')
       require('./isPlainObject')
       require('./isNil')
+      require('./isNaN')
 
       '数据判定'
       require('./isEqual')

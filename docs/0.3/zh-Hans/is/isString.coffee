@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isString('abc')
+      sai.isString('abc')  // => true
       ```
    """
 
@@ -31,8 +31,8 @@ module.exports =
       # 基本用法
 
       ```js
-      sai.isString('sai')              // => true
-      sai.isString(new String('sai'))  // => true
-      sai.isString(new Buffer('sai'))  // => false
+      sai.isString('abc')              // => true
+      sai.isString(new String('abc'))  // => true
+      sai.isString(new Buffer('abc'))  // => false
       ```
    """

@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isRegExp(/^sai/g)
+      sai.isRegExp(/^abc/ig)  // => true
       ```
    """
 
@@ -31,7 +31,7 @@ module.exports =
       # 基本用法
 
       ```js
-      sai.isRegExp(/^sai$/ig)                  // => true
-      sai.isRegExp(new RegExp('^sai$', 'ig'))  // => true
+      sai.isRegExp(/^abc$/ig)                  // => true
+      sai.isRegExp(new RegExp('^abc$', 'ig'))  // => true
       ```
    """

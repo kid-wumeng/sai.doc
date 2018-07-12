@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isError(error)
+      sai.isError(new Error)  // => true
       ```
    """
 

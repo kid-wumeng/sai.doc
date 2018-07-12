@@ -6,8 +6,8 @@ module.exports =
 
    desc: """
       ```js
-      sai.isNil(undefined)
-      sai.isNil(null)
+      sai.isNil(undefined)  // => true
+      sai.isNil(null)       // => true
       ```
    """
 

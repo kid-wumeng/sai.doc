@@ -6,7 +6,8 @@ module.exports =
 
    desc: """
       ```js
-      sai.isInt(1)
+      sai.isInt(1)    // => true
+      sai.isInt(0.1)  // => false
       ```
    """
 
@@ -30,7 +31,7 @@ module.exports =
    more: """
       # 基本用法
 
-      本函数基于`isFinite`封装，在 [sai.isNumber](/isNumber) 之上加入对整数的判定
+      本方法基于 isFinite 封装，在 [sai.isNumber](/isNumber) 之上加入对整数的判定
 
       ```js
       sai.isInt(1)                 // => true
@@ -43,7 +44,7 @@ module.exports =
       sai.isInt(0o36)              // => true
       sai.isInt(0xFA)              // => true
       sai.isInt(new Number(1))     // => true
-      sai.isInt(Number.MIN_VALUE)  // => true
+      sai.isInt(Number.MIN_VALUE)  // => false
       sai.isInt(Number.MAX_VALUE)  // => true
 
       sai.isInt('1')               // => false

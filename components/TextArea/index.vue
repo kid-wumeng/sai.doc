@@ -39,7 +39,6 @@
       h1, h2, h3, h4, h5, h6 {
          font-weight: 600;
          font-size: 19px;
-         color: #000;
          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
          &:not(:first-child) {
             margin-top: 80px;

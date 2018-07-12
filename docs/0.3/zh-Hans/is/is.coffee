@@ -6,7 +6,8 @@ module.exports =
 
    desc: """
       ```js
-      sai.is('abc', String)
+      sai.is('abc', String)  // => true
+      sai.is('abc', Buffer)  // => false
       ```
    """
 
@@ -17,7 +18,7 @@ module.exports =
 
       params: [{
          name: 'class'
-         type: 'function'
+         type: 'function, nil, NaN'
          desc: '类 ( 构造函数 )'
       },{
          name: 'value'
@@ -32,37 +33,88 @@ module.exports =
 
 
    more: """
-      # 基本用法
+      # 字面量
 
       ```js
-      sai.is(new String('sai'), String)  // => true
-      sai.is(new String('sai'), Buffer)  // => false
+      sai.is(true, Boolean)               // => true
+      sai.is(1, Number)                   // => true
+      sai.is('abc', String)               // => true
+      sai.is(Symbol(), Symbol)            // => true
+
+      sai.is(new Boolean(true), Boolean)  // => true
+      sai.is(new Number(1), Number)       // => true
+      sai.is(new String('abc'), String)   // => true
       ```
 
-      同样支持自定义的类：
+      # 函数
 
       ```js
-      class Cat {}
-      class Dog {}
-
-      cat = new Cat()
-      dog = new Dog()
-
-      sai.is(cat, Cat)  // => true
-      sai.is(dog, Cat)  // => false
+      sai.is(()=>{}, Function)       // => true
+      sai.is(async()=>{}, Function)  // => true
+      sai.is(()=>{}, Object)         // => true
+      sai.is(async()=>{}, Object)    // => true
       ```
 
-      # 与 instanceof 的区别
-
-      JavaScript 的`instanceof`认为基本量不属于对应类，这一点往往有违直觉，因此`sai.is`做了特别处理：
+      # 对象
 
       ```js
-      false instanceof Boolean  // => false
-       123  instanceof Number   // => false
-      'abc' instanceof String   // => false
+      sai.is({}, Object)                 // => true
+      sai.is([], Array)                  // => true
+      sai.is(new Date, Date)             // => true
+      sai.is(new Buffer('abc'), Buffer)  // => true
 
-      sai.is(false, Boolean)    // => true
-      sai.is( 123,  Number)     // => true
-      sai.is('abc', String)     // => true
+      sai.is(String, Function)           // => true
+      sai.is(Object, Function)           // => true
+      sai.is(Function, Function)         // => true
+      ```
+
+      支持沿着原型链判定：
+
+      ```js
+      class Animal                {}
+      class Monkey extends Animal {}
+      class Person extends Monkey {}
+
+      sai.is(new Person, Person)  // => true
+      sai.is(new Person, Monkey)  // => true
+      sai.is(new Person, Animal)  // => true
+      sai.is(new Person, Object)  // => true
+      ```
+
+      Object 是大多数对象的基类，包括由 Object.create(null) 创建的无原型对象：
+
+      ```js
+      sai.is(new Boolean(true), Object)    // => true
+      sai.is(new Number(1), Object)        // => true
+      sai.is(new String('abc'), Object)    // => true
+
+      sai.is(String, Object)               // => true
+      sai.is(Object, Object)               // => true
+      sai.is(Function, Object)             // => true
+
+      sai.is(Object.create(null), Object)  // => true
+      ```
+
+      但也有例外：
+
+      ```js
+      sai.is(true, Object)       // => false
+      sai.is(1, Object)          // => false
+      sai.is('abc', Object)      // => false
+      sai.is(Symbol(), Object)   // => false
+
+      sai.is(undefined, Object)  // => false
+      sai.is(null, Object)       // => false
+      sai.is(NaN, Object)        // => false
+      sai.is(Infinity, Object)   // => false
+      ```
+
+      # Others
+
+      ```js
+      sai.is(undefined, undefined)  // => true
+      sai.is(null, null)            // => true
+      sai.is(NaN, NaN)              // => true
+      sai.is(Infinity, Number)      // => true
       ```
    """

@@ -6,7 +6,9 @@ module.exports =
 
    desc: """
       ```js
-      sai.isArray([1, 2, 3])
+      sai.isArray([1, 2, 3])  // => true
+      sai.isArray(arguments)  // => false
+      sai.isArray('abc')      // => false
       ```
    """
 
@@ -31,8 +33,8 @@ module.exports =
       # 基本用法
 
       ```js
-      sai.isArray(new Array)               // => true
       sai.isArray([1, 2, 3])               // => true
+      sai.isArray(new Array)               // => true
 
       sai.isArray(arguments)               // => false
       sai.isArray('abc')                   // => false

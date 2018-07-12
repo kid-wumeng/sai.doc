@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isBuffer(file)
+      sai.isBuffer(new Buffer('abc'))  // => true
       ```
    """
 
@@ -31,10 +31,7 @@ module.exports =
       # 基本用法
 
       ```js
-      buffer = new Buffer('sai')
-      string = new String('sai')
-
-      sai.isBuffer( buffer )  // => true
-      sai.isBuffer( string )  // => false
+      sai.isBuffer(new Buffer('abc'))  // => true
+      sai.isBuffer(new String('abc'))  // => false
       ```
    """

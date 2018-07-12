@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isNumber(1)
+      sai.isNumber(1)  // => true
       ```
    """
 
@@ -30,7 +30,7 @@ module.exports =
    more: """
       # 基本用法
 
-      本函数基于`isFinite`封装
+      本方法基于 isFinite 封装
 
       ```js
       sai.isNumber(1)                 // => true

@@ -6,14 +6,15 @@ module.exports =
 
    desc: """
       ```js
-      sai.isPlainObject({})
+      sai.isPlainObject({})        // => true
+      sai.isPlainObject(new Date)  // => false
       ```
    """
 
 
    signs: [{
       name: 'isPlainObject( value )'
-      desc: '是否为朴素对象 ？'
+      desc: '是否为朴素对象 ？ ( 以 Object 为直接原型或是无原型 )'
 
       params: [{
          name: 'value'
@@ -33,22 +34,23 @@ module.exports =
       ```js
       sai.isPlainObject({})                   // => true
       sai.isPlainObject(new Object)           // => true
-      sai.isPlainObject(Object.create({}))    // => true
       sai.isPlainObject(Object.create(null))  // => true
+      
+      sai.isPlainObject(Object.create({}))    // => false
       sai.isPlainObject(Object)               // => false
       sai.isPlainObject([])                   // => false
       sai.isPlainObject(()=>{})               // => false
       sai.isPlainObject(class{})              // => false
-      sai.isPlainObject(/^sai$/g)             // => false
+      sai.isPlainObject(/^abc$/ig)            // => false
       sai.isObject(new Date)                  // => false
       sai.isObject(new Boolean(true))         // => false
       sai.isObject(new Number(1))             // => false
-      sai.isObject(new String('sai'))         // => false
+      sai.isObject(new String('abc'))         // => false
 
+      sai.isPlainObject(undefined)            // => false
+      sai.isPlainObject(null)                 // => false
       sai.isPlainObject(true)                 // => false
       sai.isPlainObject(1)                    // => false
-      sai.isPlainObject('sai')                // => false
-      sai.isPlainObject(null)                 // => false
-      sai.isPlainObject(undefined)            // => false
+      sai.isPlainObject('abc')                // => false
       ```
    """

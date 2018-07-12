@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isDate(create_at)
+      sai.isDate(new Date)  // => true
       ```
    """
 

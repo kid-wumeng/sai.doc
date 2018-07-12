@@ -6,7 +6,8 @@ module.exports =
 
    desc: """
       ```js
-      sai.isBoolean(true)
+      sai.isBoolean(true)  // => true
+      sai.isBoolean(null)  // => false
       ```
    """
 
@@ -36,8 +37,9 @@ module.exports =
       sai.isBoolean(new Boolean(true))   // => true
       sai.isBoolean(new Boolean(false))  // => true
 
-      sai.isBoolean(1)                   // => false
+      sai.isBoolean(undefined)           // => false
       sai.isBoolean(null)                // => false
+      sai.isBoolean(1)                   // => false
       sai.isBoolean('true')              // => false
       ```
    """

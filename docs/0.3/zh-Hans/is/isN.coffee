@@ -6,7 +6,9 @@ module.exports =
 
    desc: """
       ```js
-      sai.isN(1)
+      sai.isN(1)   // => true
+      sai.isN(0)   // => true
+      sai.isN(-1)  // => false
       ```
    """
 
@@ -30,7 +32,7 @@ module.exports =
    more: """
       # 基本用法
 
-      本函数基于`isFinite`封装，在 [sai.isInt](/isInt) 之上加入对自然数的判定
+      本方法基于 isFinite 封装，在 [sai.isInt](/isInt) 之上加入对自然数的判定
 
       ```js
       sai.isN(1)                 // => true
@@ -42,8 +44,8 @@ module.exports =
       sai.isN(0b10)              // => true
       sai.isN(0o36)              // => true
       sai.isN(0xFA)              // => true
-      sai.isN(new Number(1))     // => false
-      sai.isN(Number.MIN_VALUE)  // => false ( 假设最小值是负数 )
+      sai.isN(new Number(1))     // => true
+      sai.isN(Number.MIN_VALUE)  // => false
       sai.isN(Number.MAX_VALUE)  // => true
 
       sai.isN('1')               // => false

@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isFunction(sai.noop)
+      sai.isFunction(()=>{})  // => true
       ```
    """
 
@@ -31,14 +31,12 @@ module.exports =
       # 基本用法
 
       ```js
-      sai.isFunction(()=>{})              // => true
-      sai.isFunction(function(){})        // => true
-      sai.isFunction(async ()=>{})        // => true
-      sai.isFunction(async function(){})  // => true
+      sai.isFunction(()=>{})       // => true
+      sai.isFunction(async()=>{})  // => true
 
-      sai.isFunction(class{})             // => true
-      sai.isFunction(String)              // => true
-      sai.isFunction(Object)              // => true
-      sai.isFunction(Function)            // => true
+      sai.isFunction(class{})      // => true
+      sai.isFunction(String)       // => true
+      sai.isFunction(Object)       // => true
+      sai.isFunction(Function)     // => true
       ```
    """

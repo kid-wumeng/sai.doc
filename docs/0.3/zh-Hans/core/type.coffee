@@ -4,6 +4,13 @@ module.exports =
    name: 'type'
 
 
+   desc: """
+      ```js
+      sai.type('abc')  // => String
+      ```
+   """
+
+
    signs: [{
       name: 'type( value )'
       desc: '获取值的类型'
@@ -17,13 +24,6 @@ module.exports =
          name: 'type'
          type: 'function, nil, NaN'
    }]
-
-
-   desc: """
-      ```js
-      sai.type('abc')  // => String
-      ```
-   """
 
 
    more: """

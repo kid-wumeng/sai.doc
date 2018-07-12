@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isSymbol(Symbol())
+      sai.isSymbol(Symbol())  // => true
       ```
    """
 
