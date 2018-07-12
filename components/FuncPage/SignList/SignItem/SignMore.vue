@@ -21,12 +21,8 @@
    .FuncPage {
       .SignMore {
          pre {
-            border-radius: 3px;
-            code {
-               line-height: 25px;
-               font-family: "Monaco";
-               font-size: 13px;
-            }
+            padding: 24px 28px;
+            border-radius: 2px;
          }
       }
    }

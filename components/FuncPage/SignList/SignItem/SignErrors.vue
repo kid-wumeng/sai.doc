@@ -24,12 +24,18 @@
 <style lang="less">
    .FuncPage {
       .SignErrors {
-         .APIName {
-            font-family: "Ubuntu";
-            font-weight: 400;
-            font-size: 12px;
-            color: lighten(red, 27%);
-            text-shadow: none;
+         .APIItem {
+            line-height: 20px;
+            .APIName {
+               font-family: "Ubuntu";
+               font-weight: 300;
+               font-size: 12px;
+               color: red;
+               -webkit-font-smoothing: antialiased;
+            }
+            .APIDesc {
+               font-size: 12px;
+            }
          }
       }
    }

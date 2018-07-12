@@ -27,9 +27,6 @@
       .SignReturn {
          .APIName {
             font-weight: 300;
-            text-shadow: none;
-            opacity: 0.8;
-            -webkit-font-smoothing: subpixel-antialiased;
          }
       }
    }

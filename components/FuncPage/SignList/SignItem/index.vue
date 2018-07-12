@@ -51,7 +51,7 @@
             > .Column.right {
                margin-left: 50px;
                > *:not(:first-child) {
-                  margin-top: 30px;
+                  margin-top: 40px;
                }
             }
          }

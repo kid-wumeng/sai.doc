@@ -21,11 +21,10 @@
    .FuncPage {
       .FuncDesc {
          > pre {
-            padding: 0 !important;
-            margin-left: 2em !important;
+            padding: 0;
+            margin-left: 2em;
             > code {
                line-height: 26px;
-               font-family: "Monaco";
                font-size: 14px;
             }
          }
