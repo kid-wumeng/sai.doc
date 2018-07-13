@@ -25,4 +25,11 @@ module.exports =
 
       'Object & Array-like'
       require('./count')
+
+      '函数'
+      require('./noop')
+      require('./sleep')
+
+      '其他'
+      require('./error')
    ]

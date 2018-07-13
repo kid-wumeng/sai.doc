@@ -30,6 +30,7 @@ module.exports =
       require('./isPlainObject')
       require('./isNil')
       require('./isNaN')
+      require('./isAny')
 
       '数据判定'
       require('./isEqual')

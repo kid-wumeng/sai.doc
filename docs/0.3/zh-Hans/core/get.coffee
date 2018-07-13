@@ -24,7 +24,7 @@ module.exports =
       },{
          name: 'defaultValue'
          type: '*'
-         desc: '若发现取值是 undefined，则会返回 defaultValue（ 如果设置过 ）'
+         desc: '若发现取值是 undefined，则会返回 defaultValue'
          default: undefined
          optional: true
       }]
@@ -33,10 +33,6 @@ module.exports =
          name: 'value'
          type: '*'
          desc: '取出的值'
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
    }]
 
 
@@ -63,5 +59,17 @@ module.exports =
 
       sai.get(data, 'a.e')             // => undefined
       sai.get(data, 'a.e', 'default')  // => 'default'
+      ```
+
+      注意，*data 应该是对象，而 path 应该是字符串*。本方法不抛异常，若任何一个类型不符，会返回 undefined 或设置的 defaultValue
+
+      ```js
+      // data 不为对象
+      sai.get(12345, '0')             // => undefined
+      sai.get(12345, '0', 'default')  // => 'default'
+
+      // path 不为字符串
+      sai.get('12345', 0)             // => undefined
+      sai.get('12345', 0, 'default')  // => 'default'
       ```
    """
