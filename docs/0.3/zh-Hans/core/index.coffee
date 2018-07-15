@@ -8,6 +8,7 @@ module.exports =
       '通用'
       require('./type')
       require('./len')
+      require('./equal')
       require('./clone')
       require('./random')
 

@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       name: 'clone( data )'
-      desc: '*深度*克隆 data'
+      desc: '*深度克隆* data'
 
       params: [{
          name: 'data'
