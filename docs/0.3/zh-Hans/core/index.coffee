@@ -20,6 +20,7 @@ module.exports =
       require('./merge')
 
       'Array-like'
+      require('./index_')
       require('./first')
       require('./last')
       require('./concat')
