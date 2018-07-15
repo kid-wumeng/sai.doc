@@ -13,13 +13,13 @@ module.exports =
 
 
    signs: [{
-      name: 'is( value, class )'
-      desc: 'value 是否为 class 的实例对象 ？'
+      name: 'is( value, type )'
+      desc: 'value 是否为指定类型 ？'
 
       params: [{
-         name: 'class'
+         name: 'type'
          type: 'function, nil, NaN'
-         desc: '类 ( 构造函数 )'
+         desc: '类型'
       },{
          name: 'value'
          type: '*'

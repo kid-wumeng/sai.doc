@@ -27,9 +27,9 @@ module.exports =
       require('./count')
 
       '函数'
-      require('./noop')
-      require('./sleep')
 
       '其他'
       require('./error')
+      require('./sleep')
+      require('./noop')
    ]
