@@ -28,6 +28,9 @@ module.exports =
       'Object & Array-like'
       require('./count')
 
+      '字符串'
+      require('./match')
+
       '函数'
 
       '其他'
