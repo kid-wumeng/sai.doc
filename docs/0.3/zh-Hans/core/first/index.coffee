@@ -26,7 +26,7 @@ module.exports =
          desc: '第一个元素'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]
 

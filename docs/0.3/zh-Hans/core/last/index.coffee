@@ -26,7 +26,7 @@ module.exports =
          desc: '最后一个元素'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]
 

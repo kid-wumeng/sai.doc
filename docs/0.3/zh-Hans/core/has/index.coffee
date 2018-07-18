@@ -27,10 +27,6 @@ module.exports =
          name: 'result'
          type: 'boolean'
          desc: '*仅当属性值为 undefined 时才会被判定为不存在*'
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
    }]
 
 

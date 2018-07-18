@@ -27,10 +27,6 @@ module.exports =
          type: '*'
          desc: '期望设置的值'
       }]
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
    }]
 
 

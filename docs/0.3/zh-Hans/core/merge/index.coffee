@@ -34,7 +34,7 @@ module.exports =
          desc: '归并之后的新对象'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]
 

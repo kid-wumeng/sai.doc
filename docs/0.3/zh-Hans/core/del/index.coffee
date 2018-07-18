@@ -23,10 +23,6 @@ module.exports =
          type: 'string'
          desc: '事先无需检测属性存在与否，即使不存在，也不会有任何副作用'
       }]
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
    }]
 
 

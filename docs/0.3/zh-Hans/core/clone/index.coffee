@@ -25,10 +25,6 @@ module.exports =
          name: 'clonedData'
          type: '*'
          desc: '克隆出的数据'
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
    }]
 
 

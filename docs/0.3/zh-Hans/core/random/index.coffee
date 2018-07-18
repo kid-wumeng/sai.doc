@@ -34,7 +34,7 @@ module.exports =
          desc: '随机整数'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
 
    },{
@@ -58,7 +58,7 @@ module.exports =
          desc: '随机元素'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]
 

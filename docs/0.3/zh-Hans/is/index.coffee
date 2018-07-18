@@ -31,13 +31,9 @@ module.exports =
       require('./isNil')
       require('./isNaN')
       require('./isAny')
-
-      '数据判定'
-      require('./isEqual')
       require('./isEmpty')
 
       '格式判定'
-      require('./isMatch')
       require('./isEmail')
       require('./isURL')
    ]

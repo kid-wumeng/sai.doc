@@ -46,7 +46,7 @@ module.exports =
          desc: '数据的长度、成员数量等'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
 
    },{
@@ -79,7 +79,7 @@ module.exports =
          desc: '数据的长度、成员数量等'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]
 

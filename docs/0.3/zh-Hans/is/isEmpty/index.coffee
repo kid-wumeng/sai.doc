@@ -26,10 +26,6 @@ module.exports =
       return:
          name: 'result'
          type: 'boolean'
-
-      errors: [
-         require('../errors').INVALID_PARAMS
-      ]
    }]
 
 
