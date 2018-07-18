@@ -21,6 +21,7 @@ module.exports =
 
       'Array-like'
       require('./index_')
+      require('./contain')
       require('./first')
       require('./last')
       require('./concat')
