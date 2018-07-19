@@ -32,11 +32,11 @@ module.exports =
       # 基本类型的克隆与赋值等价
 
       ```js
+      sai.clone(undefined)  // => undefined
+      sai.clone(null)       // => null
       sai.clone(true)       // => true
       sai.clone(1)          // => 1
       sai.clone('abc')      // => 'abc'
-      sai.clone(null)       // => null
-      sai.clone(undefined)  // => undefined
       ```
 
       # 克隆对象，递归拷贝所有可枚举的后代
@@ -63,7 +63,7 @@ module.exports =
       console.log(clonedData.apple.products === data.apple.products)  // => false
       ```
 
-      # 克隆数组同理
+      # 克隆 Array-like 同理
 
       ```js
       items = [{name: 'sai'}, {name: 'kid'}]
@@ -75,11 +75,12 @@ module.exports =
       // => false
       ```
 
-      # 遇到不能克隆的东西，会抛出异常
+      # 遇见无法克隆的东西，会返回空对象
 
       ```js
-      sai.clone(()=>{})       // => throw error
-      sai.clone(new WeakSet)  // => throw error
-      sai.clone(new WeakMap)  // => throw error
+      sai.clone(()=>{})       // => {}
+      sai.clone(new Error)    // => {}
+      sai.clone(new WeakSet)  // => {}
+      sai.clone(new WeakMap)  // => {}
       ```
    """

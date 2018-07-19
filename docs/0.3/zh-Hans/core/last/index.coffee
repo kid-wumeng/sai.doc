@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      lastItem = sai.last(array)
+      item = sai.last(array)
       ```
    """
 
@@ -24,10 +24,6 @@ module.exports =
          name: 'item'
          type: '*'
          desc: '最后一个元素'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
    }]
 
 
@@ -35,8 +31,10 @@ module.exports =
       # 基本用法
 
       ```js
-      array = ['a', 'b', 'c']
-
-      sai.last(array)  // => 'c'
+      sai.last([1, 2, 3])  // => 3
+      sai.last('123')      // => '3'
+      sai.last(123)        // => undefined
+      sai.last([])         // => undefined
+      sai.last(undefined)  // => undefined
       ```
    """

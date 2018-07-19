@@ -6,7 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      firstItem = sai.first(array)
+      item = sai.first(array)
       ```
    """
 
@@ -24,10 +24,6 @@ module.exports =
          name: 'item'
          type: '*'
          desc: '第一个元素'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
    }]
 
 
@@ -35,8 +31,10 @@ module.exports =
       # 基本用法
 
       ```js
-      array = ['a', 'b', 'c']
-
-      sai.first(array)  // => 'a'
+      sai.first([1, 2, 3])  // => 1
+      sai.first('123')      // => '1'
+      sai.first(123)        // => undefined
+      sai.first([])         // => undefined
+      sai.first(undefined)  // => undefined
       ```
    """

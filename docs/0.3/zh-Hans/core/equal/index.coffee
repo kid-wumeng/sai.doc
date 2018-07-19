@@ -15,14 +15,14 @@ module.exports =
 
 
    signs: [{
-      name: 'equal( value1, value2 )'
-      desc: '*深度比较* value1 与 value2，判定两者是否完全等值 ？'
+      name: 'equal( data1, data2 )'
+      desc: '*深度比较* data1 与 data2，判定两者是否完全等值 ？'
 
       params: [{
-         name: 'value1'
+         name: 'data1'
          type: '*'
       },{
-         name: 'value2'
+         name: 'data2'
          type: '*'
       }]
 
