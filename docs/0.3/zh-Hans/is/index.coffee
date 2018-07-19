@@ -34,6 +34,7 @@ module.exports =
       require('./isEmpty')
 
       '格式判定'
+      require('./isSpace')
       require('./isEmail')
       require('./isURL')
    ]

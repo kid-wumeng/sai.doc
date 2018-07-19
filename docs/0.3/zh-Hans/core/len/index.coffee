@@ -6,86 +6,34 @@ module.exports =
 
    desc: """
       ```js
-      len = sai.len(array)
-      len = sai.len(object)
-      len = sai.len(string, 'cjk')
+      sai.len('123')               // => 3
+      sai.len([1, 2, 3])           // => 3
+      sai.len({a: 1, b: 2, c: 3})  // => 3
       ```
    """
 
 
-   signs: [{
-      name: 'len( data, mode )'
-      desc: '测量 data 的大小'
-      more: '根据 data 类型的不同，会运用不同的策略'
-
-      params: [{
-         name: 'data'
-         type: 'object'
-         desc: """
-            测量目标，一般多是：
-
-            * Array-like
-            * Set, Map
-            * 朴素对象
-         """
-      },{
-         name: 'mode'
-         type: 'string'
-         desc: """
-            字符串长度计算模式，仅在 data 为 string 时可用
-
-            * *length* - data.length
-            * *cjk* - 中日韩字符占 2 位，其余占 1 位
-         """
-         default: 'length'
-      }]
-
-      return:
-         name: 'len'
-         type: 'int ≥ 0'
-         desc: '数据的长度、成员数量等'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
-
-   },{
-
-      name: 'len( data, callback )'
-      desc: '测量 data 的大小，由 callback 决定每个成员的大小'
-
-      params: [{
-         name: 'data'
-         type: 'object'
-         desc: """
-            测量目标，一般多是：
-            * Array-like
-            * Set, Map
-            * 朴素对象
-         """
-      },{
-         name: 'callback'
-         type: 'function'
-         desc: """
-            计量器
-            Array-like, Set, Map 使用 callback(item, i)
-            其它对象使用 callback(value, key)
-         """
-      }]
-
-      return:
-         name: 'len'
-         type: 'int ≥ 0'
-         desc: '数据的长度、成员数量等'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
-   }]
+   signs: [
+      require('./sign_1')
+      require('./sign_2')
+   ]
 
 
    more: """
-      # 测量 Array 与 Array-like 长度
+      # 测量字符串长度
+
+      ```js
+      sai.len('abc')  // => 3
+      ```
+
+      指定 mode 可以更换计数方案，比如 CJK 模式将中国、日本、韩国的文字视为2个长度：
+
+      ```js
+      sai.len('中国china')         // => 7
+      sai.len('中国china', 'cjk')  // => 9
+      ```
+
+      # 测量其他 Array-like 长度
 
       ```js
       sai.len(['a', 'b', 'c'])  // => 3
@@ -105,19 +53,6 @@ module.exports =
       map.set('b')
       map.set('c')
       sai.len(map)  // => 3
-      ```
-
-      # 测量字符串长度
-
-      ```js
-      sai.len('abc')  // => 3
-      ```
-
-      指定 mode 可以更换计数方案，比如 CJK 模式将中国、日本、韩国的文字视为2个长度：
-
-      ```js
-      sai.len('中国china')         // => 7
-      sai.len('中国china', 'cjk')  // => 9
       ```
 
       # 测量对象的成员数量
@@ -177,5 +112,15 @@ module.exports =
       sai.len(fruitPrices, (name, value) => value)
 
       // => 7
+      ```
+
+      # 不可数的情况
+
+      ```js
+      sai.len(undefined)  // => 0
+      sai.len(null)       // => 0
+      sai.len(true)       // => 0
+      sai.len(1)          // => 0
+      sai.len(Symbol())   // => 0
       ```
    """
