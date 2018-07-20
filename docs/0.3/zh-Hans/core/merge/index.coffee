@@ -6,7 +6,13 @@ module.exports =
 
    desc: """
       ```js
-      data = sai.merge(data1, data2, data3)
+      data = sai.merge({a: 1}, {b: 2}, {c: 3})
+
+      // data = {
+      //    a: 1,
+      //    b: 2,
+      //    c: 3
+      // }
       ```
    """
 
@@ -32,10 +38,6 @@ module.exports =
          name: 'newObject'
          type: 'object'
          desc: '归并之后的新对象'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
    }]
 
 
