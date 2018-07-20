@@ -7,6 +7,7 @@ module.exports =
    desc: """
       ```js
       sai.isEmail('sai@gmail.com')
+      // => true
       ```
    """
 
@@ -16,7 +17,7 @@ module.exports =
       desc: '是否为 Email 地址的格式 ？'
 
       params: [{
-         name: 'string'
+         name: '*'
          type: 'string'
          desc: '期望判定的字符串'
       }]
@@ -24,10 +25,6 @@ module.exports =
       return:
          name: 'result'
          type: 'boolean'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
    }]
 
 

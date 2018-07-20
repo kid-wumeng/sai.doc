@@ -7,7 +7,7 @@ module.exports =
    desc: """
       ```js
       sai.isSpace('  ')  // => true
-      sai.isSpace('\n')  // => true
+      sai.isSpace('\\n')  // => true
       ```
    """
 

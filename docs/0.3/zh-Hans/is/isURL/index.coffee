@@ -7,6 +7,7 @@ module.exports =
    desc: """
       ```js
       sai.isURL('https://google.com')
+      // => true
       ```
    """
 
@@ -17,17 +18,13 @@ module.exports =
 
       params: [{
          name: 'string'
-         type: 'string'
+         type: '*'
          desc: '期望判定的字符串'
       }]
 
       return:
          name: 'result'
          type: 'boolean'
-
-      errors: [
-         require('../../errors').INVALID_PARAMS
-      ]
    }]
 
 
@@ -36,6 +33,6 @@ module.exports =
 
       ```js
       sai.isURL('https://google.com')  // => true
-      sai.isURL('sai@gmail.com')       // => false
+      sai.isURL('abc')                 // => false
       ```
    """
