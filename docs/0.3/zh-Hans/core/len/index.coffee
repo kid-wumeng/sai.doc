@@ -42,16 +42,16 @@ module.exports =
       # 测量 Set 与 Map 成员数量
 
       ```js
-      set = new Set()
+      set = new Set
       set.add('a')
       set.add('b')
       set.add('c')
       sai.len(set)  // => 3
 
-      map = new Map()
-      map.set('a')
-      map.set('b')
-      map.set('c')
+      map = new Map
+      map.set('a', 1)
+      map.set('b', 2)
+      map.set('c', 3)
       sai.len(map)  // => 3
       ```
 

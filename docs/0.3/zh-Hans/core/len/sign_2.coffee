@@ -2,6 +2,12 @@ module.exports =
 
    name: 'len( data, callback )'
    desc: '测量 data 的大小，由 callback 决定每个成员的大小'
+   more: """
+      * *Array-like* - `callback(item, i, arrayLike)`
+      * *Set* - `callback(value, key, set)`
+      * *Map* - `callback(value, key, map)`
+      * *Object* - `callback(value, key, object)`
+   """
 
    params: [{
       name: 'data'
@@ -15,11 +21,7 @@ module.exports =
    },{
       name: 'callback'
       type: 'function'
-      desc: """
-         计量器
-         Array-like, Set, Map 使用 callback(item, i)
-         其它对象使用 callback(value, key)
-      """
+      desc: '计量器'
    }]
 
    return:
