@@ -13,12 +13,12 @@ module.exports =
 
 
    signs: [{
-      name: 'isSpace( string )'
+      name: 'isSpace( value )'
       desc: '是否为连续的空白符 ？'
 
       params: [{
-         name: 'string'
-         type: 'string'
+         name: 'value'
+         type: '*'
          desc: '期望判定的字符串'
       }]
 

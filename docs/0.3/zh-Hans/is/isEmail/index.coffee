@@ -13,12 +13,12 @@ module.exports =
 
 
    signs: [{
-      name: 'isEmail( string )'
+      name: 'isEmail( value )'
       desc: '是否为 Email 地址的格式 ？'
 
       params: [{
-         name: '*'
-         type: 'string'
+         name: 'value'
+         type: '*'
          desc: '期望判定的字符串'
       }]
 

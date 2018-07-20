@@ -6,21 +6,21 @@ module.exports =
 
    desc: """
       ```js
-      sai.isEmpty({})
-      sai.isEmpty([])
-      sai.isEmpty('')
+      sai.isEmpty({})  // => true
+      sai.isEmpty([])  // => true
+      sai.isEmpty('')  // => true
       ```
    """
 
 
    signs: [{
-      name: 'isEmpty( data )'
+      name: 'isEmpty( value )'
       desc: '数据为空，无任何值 ？'
 
       params: [{
-         name: 'data'
-         type: 'object, Array-like'
-         desc: '期望检测的数据，类型参考 [sai.len](/len)'
+         name: 'value'
+         type: '*'
+         desc: '期望检测的值'
       }]
 
       return:
@@ -32,8 +32,6 @@ module.exports =
    more: """
       # 基本用法
 
-      本质上是`sai.len(data) === 0`的语法糖，data 类型与 [sai.len](/len) 一致
-
       ```js
       sai.isEmpty({})             // => true
       sai.isEmpty([])             // => true
@@ -42,5 +40,15 @@ module.exports =
       sai.isEmpty({name: 'sai'})  // => false
       sai.isEmpty([1])            // => false
       sai.isEmpty('1')            // => false
+      ```
+
+      # 若不是对象，则一律返回 true ( 视为空值 )
+
+      ```js
+      sai.isEmpty(null)       // => true
+      sai.isEmpty(undefined)  // => true
+      sai.isEmpty(true)       // => true
+      sai.isEmpty(1)          // => true
+      sai.isEmpty(Symbol())   // => true
       ```
    """
