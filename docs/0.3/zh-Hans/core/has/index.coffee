@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       name: 'has( data, path )'
-      desc: '检测 data 中路径为 path 的属性值是否存在'
+      desc: '检测 data 中路径为 path 的属性是否存在'
 
       params: [{
          name: 'data'
@@ -26,7 +26,6 @@ module.exports =
       return:
          name: 'result'
          type: 'boolean'
-         desc: '*仅当属性值为 undefined 时才会被判定为不存在*'
    }]
 
 
@@ -47,9 +46,8 @@ module.exports =
       sai.has(data, 'a.b[0]')  // => true，括号语法
 
       sai.has(data, 'a.c')     // => true
-      sai.has(data, 'a.d')     // => true，null 并不代表不存在
-
-      sai.has(data, 'a.e')     // => false
+      sai.has(data, 'a.d')     // => true
+      sai.has(data, 'a.e')     // => true
       sai.has(data, 'a.f')     // => false
       ```
    """

@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       name: 'del( data, path )'
-      desc: '删除 data 中路径为 path 的属性值'
+      desc: '删除 data 中路径为 path 的属性'
 
       params: [{
          name: 'data'
