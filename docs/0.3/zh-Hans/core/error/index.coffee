@@ -73,4 +73,44 @@ module.exports =
       error.message  // => "undefined"
       error.stack
       ```
+
+      # sai.error(callback)
+
+      参数可以是一个函数，函数会被执行，以返回值作为错误信息：
+
+      ```js
+      error = sai.error(()=>{
+         return "this is an error !"
+      })
+      error.name     // => "Error"
+      error.message  // => "this is an error !"
+      error.stack
+
+
+      error = sai.error(()=>{
+         return {
+            name: "INVALID_PARAMS",
+            code: 12345,
+            message: "this is an error !"
+         }
+      })
+      error.name     // => "INVALID_PARAMS"
+      error.code     // => 12345
+      error.message  // => "this is an error !"
+      error.stack
+      ```
+
+      这种模式下，你还可以传入一些额外的值，它们会成为 callback 的参数：
+
+      ```js
+      callback = ({ name }, message) => {
+         return { name, message }
+      }
+
+      error = sai.error(callback, { name: 'INVALID_PARAMS' }, "this is an error !")
+
+      error.name     // => "INVALID_PARAMS"
+      error.message  // => "this is an error !"
+      error.stack
+      ```
    """
