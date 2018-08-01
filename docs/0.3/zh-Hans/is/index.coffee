@@ -32,6 +32,8 @@ module.exports =
       require('./isNaN')
       require('./isAny')
       require('./isEmpty')
+      require('./isMin')
+      require('./isMax')
 
       '格式判定'
       require('./isSpace')
