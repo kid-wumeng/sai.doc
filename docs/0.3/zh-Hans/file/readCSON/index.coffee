@@ -1,20 +1,21 @@
 module.exports =
 
 
-   name: 'readJSON'
+   name: 'readCSON'
 
 
    desc: """
       ```js
-      data = await sai.readJSON('/assets/test.json')
+      data = await sai.readCSON('/assets/test.cson')
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'readJSON( path, encoding )'
-      desc: '读取文件，返回 JSON 对象'
+      name: 'readCSON( path, encoding )'
+      desc: '读取文件，返回 CSON 对象'
+      more: '关于 [CoffeeScript Object Notation](https://www.npmjs.com/package/cson) 的介绍'
 
       params: [{
          name: 'path'
@@ -35,8 +36,8 @@ module.exports =
          type: 'object'
 
       errors: [
-         require('../errors').INVALID_PARAMS
-         require('../errors').FILE_NOT_FOUND
-         require('../errors').TEXT_PARSE_FAIL
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').FILE_NOT_FOUND
+         require('../../errors').TEXT_PARSE_FAIL
       ]
    }]

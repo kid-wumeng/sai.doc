@@ -29,6 +29,6 @@ module.exports =
          desc: '如果无法测定，则返回\'\''
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]

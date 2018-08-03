@@ -35,7 +35,7 @@ module.exports =
          type: 'boolean'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
 
    },{
@@ -54,6 +54,6 @@ module.exports =
          type: 'boolean'
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]

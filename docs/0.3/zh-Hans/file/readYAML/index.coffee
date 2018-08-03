@@ -1,21 +1,21 @@
 module.exports =
 
 
-   name: 'readCSON'
+   name: 'readYAML'
 
 
    desc: """
       ```js
-      data = await sai.readCSON('/assets/test.cson')
+      data = await sai.readYAML('/assets/test.yaml')
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'readCSON( path, encoding )'
-      desc: '读取文件，返回 CSON 对象'
-      more: '关于 [CoffeeScript Object Notation](https://www.npmjs.com/package/cson) 的介绍'
+      name: 'readYAML( path, encoding )'
+      desc: '读取文件，返回 YAML 对象'
+      more: '关于 [YAML Ain\'t Markup Language](http://yaml.org) 的介绍'
 
       params: [{
          name: 'path'
@@ -36,8 +36,8 @@ module.exports =
          type: 'object'
 
       errors: [
-         require('../errors').INVALID_PARAMS
-         require('../errors').FILE_NOT_FOUND
-         require('../errors').TEXT_PARSE_FAIL
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').FILE_NOT_FOUND
+         require('../../errors').TEXT_PARSE_FAIL
       ]
    }]

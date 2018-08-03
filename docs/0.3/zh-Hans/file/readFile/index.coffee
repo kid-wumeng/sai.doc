@@ -27,7 +27,7 @@ module.exports =
          type: 'Buffer'
 
       errors: [
-         require('../errors').INVALID_PARAMS
-         require('../errors').FILE_NOT_FOUND
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').FILE_NOT_FOUND
       ]
    }]

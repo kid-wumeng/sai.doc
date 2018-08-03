@@ -1,20 +1,20 @@
 module.exports =
 
 
-   name: 'readText'
+   name: 'readJSON'
 
 
    desc: """
       ```js
-      text = await sai.readText('/assets/test.txt', 'base64')
+      data = await sai.readJSON('/assets/test.json')
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'readText( path, encoding )'
-      desc: '读取文件，返回 String'
+      name: 'readJSON( path, encoding )'
+      desc: '读取文件，返回 JSON 对象'
 
       params: [{
          name: 'path'
@@ -31,11 +31,12 @@ module.exports =
       }]
 
       return:
-         name: 'text'
-         type: 'string'
+         name: 'data'
+         type: 'object'
 
       errors: [
-         require('../errors').INVALID_PARAMS
-         require('../errors').FILE_NOT_FOUND
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').FILE_NOT_FOUND
+         require('../../errors').TEXT_PARSE_FAIL
       ]
    }]

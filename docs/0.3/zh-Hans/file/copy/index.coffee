@@ -27,6 +27,6 @@ module.exports =
       }]
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
       ]
    }]

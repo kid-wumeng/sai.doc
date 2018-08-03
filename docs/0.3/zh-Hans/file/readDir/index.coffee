@@ -44,8 +44,8 @@ module.exports =
          type: 'Array'
 
       errors: [
-         require('../errors').INVALID_PARAMS
-         require('../errors').DIR_NOT_FOUND
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').DIR_NOT_FOUND
       ]
    }]
 

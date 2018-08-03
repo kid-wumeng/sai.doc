@@ -1,23 +1,25 @@
 module.exports =
 
 
-   name: 'writeText'
+   name: 'writeYAML'
 
 
    desc: """
       ```js
-      await sai.writeText('/assets/test.txt', text)
+      await sai.writeYAML('/assets/test.yaml', data)
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'writeText( path, text, encoding )'
-      desc: '写入文本'
+      name: 'writeYAML( path, data, encoding )'
+      desc: '写入文件'
       more: """
          * 若文件已存在，则*完全覆写*
          * 若文件不存在，则*自动创建* ( 包括上游路径 )
+
+         关于 [YAML Ain\'t Markup Language](http://yaml.org) 的介绍
       """
 
       params: [{
@@ -25,11 +27,10 @@ module.exports =
          type: 'string'
          desc: '文件路径'
       },{
-         name: 'text'
-         type: 'string'
+         name: 'data'
+         type: 'object'
          desc: """
-            要写入的文本，仅支持字符串
-            要写入 Buffer 可使用 [sai.writeFile](/writeFile)
+            要写入的 YAML 格式数据
          """
       },{
          name: 'encoding'
@@ -42,6 +43,7 @@ module.exports =
       }]
 
       errors: [
-         require('../errors').INVALID_PARAMS
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').TEXT_PARSE_FAIL
       ]
    }]

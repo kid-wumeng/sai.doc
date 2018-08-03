@@ -1,21 +1,20 @@
 module.exports =
 
 
-   name: 'readYAML'
+   name: 'readText'
 
 
    desc: """
       ```js
-      data = await sai.readYAML('/assets/test.yaml')
+      text = await sai.readText('/assets/test.txt', 'base64')
       ```
    """
 
 
    signs: [{
       async: true
-      name: 'readYAML( path, encoding )'
-      desc: '读取文件，返回 YAML 对象'
-      more: '关于 [YAML Ain\'t Markup Language](http://yaml.org) 的介绍'
+      name: 'readText( path, encoding )'
+      desc: '读取文件，返回 String'
 
       params: [{
          name: 'path'
@@ -32,12 +31,11 @@ module.exports =
       }]
 
       return:
-         name: 'data'
-         type: 'object'
+         name: 'text'
+         type: 'string'
 
       errors: [
-         require('../errors').INVALID_PARAMS
-         require('../errors').FILE_NOT_FOUND
-         require('../errors').TEXT_PARSE_FAIL
+         require('../../errors').INVALID_PARAMS
+         require('../../errors').FILE_NOT_FOUND
       ]
    }]
