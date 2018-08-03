@@ -13,7 +13,7 @@ module.exports =
 
    signs: [{
       async: true
-      name: 'readDir( path )'
+      name: 'readDir( path, [options] )'
       desc: '读取目录下的所有子资源信息，返回一个 Array'
 
       params: [{
@@ -21,17 +21,22 @@ module.exports =
          type: 'string'
          desc: '目录路径'
       },{
-         name: 'mode'
-         type: 'string'
-         desc: """
-            返回 children 的形式
+         name: 'options'
+         type: 'object'
+         default: {}
+         children: [{
+            name: 'mode'
+            type: 'string'
+            desc: """
+               返回 children 的形式
 
-            * *path* - 子资源的绝对路径
-            * *name* - 子资源的名称
-            * *data* - 子资源的基本信息
-            * *stat* - 子资源的详细信息
-         """
-         default: 'path'
+               * *path* - 子资源的绝对路径
+               * *name* - 子资源的名称
+               * *data* - 子资源的基本信息
+               * *stat* - 子资源的详细信息
+            """
+            default: 'path'
+         }]
       }]
 
       return:
@@ -77,7 +82,7 @@ module.exports =
       # 读取目录中所有子资源的名称（ 包括后缀名 ）
 
       ```js
-      await sai.readDir('/assets', {mode: 'name'})
+      await sai.readDir('/assets', { mode: 'name' })
 
       // => ['images', 'test.json', 'test.mp3']
       ```
@@ -85,7 +90,7 @@ module.exports =
       # 读取目录中所有子资源的基本信息
 
       ```js
-      await sai.readDir('/assets', {mode: 'data'})
+      await sai.readDir('/assets', { mode: 'data' })
 
       // =>
       // [{
@@ -98,13 +103,13 @@ module.exports =
       //    path: '.../assets/test.json',
       //    name: 'test.json',
       //    base: 'test',
-      //    ext:  'json',
+      //    ext:  '.json',
       //    dir:  '.../assets'
       // },{
       //    path: '.../assets/test.mp3',
       //    name: 'test.mp3',
       //    base: 'test',
-      //    ext:  'mp3',
+      //    ext:  '.mp3',
       //    dir:  '.../assets'
       // }]
       ```
@@ -112,7 +117,7 @@ module.exports =
       # 读取目录中所有子资源的详细信息（ 待补充 ）
 
       ```js
-      await sai.readDir('/assets', {mode: 'stat'})
+      await sai.readDir('/assets', { mode: 'stat' })
 
       // =>
       // [{
@@ -125,13 +130,13 @@ module.exports =
       //    path: '.../assets/test.json',
       //    name: 'test.json',
       //    base: 'test',
-      //    ext:  'json',
+      //    ext:  '.json',
       //    dir:  '.../assets'
       // },{
       //    path: '.../assets/test.mp3',
       //    name: 'test.mp3',
       //    base: 'test',
-      //    ext:  'mp3',
+      //    ext:  '.mp3',
       //    dir:  '.../assets'
       // }]
       ```

@@ -29,4 +29,8 @@ module.exports =
             * 资源不存在，返回 false
             * 资源是文件，返回 false
          """
+
+      errors: [
+         require('../errors').INVALID_PARAMS
+      ]
    }]
