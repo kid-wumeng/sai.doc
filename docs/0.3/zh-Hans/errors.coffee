@@ -12,6 +12,13 @@ module.exports =
       """
 
 
+   INVALID_DATA:
+      name: 'INVALID_DATA'
+      desc: """
+         数据无效，测试失败
+      """
+
+
    FILE_NOT_FOUND:
       name: 'FILE_NOT_FOUND'
       desc: '文件未找到，或指向一个目录'

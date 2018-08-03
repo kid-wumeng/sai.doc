@@ -19,7 +19,7 @@
          optional:        -> @api.optional or _.has(@api, 'default')
          defaults:        -> @api.default
          defaultsFormat:  -> @formatValue(@defaults).replace(/\*/g, '&#42;')
-         defaultsDisplay: -> "←*#{@defaultsFormat}*"
+         defaultsDisplay: -> if @defaults is undefined then '' else "←*#{@defaultsFormat}*"
 </script>
 
 
