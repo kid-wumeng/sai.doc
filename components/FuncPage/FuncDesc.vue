@@ -19,6 +19,7 @@
 
 <style lang="less">
    .FuncPage .FuncDesc {
+      width: 100%;
       > pre {
          padding: 0;
          margin-left: 2em;

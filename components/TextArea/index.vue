@@ -92,6 +92,7 @@
          padding: 38px 42px;
          text-indent: 0;
          background: #1D262F;
+         overflow: scroll;
          code {
             display: block;
             line-height: 23px;
@@ -99,7 +100,6 @@
             font-size: 13px;
             color: #FFF;
             letter-spacing: 0.2px;
-            overflow: scroll;
             -webkit-font-smoothing: subpixel-antialiased;
          }
       }

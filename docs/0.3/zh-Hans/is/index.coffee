@@ -36,7 +36,7 @@ module.exports =
       require('./isMax')
 
       '格式判定'
-      require('./isSpace')
       require('./isEmail')
       require('./isURL')
+      require('./isSpace')
    ]

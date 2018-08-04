@@ -6,8 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isURL('https://google.com')
-      // => true
+      sai.isURL('https://google.com')  // => true
       ```
    """
 

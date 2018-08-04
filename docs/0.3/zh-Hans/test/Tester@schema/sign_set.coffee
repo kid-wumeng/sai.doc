@@ -1,4 +1,5 @@
 module.exports =
+   
    name: '@schema( schema )'
    desc: '设置本条测试的 Schema'
 

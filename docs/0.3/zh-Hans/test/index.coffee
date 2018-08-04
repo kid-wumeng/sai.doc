@@ -8,7 +8,10 @@ module.exports =
    """
 
    items: [
+      '基础'
       require('./test')
+
+      'Tester'
       require('./Tester')
       require('./Tester@name')
       require('./Tester@schema')
@@ -27,4 +30,12 @@ module.exports =
       require('./Tester@plainObject')
       require('./Tester@min')
       require('./Tester@max')
+      require('./Tester@check')
+      require('./Tester@format')
+      require('./Tester@rule')
+
+      'Schema'
+      require('./Schema@format')
+      require('./Schema@rule')
+      require('./Schema@test')
    ]

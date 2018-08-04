@@ -6,8 +6,7 @@ module.exports =
 
    desc: """
       ```js
-      sai.isEmail('sai@gmail.com')
-      // => true
+      sai.isEmail('sai@gmail.com')  // => true
       ```
    """
 
