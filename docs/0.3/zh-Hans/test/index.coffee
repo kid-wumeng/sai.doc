@@ -18,4 +18,11 @@ module.exports =
       require('./Tester@int')
       require('./Tester@natural')
       require('./Tester@id')
+      require('./Tester@string')
+      require('./Tester@buffer')
+      require('./Tester@date')
+      require('./Tester@array')
+      require('./Tester@plainObject')
+      require('./Tester@min')
+      require('./Tester@max')
    ]
