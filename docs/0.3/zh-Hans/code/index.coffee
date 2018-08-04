@@ -8,8 +8,10 @@ module.exports =
       'JSON Web Token'
       require('./jwt.encode')
       require('./jwt.decode')
+      require('./jwt.verify')
 
       'Bcrypt'
-      require('./bcrypt.encode')
+      require('./bcrypt.salt')
+      require('./bcrypt.hash')
       require('./bcrypt.compare')
    ]

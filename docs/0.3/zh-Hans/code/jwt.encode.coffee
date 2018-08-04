@@ -25,7 +25,7 @@ module.exports =
          desc: '密钥'
       },{
          name: 'maxAge'
-         type: 'number'
+         type: 'int'
          desc: '有效期 ( 毫秒 )'
          default: 0
       }]
