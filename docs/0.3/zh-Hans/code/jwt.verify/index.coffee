@@ -29,4 +29,8 @@ module.exports =
          name: 'isValid'
          type: 'boolean'
          desc: '若令牌解码失败，或令牌已过期，则视为无效'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

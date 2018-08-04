@@ -27,4 +27,8 @@ module.exports =
       return:
          name: 'isMatched'
          type: 'boolean'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

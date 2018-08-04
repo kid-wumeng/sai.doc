@@ -30,4 +30,8 @@ module.exports =
       return:
          name: 'hash'
          type: 'string'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

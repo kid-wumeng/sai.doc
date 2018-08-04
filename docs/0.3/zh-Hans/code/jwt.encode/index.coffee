@@ -34,4 +34,8 @@ module.exports =
          name: 'token'
          type: 'string'
          desc: '令牌字符串'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

@@ -25,4 +25,8 @@ module.exports =
       return:
          name: 'salt'
          type: 'string'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

@@ -24,4 +24,8 @@ module.exports =
       return:
          name: 'data'
          type: 'object'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]
