@@ -18,7 +18,7 @@ module.exports =
 
 
    signs: [{
-      name: '@min( [error] )'
+      name: '@min( min, [error] )'
       desc: '*数据*或者*数据长度*是否不低于 min ？'
       more: """
          使用 [sai.isMin](/isMin) 进行判定
@@ -37,7 +37,7 @@ module.exports =
       return:
          name: 'tester'
          type: 'sai.Tester'
-         desc: '支持方法链'
+         desc: 'this - 支持方法链'
 
       errors: [
          require('../../errors').INVALID_PARAMS

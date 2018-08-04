@@ -32,7 +32,7 @@ module.exports =
       return:
          name: 'tester'
          type: 'sai.Tester'
-         desc: '支持方法链'
+         desc: 'this - 支持方法链'
 
       errors: [
          require('../../errors').INVALID_DATA

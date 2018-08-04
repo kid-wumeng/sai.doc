@@ -1,26 +1,29 @@
 module.exports =
 
 
-   name: 'Tester@boolean'
+   name: 'Tester@is'
 
 
    desc: """
       ```js
-      sai.test(true).boolean()  // pass
-      sai.test(1234).boolean()  // fail
+      sai.test('1').is(Number)  // fail
+      sai.test('1').is(String)  // pass
       ```
    """
 
 
    signs: [{
-      name: '@boolean( [error] )'
-      desc: '是否为布尔量 ？'
+      name: '@is( type, [error] )'
+      desc: '是否为指定类型 ？'
       more: """
-         使用 [sai.isBoolean](/isBoolean) 进行判定
+         使用 [sai.is](/is) 进行判定
          若值是必需的，请加上 [required()](/Tester@required)
       """
 
       params: [{
+         name: 'type'
+         type: '*'
+      },{
          name: 'error'
          type: '*'
          optional: true

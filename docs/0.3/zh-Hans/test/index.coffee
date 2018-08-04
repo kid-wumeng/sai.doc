@@ -13,6 +13,8 @@ module.exports =
       require('./Tester@name')
       require('./Tester@schema')
       require('./Tester@required')
+      require('./Tester@in')
+      require('./Tester@is')
       require('./Tester@boolean')
       require('./Tester@number')
       require('./Tester@int')

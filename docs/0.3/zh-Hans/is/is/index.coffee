@@ -18,7 +18,7 @@ module.exports =
 
       params: [{
          name: 'type'
-         type: 'function, nil, NaN'
+         type: '*'
          desc: '类型'
       },{
          name: 'value'
