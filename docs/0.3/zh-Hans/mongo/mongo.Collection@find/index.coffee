@@ -17,8 +17,8 @@ module.exports =
       desc: '查找文档，依据 Query ( 批量 )'
 
       params: [
-         require('./params/query')
-         require('./params/queryOptions')([
+         require('../_params/query')
+         require('../_params/queryOptions')([
             'sort'
             'desc'
             'skip'
@@ -32,5 +32,9 @@ module.exports =
       ]
 
       return:
-         require('./return/docs')
+         require('../_return/docs')
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

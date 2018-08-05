@@ -32,3 +32,8 @@ module.exports =
    TEXT_PARSE_FAIL:
       name: 'TEXT_PARSE_FAIL'
       desc: '文本解析失败\n无法顺利转换为预期格式'
+
+
+   MONGO_DB_CONNECT_FAIL:
+      name: 'MONGO_DB_CONNECT_FAIL'
+      desc: 'MongoDB 连接失败'

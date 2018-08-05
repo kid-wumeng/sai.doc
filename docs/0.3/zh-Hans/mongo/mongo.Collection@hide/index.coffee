@@ -20,4 +20,8 @@ module.exports =
          type: 'string'
          desc: '要隐藏的字段名'
       }]
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

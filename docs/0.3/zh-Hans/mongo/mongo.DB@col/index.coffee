@@ -32,4 +32,8 @@ module.exports =
          name: 'collection'
          type: 'sai.mongo.Collection'
          desc: '集合'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

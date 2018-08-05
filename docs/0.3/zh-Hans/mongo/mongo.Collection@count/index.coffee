@@ -17,10 +17,14 @@ module.exports =
       desc: '统计文档条数'
 
       params: [
-         require('./params/query')
+         require('../_params/query')
       ]
 
       return:
          name: 'count'
          type: 'int ≥ 0'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

@@ -17,11 +17,15 @@ module.exports =
       desc: '删除文档，依据 Query ( 批量 )'
 
       params: [
-         require('./params/query')
+         require('../_params/query')
       ]
 
       return:
          name: 'count'
          type: 'int ≥ 0'
          desc: '删除成功的条数'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

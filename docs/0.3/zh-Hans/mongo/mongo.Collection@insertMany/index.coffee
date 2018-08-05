@@ -22,5 +22,9 @@ module.exports =
       }]
 
       return:
-         require('./return/docs')
+         require('../_return/docs')
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

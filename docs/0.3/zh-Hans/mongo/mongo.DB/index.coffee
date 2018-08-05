@@ -85,4 +85,8 @@ module.exports =
       return:
          name: 'db'
          type: 'sai.mongo.DB'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

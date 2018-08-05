@@ -22,12 +22,16 @@ module.exports =
       desc: '更新文档，依据 Query ( 批量 )'
 
       params: [
-         require('./params/query')
-         require('./params/modifier')
+         require('../_params/query')
+         require('../_params/modifier')
       ]
 
       return:
          name: 'count'
          type: 'int ≥ 0'
          desc: '更新成功的条数'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

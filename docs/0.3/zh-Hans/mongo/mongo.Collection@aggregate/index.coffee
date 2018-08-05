@@ -36,4 +36,8 @@ module.exports =
       return:
          name: 'results'
          type: 'Array'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]
