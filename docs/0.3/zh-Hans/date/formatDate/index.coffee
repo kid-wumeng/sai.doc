@@ -6,7 +6,8 @@ module.exports =
 
    desc: """
       ```js
-      formatDate = sai.formatDate(date, 'YYYY-MM-DD HH:II:SS')
+      date = new Date(2018, 3, 12, 6, 15, 45)
+      sai.formatDate(date, 'YYYY-MM-DD HH:II:SS')  // => '2018-04-12 06:15:45'
       ```
    """
 
@@ -26,4 +27,8 @@ module.exports =
       return:
          name: 'string'
          type: 'string'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]
