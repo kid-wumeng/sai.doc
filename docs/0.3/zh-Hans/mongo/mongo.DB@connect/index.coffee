@@ -20,9 +20,8 @@ module.exports =
       async: true
       name: '@connect()'
       desc: '连接'
+
+      errors: [
+         require('../../errors').MONGO_DB_CONNECT_FAIL
+      ]
    }]
-
-
-   errors: [
-      require('../../errors').MONGO_DB_CONNECT_FAIL
-   ]

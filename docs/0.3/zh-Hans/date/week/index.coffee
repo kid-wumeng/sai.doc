@@ -23,4 +23,8 @@ module.exports =
       return:
          name: 'week'
          type: 'int, 0 ~ 6'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

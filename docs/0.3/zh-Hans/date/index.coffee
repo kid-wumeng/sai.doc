@@ -13,7 +13,7 @@ module.exports =
       require('./second')
       require('./milliSecond')
       require('./week')
-      require('./timeStamp')
+      require('./time')
       require('./formatDate')
       require('./ms')
    ]

@@ -1,18 +1,18 @@
 module.exports =
 
 
-   name: 'timeStamp'
+   name: 'time'
 
 
    desc: """
       ```js
-      timeStamp = sai.timeStamp(date)
+      time = sai.time(date)
       ```
    """
 
 
    signs: [{
-      name: 'timeStamp( date )'
+      name: 'time( date )'
       desc: '获取时间戳 ( 格林威治时间1970年01月01日00时00分00秒起至现在的总秒数 )'
 
       params: [{
@@ -21,6 +21,10 @@ module.exports =
       }]
 
       return:
-         name: 'timeStamp'
+         name: 'time'
          type: 'int ≥ 0'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

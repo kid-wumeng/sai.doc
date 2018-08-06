@@ -23,4 +23,8 @@ module.exports =
       return:
          name: 'year'
          type: 'int'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

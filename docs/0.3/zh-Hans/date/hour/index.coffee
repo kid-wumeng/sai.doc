@@ -23,4 +23,8 @@ module.exports =
       return:
          name: 'hour'
          type: 'int, 0 ~ 23'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

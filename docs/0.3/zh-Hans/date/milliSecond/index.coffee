@@ -23,4 +23,8 @@ module.exports =
       return:
          name: 'milliSecond'
          type: 'int, 0 ~ 999'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]

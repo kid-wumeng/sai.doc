@@ -23,4 +23,8 @@ module.exports =
       return:
          name: 'second'
          type: 'int, 0 ~ 59'
+
+      errors: [
+         require('../../errors').INVALID_PARAMS
+      ]
    }]
