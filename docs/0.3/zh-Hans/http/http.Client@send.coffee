@@ -22,7 +22,7 @@ module.exports =
             require('./params/http.requestMethod')
             require('./params/http.requestPath')
             require('./params/http.requestData')
-            require('./params/http.requestOptions')
+            require('./params/http.requestConfig')
          ]
       }]
 

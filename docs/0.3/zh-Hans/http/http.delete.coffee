@@ -18,7 +18,7 @@ module.exports =
       params: [
          require('./params/http.requestUrl')
          require('./params/http.requestData')
-         require('./params/http.requestOptions')
+         require('./params/http.requestConfig')
       ]
 
       return:

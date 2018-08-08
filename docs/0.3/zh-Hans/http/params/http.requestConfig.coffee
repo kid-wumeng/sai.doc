@@ -1,5 +1,5 @@
 module.exports =
 
-   name: 'options'
+   name: 'config'
    type: 'object'
    default: {}
