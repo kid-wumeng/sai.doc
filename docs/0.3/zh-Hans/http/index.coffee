@@ -1,18 +1,19 @@
 module.exports =
 
-   path: 'net'
-   name: '网络系统'
+   path: 'http'
+   name: 'HTTP'
    desc: ''
 
    items: [
-      'HTTP'
+      '基础'
       require('./http.get')
       require('./http.post')
       require('./http.put')
       require('./http.patch')
       require('./http.delete')
+      require('./http.send')
 
-      'HTTP Client'
+      'Client'
       require('./http.Client')
       require('./http.Client@url')
       require('./http.Client@get')
@@ -20,8 +21,9 @@ module.exports =
       require('./http.Client@put')
       require('./http.Client@patch')
       require('./http.Client@delete')
+      require('./http.Client@send')
 
-      'HTTP Server'
+      'Server'
       require('./http.Server')
       require('./http.Server@all')
       require('./http.Server@get')

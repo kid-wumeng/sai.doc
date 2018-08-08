@@ -6,7 +6,7 @@ module.exports =
       require('./is')
       require('./test')
       require('./file')
-      require('./net')
+      require('./http')
       require('./mongo')
       require('./code')
       require('./date')
