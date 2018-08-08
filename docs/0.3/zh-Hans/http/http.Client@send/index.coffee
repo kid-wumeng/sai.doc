@@ -19,13 +19,13 @@ module.exports =
          name: 'options'
          type: 'object'
          children: [
-            require('./params/http.requestMethod')
-            require('./params/http.requestPath')
-            require('./params/http.requestData')
-            require('./params/http.requestConfig')
+            require('../_params/http.requestMethod')
+            require('../_params/http.requestPath')
+            require('../_params/http.requestData')
+            require('../_params/http.requestConfig')
          ]
       }]
 
       return:
-         require('./return/http.response')
+         require('../_return/http.response')
    }]

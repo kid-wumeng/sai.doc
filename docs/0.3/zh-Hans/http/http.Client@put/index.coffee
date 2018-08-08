@@ -16,11 +16,11 @@ module.exports =
       desc: '发送 PUT 请求'
 
       params: [
-         require('./params/http.requestPath')
-         require('./params/http.requestData')
-         require('./params/http.requestConfig')
+         require('../_params/http.requestPath')
+         require('../_params/http.requestData')
+         require('../_params/http.requestConfig')
       ]
 
       return:
-         require('./return/http.response')
+         require('../_return/http.response')
    }]

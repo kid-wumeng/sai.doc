@@ -18,7 +18,7 @@ module.exports =
       desc: '处理 PATCH 请求'
 
       params: [
-         require('./params/http.requestPath')
-         require('./params/http.handlerCallback')
+         require('../_params/http.requestPath')
+         require('../_params/http.handlerCallback')
       ]
    }]

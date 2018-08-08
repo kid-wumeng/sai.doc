@@ -16,7 +16,7 @@ module.exports =
       desc: '与 urlBase 一起构造 url'
 
       params: [
-         require('./params/http.requestPath')
+         require('../_params/http.requestPath')
       ]
 
       return:
