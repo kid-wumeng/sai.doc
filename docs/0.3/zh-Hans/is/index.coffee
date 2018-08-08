@@ -38,5 +38,7 @@ module.exports =
       '格式判定'
       require('./isEmail')
       require('./isURL')
+      require('./isBooleanString')
+      require('./isNumberString')
       require('./isSpace')
    ]
