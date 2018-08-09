@@ -21,6 +21,7 @@ module.exports =
       require('./del')
       require('./merge')
       require('./count')
+      require('./sum')
 
       'Array-like'
       require('./index_')
@@ -28,6 +29,8 @@ module.exports =
       require('./first')
       require('./last')
       require('./concat')
+      require('./randomItem')
+      require('./deleteItem')
 
       '字符串'
       require('./match')
