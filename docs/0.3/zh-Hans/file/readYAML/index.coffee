@@ -33,7 +33,7 @@ module.exports =
 
       return:
          name: 'data'
-         type: 'object'
+         type: 'object|boolean|number|string'
 
       errors: [
          require('../../errors').INVALID_PARAMS

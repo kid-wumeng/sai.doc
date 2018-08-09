@@ -28,7 +28,7 @@ module.exports =
          desc: '文件路径'
       },{
          name: 'data'
-         type: 'object'
+         type: 'object|boolean|number|string'
          desc: """
             要写入的 YAML 格式数据
          """
