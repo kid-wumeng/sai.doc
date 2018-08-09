@@ -11,6 +11,8 @@ module.exports =
       require('./clone')
 
       'Number'
+      require('./min')
+      require('./max')
       require('./random')
 
       'Object'
