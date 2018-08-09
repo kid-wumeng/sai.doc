@@ -30,6 +30,7 @@ module.exports =
       require('./Tester@plainObject')
       require('./Tester@min')
       require('./Tester@max')
+      require('./Tester@mime')
       require('./Tester@check')
       require('./Tester@format')
       require('./Tester@rule')

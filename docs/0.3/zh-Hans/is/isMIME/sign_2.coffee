@@ -9,7 +9,7 @@ module.exports =
       desc: '期望检测的值'
    },{
       name: 'mimes'
-      type: 'Array[string]'
+      type: 'Array-like[string]'
    }]
 
    return:
