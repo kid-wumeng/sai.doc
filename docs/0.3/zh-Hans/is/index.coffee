@@ -35,6 +35,7 @@ module.exports =
       require('./isEmpty')
       require('./isMin')
       require('./isMax')
+      require('./isMIME')
 
       '格式判定'
       require('./isEmail')
