@@ -5,6 +5,14 @@ module.exports =
    desc: ''
 
    items: [
+      'CSON'
+      require('./cson.stringify')
+      require('./cson.parse')
+
+      'YAML'
+      require('./yaml.stringify')
+      require('./yaml.parse')
+
       'JSON Web Token'
       require('./jwt.encode')
       require('./jwt.decode')
