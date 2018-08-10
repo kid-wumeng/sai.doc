@@ -22,7 +22,7 @@ module.exports =
 
       return:
          name: 'milliSeconds'
-         type: 'number'
+         type: 'number ≥ 0'
 
       errors: [
          require('../../errors').INVALID_PARAMS

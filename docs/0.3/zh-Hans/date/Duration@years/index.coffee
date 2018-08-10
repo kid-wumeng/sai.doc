@@ -30,7 +30,7 @@ module.exports =
 
       return:
          name: 'years'
-         type: 'number'
+         type: 'number ≥ 0'
 
       errors: [
          require('../../errors').INVALID_PARAMS
