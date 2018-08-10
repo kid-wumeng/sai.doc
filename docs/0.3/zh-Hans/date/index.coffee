@@ -27,4 +27,12 @@ module.exports =
       require('./Duration@seconds')
       require('./Duration@milliSeconds')
       require('./Duration@weeks')
+      require('./Duration@yearsBit')
+      require('./Duration@monthsBit')
+      require('./Duration@daysBit')
+      require('./Duration@hoursBit')
+      require('./Duration@minutesBit')
+      require('./Duration@secondsBit')
+      require('./Duration@milliSecondsBit')
+      require('./Duration@weeksBit')
    ]
