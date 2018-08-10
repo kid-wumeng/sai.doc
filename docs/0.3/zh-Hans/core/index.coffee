@@ -38,6 +38,13 @@ module.exports =
       require('./match')
 
       '函数'
+      require('./switch')
+
+      'Switcher'
+      require('./Switcher@case')
+      require('./Switcher@then')
+      require('./Switcher@default')
+      require('./Switcher@result')
 
       '其他'
       require('./error')
