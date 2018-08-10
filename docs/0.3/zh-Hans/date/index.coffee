@@ -16,4 +16,15 @@ module.exports =
       require('./time')
       require('./formatDate')
       require('./ms')
+      require('./between')
+
+      'Duration'
+      require('./Duration@years')
+      require('./Duration@months')
+      require('./Duration@days')
+      require('./Duration@hours')
+      require('./Duration@minutes')
+      require('./Duration@seconds')
+      require('./Duration@milliSeconds')
+      require('./Duration@weeks')
    ]
