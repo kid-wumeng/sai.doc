@@ -18,7 +18,7 @@ module.exports =
       require('./ms')
       require('./between')
 
-      'Duration'
+      'Duration 时间量'
       require('./Duration@years')
       require('./Duration@months')
       require('./Duration@days')
@@ -27,7 +27,9 @@ module.exports =
       require('./Duration@seconds')
       require('./Duration@milliSeconds')
       require('./Duration@weeks')
+      require('./Duration@format')
 
+      'Duration 时间位'
       require('./Duration@yearsBit')
       require('./Duration@monthsBit')
       require('./Duration@daysBit')
@@ -36,4 +38,5 @@ module.exports =
       require('./Duration@secondsBit')
       require('./Duration@milliSecondsBit')
       require('./Duration@weeksBit')
+      require('./Duration@formatBit')
    ]
